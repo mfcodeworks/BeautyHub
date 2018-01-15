@@ -1,0 +1,23 @@
+{
+    "name": "components/jquery-migrate",
+    "description": "APIs and features removed from jQuery core",
+    "type": "component",
+    "homepage": "https://github.com/jquery/jquery-migrate",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jQuery Foundation and other contributors",
+            "homepage": "https://github.com/jquery/jquery-migrate/blob/master/AUTHORS.txt"
+        }
+    ],
+    "extra": {
+        "component": {
+            "scripts": [
+                "jquery-migrate.js"
+            ],
+            "files": [
+                "jquery-migrate.min.js"
+            ]
+        }
+    }
+}
