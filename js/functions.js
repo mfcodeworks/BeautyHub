@@ -109,11 +109,18 @@ $(document).ready(function() {
     //Add new product
     $('#add-new-product').submit(function() {
         console.log("product submitted");
+
+        var productInfoJSON = scrapeProduct( $('#productBrand').val()+" "+$('#productName').val());
+        var productInfo = JSON.parse(productInfoJSON);
+        console.log(productInfo);
+
         if( $('#productName').val() && $('#productBrand').val() && $('#productType').val() ) {
             $.post("scripts/add-new-product.php",
             {
                 productName: $('#productName').val(),
                 productBrand: $('#productBrand').val(),
+                productImg: productInfo.img,
+                productDescription: productInfo.description,
                 productShades: $('#productShades').val(),
                 productType: $('#productType').val(),
                 productRating: $('#productRating').val(),
@@ -122,7 +129,7 @@ $(document).ready(function() {
             },
             function(data,status){
                 console.log("Product ID:"+data);
-                scrapeProduct($('#productBrand').val()+" "+$('#productName').val(),data);
+                if(data.match(/^[0-9]+$/) != null)  echoAlert("Product saved successfully!");
             });
         }
     });
@@ -420,13 +427,31 @@ function getParameterByName(name, url) {
 };
 
 // Scrape product info
-function scrapeProduct(search,id) {
-    $.post("scripts/scrape-product.php",
-    {
-        search: search,
-        id: id
-    },
-    function(data,status){
-        console.log(data);
-    });
+function scrapeProduct(search) {
+    console.log("Scraping "+search);
+    var productInfo =
+        $.ajax({
+            type: "GET",
+            url: "scripts/scrape-product.php?search="+search,
+            data: search,
+            success: 
+                function(data,status){
+                    //console.log(data);
+                    return data;
+                },
+            async: false
+        });
+    return productInfo.responseText
+};
+
+// Display alert message
+function echoAlert(message) {
+    $("div#content").prepend(" \
+    <div class='container'> \
+        <div class='col-lg-12 col-sm-12 col-md-12'> \
+            <div class='alert alert-info box' style='background-color: #d9edf7; border-color: #bce8f1;'>" + 
+                message + " \
+            </div> \
+        </div> \
+    </div>");
 };

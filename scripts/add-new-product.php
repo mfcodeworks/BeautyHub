@@ -7,7 +7,8 @@
 
     //Enter info into DB
     $conn = sqlConnect();
-    $sql = "INSERT INTO products(id,name,brand,shade,product_type,rating,price_site) VALUES($id,\"$productName\",\"$productBrand\"";
+    $sql = "INSERT INTO products(id,name,brand,img,description,shade,product_type,rating,price_site) 
+            VALUES($id, \"$productName\", \"$productBrand\", \"$productImg\", \"$productDescription\"";
 
     if($productShades != "") {
         $sql .= ",\"$productShades\"";
@@ -36,5 +37,5 @@
     $sql.=");";
 
     if(!mysqli_query($conn,$sql)) echo("Error. Could not save product.");
-    else echo "$id";
+    echo "$id";
 ?>

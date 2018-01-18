@@ -13,6 +13,7 @@ require_once(ABSPATH . "class/product.php");
 require_once(ABSPATH . "class/user.php");
 
 // Require script functions
+require_once(ABSPATH . "scripts/functions/Encoding.php");
 require_once(ABSPATH . "scripts/functions/generic-functions.php");
 require_once(ABSPATH . "scripts/functions/page-load-functions.php");
 require_once(ABSPATH . "scripts/functions/product-functions.php");

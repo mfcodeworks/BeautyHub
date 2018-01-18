@@ -2,17 +2,17 @@
     // Get dependencies
     require_once "functions.php";
     use Goutte\Client;
+    use ForceUTF8\Encoding;
 
     // Init. client
     $client = new Client();
 
     // Set test search
     $search = $_GET['search'];
-    $productID = $_GET['id'];
+    $search = str_replace(" ","+",$search);
 
     // Do search
-    $searchURI = str_replace(" ","+",$search);
-    $crawler = $client->request('GET', 'http://www.google.com/search?q='.$searchURI);
+    $crawler = $client->request('GET', 'http://www.google.com/search?q='.$search);
 
     // Crawl response
     $output = $crawler->filter('.r > a')->each(function($node) {
@@ -33,7 +33,7 @@
     foreach($links as $name => $uri) {
 
         // If link is Sephora
-        if( strpos($uri,"sephora") != false && !isset($imageURI)) {
+        if( strpos($uri,"sephora") != false && !isset($imageURI) && !isset($descriptionText)) {
 
             // Init. new client
             $client = new Client();
@@ -46,9 +46,10 @@
             });
 
             // If correct link, save link
-            foreach($imagelink as $i) {
-                if( strpos($i,"main") != false ) $imageURI = parse_url($uri)['host'].$i;
-                else break;
+            if(isset($imagelink) && $imagelink != NULL) {
+                foreach($imagelink as $i) {
+                    if( strpos($i,"main") != false ) $imageURI = parse_url($uri)['host'].$i;
+                }
             }
 
             // If has description, save description
@@ -56,43 +57,38 @@
                 return $node->text();
             });
 
-            // If no image, save alert for product
-            if(!isset($imageURI)) {
-                $imageURI = "NULL";
-                $log = "Couldn't scrape image link for $search, #$productID.<br>";
-            }
-
             // Check description exists
-            if(isset($description)) {
+            if(isset($description) && $description != NULL) {
 
                 // Set description
-                $description = $description[0];
+                $descriptionText = $description[0];
                 // Format decription
-                formatSephoraDescrption($description,"What it is:");
-                formatSephoraDescrption($description,"What it does:");
-                formatSephoraDescrption($description,"What else you need to know:");
+                $descriptionText = formatSephoraDescription($descriptionText,"What it is:");
+                $descriptionText = formatSephoraDescription($descriptionText,"What it does:");
+                $descriptionText = formatSephoraDescription($descriptionText,"What else you need to know:");
+                $descriptionText = str_replace("","-",$descriptionText);
             }
-            // If description not found, save alert for product
-            else {
-                $description = "NULL";
-                $log = "Couldn't scrape description for $search, #$productID.<br>";
-            }
-            // If anything not found, email alert for product
-            if(isset($log)) mailMessage("<html><body>$log</body></html>","[IMPORTANT] Error Scraping Product");
         }
     }
 
-    // Save info
-    $conn = sqlConnect();
-    $sql = "UPDATE products
-            SET img=\"$imageURI\" description=\"$description\"
-            WHERE ID=$productID;";
-    if(mysqli_query($conn,$sql)) {
-        echo "Product scraped successfully\n";
-        mysqli_close($conn);
+    // If description not found, save alert for product
+    if(!isset($descriptionText) || $descriptionText == "") {
+        $descriptionText = "NULL";
+        $log = "Couldn't scrape description for $search.<br>";
     }
-    else {
-        echo "Scrape failed\n";
-        mysqli_close($conn);
+
+    // If no image, save alert for product
+    if(!isset($imageURI) || $imageURI == "") {
+        $imageURI = "NULL";
+        $log = "Couldn't scrape image link for $search.<br>";
     }
+
+    // If anything not found, email alert for product
+    if(isset($log)) mailMessage("<html><body>$log</body></html>","[IMPORTANT] Error Scraping Product");
+
+    // Return info
+    echo json_encode($array = [
+        "img" => "https://" . $imageURI,
+        "description" => str_replace('"',"'",$descriptionText),
+    ])
 ?>

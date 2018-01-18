@@ -190,7 +190,8 @@ function loadProductDetails($id,$dupeBrands=NULL)
     echo "</div>
         <!-- /#comments -->";
 
-    if($_SESSION['user']->getID() != null) {
+    if(isset($_SESSION['user'])) $user = $_SESSION['user'];
+    if(isset($user) && $user->getID() != null) {
         echo "<div id='comment-form' data-animate='fadeInUp'>
 
                 <h4>Leave a review</h4>

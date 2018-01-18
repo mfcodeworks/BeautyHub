@@ -3,8 +3,9 @@
     require_once 'functions.php';
     extract($_POST);
 
+    if(isset($_SESSION['user'])) $loginCheck = $_SESSION['user'];
     //If user is logged in, return true
-    if($_SESSION['user']->getID() != null) echo "true";
+    if(isset($loginCheck) && $loginCheck->getID() != null) echo "true";
 
     //If login successful, print login form
     else {

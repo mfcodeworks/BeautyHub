@@ -8,7 +8,8 @@
 // Print any errors as Javascript alert
 function alert($message)
 {
-    loadJS("alert('$message');");
+    //CHANGED loadJS("alert('$message');");
+    loadJS("echoAlert($message);");
 };
 // Load any JS actions
 function loadJS($js)

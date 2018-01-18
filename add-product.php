@@ -1,5 +1,5 @@
 <?php
-require_once 'scripts/functions.php';
+    require_once 'scripts/functions.php';
     session_start();
     loadHead();
     loadTopBar();
@@ -7,8 +7,7 @@ require_once 'scripts/functions.php';
     beginContent();
     loadAddProduct();
     loadFoot();
-?>
-<?php
+    
 function loadAddProduct() {
     echo
     "<div class='col-md-12'>

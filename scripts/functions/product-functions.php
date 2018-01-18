@@ -2,12 +2,13 @@
 // Format scraped Sephora description
 function formatSephoraDescription($text,$heading)
 {
-    $pos = strpos($description,$heading);
+    $pos = strpos($text,$heading);
     if($pos !== false) {
-        $description = substr_replace($description,"</b><br>",$pos+strlen($heading),0);
-        if($pos == 0) $description = substr_replace($description,"<b>",$pos,0);
-        else $description = substr_replace($description,"<br><b>",$pos,0);
+        $text = substr_replace($text,"</b><br>",$pos+strlen($heading),0);
+        if($pos == 0) $text = substr_replace($text,"<b>",$pos,0);
+        else $text = substr_replace($text,"<br><b>",$pos,0);
     }
+    return $text;
 };
 
 // Check wishlist for duplicate entries
