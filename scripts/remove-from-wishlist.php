@@ -1,7 +1,7 @@
 <?php
+    require_once 'functions.php';
     session_start();
     extract($_POST);
-    require_once 'functions.php';
 
     //Get user info
     $user = $_SESSION['username'];

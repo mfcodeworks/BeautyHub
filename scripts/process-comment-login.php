@@ -1,6 +1,6 @@
 <?php
-    session_start();
     require_once 'functions.php';
+    session_start();
     extract($_POST);
 
     if(isset($_SESSION['user'])) $loginCheck = $_SESSION['user'];
