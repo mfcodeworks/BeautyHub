@@ -19,23 +19,25 @@ $(document).ready(function() {
     $("#productBrand").easyAutocomplete(options);
 
     // Print new shade form
-    $('#top').before(" \
-        <div id='new-shade-enter' style='width:100%;height:100%;position:fixed;background:rgba(0,0,0,.5);z-index:16;'> \
-            <div class='row popup'> \
-                <div class='center-block col-md-12 text-center' style='position: absolute; float: none; background-color: white; top: 50%; border-radius: 1em; padding: 0.5em; z-index:20;'> \
-                    <form action='javascript:void(0)' id='submit-new-shade-form'> \
-                        <div class='form-group' style='width:80%; margin-left:auto; margin-right:auto;'> \
-                            <label for='newShade'><h4>New shade name:</h4></label> \
-                            <input type='text' class='form-control' id='newShade' name='newShade'> \
-                        </div> \
-                        <div class='form-group'> \
-                            <input type='submit' class='btn btn-primary' value='Submit new shade'> \
-                        </div> \
-                    </form> \
+    if(page == "detail.php") {
+        $('#top').before(" \
+            <div id='new-shade-enter' style='width:100%;height:100%;position:fixed;background:rgba(0,0,0,.5);z-index:16;'> \
+                <div class='row popup'> \
+                    <div class='center-block col-md-12 text-center' style='position: absolute; float: none; background-color: white; top: 50%; border-radius: 1em; padding: 0.5em; z-index:20;'> \
+                        <form action='javascript:void(0)' id='submit-new-shade-form'> \
+                            <div class='form-group' style='width:80%; margin-left:auto; margin-right:auto;'> \
+                                <label for='newShade'><h4>New shade name:</h4></label> \
+                                <input type='text' class='form-control' id='newShade' name='newShade'> \
+                            </div> \
+                            <div class='form-group'> \
+                                <input type='submit' class='btn btn-primary' value='Submit new shade'> \
+                            </div> \
+                        </form> \
+                    </div> \
                 </div> \
-            </div> \
-        </div>"
-    );
+            </div>"
+        );
+    }
     // Hide form until clicked
     $("#new-shade-enter").hide();
 
@@ -145,7 +147,7 @@ $(document).ready(function() {
         function(data,status){
             console.log(data);
             if(data.indexOf("true") > -1) location.reload();
-            else alert("Couldn't login. Check username/password.");
+            else echoAlert("Couldn't login. Check username/password.");
         });
     });
 
@@ -159,7 +161,7 @@ $(document).ready(function() {
         },
         function(data,status){
             if(data == "true") location.reload();
-            else alert("Couldn't login. Check username/password.");
+            else echoAlert("Couldn't login. Check username/password.");
         });
     });
 
@@ -171,7 +173,7 @@ $(document).ready(function() {
             password: $('#comment-password').val()
         },
         function(data,status){
-            if(data == "false") alert("Couldn't login. Check username/password.");
+            if(data == "false") echoAlert("Couldn't login. Check username/password.");
             else {
                 $('#comment-form').empty();
                 $('#comment-form').append(data);
@@ -181,7 +183,13 @@ $(document).ready(function() {
 
     // Submit info to register account
     $('#register-form').submit(function() {
+        $("#AJAXalert").remove();
         console.log("Register submit");
+        // Check register values
+        if($('#reg-username').val() == "" || $('#reg-username').val() == "undefined" || $('#reg-password').val() == "" || $('#reg-password').val() == "undefined" || $('#reg-email').val() == "" || $('#reg-email').val() == "undefined") {
+            echoAlert("Registering new account requires a username, password and email.");
+            return;
+        }
         $.post("scripts/process-register.php",
         {
             username: $('#reg-username').val(),
@@ -189,8 +197,8 @@ $(document).ready(function() {
             email   : $('#reg-email').val()
         },
         function(data,status){
-            if(data == "true") location.reload();
-            else alert("Couldn't register account. Username/email already exists.");
+            if(data.indexOf("true") > -1) location.reload();
+            else echoAlert("Couldn't register account. Username/email already exists.");
         });
     });
 
@@ -208,13 +216,13 @@ $(document).ready(function() {
             function(data,status){
                 console.log("Return: "+data);
                 if(data == "true") {
-                    alert("Password changed successfully.");
+                    echoAlert("Password changed successfully.");
                     location.reload();
                 }
-                else alert("Couldn't change password, password is incorrect.");
+                else echoAlert("Couldn't change password, password is incorrect.");
             });
         }
-        else alert("Passwords don't match. Check new password and retype exactly.");
+        else echoAlert("Passwords don't match. Check new password and retype exactly.");
     });
 
     // Submit extra account info
@@ -234,7 +242,7 @@ $(document).ready(function() {
         function(data,status){
             console.log("Data "+data+"\nStatus "+status);
             if(data == "true") location.reload();
-            else alert("Couldn't save info, please refresh and try again.");
+            else echoAlert("Couldn't save info, please refresh and try again.");
         });
     });
 
@@ -268,8 +276,8 @@ $(document).ready(function() {
             },
             function(data,status){
                 console.log("Data: "+data+"\nStatus: "+status);
-                if(data == "true") alert("Thank you for contributing to the beauty community!");
-                else alert("Couldn't add information. Pleae try again later.");
+                if(data == "true") echoAlert("Thank you for contributing to the beauty community!");
+                else echoAlert("Couldn't add information. Pleae try again later.");
             });
         };
     });
@@ -429,6 +437,7 @@ function getParameterByName(name, url) {
 // Scrape product info
 function scrapeProduct(search) {
     console.log("Scraping "+search);
+    loadingAJAX();
     var productInfo =
         $.ajax({
             type: "GET",
@@ -437,6 +446,7 @@ function scrapeProduct(search) {
             success: 
                 function(data,status){
                     //console.log(data);
+                    doneAJAX();
                     return data;
                 },
             async: false
@@ -444,14 +454,27 @@ function scrapeProduct(search) {
     return productInfo.responseText
 };
 
-// Display alert message
+// Display echoAlert message
 function echoAlert(message) {
     $("div#content").prepend(" \
-    <div class='container'> \
+    <div class='container' id='AJAXalert'> \
         <div class='col-lg-12 col-sm-12 col-md-12'> \
-            <div class='alert alert-info box' style='background-color: #d9edf7; border-color: #bce8f1;'>" + 
-                message + " \
+            <div class='box'>" + 
+                "<i class='fa fa-exclamation-circle'></i>&nbsp;" + message + " \
             </div> \
         </div> \
     </div>");
 };
+
+// Set loader for AJAX
+function loadingAJAX() { $('div#top').before("<div id='loader' style='width:100%;height:100%;position:fixed;background:rgba(0,0,0,.5) url(img/ajax-loader.svg) center center no-repeat;z-index:16;'></div>"); }
+function doneAJAX() { $("div#loader").remove(); }
+
+// Set AJAX global handlers
+$(document).ajaxSend(function() {
+    $("#AJAXalert").remove();
+    loadingAJAX();
+});
+$(document).ajaxComplete(function() {
+    doneAJAX();
+});

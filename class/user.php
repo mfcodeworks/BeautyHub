@@ -32,7 +32,10 @@
             $password = $this->hashPassword($password);
 
             //Select count of columns that equal data to be checked
-            $sql = "SELECT count(ID) FROM users WHERE pass = '$password' AND username = '$username';";
+            $sql = "SELECT count(ID) 
+                    FROM users 
+                    WHERE pass = '$password' 
+                    AND username = '$username';";
 
             try {
                 $result = mysqli_query($conn,$sql);
@@ -47,7 +50,9 @@
                 $row = mysqli_fetch_assoc($result);
                 if($row["count(ID)"] > 0) {
                     //If combo exists get and save user info
-                    $sql = "SELECT id,username,email FROM users WHERE username = '$username';";
+                    $sql = "SELECT id,username,email 
+                            FROM users 
+                            WHERE username = '$username';";
                     $result = mysqli_query($conn,$sql);
                     $row = mysqli_fetch_assoc($result);
                     $this->id = $row['id'];
@@ -70,17 +75,25 @@
 
         //Register new user
         private function registerUser($username, $password, $email) {
+            if(!isset($username) || !isset($password) || !isset($email) || $username = "" || $password = "" || $email = "")
+                throw new Exception("Register requires Username, password and email.");
+
             //Connect to DB
             $conn = sqlConnect();
+
+            //Check user doesn't exist
+            if($this->userExists($username,$password)) 
+                throw new Exception("User already exists");
 
             //Get new unique ID to give user
             $id = getMaxId('users');
 
             //One way salted hash for password
-            $password = hashPassword($password);
+            $password = $this->hashPassword($password);
 
             //Build SQL statement
-            $sql = "INSERT INTO users(id,username,pass,email) VALUES($id,'$username','$password','$email');";
+            $sql = "INSERT INTO users(id,username,pass,email) 
+                    VALUES($id,'$username','$password','$email');";
 
             //Insert post data into DB
             try {
@@ -100,6 +113,27 @@
             mysqli_close($conn);
         }
 
+        //Check user exists
+        private function userExists($username,$password)
+        {
+            //Connect to DB
+            $conn = sqlConnect();
+
+            //Hash password
+            $password = $this->hashPassword($password);
+
+            $sql = "SELECT count(ID)
+                    FROM users
+                    WHERE username = '$username'
+                    AND pass = '$password';
+                    ";
+            $result = mysqli_query($conn,$sql);
+            while( $row = mysqli_fetch_assoc($result) ) {
+                if($row['count(ID)'] > 0) return true; 
+            }
+            return false;
+        }
+
         //Update users password
         public function changePassword($old,$new)
         {
@@ -111,7 +145,10 @@
             $new = $this->hashPassword($new);
 
             //Build SQL statement
-            $sql = "UPDATE users SET pass='$new' WHERE username='" . $this->username ."' AND pass='$old';";
+            $sql = "UPDATE users 
+                    SET pass='$new' 
+                    WHERE username='" . $this->username ."' 
+                    AND pass='$old';";
 
             try {
                 mysqli_query($conn,$sql);

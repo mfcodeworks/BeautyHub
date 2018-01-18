@@ -4,8 +4,10 @@
     extract($_POST);
 
     // If make user successful, set logged in and return true
-    $user = new user($username, $password, $email);
-    if($user != null)
+    try { $user = new user($username, $password, $email); }
+    catch(Exception $exc) { echo $exc->getMessage(); }
+
+    if(isset($user) && $user->getID() != null)
         echo "true";
 
     // If failed return false

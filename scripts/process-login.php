@@ -7,8 +7,10 @@
     if(isset($_SESSION['user'])) echo "true";
 
     //If login successful, return true
-    $user = new user($username, $password);
-    if($user->getID() != null)
+    try { $user = new user($username, $password); }
+    catch(Exception $exc) { echo $exc; }
+
+    if(isset($user) && $user->getID() != null)
         echo "true";
 
     //If login failed return false
