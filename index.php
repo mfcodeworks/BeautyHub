@@ -17,8 +17,8 @@
                                 <div class="icon"><i class="fa fa-heart"></i>
                                 </div>
 
-                                <h3><a href="#">We love our customers</a></h3>
-                                <p>We are known to provide best possible service ever</p>
+                                <h3><a href="#">We love beauty</a></h3>
+                                <p>BeautyHub is made for makeup lovers and the beauty community to come together and share their beauty love</p>
                             </div>
                         </div>
 
@@ -27,8 +27,8 @@
                                 <div class="icon"><i class="fa fa-tags"></i>
                                 </div>
 
-                                <h3><a href="#">Best prices</a></h3>
-                                <p>You can check that the height of the boxes adjust when longer text like this one is used in one of them.</p>
+                                <h3><a href="#">Best beauty platform</a></h3>
+                                <p>BeautyHub and all the products, reviews and prices are put here by the beauty community, making it the largest beauty platform to date</p>
                             </div>
                         </div>
 
@@ -38,7 +38,7 @@
                                 </div>
 
                                 <h3><a href="#">100% satisfaction guaranteed</a></h3>
-                                <p>Free returns on everything for 3 months.</p>
+                                <p>BeautyHub is made by the community and will be continuousley updated and moderated to give the best possible experience for all the beauty lovers</p>
                             </div>
                         </div>
                     </div>
@@ -59,7 +59,7 @@
                 <div class="box">
                     <div class="container">
                         <div class="col-md-12">
-                            <h2>Hot this week</h2>
+                            <h2>Top viewed products</h2>
                         </div>
                     </div>
                 </div>
@@ -79,8 +79,8 @@
             <!-- *** HOT END *** -->
 
             <!-- *** GET INSPIRED ***
- _________________________________________________________ -->
-            <div class="container" data-animate="fadeInUpBig">
+            
+            <div class="container">
                 <div class="col-md-12">
                     <div class="box slideshow">
                         <h3>Get Inspired</h3>
@@ -105,17 +105,17 @@
                     </div>
                 </div>
             </div>
-            <!-- *** GET INSPIRED END *** -->
+                *** GET INSPIRED END *** -->
 
             <!-- *** BLOG HOMEPAGE ***
  _________________________________________________________ -->
 
-            <div class="box text-center" data-animate="fadeInUp">
+            <div class="box text-center">
                 <div class="container">
                     <div class="col-md-12">
-                        <h3 class="text-uppercase">From our blog</h3>
+                        <h3 class="text-uppercase">From NygmaRose Beauty</h3>
 
-                        <p class="lead">What's new in the world of fashion? <a href="blog.php">Check our blog!</a>
+                        <p class="lead">What's new in the world of beauty? <a href="https://nygmarosebeauty.com">Check our site!</a>
                         </p>
                     </div>
                 </div>
@@ -123,7 +123,7 @@
 
             <div class="container">
 
-                <div class="col-md-12" data-animate="fadeInUp">
+                <div class="col-md-12">
 
                     <div id="blog-homepage" class="row">
                         <div class="col-sm-6">

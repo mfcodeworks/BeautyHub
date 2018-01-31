@@ -9,9 +9,9 @@ require_once 'scripts/functions.php';
 
                 <div class="col-md-12">
                     <ul class="breadcrumb">
-                        <li><a href="#">Home</a>
+                        <li><a href="#" class='nav-link'>Home</a>
                         </li>
-                        <li>FAQ</li>
+                        <li>About</li>
                     </ul>
 
                 </div>
@@ -28,13 +28,10 @@ require_once 'scripts/functions.php';
                         <div class="panel-body">
                             <ul class="nav nav-pills nav-stacked">
                                 <li>
-                                    <a href="text.php">Text page</a>
-                                </li>
-                                <li>
                                     <a href="contact.php">Contact page</a>
                                 </li>
                                 <li>
-                                    <a href="faq.php">FAQ</a>
+                                    <a href="about.php">About BeautyHub</a>
                                 </li>
 
                             </ul>
@@ -56,7 +53,18 @@ require_once 'scripts/functions.php';
 
 
                     <div class="box" id="contact">
-                        <h1>Frequently asked questions</h1>
+                        <h1>About BeautyHub</h1>
+                        <p class='lead'>
+                            What is BeautyHub?<br>
+                            <br>
+                            BeautyHub is a paltform for the makeup and beauty community, 
+                            that allows everyone to contribute and post.
+                            BeautyHub is founded by the NygmaRose in hopes that the beauty comunity can come together to share dupes, 
+                            looks, reviews, discounts, ideas, and everything that can help and unite the beauty community across the world as a family.
+                        </p>
+                    </div>
+                    
+                    <!--    <h1>Frequently asked questions</h1>
 
                         <p class="lead">Are you curious about something? Do you have some kind of problem with our products?</p>
                         <p>Please feel free to contact us, our customer service center is working for you 24/7.</p>
@@ -89,7 +97,7 @@ require_once 'scripts/functions.php';
                                     </div>
                                 </div>
                             </div>
-                            <!-- /.panel -->
+                            /.panel 
 
                             <div class="panel panel-primary">
                                 <div class="panel-heading">
@@ -111,7 +119,7 @@ require_once 'scripts/functions.php';
                                     </div>
                                 </div>
                             </div>
-                            <!-- /.panel -->
+                            /.panel 
 
 
                             <div class="panel panel-primary">
@@ -134,15 +142,15 @@ require_once 'scripts/functions.php';
                                     </div>
                                 </div>
                             </div>
-                            <!-- /.panel -->
+                            /.panel 
 
                         </div>
-                        <!-- /.panel-group -->
+                        /.panel-group 
 
 
                     </div>
 
 
                 </div>
-                <!-- /.col-md-9 -->
+                /.col-md-9 -->
 <?php loadFoot(); ?>

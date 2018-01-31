@@ -56,7 +56,10 @@ function loadProduct($id,$page,$shade=NULL,$user=NULL) {
     if(session_status() == PHP_SESSION_NONE) session_start();
 
     //Get user ID
-    if(!isset($user)) $user = $_SESSION['user']->getUsername();
+    if(!isset($_SESSION['user']) && !isset($user)) {
+        $user = NULL;
+    }
+    else if(!isset($user)) $user = $_SESSION['user']->getUsername();
 
     //Get product info
     $product = new product($id);

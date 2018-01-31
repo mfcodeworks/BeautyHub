@@ -31,8 +31,10 @@ function mailMessage($message, $subject = NULL, $to = ADMIN_EMAIL)
 
     if(mail($to,$subject,$message,$headers))
         return true;
-    else
+    else {
         error_log("Couldn't send Email!\nTo: $to\nSubject: $subject\nMessage: $message");
+        return false;
+    }
 };
 // Return todays date as yyyy-mm-dd
 function getDateNow($tz = NULL)

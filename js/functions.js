@@ -108,6 +108,23 @@ $(document).ready(function() {
         });
     };
 
+    //Send contact email
+    $("#contact-form").submit(function() {
+        console.log("Email sent");
+
+        $.post("scripts/contact-email.php",
+        {
+            firstname: $("#firstname").val(),
+            lastname: $("#lastname").val(),
+            email: $("#email").val(),
+            subject: $("#subject").val(),
+            message: $("#message").val()
+        },
+        function(data,status){
+            console.log(data);
+        });
+    });
+
     //Add new product
     $('#add-new-product').submit(function() {
         console.log("product submitted");

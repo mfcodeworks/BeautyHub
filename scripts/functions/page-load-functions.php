@@ -26,7 +26,7 @@ function loadHead()
         <link href="vendor/components/font-awesome/css/font-awesome.css" rel="stylesheet">
 
         <!-- bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
         <link href="vendor/components/bootstrap/css/bootstrap.css" rel="stylesheet">
 
         <!-- other -->
@@ -569,7 +569,7 @@ function loadFoot()
     </div>
     <!-- /#content -->
     <!-- *** FOOTER *** -->
-    <div id='footer' data-animate='fadeInUp'>
+    <div id='footer'>
         <div class='container'>
             <div class='row'>
                 <div class='col-md-3 col-sm-6'>
