@@ -572,14 +572,12 @@ function loadFoot()
     <div id='footer'>
         <div class='container'>
             <div class='row'>
-                <div class='col-md-3 col-sm-6'>
+                <div class='col-md-4 col-sm-6'>
                     <h4>Pages</h4>
                     <ul>
-                        <li><a href='text.php'>About us</a>
+                        <li><a href='about.php'>About BeautyHub</a>
                         </li>
-                        <li><a href='text.php'>Terms and conditions</a>
-                        </li>
-                        <li><a href='faq.php'>FAQ</a>
+                        <li><a href='privacy-policy.php'>Terms and conditions</a>
                         </li>
                         <li><a href='contact.php'>Contact us</a>
                         </li>
@@ -588,58 +586,65 @@ function loadFoot()
                     <h4>User section</h4>
                     <ul>");
     loadLogin();
-    echo            ("
+    echo            "
                     </ul>
                     <hr class='hidden-md hidden-lg hidden-sm'>
                 </div>
-                <!-- /.col-md-3 -->
-                <div class='col-md-3 col-sm-6'>
+                <!-- /.col-md-4 -->
+                <div class='col-md-4 col-sm-6'>
                     <h4>Top categories</h4>
-                    <h5>Men</h5>
-                    <ul>
-                        <li><a href='search.php'>T-shirts</a>
-                        </li>
-                        <li><a href='search.php'>Shirts</a>
-                        </li>
-                        <li><a href='search.php'>Accessories</a>
-                        </li>
-                    </ul>
-                    <h5>Ladies</h5>
-                    <ul>
-                        <li><a href='search.php'>T-shirts</a>
-                        </li>
-                        <li><a href='search.php'>Skirts</a>
-                        </li>
-                        <li><a href='search.php'>Pants</a>
-                        </li>
-                        <li><a href='search.php'>Accessories</a>
-                        </li>
-                    </ul>
+                    <h5>Brand</h5>
+                    <ul>";
+
+                //Get top brands 
+                $conn = sqlConnect();
+                $sql = "SELECT brand,COUNT(*)
+                        FROM products
+                        GROUP BY brand
+                        ORDER BY COUNT(*) DESC
+                        LIMIT 3;";
+                $result = mysqli_query($conn,$sql);
+                while($row = mysqli_fetch_assoc($result)) {
+                    $brand[] = $row['brand'];
+                }
+                //Echo top brands
+                foreach($brand as $b) {
+                    echo "<li><a href='search.php?brand=$b'>$b</a></li>";
+                }
+                echo "</ul>
+                    <h5>Type</h5>
+                    <ul>";
+                
+                //Get popular types
+                $sql = "SELECT product_type,COUNT(*)
+                        FROM products
+                        GROUP BY product_type
+                        ORDER BY COUNT(*) DESC
+                        LIMIT 4;";
+                $result = mysqli_query($conn,$sql);
+                while($row = mysqli_fetch_assoc($result)) {
+                    $type[] = $row['product_type'];
+                }
+                //Echo popular types
+                foreach($type as $t) {
+                    echo "<li><a href='search.php?type=$t'>$t</a></li>";
+                }
+                
+                //Close DB connection
+                mysqli_close($conn);
+
+                echo "</ul>
                     <hr class='hidden-md hidden-lg'>
                 </div>
-                <!-- /.col-md-3 -->
-                <div class='col-md-3 col-sm-6'>
-                    <h4>Where to find us</h4>
-                    <p><strong>Obaju Ltd.</strong>
-                        <br>13/25 New Avenue
-                        <br>New Heaven
-                        <br>45Y 73J
-                        <br>England
-                        <br>
-                        <strong>Great Britain</strong>
-                    </p>
-                    <a href='contact.php'>Go to contact page</a>
-                    <hr class='hidden-md hidden-lg'>
-                </div>
-                <!-- /.col-md-3 -->
-                <div class='col-md-3 col-sm-6'>
-                    <h4>Get the news</h4>
-                    <p class='text-muted'>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                    <form>
+                <!-- /.col-md-4 -->
+                <div class='col-md-4 col-sm-6'>
+                    <h4>Subscribe for more</h4>
+                    <p class='text-muted'>Subscribe to BeautyHub's email list to be updated about new and exciting BeautyHub prospects.</p>
+                    <form action='javascript:void(0)' id='subscribe-email-list'>
                         <div class='input-group'>
-                            <input type='text' class='form-control'>
+                            <input type='text' class='form-control' id='subscribe-email'>
                             <span class='input-group-btn'>
-                                <button class='btn btn-default' type='button'>Subscribe!</button>
+                                <button class='btn btn-default' type='submit'>Subscribe</button>
                             </span>
                         </div>
                         <!-- /input-group -->
@@ -647,14 +652,13 @@ function loadFoot()
                     </hr>
                     <h4>Stay in touch</h4>
                     <p class='social'>
-                        <a href='#' class='facebook external' data-animate-hover='shake'><i class='fa fa-facebook'></i></a>
-                        <a href='#' class='twitter external' data-animate-hover='shake'><i class='fa fa-twitter'></i></a>
-                        <a href='#' class='instagram external' data-animate-hover='shake'><i class='fa fa-instagram'></i></a>
-                        <a href='#' class='gplus external' data-animate-hover='shake'><i class='fa fa-google-plus'></i></a>
-                        <a href='#' class='email external' data-animate-hover='shake'><i class='fa fa-envelope'></i></a>
+                        <a href='https://www.facebook.com/nygmarosebeauty' class='facebook external' data-animate-hover='shake'><i class='fa fa-facebook'></i></a>
+                        <a href='https://twitter.com/nygmarose' class='twitter external' data-animate-hover='shake'><i class='fa fa-twitter'></i></a>
+                        <a href='https://www.instagram.com/nygmarose/' class='instagram external' data-animate-hover='shake'><i class='fa fa-instagram'></i></a>
+                        <a href='mailto:mua@nygmarose.com' class='email external' data-animate-hover='shake'><i class='fa fa-envelope'></i></a>
                     </p>
                 </div>
-                <!-- /.col-md-3 -->
+                <!-- /.col-md-4 -->
             </div>
             <!-- /.row -->
         </div>
@@ -679,6 +683,6 @@ function loadFoot()
 </div>
 <!-- /#all -->
 </body>
-</html>");
+</html>";
 };
 ?>

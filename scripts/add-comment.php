@@ -4,7 +4,7 @@
     extract($_POST);
 
     //Get user/product info
-    $userID = getUserID($_SESSION['username']);
+    $userID = $_SESSION['user']->getID();
     $productName = $_SESSION['product-view'];
     $date = getDateNow();
     $commentID = getMaxId('comments');

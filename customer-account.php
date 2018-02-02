@@ -101,7 +101,7 @@ require_once 'scripts/functions.php';
                                     <a href="customer-wishlist.php"><i class="fa fa-heart"></i> My wishlist</a>
                                 </li>
                                 <li name='customer-account.php'>
-                                    <a href="customer-account.php"><i class="fa fa-user"></i> My account</a>
+                                    <a href="customer-account.php?user=<?php echo $_SESSION['user']->getUsername(); ?>"><i class="fa fa-user"></i> My account</a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)" onclick="logout()"><i class="fa fa-sign-out"></i> Logout</a>
@@ -119,19 +119,31 @@ require_once 'scripts/functions.php';
                     <div class="box">
                         <h1>My account</h1>
                         <p class="lead">Change your personal details or your password here.</p>
-                        <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <!-- <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p> -->
 
                         <h3>Set profile picture</h3>
 
                         <form action='javascript:void(0)' id='profile-pic-upload-form'>
                           <div class='row'>
                             <div class='col-sm-12'>
-                              <div class='form-group'>
-                                  <label for='addPhoto' class='btn'><i class='fa fa-photo'></i>&nbsp;Set profile picture</label>
-                                  <input type='file' class='form-control' id='addPhoto' name='addPhoto' style='display:none;'>
-                              </div>
+                                <div class='form-group text-center col-sm-12'>
+                                    <img src='<?php 
+                                                $conn = sqlConnect();
+                                                $sql = "SELECT profile_img
+                                                        FROM users
+                                                        WHERE ID=" . $_SESSION['user']->getID() . ";
+                                                        ";
+                                                $result = mysqli_query($conn,$sql);
+                                                echo mysqli_fetch_assoc($result)['profile_img'];
+                                                ?>'
+                                        class='img-rounded' alt='Profile Picture' id='profilePicDisplay' style='height: auto; width: auto; max-height: 500px; max-width: 750px;'>
+                                </div>
+                                <div class='form-group col-sm-12 text-center'>
+                                    <label for='profilePicUpload' class='btn btn-default'><i class='fa fa-photo'></i>&nbsp;Set profile picture</label>
+                                    <input type='file' class='form-control' id='profilePicUpload' name='profilePicUpload' style='display:none;'>
+                                </div>
                             </div>
-                            <div class='col-sm-12'>
+                            <div class='col-sm-12 text-center'>
                                 <div class='form-group'>
                                     <button type='submit' class='btn btn-primary'><i class='fa fa-upload'></i> Submit</button>
                                 </div>

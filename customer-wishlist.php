@@ -1,11 +1,12 @@
 <?php
-require_once 'scripts/functions.php';
+    require_once 'scripts/functions.php';
     session_start();
     if(!isset($_SESSION['user'])) headerLocation('index.php');
     loadHead();
     loadTopBar();
     loadNavBar();
     beginContent();
+    $username = $_SESSION['user']->getUsername();
         echo "    <div class='col-md-12'>
                     <!-- Home > Wishlist nav link -->
                     <ul class='breadcrumb'>
@@ -30,7 +31,7 @@ require_once 'scripts/functions.php';
                                     <a href='customer-wishlist.php'><i class='fa fa-heart'></i> My wishlist</a>
                                 </li>
                                 <li name='customer-account.php'>
-                                    <a href='customer-account.php'><i class='fa fa-user'></i> My account</a>
+                                    <a href='customer-account.php?user=$username'><i class='fa fa-user'></i> My account</a>
                                 </li>
                                 <li>
                                     <a href='javascript:void(0)' onclick='logout()'><i class='fa fa-sign-out'></i> Logout</a>

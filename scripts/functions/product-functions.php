@@ -54,6 +54,8 @@ function checkWishlist($dataArray,$colArray)
 //Load product for wishlist/category/etc.
 function loadProduct($id,$page,$shade=NULL,$user=NULL) {
     if(session_status() == PHP_SESSION_NONE) session_start();
+    
+    if($shade == "NULL") unset($shade);
 
     //Get user ID
     if(!isset($_SESSION['user']) && !isset($user)) {
@@ -86,10 +88,13 @@ function loadProduct($id,$page,$shade=NULL,$user=NULL) {
                 <p class='buttons'>
                     <a href='detail.php?id=$id' class='btn btn-default'>View detail</a>
                 </p>";
-            if($page == 'wishlist')
+            if($page == 'wishlist') {
+                if(!isset($shade)) $shade="NULL";
                 echo "<p class='buttons'>
                           <a href='javascript:void(0)' onclick='removeWishlist(\"$id,$shade,$user\")' class='btn btn-danger'>Remove from wishlist</a>
                       </p>";
+                unset($shade);
+            }
 
             echo"
             </div>
@@ -102,28 +107,31 @@ function loadProduct($id,$page,$shade=NULL,$user=NULL) {
 //Load wishlist product row
 function loadWishlistProducts($user = NULL)
 {
-    session_start();
     echo "<div class='row products' id='wishlist-product-row'>";
 
     //Get user
     if(!isset($user)) $user = $_SESSION['user']->getUsername();
 
     //Get wishlist
-    $wishlist = selectAll('wishlist','users','username',"$user");
+    $wishlist = selectAll('wishlist','users','username',$user);
+    if(isset($wishlist)) {
+        $wishlist = rtrim($wishlist[0],",");
+        $wishlist = explode(",",$wishlist);
 
-    for($i = 0; $i < count($wishlist); $i += 2) {
-        $wishlist_array[] = [
-            "item" => new product($wishlist[$i]),
-            "shade" => $wishlist[$i + 1]
-        ];
+        for($i = 0; $i < count($wishlist); $i += 2) {
+            $wishlist_array[] = [
+                "item" => new product($wishlist[$i]),
+                "shade" => $wishlist[$i + 1]
+            ];
+        }
+
+        //Print wishlist products
+        foreach($wishlist_array as $p) {
+            loadProduct($p['item']->getID(),'wishlist',$p['shade'],$user);
+        }
+
+        echo "</div>
+            <!-- /.products -->";
     }
-
-    //Print wishlist products
-    foreach($wishlist_array as $p) {
-        loadProduct($p['item']->getID(),'wishlist',$p['shade'],$user);
-    }
-
-    echo "</div>
-        <!-- /.products -->";
 };
 ?>

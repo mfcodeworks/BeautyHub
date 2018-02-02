@@ -4,9 +4,8 @@
     extract($_POST);
 
     //Get user info
-    $user = $_SESSION['username'];
-    $userID = getUserID($user);
-    $userID = $userID[0];
+    $user = $_SESSION['user'];
+    $userID = $user->getID();
 
     //Get current wishlist
     $conn = sqlConnect();

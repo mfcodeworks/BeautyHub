@@ -125,6 +125,18 @@ $(document).ready(function() {
         });
     });
 
+    //Subscribe email
+    $("#subscribe-email-list").submit(function(){
+        console.log("Subscribing email");
+        $.post("scripts/subscribe-email.php",
+        {
+            email: $("#subscribe-email").val(),
+        },
+        function(data,status){
+            console.log(data);
+        });
+    });
+
     //Add new product
     $('#add-new-product').submit(function() {
         console.log("product submitted");
@@ -265,7 +277,7 @@ $(document).ready(function() {
 
     // Add product to favourites list
     $('#add-to-wishlist').click(function() {
-        if( $("#shade-selector :selected").val().length ) var shade = $("#shade-selector :selected").val().split(",")[1];
+        if( $("#shade-selector :selected").length ) var shade = $("#shade-selector :selected").val().split(",")[1];
         else var shade = "NULL";
         $.post("scripts/add-to-wishlist.php",
         {
@@ -347,6 +359,8 @@ $(document).ready(function() {
     $('#profile-pic-upload-form').submit(function(e) {
         e.preventDefault();
         console.log('Profile pic upload\n\n');
+        $("label[for='profilePicUpload']").removeClass("btn-danger");
+        $("#profilePicUploadError").remove();
         var form = new FormData($('#profile-pic-upload-form')[0]);
         $.ajax({
             url: "scripts/add-profile-picture.php",
@@ -355,8 +369,16 @@ $(document).ready(function() {
             processData: false,
             contentType: false,
             success: function(result){
-                console.log(result);
-                //location.reload();
+                //console.log(result);
+                if(result.indexOf("true") > -1) {
+                    var pic_uri = result.split(",")[1];
+                    $("#profilePicDisplay").attr("src",pic_uri);
+                }
+                else {
+                    console.log("Adding failure class");
+                    $("label[for='profilePicUpload']").addClass("btn-danger");
+                    $("label[for='profilePicUpload']").append(" <i class='fa fa-times' id='profilePicUploadError'></i>");
+                }
             }
         });
     });

@@ -6,7 +6,7 @@ function checkUploadImage($name,$tmpName)
     if(!isset($tmpName)) return false;
     else {
         //Upload check var
-        $uploadCheck = 1;
+        $uploadCheck = true;
         //Current target file
         $baseName = basename($name);
         //Get file type
@@ -15,16 +15,17 @@ function checkUploadImage($name,$tmpName)
         $check = getimagesize($tmpName);
         if($check != false) {
             echo "File is an image - " . $check["mime"] . ".\n\n";
-            $uploadCheck = 1;
+            $uploadCheck = true;
         }
         else {
             echo "File is not an image.";
-            $uploadCheck = 0;
+            $uploadCheck = false;
         }
         // Allow certain file formats
+        $fileType = strtolower($fileType);
         if($fileType != "jpg" && $fileType != "png" && $fileType != "jpeg" && $fileType != "gif" ) {
             echo "Only JPG, JPEG, PNG & GIF files are allowed.";
-            $uploadCheck = 0;
+            $uploadCheck = false;
         }
     }
     return $uploadCheck;
@@ -40,11 +41,27 @@ function getUniqueName($target)
         return $newFileName;
     }
 };
-function getFileTarget($file)
+function getFileTarget($file,$targetDir = NULL)
 {
+    //Get file name
     $targetNewName = getUniqueName($file);
-    $target = IMAGE_DIR . $targetNewName;
-    if(file_exists($target)) $target = getFileTarget($file);
+
+    //Set target
+    if(isset($targetDir) && $targetDir != "" && $targetDir != " ") {
+
+        //Check user directory exists
+        if( !file_exists(IMAGE_DIR . $targetDir) ) {
+            mkdir(IMAGE_DIR . $targetDir, 0775, true);
+        }
+
+        $target = IMAGE_DIR . $targetDir . $targetNewName;
+    }
+
+    else $target = IMAGE_DIR . $targetNewName;
+
+    //Check if file exists
+    if(file_exists($target)) $target = getFileTarget($file,$userPhoto);
+
     return $target;
 };
 //Try to upload/check upload for file
