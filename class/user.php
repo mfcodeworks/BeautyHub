@@ -144,23 +144,41 @@
             $old = $this->hashPassword($old);
             $new = $this->hashPassword($new);
 
-            //Build SQL statement
-            $sql = "UPDATE users 
-                    SET pass='$new' 
-                    WHERE username='" . $this->username ."' 
-                    AND pass='$old';";
+            //Get old password
+            $sql = "SELECT pass
+                    FROM users
+                    WHERE ID=".$this->id.";";
 
-            try {
-                mysqli_query($conn,$sql);
-            }
-            catch(Exception $exc) {
-                throw $exc;
-                return false;
+            $result = mysqli_query($conn,$sql);
+            while($row = mysqli_fetch_assoc($result)) {
+                $compare = $row['pass'];
             }
 
-            //Close DB connection
-            mysqli_close($conn);
-            return true;
+            //Check password match
+            if($old == $compare) {
+
+                //Build SQL statement
+                $sql = "UPDATE users 
+                        SET pass='$new' 
+                        WHERE ID=".$this->id.";";
+
+                try {
+                    mysqli_query($conn,$sql);
+                }
+                catch(Exception $exc) {
+                    throw $exc;
+                    return false;
+                }
+
+                //Close DB connection
+                mysqli_close($conn);
+                return true;
+            }
+            
+            //If no password match, throw exception
+            else {
+                throw new Exception("Password incorrect");
+            }
         }
 
         //Save user and login
