@@ -61,7 +61,7 @@
 
     if($result) {
         while($row = mysqli_fetch_assoc($result)) {
-            $id[] = $row['id'];
+            $id[] = $row['ID'];
         }
     }
 
@@ -93,7 +93,7 @@
                     <div class='row products'>";
 
     for($i=$start-1;$i<$end;$i++) {
-        if($id[$i]>0) loadProduct($id[$i],'search');
+        loadProduct($id[$i],'search');
     }
 
     //Echo page links
@@ -104,7 +104,10 @@
     $currentURL = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]/BeautyHub/search.php?";
     if(isset($brand)) $currentURL .= "brand=$brand&";
     if(isset($type)) $currentURL .= "type=$type&";
-    if(isset($q)) $currentURL .= "q=$q&";
+    if(isset($q)) {
+        $q = implode("+",$q);
+        $currentURL .= "q=$q&";
+    }
     for($i=0;$i<(ceil($total/30));$i++) {
         $page = $i+1;
         $thisURL = $currentURL . "p=$page";

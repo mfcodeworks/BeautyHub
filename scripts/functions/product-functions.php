@@ -70,6 +70,7 @@ function loadProduct($id,$page,$shade=NULL,$user=NULL) {
     $img = $product->getImg();
     $name = $product->getName();
     $brand = $product->getBrand();
+    if(isset($user) && $user != NULL) $userID = $user->getID();
 
     //Set size
     if($page == 'wishlist') echo "<div class='col-md-3 col-sm-4 display-product'>";
@@ -91,7 +92,7 @@ function loadProduct($id,$page,$shade=NULL,$user=NULL) {
             if($page == 'wishlist') {
                 if(!isset($shade)) $shade="NULL";
                 echo "<p class='buttons'>
-                          <a href='javascript:void(0)' onclick='removeWishlist(\"$id,$shade,$user\")' class='btn btn-danger'>Remove from wishlist</a>
+                          <a href='javascript:void(0)' onclick='removeWishlist(\"$id,$shade\")' class='btn btn-danger'>Remove from wishlist</a>
                       </p>";
                 unset($shade);
             }
@@ -105,33 +106,66 @@ function loadProduct($id,$page,$shade=NULL,$user=NULL) {
 };
 
 //Load wishlist product row
-function loadWishlistProducts($user = NULL)
+function loadWishlistProducts()
 {
     echo "<div class='row products' id='wishlist-product-row'>";
 
     //Get user
-    if(!isset($user)) $user = $_SESSION['user']->getUsername();
+    $user = $_SESSION['user'];
+    //else $user = new user($user);
+    if(isset($user)) $userID = $user->getID();
 
     //Get wishlist
-    $wishlist = selectAll('wishlist','users','username',$user);
-    if(isset($wishlist)) {
-        $wishlist = rtrim($wishlist[0],",");
-        $wishlist = explode(",",$wishlist);
-
-        for($i = 0; $i < count($wishlist); $i += 2) {
-            $wishlist_array[] = [
-                "item" => new product($wishlist[$i]),
-                "shade" => $wishlist[$i + 1]
-            ];
+    $conn = sqlConnect();
+    $sql = "SELECT wishlist
+            FROM users
+            WHERE ID = $userID;";
+    $result = mysqli_query($conn,$sql);
+    if($result) {
+        while($row = mysqli_fetch_assoc($result)) {
+            $wishlist = $row['wishlist'];
         }
+    }
+    else {
+        return;
+    }
+
+    if(isset($wishlist)) {
+        $wishlist = json_decode($wishlist,true);
 
         //Print wishlist products
-        foreach($wishlist_array as $p) {
-            loadProduct($p['item']->getID(),'wishlist',$p['shade'],$user);
+        foreach($wishlist as $p) {
+            loadProduct($p['id'],'wishlist',$p['shade'],$user);
         }
 
         echo "</div>
             <!-- /.products -->";
     }
 };
+
+//Load favourites for user
+function loadFavourites() {
+    //Get favourites
+    $conn = sqlConnect();
+    $sql = "SELECT favourites
+            FROM users
+            WHERE ID = ".$_SESSION['user']->getID().";";
+    $result = mysqli_query($conn,$sql);
+    while($row = mysqli_fetch_assoc($result)) {
+        $favourites = json_decode($row['favourites'],true);
+    }
+
+    //Print favourites
+    foreach($favourites as $f) {
+        $product = new product($f['id']);
+        $content = "<p>" . $product;
+        if($f['shade'] != "NULL") $content .= " - " . $f['shade'];
+        $content .= "<a href='javascript:void(0)' onclick='removeFromFav(\"" . $f['id'] . "," . $f['shade'] . "\")'>
+                        <i class='fa fa-times' style='color:black;opacity:.5;'></i>
+                    </a>
+                </p>";
+        echo $content;
+    }
+    mysqli_close($conn);
+}
 ?>

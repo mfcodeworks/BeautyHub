@@ -4,6 +4,11 @@
     extract($_POST);
 
     //Set password
-    if($_SESSION['user']->changePassword($oldPassword,$newPassword)) echo "true";
-    else echo "false";
+    try {
+        $_SESSION['user']->changePassword($oldPassword,$newPassword);
+        echo "true";
+    }
+    catch(Exception $exc) {
+        echo $exc;
+    }
 ?>

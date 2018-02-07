@@ -244,7 +244,7 @@ $(document).ready(function() {
             },
             function(data,status){
                 console.log("Return: "+data);
-                if(data == "true") {
+                if(data.indexOf("true") > -1) {
                     echoAlert("Password changed successfully.");
                     location.reload();
                 }
@@ -274,6 +274,20 @@ $(document).ready(function() {
             else echoAlert("Couldn't save info, please refresh and try again.");
         });
     });
+
+    //Add favourite action 
+    $('#add-to-favourites').click(function() {
+        console.log("Adding favourite");
+        $.post("scripts/add-to-favourites.php",
+        {
+            product: $("#favourites-input").val()
+        },
+        function(data,status){
+            console.log(data);
+            $("#favourites-list").empty();
+            loadFavourites();
+        });
+    })
 
     // Add product to favourites list
     $('#add-to-wishlist').click(function() {
@@ -443,10 +457,33 @@ function removeWishlist(data)
     },
     function(data,status) {
         console.log("Remove returned: "+data);
-        if(data.indexOf('1') > -1) {
+        if(data.indexOf('true') > -1) {
             $('#wishlist-product-row').remove();
             printWishlist(user);
         }
+    });
+};
+
+//Remove item from favourites
+function removeFromFav(data) {
+    $.post("scripts/remove-from-favourites.php",
+    {
+        data: data
+    },
+    function(data,status) {
+        console.log(data);
+        if(data.indexOf("true") > -1) {
+            $("#favourites-list").empty();
+            loadFavourites();
+        }
+    })
+};
+
+//Load favourites list 
+function loadFavourites() {
+    $.get("scripts/load-favourites.php",
+    function(data,status){
+        $("#favourites-list").append(data);
     });
 };
 

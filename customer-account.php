@@ -11,62 +11,60 @@ require_once 'scripts/functions.php';
     <script>
     $( document).ready(function() {
         var foundations = [
+
             <?php
+
             //Get items to autofill favourite selection
             $conn = sqlConnect();
-            $sql = "SELECT name,shade,brand FROM products WHERE product_type = \"Foundation\";";
+            $sql = "SELECT ID FROM products WHERE product_type = \"Foundation\";";
+
             $result = mysqli_query($conn,$sql);
             while($row = mysqli_fetch_assoc($result)) {
-                $name[] = $row['name'];
-                $brand[] = $row['brand'];
-                $shade[] = $row['shade'];
+                $products[] = new product($row['ID']);
             }
-            for($i=0;$i<count($name);$i++) {
-                $thisShades = explode(",",$shade[$i]);
-                if($thisShades[0] != NULL) {
-                    foreach($thisShades as $s)
-                        $tag[] = $brand[$i]." ".$name[$i]." - ".$s;
+            foreach($products as $product) {
+                if($product->getShades() !== null) {
+                    foreach($product->getShades() as $shade) {
+                        echo "\"" . $product . " - " . $shade . "\",";
                     }
-                    else
-                        $tag[] = $brand[$i]." ".$name[$i];
                 }
-                for($i=0;$i<count($tag);$i++) {
-                    if($i<count($tag) - 1) echo "\"$tag[$i]\",";
-                    else echo "\"$tag[$i]\"";
+                else {
+                    echo "\"" . $product . "\",";
                 }
+            }
+            unset($products);
             ?>
+
         ];
         $('#foundation').autocomplete({
             source: foundations
         });
 
         var makeup = [
+
             <?php
             //Get items to autofill favourite selection
             $conn = sqlConnect();
-            $sql = "SELECT name,shade,brand FROM products;";
+            $sql = "SELECT ID FROM products;";
             $result = mysqli_query($conn,$sql);
             while($row = mysqli_fetch_assoc($result)) {
-                $name[] = $row['name'];
-                $brand[] = $row['brand'];
-                $shade[] = $row['shade'];
+                $products[] = new product($row['ID']);
             }
-            for($i=0;$i<count($name);$i++) {
-                $thisShades = explode(",",$shade[$i]);
-                if($thisShades[0] != NULL) {
-                    foreach($thisShades as $s)
-                        $tag[] = $brand[$i]." ".$name[$i]." - ".$s;
+            foreach($products as $product) {
+                if($product->getShades() !== null) {
+                    foreach($product->getShades() as $shade) {
+                        echo "\"" . $product . " - " . $shade . "\",";
                     }
-                    else
-                        $tag[] = $brand[$i]." ".$name[$i];
                 }
-                for($i=0;$i<count($tag);$i++) {
-                    if($i<count($tag) - 1) echo "\"$tag[$i]\",";
-                    else echo "\"$tag[$i]\"";
+                else {
+                    echo "\"" . $product . "\",";
                 }
+            }
+            unset($products);
             ?>
+
         ];
-        $('#favourites').autocomplete({
+        $('#favourites-input').autocomplete({
             source: makeup
         });
     });
@@ -188,19 +186,24 @@ require_once 'scripts/functions.php';
                         <hr>
 
                         <h3>Personal details</h3>
-                        <form action="javascript:void(0)" id="account-info-form">
                             <div class="row">
                                 <div class="col-sm-12 text-center">
                                     <div class="form-group">
                                         <label for="favourites">Favourite Products</label>
-                                        <input type="text" class="form-control" id="favourites" name="favourites">
+                                        <input type="text" class="form-control" id="favourites-input" name="favourites">
                                     </div>
+                                </div>
+                                <div class='col-sm-12 text-center' id='favourites-list'>
+                                    <?php
+                                        loadFavourites();
+                                    ?>
                                 </div>
                                 <div class="col-sm-12 text-center">
                                     <div class="form-group">
                                         <button class="btn btn-primary" id="add-to-favourites"><i class='fa fa-heart'></i> Add to favourites</button>
                                     </div>
                                 </div>
+                        <form action="javascript:void(0)" id="account-info-form">
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="facebook_link">Facebook</label>
@@ -236,31 +239,6 @@ require_once 'scripts/functions.php';
                             </div>
                             <!-- /.row -->
                             <div class="row">
-                            <!--
-                                <div class="col-sm-6 col-md-3">
-                                    <div class="form-group">
-                                        <label for="city">Company</label>
-                                        <input type="text" class="form-control" id="city">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-3">
-                                    <div class="form-group">
-                                        <label for="zip">ZIP</label>
-                                        <input type="text" class="form-control" id="zip">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-3">
-                                    <div class="form-group">
-                                        <label for="state">State</label>
-                                        <select class="form-control" id="state"></select>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-3">
-                                    <div class="form-group">
-                                        <label for="country">Country</label>
-                                        <select class="form-control" id="country"></select>
-                                    </div>
-                                </div>-->
 
                                 <div class="col-sm-12 text-center">
                                     <div class="form-group">
