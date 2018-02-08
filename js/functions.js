@@ -263,14 +263,13 @@ $(document).ready(function() {
             twitter    : $('#twitter_link').val(),
             instagram  : $('#instagram_link').val(),
             youtube    : $('#youtube_link').val(),
-            pintrest   : $('#pintrest_link').val(),
+            pinterest   : $('#pinterest_link').val(),
             foundation : $('#foundation').val(),
-            favourites : $('#favourites').val(),
             bio        : $('#bio').val()
         },
         function(data,status){
-            console.log("Data "+data+"\nStatus "+status);
-            if(data == "true") location.reload();
+            console.log(data);
+            if(data.indexOf("true") > -1) location.reload();
             else echoAlert("Couldn't save info, please refresh and try again.");
         });
     });

@@ -190,7 +190,7 @@ require_once 'scripts/functions.php';
                                 <div class="col-sm-12 text-center">
                                     <div class="form-group">
                                         <label for="favourites">Favourite Products</label>
-                                        <input type="text" class="form-control" id="favourites-input" name="favourites">
+                                        <input type="text" class="form-control" id="favourites-input" name="favourites" placeholder="Kat Von D - Lock-It Foundation">
                                     </div>
                                 </div>
                                 <div class='col-sm-12 text-center' id='favourites-list'>
@@ -204,18 +204,35 @@ require_once 'scripts/functions.php';
                                     </div>
                                 </div>
                         <form action="javascript:void(0)" id="account-info-form">
+
+                                <?php
+                                    /**
+                                     * Get account info
+                                     */
+                                    $conn = sqlConnect();
+                                    $sql = "SELECT foundation,social_links,bio
+                                            FROM users
+                                            WHERE ID = " . $_SESSION['user']->getID() . ";";
+                                    $result = mysqli_query($conn,$sql);
+                                    while($row = mysqli_fetch_assoc($result)) {
+                                        $links = json_decode($row['social_links'],true);
+                                        $foundation = json_decode($row['foundation'],true);
+                                        $bio = $row['bio'];
+                                    }
+                                ?>
+
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="facebook_link">Facebook</label>
-                                        <a href='javascript:void(0)' class='facebook external' data-animate-hover='shake'><i class='fa fa-facebook-official'></i></a>
-                                        <input type="text" class="form-control" id="facebook_link">
+                                        <a href='<?php if($links['facebook'] != "NULL") echo $links['facebook']; else echo "javascript:void(0)"; ?>' class='facebook external' data-animate-hover='shake'><i class='fa fa-facebook-official'></i></a>
+                                        <input type="text" class="form-control" id="facebook_link" placeholder="https://facebook.com/nygmarosebeauty" value="<?php if($links['facebook'] != "NULL") echo $links['facebook']; ?>">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="twitter_link">Twitter</label>
-                                        <a href='javascript:void(0)' class='twitter external' data-animate-hover='shake'><i class='fa fa-twitter'></i></a>
-                                        <input type="text" class="form-control" id="twitter_link">
+                                        <a href='<?php if($links['twitter'] != "NULL") echo $links['twitter']; else echo "javascript:void(0)"; ?>' class='twitter external' data-animate-hover='shake'><i class='fa fa-twitter'></i></a>
+                                        <input type="text" class="form-control" id="twitter_link" placeholder="https://twitter.com/nygmarose" value="<?php if($links['twitter'] != "NULL") echo $links['twitter']; ?>">
                                     </div>
                                 </div>
                             </div>
@@ -225,15 +242,15 @@ require_once 'scripts/functions.php';
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="instagram_link">Instagram</label>
-                                        <a href='javascript:void(0)' class='instagram external' data-animate-hover='shake'><i class='fa fa-instagram'></i></a>
-                                        <input type="text" class="form-control" id="instagram_link">
+                                        <a href='<?php if($links['instagram'] != "NULL") echo $links['instagram']; else echo "javascript:void(0)"; ?>' class='instagram external' data-animate-hover='shake'><i class='fa fa-instagram'></i></a>
+                                        <input type="text" class="form-control" id="instagram_link" placeholder="https://instagram.com/nygmarose" value="<?php if($links['instagram'] != "NULL") echo $links['instagram']; ?>">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="youtube_link">YouTube</label>
-                                        <a href='javascript:void(0)' class='youtube external' data-animate-hover='shake'><i class='fa fa-youtube'></i></a>
-                                        <input type="text" class="form-control" id="youtube_link">
+                                        <a href='<?php if($links['youtube'] != "NULL") echo $links['youtube']; else echo "javascript:void(0)"; ?>' class='youtube external' data-animate-hover='shake'><i class='fa fa-youtube'></i></a>
+                                        <input type="text" class="form-control" id="youtube_link" placeholder="https://youtube.com/nygmarose" value="<?php if($links['youtube'] != "NULL") echo $links['youtube']; ?>">
                                     </div>
                                 </div>
                             </div>
@@ -242,22 +259,22 @@ require_once 'scripts/functions.php';
 
                                 <div class="col-sm-12 text-center">
                                     <div class="form-group">
-                                        <label for="pintrest_link">Pinterest</label>
-                                        <a href='javascript:void(0)'><i class='fa fa-pinterest'></i></a>
-                                        <input type="text" class="form-control" id="pintrest_link">
+                                        <label for="pinterest_link">Pinterest</label>
+                                        <a href='<?php if($links['pinterest'] != "NULL") echo $links['pinterest']; else echo "javascript:void(0)"; ?>'><i class='fa fa-pinterest'></i></a>
+                                        <input type="text" class="form-control" id="pinterest_link" placeholder="https://pinterest.com/nygmarose" value="<?php if($links['pinterest'] != "NULL") echo $links['pinterest']; ?>">
                                     </div>
                                 </div>
                                 <div class="col-sm-12 text-center">
                                     <div class="form-group">
                                         <label for="foundation">Foundation Used</label>
                                         <a href='javascript:void(0)'><i class='fa fa-star'></i></a>
-                                        <input type="text" class="form-control" id="foundation" placeholder="Fenty Beauty PRO FILT'R Soft Matte Longwear Foundation - 110">
+                                        <input type="text" class="form-control" id="foundation" placeholder="Fenty Beauty - PRO FILT'R Soft Matte Longwear Foundation - 110" value="<?php if($foundation['id'] != "" && $foundation['id'] != "NULL") { $product = new product($foundation['id']); echo $product; if($foundation['shade'] != "NULL") echo " - " . $foundation['shade']; } ?>">
                                     </div>
                                 </div>
                                 <div class="col-sm-12 text-center">
                                     <div class="form-group">
                                         <label for="bio">Bio&nbsp;<i class='fa fa-newspaper-o'></i></label>
-                                        <textarea class="form-control" id="bio" rows="10"></textarea>
+                                        <textarea class="form-control" id="bio" rows="10" palceholder="This is my bio..."><?php if(isset($bio) && $bio != "" && $bio != "NULL") echo $bio; ?></textarea>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 text-center">
