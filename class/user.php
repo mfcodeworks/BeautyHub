@@ -1,4 +1,9 @@
 <?php
+    /**
+     * User class
+     * Login, make user, change password
+     * Save sensitive information
+     */
     if(!defined("ABSPATH")) define( 'ABSPATH', dirname(dirname(__FILE__)) . '/' );
     require_once ABSPATH . "scripts/functions.php";
 

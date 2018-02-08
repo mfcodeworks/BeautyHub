@@ -52,16 +52,10 @@ function checkWishlist($dataArray,$colArray)
 };
 
 //Load product for wishlist/category/etc.
-function loadProduct($id,$page,$shade=NULL,$user=NULL) {
+function loadProduct($id,$page,$shade=NULL) {
     if(session_status() == PHP_SESSION_NONE) session_start();
     
     if($shade == "NULL") unset($shade);
-
-    //Get user ID
-    if(!isset($_SESSION['user']) && !isset($user)) {
-        $user = NULL;
-    }
-    else if(!isset($user)) $user = $_SESSION['user']->getUsername();
 
     //Get product info
     $product = new product($id);
@@ -70,7 +64,6 @@ function loadProduct($id,$page,$shade=NULL,$user=NULL) {
     $img = $product->getImg();
     $name = $product->getName();
     $brand = $product->getBrand();
-    if(isset($user) && $user != NULL) $userID = $user->getID();
 
     //Set size
     if($page == 'wishlist') echo "<div class='col-md-3 col-sm-4 display-product'>";

@@ -529,6 +529,30 @@ function scrapeProduct(search) {
     return productInfo.responseText
 };
 
+// Follow user
+function followProfile(id) {
+    console.log("Follow profile.\nID: "+id);
+    $.post("scripts/follow-user.php",
+    {
+        id: id,
+    },
+    function(data,status){
+        console.log(data);
+    });
+};
+
+// Report user
+function reportProfile(id) {
+    console.log("Report profile "+id);
+    $.post("scripts/report-user.php",
+    {
+        id: id,
+    },
+    function(data,status){
+        console.log(data);
+    });
+};
+
 // Display echoAlert message
 function echoAlert(message) {
     $("div#content").prepend(" \

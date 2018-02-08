@@ -1,5 +1,5 @@
 <?php
-require_once 'scripts/functions.php';
+    require_once 'scripts/functions.php';
     session_start();
     if(!isset($_SESSION['user'])) headerLocation('register.php');
     loadHead();

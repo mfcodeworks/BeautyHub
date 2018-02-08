@@ -27,7 +27,7 @@
     $conn = sqlConnect();
 
     //Build SQL statement
-    $sql = "SELECT id FROM ";
+    $sql = "SELECT ID FROM ";
 
     //If there's a search term
     if(isset($q)) {
@@ -92,8 +92,10 @@
 
                     <div class='row products'>";
 
-    for($i=$start-1;$i<$end;$i++) {
-        loadProduct($id[$i],'search');
+    if(isset($id)) {
+        for($i=$start-1;$i<$end;$i++) {
+            loadProduct($id[$i],'search');
+        }
     }
 
     //Echo page links

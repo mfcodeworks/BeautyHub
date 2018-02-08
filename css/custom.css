@@ -48,6 +48,34 @@ table {
     max-width: 100% !important;
 }
 
+#follow-button {
+    margin-left: 1em; 
+    padding-top: .1em; 
+    padding-bottom: .1em; 
+    padding-right: .5em;
+}
+
+/**
+ * Overlay CSS
+ *
+ */
+ #profile-badge {
+     position: absolute;
+     font-size: 30pt;
+     bottom: .1em;
+     right: .3em;
+     color: #1bb4e6;
+ }
+
+ #profile-pic {
+    margin-bottom: 1em;
+    border-radius: 1rem;
+    background-color: white;
+    border-style: solid;
+    border-width: .1em;
+    border-color: #8a8787;
+ }
+
 /* Product Display CSS */
 .display-product {
     min-height: 35em;

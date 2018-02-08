@@ -82,7 +82,7 @@ function loadTopBar()
         <div id='top'>
             <div class='container'>
                 <div class='col-md-6 offer' data-animate='fadeInDown'>
-                    <a href='https://nygmarose.com' class='btn btn-success btn-sm' data-animate-hover='shake'>NygmaRose Beauty</a>  <a href='#'>Visit NygmaRose for the latest makeup trends.</a>
+                    <a href='https://nygmarosebeauty.com' class='btn btn-success btn-sm' data-animate-hover='shake'>NygmaRose Beauty</a>  <a href='#'>Visit NygmaRose for the latest makeup trends.</a>
                 </div>
                 <div class='col-md-6' data-animate='fadeInDown'>
                     <ul class='menu'>");
@@ -655,7 +655,7 @@ function loadFoot()
                         <a href='https://www.facebook.com/nygmarosebeauty' class='facebook external' data-animate-hover='shake'><i class='fa fa-facebook'></i></a>
                         <a href='https://twitter.com/nygmarose' class='twitter external' data-animate-hover='shake'><i class='fa fa-twitter'></i></a>
                         <a href='https://www.instagram.com/nygmarose/' class='instagram external' data-animate-hover='shake'><i class='fa fa-instagram'></i></a>
-                        <a href='mailto:mua@nygmarose.com' class='email external' data-animate-hover='shake'><i class='fa fa-envelope'></i></a>
+                        <a href='mailto:mua@nygmarosebeauty.com' class='email external' data-animate-hover='shake'><i class='fa fa-envelope'></i></a>
                     </p>
                 </div>
                 <!-- /.col-md-4 -->
