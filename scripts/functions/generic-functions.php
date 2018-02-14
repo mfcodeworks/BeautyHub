@@ -41,6 +41,7 @@ function getDateNow($tz = NULL)
 {
     //Get Date
     if(isset($tz)) date_default_timezone_set($tz);
+    else if(isset($_SESSION['timezone'])) date_default_timezone_set($_SESSION['timezone']);
     $date = date('Y-m-d', time());
     return $date;
 };
@@ -49,8 +50,27 @@ function formatDate($date, $tz = NULL)
 {
     //Format date
     if(isset($tz)) date_default_timezone_set($tz);
+    else if(isset($_SESSION['timezone'])) date_default_timezone_set($_SESSION['timezone']);
     $date = date('Y-m-d', $date);
     return $date;
+};
+// Return todays datetime as yyyy-mm-dd H:i:s
+function getDatetimeNow($tz = NULL)
+{
+    //Get Date
+    if(isset($tz)) date_default_timezone_set($tz);
+    else if(isset($_SESSION['timezone'])) date_default_timezone_set($_SESSION['timezone']);
+    $date = date('Y-m-d H:i:s', time());
+    return $date;
+};
+// Format datetime as user friendly
+function formatDatetime($dt) 
+{
+    $date = date_create($dt);
+    $datetime = date_format($date,"g:ia, F jS o");
+    //$datetime = date("g:ia, jS M, o",$dt);
+    return $datetime;
+
 };
 //Remove duplicate/null values from one-dimensional arrays
 function uniqueArray($array) {

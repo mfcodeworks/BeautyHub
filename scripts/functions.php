@@ -12,6 +12,7 @@ require_once(ABSPATH . "vendor/autoload.php");
 require_once(ABSPATH . "class/product.php");
 require_once(ABSPATH . "class/user.php");
 require_once(ABSPATH . "class/profile.php");
+require_once(ABSPATH . "class/comment.php");
 
 // Require script functions
 require_once(ABSPATH . "scripts/functions/Encoding.php");

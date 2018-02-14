@@ -460,31 +460,22 @@ function loadTopProducts() {
 //Load the comments needed
 function loadComments($comments=null) {
     if(isset($comments)) {
-        echo "<h4>Reviews</h4>";
+        echo "<h4>Comments</h4>";
+        $conn = sqlConnect();
         foreach($comments as $c) {
-            $conn = sqlConnect();
-            $sql = "SELECT * FROM comments WHERE id = $c;";
-            $result=mysqli_query($conn,$sql);
-            while($row=mysqli_fetch_assoc($result)) {
-                $userID = $row['authorID'];
-                $comment = $row['comment'];
-                $date = $row['date'];
-                $imgs = $row['img'];
-                $rating = $row['rating'];
-            }
-            $sql = "SELECT username,profile_img FROM users WHERE ID=$userID;";
+            $comment = new comment($c);
+            $sql = "SELECT username,profile_img 
+                    FROM users 
+                    WHERE ID = ".$comment->author().";";
             $result = mysqli_query($conn,$sql);
-            while($row = mysqli_fetch_assoc($result)) {
-                $name = $row['username'];
-                $profilePic = $row['profile_img'];
-            }
-            mysqli_close($conn);
-            if(isset($imgs)) {
-                $imgArray = explode(',',$imgs);
-                $count = count($imgArray);
+            if($result) {
+                while($row = mysqli_fetch_assoc($result)) {
+                    $name = $row['username'];
+                    $profilePic = $row['profile_img'];
+                }
             }
             echo "
-            <div class='row comment' style='padding-bottom:20px;'>
+            <div class='row comment' style='padding-bottom:20px;' id='productComment".$comment->id()."'>
                 <div class='col-sm-3 col-md-2 text-center-xs'>
                     <p>
                         <img src='$profilePic' class='img-responsive img-circle' alt=''>
@@ -492,33 +483,136 @@ function loadComments($comments=null) {
                 </div>
                 <div class='col-sm-9 col-md-10'>
                     <h5>$name</h5>
-                    <p class='posted'><i class='fa fa-clock-o'></i> $date</br>Rating: ";
-            for($i=0;$i<round($rating);$i++) echo "<i class='fa fa-star'></i>";
-            echo "</p>
-                <p>$comment</p>
-            </div>";
-            if(isset($imgArray)) {
-                for($i=0;$i<count($imgArray);$i++) {
-                    $photoSource = $imgArray[$i];
-                    echo "<div class='col-xs-4'>
-                            <img src='$photoSource' alt='' class='thumb img-fluid product-modal' id='myImg$i' name='$i'>
-                    </div>";
+                    <p class='posted'><span style='font-size:8pt;'>".formatDatetime($comment->datetime())."</span></br>";
+            if($comment->rating() != null) {
+                echo "<span style='font-size:10pt;'>Rating: ";
+                for($i=0; $i<round($comment->rating()); $i++) echo "<i class='fa fa-star'></i>";
+            }
+            echo "</span></p>
+                <p>".$comment->content()."</p>
+            </div>
+            <div class='col-lg-12 text-center'>";
+            if($comment->media() != null) {
+                for($i=0; $i<count($comment->media()); $i++) {
+                    $photoSource = $comment->media()[$i];
+                    echo "<div class='col-xs-12 col-lg-6 img-preview myImg' style='background-image: url($photoSource);' name='$photoSource'></div>";
                 }
             }
-            echo "
+            echo "</div>
                 </div>
-            <!-- /.comment -->";
+            <!-- /.comment -->
+            <hr style='margin-top: 10px; border-top: 1px solid #d8d7d7;'>";
         }
+        mysqli_close($conn);
     }
     else {
         $conn = sqlConnect();
         $product = $_SESSION['product-view'];
-        $sql = "SELECT DISTINCT id FROM comments WHERE product_name = \"$product\";";
+        $sql = "SELECT DISTINCT ID 
+                FROM comments 
+                WHERE product_id = ".$product->getID()."
+                ORDER BY datetime DESC;";
         $result = mysqli_query($conn,$sql);
-        while($row = mysqli_fetch_assoc($result)) $comments[] = $row['id'];
+        while($row = mysqli_fetch_assoc($result)) {
+            $comments[] = $row['ID'];
+        }
         mysqli_close($conn);
-        loadComments($comments);
+        if(isset($comments)) {
+            loadComments($comments);
+        }
+        else {
+            echo "
+            <div class='row comment'>
+                <div class='col-sm-9 col-md-10'>
+                <h4>No reviews here yet.</h4>
+                </div>
+            </div>";
+        }
     }
+};
+//Load comment post form
+function loadCommentForm() 
+{
+    if(isset($_SESSION['user']) && $_SESSION['user']->getID() != null) {
+        $user = $_SESSION['user'];
+        echo "<div id='comment-form'>
+
+                <h4>Leave a review</h4>
+
+                <form action='javascript:void(0)' enctype='multipart/form-data' id='author-review-form'>
+                    <div class='row'>
+
+                        <div class='col-sm-6'>
+                            <div class='form-group'>
+                                <label for='authorRating'>Rating<br><i class='fa fa-star-o' id='star1'></i><i class='fa fa-star-o' id='star2'></i><i class='fa fa-star-o' id='star3'></i><i class='fa fa-star-o' id='star4'></i><i class='fa fa-star-o' id='star5'></i></label>
+                                <input type='number' class='form-control' id='authorRating' style='display:none;'>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class='row'>
+                        <div class='col-sm-12'>
+                            <div class='form-group'>
+                                <label for='authorReview'>Review <span class='required'>*</span>
+                                </label>
+                                <textarea class='form-control' id='authorReview' name='authorReview' rows='4'></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='row'>
+                        <div class='col-sm-12'>
+                            <div class='form-group'>
+                                <label for='authorImg' class='btn btn-default'>Photos
+                                </label>
+                                <input type='file' id='authorImg' name='authorImg[]' style='display:none;' multiple>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='row'>
+                        <div class='col-sm-12 text-right'>
+                            <button class='btn btn-primary' type='submit'><i class='fa fa-comment'></i> Post comment</button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+            <!-- /#comment-form -->
+            </div>";
+    }
+    else echo "
+    <div id='comment-form'>
+        <h4>Login</h4>
+        <form action='javascript:void(0)' id='comment-login-form'>
+            <div class='row'>
+                <div class='col-sm-6'>
+                    <div class='form-group'>
+                        <label for='comment-username'>Username
+                        </label>
+                        <input type='text' class='form-control' id='comment-username' name='comment-username'>
+                    </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-sm-6'>
+                    <div class='form-group'>
+                        <label for='comment-password'>Password
+                        </label>
+                        <input type='password' class='form-control' id='comment-password' name='comment-password'>
+                    </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-sm-6'>
+                    <button class='btn btn-primary' type='submit'><i class='fa fa-sign-in'></i>Login</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>";
 };
 //Load category menu for new order
 function loadCategories()

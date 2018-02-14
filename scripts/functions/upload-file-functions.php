@@ -7,14 +7,17 @@ function checkUploadImage($name,$tmpName)
     else {
         //Upload check var
         $uploadCheck = true;
+        //Allowed var
+        $allowedFileTypes = array("jpg","jpeg","png","gif","mp4","m4a","mov");
         //Current target file
         $baseName = basename($name);
         //Get file type
         $fileType = pathinfo($baseName,PATHINFO_EXTENSION);
+
         // Check if image file is an actual image or fake image
         $check = getimagesize($tmpName);
-        if($check != false) {
-            echo "File is an image - " . $check["mime"] . ".\n\n";
+        if($check) {
+            //echo "File is an image - " . $check["mime"] . ".\n\n";
             $uploadCheck = true;
         }
         else {
@@ -23,7 +26,7 @@ function checkUploadImage($name,$tmpName)
         }
         // Allow certain file formats
         $fileType = strtolower($fileType);
-        if($fileType != "jpg" && $fileType != "png" && $fileType != "jpeg" && $fileType != "gif" ) {
+        if(!in_array($fileType,$allowedFileTypes)) {
             echo "Only JPG, JPEG, PNG & GIF files are allowed.";
             $uploadCheck = false;
         }

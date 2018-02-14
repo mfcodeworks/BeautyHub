@@ -6,6 +6,23 @@ $(document).ready(function() {
     console.log(page);
     $("li[name='"+page+"']").addClass('active');
 
+    /**
+     *  Set client timezone
+     * 
+     */
+    var timezone_offset_minutes = new Date().getTimezoneOffset();
+    timezone_offset_minutes = timezone_offset_minutes == 0 ? 0 : -timezone_offset_minutes;
+    // Timezone difference in minutes such as 330 or -360 or 0
+    console.log("Timezone offset "+timezone_offset_minutes);
+    $.post("scripts/set-timezone.php",
+    {
+        timezone_offset_minutes: timezone_offset_minutes,
+    },
+    function(data,status) {
+        console.log("Timezone name "+data);
+    });
+    
+
     // Autocomplete brands
     var options = {
         url: "js/brands.json",
@@ -40,6 +57,18 @@ $(document).ready(function() {
     }
     // Hide form until clicked
     $("#new-shade-enter").hide();
+
+    // Photo lightbox
+    $(".myImg").click(function() {
+        console.log("Image tapped. Source " + $(this).attr("name"));
+        $('#top').before(" \
+            <div id='myModal'> \
+                <img id='myModalImg' src='"+ $(this).attr("name") +"'> \
+            </div>\
+        ");
+        $("#myModal").show();
+        modalObserver();
+    });
 
     // Show form when button clicked
     $("#add-a-shade").click(function() {
@@ -206,6 +235,8 @@ $(document).ready(function() {
             else {
                 $('#comment-form').empty();
                 $('#comment-form').append(data);
+                ratingStars();
+                commentFormHandler();
             }
         });
     });
@@ -431,6 +462,69 @@ $(document).ready(function() {
     //Add class last to last comment
     $('.comment').last().addClass('last');
 });
+
+//Set rating funtion
+function ratingStars() 
+{
+    $(".fa-star-o")
+        .mouseover(function() {
+            var num = $(this).attr('id')[$(this).attr('id').length -1];
+            for(var i=0;i<=num;i++) {
+                $("#star"+i).removeClass("fa-star-o");
+                $("#star"+i).addClass("fa-star");
+            }
+        })
+        .mouseout(function() {
+            for(var i=0;i<6;i++){
+                if(i>$('#productRating').val()) {
+                    $("#star"+i).removeClass("fa-star");
+                    $("#star"+i).addClass("fa-star-o");
+                }
+                else if(i>$('#authorRating').val()) {
+                        $("#star"+i).removeClass("fa-star");
+                        $("#star"+i).addClass("fa-star-o");
+                    }
+            }
+        })
+        .click(function() {
+            var num = $(this).attr('id')[$(this).attr('id').length -1];
+            $('#productRating').val(num);
+            $('#authorRating').val(num);
+        });
+};
+
+// Close modal when needed
+function modalObserver() 
+{
+    $("#myModal").click(function() {
+        console.log("Closing image");
+        $("#myModal").remove();
+    });
+};
+
+// Set comment form handler
+function commentFormHandler()
+{
+    $('#author-review-form').submit(function(e) {
+        e.preventDefault();
+        var form = new FormData($('#author-review-form')[0]);
+        $.ajax({
+            url: "scripts/add-comment.php",
+            method: "POST",
+            data: form,
+            processData: false,
+            contentType: false,
+            success: function(result){
+                console.log("Response:\n\n"+result);
+                $('#comments').empty();
+                $('#comments').append(result);
+            },
+            error: function(er){
+                console.log("Error\n"+er);
+            }
+        });
+    });
+};
 
 // Logout user
 function logout()

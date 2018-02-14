@@ -22,7 +22,7 @@ function loadProductDetails($id,$dupeBrands=NULL)
     $product = new product($id);
 
     //Define vars
-    $_SESSION['product-view']=$product->getName();
+    $_SESSION['product-view']=$product;
     $name = $product->getName();
     $brand = $product->getBrand();
     $type = $product->getType();
@@ -170,106 +170,13 @@ function loadProductDetails($id,$dupeBrands=NULL)
         </div>";
 
     //Print comment form
-    $conn = sqlConnect();
-    $sql = "SELECT DISTINCT id FROM comments WHERE product_name = '" . $product->getName() . "' ORDER BY id ASC;";
-    $result = mysqli_query($conn,$sql);
-    if($result) {
-        while($row = mysqli_fetch_assoc($result)) $comments[] = $row['id'];
-    }
     echo "<div class='box' id='comments-start'>
             <div id='comments' data-animate='fadeInUp'>";
-    if(isset($comments)) {
-        loadComments($comments);
-    }
-    else echo "
-        <div class='row comment'>
-            <div class='col-sm-9 col-md-10'>
-            <h4>No reviews here yet.</h4>
-            </div>
-        </div>";
+    loadComments();
     echo "</div>
         <!-- /#comments -->";
 
-    if(isset($_SESSION['user'])) $user = $_SESSION['user'];
-    if(isset($user) && $user->getID() != null) {
-        echo "<div id='comment-form' data-animate='fadeInUp'>
-
-                <h4>Leave a review</h4>
-
-                <form action='javascript:void(0)' enctype='multipart/form-data' id='author-review-form'>
-                    <div class='row'>
-
-                        <div class='col-sm-6'>
-                            <div class='form-group'>
-                                <label for='authorRating'>Rating<br><i class='fa fa-star-o' id='star1'></i><i class='fa fa-star-o' id='star2'></i><i class='fa fa-star-o' id='star3'></i><i class='fa fa-star-o' id='star4'></i><i class='fa fa-star-o' id='star5'></i></label>
-                                <input type='number' class='form-control' id='authorRating' style='display:none;'>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class='row'>
-                        <div class='col-sm-12'>
-                            <div class='form-group'>
-                                <label for='authorReview'>Review <span class='required'>*</span>
-                                </label>
-                                <textarea class='form-control' id='authorReview' name='authorReview' rows='4'></textarea>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class='row'>
-                        <div class='col-sm-12'>
-                            <div class='form-group'>
-                                <label for='authorImg' class='btn btn-default'>Photos
-                                </label>
-                                <input type='file' id='authorImg' name='authorImg[]' style='display:none;' multiple>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class='row'>
-                        <div class='col-sm-12 text-right'>
-                            <button class='btn btn-primary' type='submit'><i class='fa fa-comment'></i> Post comment</button>
-                        </div>
-                    </div>
-
-                </form>
-
-            </div>
-            <!-- /#comment-form -->
-            </div>";
-    }
-    else echo "
-    <div id='comment-form' data-animate='fadeInUp'>
-        <h4>Login</h4>
-        <form action='javascript:void(0)' id='comment-login-form'>
-            <div class='row'>
-                <div class='col-sm-6'>
-                    <div class='form-group'>
-                        <label for='comment-username'>Username
-                        </label>
-                        <input type='text' class='form-control' id='comment-username' name='comment-username'>
-                    </div>
-                </div>
-            </div>
-            <div class='row'>
-                <div class='col-sm-6'>
-                    <div class='form-group'>
-                        <label for='comment-password'>Password
-                        </label>
-                        <input type='password' class='form-control' id='comment-password' name='comment-password'>
-                    </div>
-                </div>
-            </div>
-            <div class='row'>
-                <div class='col-sm-6'>
-                    <button class='btn btn-primary' type='submit'><i class='fa fa-sign-in'></i>Login</button>
-                </div>
-            </div>
-        </form>
-    </div>
-    </div>";
+    loadCommentForm();
 
     $shade = $product->getShades()[0];
     getDupeDetails($id,$shade,$dupeBrands);

@@ -47,12 +47,22 @@ table {
 #full-image {
     max-width: 100% !important;
 }
-
 #follow-button {
     margin-left: 1em; 
     padding-top: .1em; 
     padding-bottom: .1em; 
     padding-right: .5em;
+}
+.img-preview {
+    margin: 10px;
+    border-width: 0.1em;
+    border-style: solid;
+    border-color: #8a8a8a;
+    border-radius: 8px;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-position:center; 
 }
 
 /**
@@ -90,12 +100,12 @@ table {
 /* LIGHTBOX CSS */
 
 /* Style the Image Used to Trigger the Modal */
-#myImg {
+.myImg {
     cursor: pointer;
     transition: 0.3s;
 }
 
-#myImg:hover {
+.myImg:hover {
     opacity: 0.7;
 }
 
@@ -152,7 +162,7 @@ table {
     position: absolute;
     margin: auto;
     display: block;
-    height: 70vh;
+    height: 85vh;
     width: auto;
     top: 50%;
     left: 50%;

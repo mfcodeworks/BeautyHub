@@ -2,7 +2,12 @@
     require_once 'scripts/functions.php';
     session_start();
     extract($_GET);
-    //if(!isset($_GET['id']) || $_GET['id'] = "" || $_GET['id'] = " " || $_GET['id'] = "NULL") headerLocation("index.php");
+    if(!isset($_GET['id']) 
+    || $_GET['id'] = "" 
+    || $_GET['id'] = " " 
+    || $_GET['id'] = "NULL") {
+        headerLocation("index.php");
+    }
 
     loadHead();
     loadTopBar();
@@ -15,8 +20,8 @@
     <div class='row'>
         <!-- PROFILE PIC COLUMN -->
         <div class='col-lg-3 col-xs-12'>
-                <img src='<?php echo $profile->ProfileImg(); ?>' id='profile-pic'/>
-                <?php if($profile->isVerified()) echo '<i class="fa fa-check-circle" id="profile-badge"></i>'; ?>
+            <img src='<?php echo $profile->ProfileImg(); ?>' id='profile-pic'/>
+            <?php if($profile->isVerified()) echo '<i class="fa fa-check-circle" id="profile-badge"></i>'; ?>
         </div>
         <!-- MAIN INFO COLUMN -->
         <div class='col-lg-6 col-xs-12'>
@@ -95,6 +100,11 @@
             </div>
         </div>
     <!-- </row> -->
+        <div class='row'>
+            <div class='col-lg-9 col-xs-12'>
+                <!-- LOAD USER POSTS -->
+            </div>
+        </div>
     </div>
 
 <?php
