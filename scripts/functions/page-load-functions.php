@@ -226,6 +226,8 @@ function loadNavBar()
                         </li>
                         <li><a href='add-product.php'>Add New Product</a>
                         </li>
+                        <li><a href='social.php'>Social Feed</a>
+                        </li>
                     </ul>
                 </div>
                 <!--/.nav-collapse -->
