@@ -781,4 +781,77 @@ function loadFoot()
 </body>
 </html>";
 };
+//Load posts from following
+function loadPosts($offset = 0) {
+    if( ($posts = getPostID($offset)) !== false) {
+        foreach($posts as $p) {
+            $post = new post($p);
+            echo $post;
+            unset($post);
+        }
+    }
+    else {
+        if($offset == 0) {
+            noPosts();
+        }
+    }
+}
+//If no posts available to load
+function noPosts(){
+    echo "
+    <div class='col-lg-12'>
+        <div class='panel panel-primary text-center' style='background-color: #729ae0; border-color: #4b85ef;'>
+            <div class='panel-body' style='width: 90vw;'>
+                <h4>No posts to load, follow some of the beauty community to start seeing posts</h4>
+            </div>
+        </div>
+    </div>";
+}
+//Get list of post ID from user
+function getPostID($offset = 0) {
+    //Get user ID
+    $userID = $_SESSION['user']->getID();
+
+    //Connect to DB
+    $conn = sqlConnect();
+
+    //Build SQL
+    $sql = "SELECT following
+            FROM users
+            WHERE ID = $userID;
+            ";
+    //Get result and check exists
+    $result = mysqli_query($conn,$sql);
+    if($result) {
+        while($row = mysqli_fetch_assoc($result)) {
+            $following = json_decode($row['following']);
+        }
+        //If following at least 1 person check for posts
+        if(count($following) > 0) {
+            //Build SQL query for posts per following author limit 30
+            $sql = "SELECT ID
+                    FROM posts
+                    WHERE ";
+            foreach($following as $f) {
+                $sql .= "author = $f OR ";
+            }
+            $sql = trim($sql,"OR ") . "
+                    ORDER BY datetime
+                    LIMIT 2
+                    OFFSET $offset;";
+            //Get and check result
+            $result = mysqli_query($conn,$sql);
+            if($result) {
+                while($row = mysqli_fetch_assoc($result)) {
+                    $postID[] = $row['ID'];
+                }
+                mysqli_close($conn);
+                return $postID;
+            }
+        }
+    }
+    mysqli_close($conn);
+    return false;
+}
+
 ?>

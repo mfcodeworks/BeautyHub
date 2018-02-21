@@ -1,11 +1,10 @@
 <?php
     require_once 'scripts/functions.php';
     session_start();
-    extract($_GET);
+    //Check ID exists
     if(!isset($_GET['id']) 
-    || $_GET['id'] = "" 
-    || $_GET['id'] = " " 
-    || $_GET['id'] = "NULL") {
+    || $_GET['id'] == "" 
+    || $_GET['id'] == " ") {
         headerLocation("index.php");
     }
 

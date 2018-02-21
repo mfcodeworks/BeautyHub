@@ -8,6 +8,10 @@
     require_once ABSPATH . "scripts/functions.php";
 
     class comment {
+
+        /** 
+         * Properties
+         */
         private $id;
         private $authorID;
         private $data = [

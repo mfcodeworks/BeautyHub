@@ -399,6 +399,44 @@ $(document).ready(function() {
         });
     });
 
+    //If posts exist add load more button 
+    if($('.following-post').length > 0) {
+        $("#following-post-area").after(
+            "<div class='col-lg-12 col-xs-12 text-center'>\
+                <button type='button' class='btn btn-primary' id='load-more-posts' style='margin-bottom: 1em; padding-left: 2em; padding-right: 2em;'>Load More</button>\
+            </div>");
+    }
+    //Load more posts for social feed
+    $('#load-more-posts').click(function(){
+        var offset = $('.following-post').length;
+        console.log(offset+"\n");
+        $.post("scripts/load-more-posts.php",
+        {
+            offset: offset,
+        },
+        function(data,status){
+            console.log(data);
+            $("#following-post-area").append(data);
+        });
+    });
+
+    //Upload new post
+    $('#newPostForm').submit(function(e) {
+        e.preventDefault();
+        console.log("Publishing post...\n\n");
+        var form = new FormData($('#newPostForm')[0]);
+        $.ajax({
+            url: "scripts/new-post.php",
+            method: "POST",
+            data: form,
+            processData: false,
+            contentType: false,
+            success: function(result){
+                console.log(result);
+            }
+        });
+    });
+
     //Upload new profile picture
     $('#profile-pic-upload-form').submit(function(e) {
         e.preventDefault();

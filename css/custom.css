@@ -170,6 +170,18 @@ table {
     border-radius: 1px;
 }
 
+/* Post image preview style */
+.post-image-preview {
+    padding-left: 1.5rem;
+}
+@media screen and (max-width: 815px) {
+    .post-image-preview {
+        padding-left: 8rem;
+    }
+}
+
+
+
 @-webkit-keyframes zoom {
     from {-webkit-transform:scale(0)}
     to {-webkit-transform:scale(1)}
