@@ -71,6 +71,7 @@ function loadHead()
         <script src="js/lightbox.js"></script>
         <script src="vendor/easy-autocomplete/dist/jquery.easy-autocomplete.js"></script>
         <script src="js/functions.js"></script>
+        <script src="vendor/jquery-endless-scroll-master/js/jquery.endless-scroll.js"></script>
     </head>
     <body>');
 };
@@ -345,7 +346,7 @@ function getDupeDetails($id,$shade,$dupeBrands=NULL,$dupeArray=NULL) {
     //If no array is set, echo no dupes found
     if($product->getDupes() == null || $product->getDupes() == "" || $product->getDupes() == " ") {
         echo       "<h3>Dupes for this product</h3>
-                    <h5>No dupes for this product yet. Add it <a href='add-product.php?dupe=$id'>here</a></h5>
+                    <h5>No dupes for this product yet. Add it <a href='javascript:void(0)' id='add-product-dupe'>here</a></h5>
                 </div>
             </div>";
     }
@@ -354,7 +355,7 @@ function getDupeDetails($id,$shade,$dupeBrands=NULL,$dupeArray=NULL) {
     else {
         //Begin section
         echo "<h3>Dupes for this product</h3>
-                <h5>Know another dupe for this product? Add it <a href='add-product.php?id=$id'>here</a></h5>
+                <h5>Know another dupe for this product? Add it <a href='javascript:void(0)' id='add-product-dupe'>here</a></h5>
             </div>
         </div>";
 
@@ -799,10 +800,10 @@ function loadPosts($offset = 0) {
 //If no posts available to load
 function noPosts(){
     echo "
-    <div class='col-lg-12'>
+    <div class='col-lg-12' id='noMorePosts'>
         <div class='panel panel-primary text-center' style='background-color: #729ae0; border-color: #4b85ef;'>
             <div class='panel-body' style='width: 90vw;'>
-                <h4>No posts to load, follow some of the beauty community to start seeing posts</h4>
+                <h4>No posts to load</h4>
             </div>
         </div>
     </div>";
@@ -836,7 +837,7 @@ function getPostID($offset = 0) {
                 $sql .= "author = $f OR ";
             }
             $sql = trim($sql,"OR ") . "
-                    ORDER BY datetime
+                    ORDER BY datetime DESC
                     LIMIT 2
                     OFFSET $offset;";
             //Get and check result

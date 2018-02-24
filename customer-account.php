@@ -16,7 +16,9 @@
 
             //Get items to autofill favourite selection
             $conn = sqlConnect();
-            $sql = "SELECT ID FROM products WHERE product_type = \"Foundation\";";
+            $sql = "SELECT ID 
+                    FROM products 
+                    WHERE product_type = \"Foundation\";";
 
             $result = mysqli_query($conn,$sql);
             while($row = mysqli_fetch_assoc($result)) {

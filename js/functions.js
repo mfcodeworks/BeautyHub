@@ -54,9 +54,55 @@ $(document).ready(function() {
                 </div> \
             </div>"
         );
-    }
+        $('#top').before("\
+            <div id='new-dupe-enter' style='width:100%;height:100%;position:fixed;background:rgba(0,0,0,.5);z-index:16;'> \
+                <div class='row popup'> \
+                    <div class='center-block col-md-12 col-lg-12 col-xs-12 text-center' style='margin-top: 0; position: absolute; float: none; background-color: white; top: 50%; border-radius: 1em; padding: 0.5em; z-index:20;'> \
+                        <form action='javascript:void(0)' id='submit-new-dupe-form'> \
+                            <div class='form-group' style='width:80%; margin-left:auto; margin-right:auto;' id='thisShadeContainer'> \
+                                <label for='thisShade'><h4>Current product shade:</h4></label> \
+                                <input type='text' class='form-control' id='thisShade' name='thisShade' placeholder='Ruby'> \
+                            </div> \
+                            <div class='form-group' style='width:80%; margin-left:auto; margin-right:auto;'> \
+                                <label for='dupeName'><h4>Dupe product:</h4></label> \
+                                <input type='text' class='form-control' id='dupeName' name='dupeName' placeholder='Cover FX - Custom Enhancer Drops'> \
+                            </div> \
+                            <div class='form-group' style='width:80%; margin-left:auto; margin-right:auto;'> \
+                                <label for='dupeShade'><h4>Dupe product shade:</h4></label> \
+                                <input type='text' class='form-control' id='dupeShade' name='dupeShade' placeholder='Leave blank for no shade'> \
+                            </div> \
+                            <div class='form-group'> \
+                                <input type='submit' class='btn btn-primary' value='Submit new dupe'> \
+                            </div> \
+                        </form> \
+                    </div> \
+                </div> \
+            </div>"
+        );
+        dupeFormRemover();
+    };
     // Hide form until clicked
     $("#new-shade-enter").hide();
+    $("#new-dupe-enter").hide();
+
+    // Add new dupe form submit
+    $("#submit-new-dupe-form").submit(function(){
+        console.log("New dupe added.");
+        $.post("scripts/add-new-dupe.php",
+        {
+            thisShade: $("#thisShade").val(),
+            dupeShade: $("#dupeShade").val(),
+            dupeName: $("#dupeName").val()
+        },
+        function(data,status){
+            console.log(data);
+        });
+    })
+
+    //Add new product dupe display
+    $("#add-product-dupe").click(function(){
+        $("#new-dupe-enter").show();
+    });
 
     // Photo lightbox
     $(".myImg").click(function() {
@@ -127,7 +173,10 @@ $(document).ready(function() {
         });
 
     //Add product view to counter
-    if(page == "detail.php") setTimeout(addProductView, 10000);
+    if(page == "detail.php") {
+        setTimeout(addProductView, 10000);
+    }
+
     function addProductView() {
         $.post("scripts/add-product-view.php",
         {
@@ -403,22 +452,44 @@ $(document).ready(function() {
     if($('.following-post').length > 0) {
         $("#following-post-area").after(
             "<div class='col-lg-12 col-xs-12 text-center'>\
-                <button type='button' class='btn btn-primary' id='load-more-posts' style='margin-bottom: 1em; padding-left: 2em; padding-right: 2em;'>Load More</button>\
+                <img src='/BeautyHub/img/ajax-loader.svg' style='width: 5em; display: none;' id='postLoading'>\
             </div>");
-    }
+    };
+    
     //Load more posts for social feed
-    $('#load-more-posts').click(function(){
-        var offset = $('.following-post').length;
-        console.log(offset+"\n");
-        $.post("scripts/load-more-posts.php",
-        {
-            offset: offset,
-        },
-        function(data,status){
-            console.log(data);
-            $("#following-post-area").append(data);
+    //Add infinite scroll loading for social feed
+    if(page == "social.php") {
+        $(window).scroll(function(){
+            if ($(document).height() - $(window).height() == $(window).scrollTop()
+            && $("#noMorePosts").length < 1) {
+                //Show loading icon
+                $("#postLoading").show();
+                //Set offset
+                var offset = $('.following-post').length;
+                console.log(offset+"\n");
+                //Post offset to load further posts
+                $.ajax({
+                    url: "scripts/load-more-posts.php",
+                    method: "POST",
+                    data: {
+                        offset: offset,
+                    },
+                    async: false,
+                    success: function(data){
+                        console.log(data);
+                        //If has data append data
+                        if(data != " "
+                        && data != ""
+                        && data != null) {
+                            $("#following-post-area").append(data);
+                        }
+                        //Hide loading icon
+                        $("#postLoading").hide();
+                    }
+                });
+            }
         });
-    });
+    };
 
     //Upload new post
     $('#newPostForm').submit(function(e) {
@@ -660,6 +731,17 @@ function scrapeProduct(search) {
         });
     return productInfo.responseText
 };
+
+// Dupe form remover
+function dupeFormRemover() {
+    $("body").click(function(e) {
+        if( $("#new-dupe-enter").css("display") === "block" ) {
+            if( e.target.id == "new-dupe-enter") {
+                $("#new-dupe-enter").hide();
+            }
+        }
+    });
+}
 
 // Follow user
 function followProfile(id) {

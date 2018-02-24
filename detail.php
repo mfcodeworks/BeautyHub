@@ -19,10 +19,52 @@ require_once 'scripts/functions.php';
 
 function loadProductDetails($id,$dupeBrands=NULL)
 {
+    //Load product
     $product = new product($id);
 
+    // Set autocomplete for dupe area
+    $conn = sqlConnect();
+    $sql = "SELECT name,brand
+            FROM products;";
+    $result = mysqli_query($conn,$sql);
+    while($row = mysqli_fetch_assoc($result)) {
+        $allProducts[] = $row['brand'] . " - " . $row['name'];
+    }
+    mysqli_close($conn);
+    $script = 
+    "<script>
+        $(document).ready(function() {
+            var products = [";
+    for($i = 0; $i < count($allProducts); $i++) {
+        $script .= "\"" . $allProducts[$i] . "\",";
+    }
+    $script = trim($script,",") .
+            "];
+            $('#dupeName').autocomplete({
+                source: products
+            });
+            var shades = [";
+    if($product->getShades() != null) {
+        foreach($product->getShades() as $s) {
+            $script .= "\"" . $s . "\",";
+        }
+    }
+    $script = trim($script,",") . 
+            "];
+            if(shades.length > 0) {
+                $('#thisShade').autocomplete({
+                    source: shades
+                });
+            }
+            else {
+                $('#thisShadeContainer').hide();
+            }
+        });
+    </script>";
+    echo $script;
+
     //Define vars
-    $_SESSION['product-view']=$product;
+    $_SESSION['product-view'] = $product;
     $name = $product->getName();
     $brand = $product->getBrand();
     $type = $product->getType();
@@ -184,11 +226,5 @@ function loadProductDetails($id,$dupeBrands=NULL)
         </div>
     </div>
     <!-- /.col-md-9 -->";
-    echo "
-    <!-- The Modal -->
-    <div id='myModal' class='modal'>
-        <!-- Modal Content (The Image) -->
-        <img class='modal-content' id='myModalImg'>
-    </div>";
 };
 ?>
