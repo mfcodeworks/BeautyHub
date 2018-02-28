@@ -784,7 +784,7 @@ function loadFoot()
 };
 //Load posts from following
 function loadPosts($offset = 0) {
-    if( ($posts = getPostID($offset)) !== false) {
+    if( ($posts = getPostID($offset)) != false) {
         foreach($posts as $p) {
             $post = new post($p);
             echo $post;
@@ -847,12 +847,115 @@ function getPostID($offset = 0) {
                     $postID[] = $row['ID'];
                 }
                 mysqli_close($conn);
-                return $postID;
+                if(isset($postID)) {
+                    return $postID;
+                }
+                else {
+                    return false;
+                }
             }
         }
     }
     mysqli_close($conn);
     return false;
-}
+};
+//Load suggested users for current user
+function loadSuggestedUsers() {
+    if(isset($_SESSION['user'])) {
+        //Connect to DB
+        $conn = sqlConnect();
+        //Get favourites and wishlist
+        $sql = "SELECT wishlist,favourites 
+                FROM users
+                WHERE ID=".$_SESSION['user']->getID().";
+                ";
+        $result = mysqli_query($conn,$sql);
+        while($row = mysqli_fetch_assoc($result)) {
+            $wishlist = json_decode($row['wishlist'],true);
+            $favourites = json_decode($row['favourites'],true);
+        }
+        //Combine and remove duplicates from favourites and wishlist to create a comparison array
+        foreach($wishlist as $a => $w) {
+            $wishlistID[] = $w['id'];
+        }
+        foreach($favourites as $a => $f) {
+            $favouriteID[] = $f['id'];
+        }
+        $comparison = array_unique(array_merge($wishlistID,$favouriteID));
+        shuffle($comparison);
+        //Select users with similar wishlist/favourites
+        $sql = "SELECT u.ID
+                FROM users u ";
+        for($i = 0; $i < count($comparison); $i++) {
+            switch ($i) {
+                case "0":
+                    $sql .= "WHERE wishlist LIKE '%\"id\":\"" . $comparison[$i] . "\"%' 
+                            OR favourites LIKE '%\"id\":\"" . $comparison[$i] . "\"%'";
+                    break;
+                default:
+                    $sql .= "OR wishlist LIKE '%\"id\":\"" . $comparison[$i] . "\"%' 
+                            OR favourites LIKE '%\"id\":\"" . $comparison[$i] . "\"%'";
+            }
+        }
+        $sql .= " ORDER BY RAND()
+                LIMIT 15;";
+        //Save user ID to list
+        $result = mysqli_query($conn,$sql);
+        if($result){
+            while($row = mysqli_fetch_assoc($result)) {
+                $authors[] = $row['ID'];
+            }
+        }
+        //Get list of high posting authors
+        $sql = "SELECT p.author
+                FROM posts p
+                GROUP BY p.author
+                HAVING count(*) > 0
+                ORDER BY RAND()
+                LIMIT 15;";
+        $result = mysqli_query($conn,$sql);
+        if($result){
+            while($row = mysqli_fetch_assoc($result)) {
+                $authors[] = $row['author'];
+            }
+        }
+        suggestedUserBox(array_unique($authors));
+    }
+    else {
+        $conn = sqlConnect();
+        $sql = "SELECT p.author
+                FROM posts p
+                GROUP BY p.author
+                HAVING count(*) > 0
+                ORDER BY RAND()
+                LIMIT 15;";
+        $result = mysqli_query($conn,$sql);
+        if($result){
+            while($row = mysqli_fetch_assoc($result)) {
+                $authors[] = $row['author'];
+            }
+            suggestedUserBox($authors);
+        }
+    }
+};
+//Echo suggested users on page
+function suggestedUserBox($users) {
+    echo "
+        <div class='col-lg-12'>
+            <div class='panel panel-default sidebar-menu' id='suggested-user-panel' style='margin-left: -2rem; margin-right: -2rem;'>
+                <div class='panel-heading text-center'><h4>Suggested Users</h4></div>
+                <div class='panel-body text-center'>";
+    foreach($users as $a) {
+        $author = new profile($a);
+        echo "
+            <h2 style='margin-top: 0px;'><a href='profile.php?id=".$author->ID()."'>".$author->Username()."</a></h2>
+            <a href='profile.php?id=".$author->ID()."'><img src='".$author->ProfileImg()."' class='img-responsive img-circle' style='border: 0.1rem solid #7b7a7a;'></a>
+            <hr style='border-color: #bdbaba; margin: 0px; margin-top: 15px;'>";
+    }
+
+    echo "      </div>
+            </div>
+        </div>";
+};
 
 ?>

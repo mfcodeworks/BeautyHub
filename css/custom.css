@@ -169,14 +169,19 @@ table {
     transform: translate(-50%, -50%);
     border-radius: 1px;
 }
+@media screen and (min-width: 815px) {
+    #suggested-user-panel {
+        margin-right: -6rem;
+    }
+}
 
 /* Post image preview style */
 .post-image-preview {
-    padding-left: 1.5rem;
+    padding-left: 9.5rem;
 }
 @media screen and (max-width: 815px) {
     .post-image-preview {
-        padding-left: 8rem;
+        padding-left: 6rem;
     }
 }
 

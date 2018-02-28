@@ -448,49 +448,6 @@ $(document).ready(function() {
         });
     });
 
-    //If posts exist add load more button 
-    if($('.following-post').length > 0) {
-        $("#following-post-area").after(
-            "<div class='col-lg-12 col-xs-12 text-center'>\
-                <img src='/BeautyHub/img/ajax-loader.svg' style='width: 5em; display: none;' id='postLoading'>\
-            </div>");
-    };
-    
-    //Load more posts for social feed
-    //Add infinite scroll loading for social feed
-    if(page == "social.php") {
-        $(window).scroll(function(){
-            if ($(document).height() - $(window).height() == $(window).scrollTop()
-            && $("#noMorePosts").length < 1) {
-                //Show loading icon
-                $("#postLoading").show();
-                //Set offset
-                var offset = $('.following-post').length;
-                console.log(offset+"\n");
-                //Post offset to load further posts
-                $.ajax({
-                    url: "scripts/load-more-posts.php",
-                    method: "POST",
-                    data: {
-                        offset: offset,
-                    },
-                    async: false,
-                    success: function(data){
-                        console.log(data);
-                        //If has data append data
-                        if(data != " "
-                        && data != ""
-                        && data != null) {
-                            $("#following-post-area").append(data);
-                        }
-                        //Hide loading icon
-                        $("#postLoading").hide();
-                    }
-                });
-            }
-        });
-    };
-
     //Upload new post
     $('#newPostForm').submit(function(e) {
         e.preventDefault();
@@ -570,7 +527,132 @@ $(document).ready(function() {
 
     //Add class last to last comment
     $('.comment').last().addClass('last');
+
+    //Watch for new post text changes i.e. # and @
+    $('#newPost').on("keyup", function(){
+        $("#tagSuggestions").remove();
+        //Define text, most recent hashtag, and tag alphaNum text
+        var postText = $('#newPost').val();
+        var tag = '';
+        var lastHashPos;
+        var at = '';
+        var lastAtPos = '';
+        //If tag exists
+        if( postText.indexOf('#') > -1 ) {
+            //Check every letter of string to get last hashtag position
+            for(var i = 0; i < postText.length; i++) {
+                if(postText.charAt(i) == "#") {
+                    lastHashPos = i;
+                }
+            }
+            //For the last hashtag, check every proceeding alphaNum character to build tag
+            for(var i = lastHashPos+1; i < postText.length; i++) {
+                if( isAlphaNum(postText.charAt(i)) ) {
+                    console.log(postText.charAt(i));
+                    tag += postText.charAt(i);
+                }
+                else {
+                    console.log("Exiting because of "+postText.charAt(i));
+                    var stop = true;
+                }
+            }
+            if(stop != true) {
+                //Log full tag text
+                console.log("Hashtag #"+tag);
+                $.post("scripts/get-trending-hashtag.php",
+                {
+                    tag: tag,
+                },
+                function(data,status){
+                    var taglist = JSON.parse(data);
+                    console.log(taglist);
+                    if(data != "false") {
+                        console.log("Hashtags found:\n");
+                        append = "<ul class='list-group' id='tagSuggestions' style='position: absolute; width: 95%; z-index: 10;'>"
+                        for(var i=0; i<taglist.length; i++) {
+                            append += "<li class='tagSuggestion list-group-item' value='"+taglist[i]+"'><a>"+taglist[i]+"</a></li>";
+                        }
+                        append += "</ul>";
+                        $("#newPost").after(append);
+                        hashtagObserver();
+                    }
+                    else {
+                        console.log("No hashtags found");
+                    }
+                });
+            }
+        }
+        /*
+        //If @ exists
+        if( postText.indexOf('@') > -1 ) {
+            //Check every letter of string to get last hashtag position
+            for(var i = 0; i < postText.length; i++) {
+                if(postText.charAt(i) == "@") {
+                    lastAtPos = i;
+                }
+            }
+            //For the last hashtag, check every proceeding alphaNum character to build tag
+            for(var i = lastAtPos+1; i < postText.length; i++) {
+                if( isAlphaNum(postText.charAt(i)) ) {
+                    at += postText.charAt(i);
+                }
+                else {
+                    break;
+                }
+            }
+            //Log full tag text
+            console.log("At @"+at);
+        }
+        */
+    });
 });
+
+
+var page;
+if(document.location.pathname.match(/[^\/]+$/)) page = document.location.pathname.match(/[^\/]+$/)[0];
+else page='index.php';
+//If posts exist add load more button 
+if($('.following-post').length > 0) {
+    $("#following-post-area").after(
+        "<div class='text-center'>\
+            <img src='/BeautyHub/img/ajax-loader.svg' style='width: 5em;' id='postLoading'>\
+        </div>");
+    $("#postLoading").hide();
+};
+//Load more posts for social feed
+//Add infinite scroll loading for social feed
+if(page == "social.php") {
+    $(window).scroll(function(){
+        if ($(document).height() - $(window).height() == $(window).scrollTop()
+        && $("#noMorePosts").length < 1) {
+            //Show loading icon
+            $("#postLoading").show();
+            //Set offset
+            var offset = $('.following-post').length;
+            console.log(offset+"\n");
+            //Post offset to load further posts
+            $.ajax({
+                url: "scripts/load-more-posts.php",
+                method: "POST",
+                data: {
+                    offset: offset,
+                },
+                async: false,
+                success: function(data){
+                    console.log(data);
+                    //If has data append data
+                    if(data != " "
+                    && data != ""
+                    && data != null) {
+                        $("#following-post-area").append(data);
+                    }
+                    //Hide loading icon
+                    $("#postLoading").hide();
+                }
+            });
+        }
+    });
+};
 
 //Set rating funtion
 function ratingStars() 
@@ -779,6 +861,42 @@ function echoAlert(message) {
     </div>");
 };
 
+//Add selcted tag
+function hashtagObserver() {
+    $(".tagSuggestion").click(function(){
+        var hashtag = $(this).attr('value');
+        var postText = $('#newPost').val();
+        var tag = "#";
+        //Check every letter of string to get last hashtag position
+        for(var i = 0; i < postText.length; i++) {
+            if(postText.charAt(i) == "#") {
+                lastHashPos = i;
+            }
+        }
+        //For the last hashtag, check every proceeding alphaNum character to build tag
+        for(var i = lastHashPos+1; i < postText.length; i++) {
+            if( isAlphaNum(postText.charAt(i)) ) {
+                tag += postText.charAt(i);
+            }
+        }
+        var newText = postText.substring(0,lastHashPos)+hashtag;
+        console.log("New Text\n"+newText);
+        $('#newPost').val(newText);
+        $("#tagSuggestions").remove();
+    });
+};
+
+//Check string is alhpanumeric
+function isAlphaNum(string) {
+    if( string.match(/^[a-zA-Z0-9]+/) ) {
+        return true
+   }
+   else {
+       return false;
+   }
+};
+
+/*
 // Set loader for AJAX
 function loadingAJAX() { $('div#top').before("<div id='loader' style='width:100%;height:100%;position:fixed;background:rgba(0,0,0,.5) url(img/ajax-loader.svg) center center no-repeat;z-index:16;'></div>"); }
 function doneAJAX() { $("div#loader").remove(); }
@@ -790,4 +908,4 @@ $(document).ajaxSend(function() {
 });
 $(document).ajaxComplete(function() {
     doneAJAX();
-});
+});*/

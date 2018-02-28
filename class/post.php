@@ -187,7 +187,7 @@
         public function __toString() {
             $author = new profile($this->author);
             $string = "
-            <div class='col-lg-6 col-xs-12 following-post'>
+            <div class='following-post'>
                 <div class='panel panel-default'>
                     <div class='row'>
                         <div class='col-lg-2 col-xs-2'>
@@ -204,21 +204,27 @@
                     </div>
                     <div class='row'>
                         <div class='col-lg-12'>
-                            <p style='padding: 1em; padding-left: 2em;'>".$this->content."</p>
+                            <p style='padding: 0.5rem; padding-left: 3rem;'>".$this->content."</p>
                         </div>
-                    </div>
-                    <div class='row post-image-preview'>";
+                    </div>";
             if($this->media != NULL) {
                 foreach($this->media as $m) {
                     $string .= "
-                            <div class='col-xs-4 col-lg-6 img-preview myImg' style='background-image: url($m); width: 250px; height: 250px;' name='$m'></div>
+                        <div class='row'>
+                            <div class='col-lg-1 col-xs-1'></div>
+                            <div class='col-xs-10 col-lg-10'>
+                                <div class='thumbnail'>
+                                    <img class='myImg' src='$m' name='$m'>
+                                </div>
+                            </div>
+                            <div class='col-lg-1 col-xs-1'></div>
+                        </div>
                     ";
                 }
             }
             $string .= "
                     </div>
                 </div>
-            </div>
             ";
             return $string;
         }
