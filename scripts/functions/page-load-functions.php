@@ -56,6 +56,7 @@ function loadHead()
         <script src="vendor/components/jquery/jquery.js"></script>
         <script src="vendor/components/jquery-migrate/jquery-migrate.js"></script>
         <script src="vendor/components/jqueryui/jquery-ui.js"></script>
+        <script src="vendor/jquery-caret/jquery.caret.js"></script>
 
 
         <!-- bootstrap -->

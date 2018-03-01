@@ -531,16 +531,20 @@ $(document).ready(function() {
     //Watch for new post text changes i.e. # and @
     $('#newPost').on("keyup", function(){
         $("#tagSuggestions").remove();
+        //Get cursor position
+        var cursorPos = $("#newPost").caret();
+        console.log("Cursor "+cursorPos);
         //Define text, most recent hashtag, and tag alphaNum text
         var postText = $('#newPost').val();
         var tag = '';
         var lastHashPos;
+        var lastHashCharPos;
         var at = '';
         var lastAtPos = '';
         //If tag exists
         if( postText.indexOf('#') > -1 ) {
             //Check every letter of string to get last hashtag position
-            for(var i = 0; i < postText.length; i++) {
+            for(var i = 0; i < postText.length && i < cursorPos; i++) {
                 if(postText.charAt(i) == "#") {
                     lastHashPos = i;
                 }
@@ -548,13 +552,26 @@ $(document).ready(function() {
             //For the last hashtag, check every proceeding alphaNum character to build tag
             for(var i = lastHashPos+1; i < postText.length; i++) {
                 if( isAlphaNum(postText.charAt(i)) ) {
-                    console.log(postText.charAt(i));
                     tag += postText.charAt(i);
                 }
                 else {
-                    console.log("Exiting because of "+postText.charAt(i));
-                    var stop = true;
+                    lastHashCharPos = i;
+                    break;
                 }
+            }
+            if(lastHashCharPos == undefined) {
+                lastHashCharPos = postText.length;
+            }
+            console.log("Last hashtag char at "+lastHashCharPos);
+            if(cursorPos <= lastHashCharPos) {
+                for(var i = lastHashPos+1; i < cursorPos; i++) {
+                    if(isAlphaNum(postText.charAt(i)) == false) {
+                        var stop = true;
+                    }
+                }
+            }
+            else {
+                var stop = true;
             }
             if(stop != true) {
                 //Log full tag text
@@ -864,22 +881,28 @@ function echoAlert(message) {
 //Add selcted tag
 function hashtagObserver() {
     $(".tagSuggestion").click(function(){
+        var cursorPos = $("#newPost").caret();
         var hashtag = $(this).attr('value');
         var postText = $('#newPost').val();
+        var lastPos = postText.length;
         var tag = "#";
         //Check every letter of string to get last hashtag position
-        for(var i = 0; i < postText.length; i++) {
+        for(var i = 0; i < lastPos && i < cursorPos; i++) {
             if(postText.charAt(i) == "#") {
                 lastHashPos = i;
             }
         }
         //For the last hashtag, check every proceeding alphaNum character to build tag
-        for(var i = lastHashPos+1; i < postText.length; i++) {
+        for(var i = lastHashPos+1; i < lastPos; i++) {
             if( isAlphaNum(postText.charAt(i)) ) {
                 tag += postText.charAt(i);
             }
+            else {
+                var lastTagChar = i-1;
+                break;
+            }
         }
-        var newText = postText.substring(0,lastHashPos)+hashtag;
+        var newText = postText.substring(0,lastHashPos)+hashtag+" "+postText.substring(cursorPos,lastPos);
         console.log("New Text\n"+newText);
         $('#newPost').val(newText);
         $("#tagSuggestions").remove();
