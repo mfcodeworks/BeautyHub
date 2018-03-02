@@ -10,7 +10,8 @@
     $conn = sqlConnect();
     $sql = "SELECT content
             FROM posts
-            WHERE LOCATE('$tag',content) > 0;
+            WHERE LOCATE('$tag',content) > 0
+            LIMIT 15;
             ";
     $result = mysqli_query($conn,$sql);
     if($result) {

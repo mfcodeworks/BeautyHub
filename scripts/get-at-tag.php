@@ -7,7 +7,8 @@
     //Get distinct usernames matching at tag
     $sql = "SELECT DISTINCT username
             FROM users 
-            WHERE LOWER(username) LIKE LOWER('%$tag%');
+            WHERE LOWER(username) LIKE LOWER('%$tag%')
+            LIMIT 15;
             ";
     $result = mysqli_query($conn,$sql);
     //Check for result

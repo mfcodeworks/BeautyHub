@@ -3,7 +3,7 @@ $(document).ready(function() {
     var page;
     if(document.location.pathname.match(/[^\/]+$/)) page = document.location.pathname.match(/[^\/]+$/)[0];
     else page='index.php';
-    console.log(page);
+    //console.log(page);
     $("li[name='"+page+"']").addClass('active');
 
     /**
@@ -13,7 +13,7 @@ $(document).ready(function() {
     var timezone_offset_minutes = new Date().getTimezoneOffset();
     timezone_offset_minutes = timezone_offset_minutes == 0 ? 0 : -timezone_offset_minutes;
     // Timezone difference in minutes such as 330 or -360 or 0
-    console.log("Timezone offset "+timezone_offset_minutes);
+    //console.log("Timezone offset "+timezone_offset_minutes);
     $.post("scripts/set-timezone.php",
     {
         timezone_offset_minutes: timezone_offset_minutes,
@@ -528,13 +528,14 @@ $(document).ready(function() {
     //Add class last to last comment
     $('.comment').last().addClass('last');
 
-    //TODO: Watch for new post text changes i.e. # and @
+    //Watch for new post text changes i.e. # and @
     $('#newPost').on("keyup", function(){
+        //Remove previous suggestions
         $("#atSuggestions").remove();
         $("#tagSuggestions").remove();
         //Get cursor position
         var cursorPos = $("#newPost").caret();
-        //Define text, most recent hashtag, and tag alphaNum text
+        //Define text, tag and positions
         var postText = $('#newPost').val();
         var tag = '';
         var at = '';
@@ -543,120 +544,128 @@ $(document).ready(function() {
         var lastHashCharPos = -1;
         var lastAtCharPos = -1;
 
-        //If at exists
-        if( postText.indexOf('@') > -1 ) {
-            //Check every letter of string to get last At position
+        //If any tag exists
+        if( postText.indexOf('@') > -1 || postText.indexOf('#') > -1) {
+            //Check every letter of string to get last tag position
             for(var i = 0; i < postText.length && i < cursorPos; i++) {
                 if(postText.charAt(i) == "@") {
                     lastAtPos = i;
                 }
-            }
-            //For the last At, check every proceeding alphaNum character to build tag
-            for(var i = lastAtPos+1; i < postText.length; i++) {
-                if( isAlphaNum(postText.charAt(i)) ) {
-                    tag += postText.charAt(i);
-                }
-                else {
-                    lastAtCharPos = i;
-                    break;
-                }
-            }
-            if(lastAtCharPos == undefined) {
-                lastAtCharPos = postText.length;
-            }
-            console.log("Last at char at "+lastAtCharPos);
-            if(cursorPos <= lastAtCharPos) {
-                for(var i = lastAtPos+1; i < cursorPos; i++) {
-                    if(isAlphaNum(postText.charAt(i)) == false) {
-                        var stop = true;
-                    }
-                }
-            }
-            else {
-                var stop = true;
-            }
-            if(stop != true) {
-                //Log full tag text
-                console.log("at @"+tag);
-                $.post("scripts/get-at-tag.php",
-                {
-                    tag: tag,
-                },
-                function(data,status){
-                    var taglist = JSON.parse(data);
-                    console.log(taglist);
-                    if(data != "false") {
-                        console.log("At tags found:\n");
-                        append = "<ul class='list-group' id='atSuggestions' style='position: absolute; width: 95%; z-index: 10;'>"
-                        for(var i=0; i<taglist.length; i++) {
-                            append += "<li class='atSuggestion list-group-item' value='@"+taglist[i]+"'><a>"+taglist[i]+"</a></li>";
-                        }
-                        append += "</ul>";
-                        $("#newPost").after(append);
-                        atTagObserver();
-                    }
-                    else {
-                        console.log("No at tags found");
-                    }
-                });
-            }
-        }
-        //If tag exists
-        if( postText.indexOf('#') > -1 ) {
-            //Check every letter of string to get last hashtag position
-            for(var i = 0; i < postText.length && i < cursorPos; i++) {
-                if(postText.charAt(i) == "#") {
+                else if(postText.charAt(i) == "#") {
                     lastHashPos = i;
                 }
             }
-            //For the last hashtag, check every proceeding alphaNum character to build tag
-            for(var i = lastHashPos+1; i < postText.length; i++) {
-                if( isAlphaNum(postText.charAt(i)) ) {
-                    tag += postText.charAt(i);
-                }
-                else {
-                    lastHashCharPos = i;
-                    break;
-                }
-            }
-            if(lastHashCharPos == undefined) {
-                lastHashCharPos = postText.length;
-            }
-            console.log("Last hashtag char at "+lastHashCharPos);
-            if(cursorPos <= lastHashCharPos) {
-                for(var i = lastHashPos+1; i < cursorPos; i++) {
-                    if(isAlphaNum(postText.charAt(i)) == false) {
-                        var stop = true;
-                    }
-                }
-            }
-            else {
-                var stop = true;
-            }
-            if(stop != true) {
-                //Log full tag text
-                console.log("Hashtag #"+tag);
-                $.post("scripts/get-trending-hashtag.php",
-                {
-                    tag: tag,
-                },
-                function(data,status){
-                    var taglist = JSON.parse(data);
-                    console.log(taglist);
-                    if(data != "false") {
-                        console.log("Hashtags found:\n");
-                        append = "<ul class='list-group' id='tagSuggestions' style='position: absolute; width: 95%; z-index: 10;'>"
-                        for(var i=0; i<taglist.length; i++) {
-                            append += "<li class='tagSuggestion list-group-item' value='"+taglist[i]+"'><a>"+taglist[i]+"</a></li>";
-                        }
-                        append += "</ul>";
-                        $("#newPost").after(append);
-                        hashtagObserver();
+            //If @ position is higher (Editing @, not hashtag)
+            if(lastAtPos > lastHashPos) {
+                console.log("Editing @");
+                //For the last @, check every proceeding alphaNum character to build tag
+                for(var i = lastAtPos+1; i < postText.length; i++) {
+                    console.log("Check char "+i);
+                    if( isAlphaNum(postText.charAt(i)) ) {
+                        tag += postText.charAt(i);
                     }
                     else {
-                        console.log("No hashtags found");
+                        lastAtCharPos = i;
+                        break;
                     }
-                });
+                }
+                //Log last @ character position
+                console.log("Last at char found at "+lastAtCharPos)
+                //If the last @ character wasn't checked, last at character must be last global character i.e. total length
+                if(lastAtCharPos == -1) {
+                    lastAtCharPos = postText.length;
+                }
+                //If the cursor is after last @ character, @ tag not being edited. Break.
+                if(cursorPos > lastAtCharPos) {
+                    var stop = true;
+                }
+                if(stop !== true) {
+                    //Log full tag text
+                    console.log("at @"+tag);
+                    //AJAX call for relevant @ tags
+                    $.post("scripts/get-at-tag.php",
+                    {
+                        tag: tag,
+                    },
+                    //On receiving tag list
+                    function(data,status){
+                        //Parse and log JSON encoded tag list
+                        var taglist = JSON.parse(data);
+                        console.log(taglist);
+                        //If data exists
+                        if(data) {
+                            //Log success and append list of tags after text box
+                            console.log("At tags found:\n");
+                            append = "<ul class='list-group' id='atSuggestions' style='position: absolute; width: 95%; z-index: 10;'>"
+                            for(var i=0; i<taglist.length; i++) {
+                                append += "<li class='atSuggestion list-group-item' value='@"+taglist[i]+"'><a>"+taglist[i]+"</a></li>";
+                            }
+                            append += "</ul>";
+                            $("#newPost").after(append);
+                            //Begin an observer for suggestion click
+                            atTagObserver();
+                        }
+                        //If no data, log no data found
+                        else {
+                            console.log("No at tags found");
+                        }
+                    });
+                }
+            }
+            //If @ is lower than # position (Editing #, not @)
+            else {
+                //For the last #, check every proceeding alphaNum character to build tag
+                for(var i = lastHashPos+1; i < postText.length; i++) {
+                    if( isAlphaNum(postText.charAt(i)) ) {
+                        tag += postText.charAt(i);
+                    }
+                    else {
+                        lastHashCharPos = i;
+                        break;
+                    }
+                }
+                //If last # character wasn't found, must be last global character i.e. post length
+                if(lastHashCharPos == -1) {
+                    lastHashCharPos = postText.length;
+                }
+                //Log last # character position
+                console.log("Last hashtag char at "+lastHashCharPos);
+                //If cursor is after last # character position, # is not being edited
+                if(cursorPos > lastHashCharPos) {
+                    var stop = true;
+                }
+                if(stop !== true) {
+                    //Log full tag text
+                    console.log("Hashtag #"+tag);
+                    //AJAX call for relevant # tags
+                    $.post("scripts/get-trending-hashtag.php",
+                    {
+                        tag: tag,
+                    },
+                    //On receiving tag list
+                    function(data,status){
+                        //Parse and LOG JSON encoded tag list
+                        var taglist = JSON.parse(data);
+                        console.log(taglist);
+                        //If dta exists
+                        if(data) {
+                            //Log success and append tag list after textbox
+                            console.log("Hashtags found:\n");
+                            append = "<ul class='list-group' id='tagSuggestions' style='position: absolute; width: 95%; z-index: 10;'>"
+                            for(var i=0; i<taglist.length; i++) {
+                                append += "<li class='tagSuggestion list-group-item' value='"+taglist[i]+"'><a>"+taglist[i]+"</a></li>";
+                            }
+                            append += "</ul>";
+                            $("#newPost").after(append);
+                            //Begin an observer for suggestion click
+                            hashtagObserver();
+                        }
+                        //If no data, log no data found
+                        else {
+                            console.log("No hashtags found");
+                        }
+                    });
+                }
             }
         }
     });
@@ -916,7 +925,7 @@ function echoAlert(message) {
     </div>");
 };
 
-//TODO: Add selcted tag
+//Add selcted tag
 function atTagObserver() {
     $(".atSuggestion").click(function(){
         var cursorPos = $("#newPost").caret();
@@ -924,26 +933,36 @@ function atTagObserver() {
         var postText = $('#newPost').val();
         var lastPos = postText.length;
         var tag = "@";
-        var lastAtPos;
-        //Check every letter of string to get last hashtag position
+        var lastAtPos = -1;
+        //Check every letter of string from start to cursor to get last @ position
         for(var i = 0; i < lastPos && i < cursorPos; i++) {
             if(postText.charAt(i) == "@") {
                 lastAtPos = i;
             }
         }
-        //For the last hashtag, check every proceeding alphaNum character to build tag
+        //For the last @, check every proceeding alphaNum character to build tag
         for(var i = lastAtPos+1; i < lastPos; i++) {
             if( isAlphaNum(postText.charAt(i)) ) {
                 tag += postText.charAt(i);
             }
             else {
-                var lastTagChar = i-1;
                 break;
             }
         }
+        /**
+         * New textbox value is; 
+         * current text from beginning to the @ tag, 
+         * plus the new @ tag,
+         * space, 
+         * original text from the cursor position to the end of the original
+         */
         var newText = postText.substring(0,lastAtPos)+atTag+" "+postText.substring(cursorPos,lastPos);
+        //Log the new text
         console.log("New Text\n"+newText);
+        //Insert the new text and remove suggestion box
         $('#newPost').val(newText);
+        //Move mouse to end of @
+        $('#newPost').caret(lastHashPos+hashtag.length);
         $("#atSuggestions").remove();
     });
 };
@@ -954,25 +973,36 @@ function hashtagObserver() {
         var postText = $('#newPost').val();
         var lastPos = postText.length;
         var tag = "#";
-        //Check every letter of string to get last hashtag position
+        var lastHashPos = -1;
+        //Check every letter of string from start to cursor to get last # position
         for(var i = 0; i < lastPos && i < cursorPos; i++) {
             if(postText.charAt(i) == "#") {
-                var lastHashPos = i;
+                lastHashPos = i;
             }
         }
-        //For the last hashtag, check every proceeding alphaNum character to build tag
+        //For the last #, check every proceeding alphaNum character to build tag
         for(var i = lastHashPos+1; i < lastPos; i++) {
             if( isAlphaNum(postText.charAt(i)) ) {
                 tag += postText.charAt(i);
             }
             else {
-                var lastTagChar = i-1;
                 break;
             }
         }
+        /**
+         * New textbox value is; 
+         * current text from beginning to the # tag, 
+         * plus the new # tag,
+         * space, 
+         * original text from the cursor position to the end of the original
+         */
         var newText = postText.substring(0,lastHashPos)+hashtag+" "+postText.substring(cursorPos,lastPos);
+        //Log new text
         console.log("New Text\n"+newText);
+        //Insert the new text and remove suggestion box
         $('#newPost').val(newText);
+        //Move mouse to end of #
+        $('#newPost').caret(lastHashPos+hashtag.length);
         $("#tagSuggestions").remove();
     });
 };
