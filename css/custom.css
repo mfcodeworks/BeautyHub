@@ -47,7 +47,7 @@ table {
 #full-image {
     max-width: 100% !important;
 }
-#follow-button {
+.follow-button {
     margin-left: 1em; 
     padding-top: .1em; 
     padding-bottom: .1em; 
