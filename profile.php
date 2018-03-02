@@ -27,9 +27,15 @@
             <div class='box'>
                 <p class='lead'>
                     <?php 
+                        $thisUser = new profile($_SESSION['user']->getID());
                         echo "<strong>" . $profile->Username() . "</strong>";
-                        echo "<button type='button' class='btn btn-primary' id='follow-button' onclick='followProfile(\"" . $profile->ID() . "\")'>Follow&nbsp;<i class='fa fa-plus'></i></button>";
-                        echo "<button type='button' class='btn btn-danger' id='follow-button' onclick='reportProfile(\"" . $profile->ID() . "\")'>Report&nbsp;<i class='fa fa-exclamation'></i></button>";
+                        if($thisUser->isFollowing($profile->ID())) {
+                            echo "<button type='button' class='btn btn-success follow-button'>Following&nbsp;<i class='fa fa-check'></i></button>";
+                        }
+                        else {
+                            echo "<button type='button' class='btn btn-primary follow-button' onclick='followProfile(\"" . $profile->ID() . "\")'>Follow&nbsp;<i class='fa fa-plus'></i></button>";
+                        }
+                        echo "<button type='button' class='btn btn-danger follow-button' onclick='reportProfile(\"" . $profile->ID() . "\")'>Report&nbsp;<i class='fa fa-exclamation'></i></button>";
                         echo "<br>" . $profile->Bio() . "<br><br>";
                         //Print selected foundation
                         if($profile->Foundation() != NULL) {
@@ -100,8 +106,11 @@
         </div>
     <!-- </row> -->
         <div class='row'>
-            <div class='col-lg-9 col-xs-12'>
+            <div class='col-lg-12 col-xs-12' id='profile-posts'>
                 <!-- LOAD USER POSTS -->
+                <?php
+                    $profile->loadPosts();
+                ?>
             </div>
         </div>
     </div>
