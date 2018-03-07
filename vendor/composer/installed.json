@@ -108,20 +108,20 @@
     },
     {
         "name": "components/jquery",
-        "version": "3.2.1",
-        "version_normalized": "3.2.1.0",
+        "version": "3.3.1",
+        "version_normalized": "3.3.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/components/jquery.git",
-            "reference": "e5534d4ab8e80c159553d507e358ed20a806d3bf"
+            "reference": "459648cda77875519c5da3ae1dd0ed5d170aa649"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/components/jquery/zipball/e5534d4ab8e80c159553d507e358ed20a806d3bf",
-            "reference": "e5534d4ab8e80c159553d507e358ed20a806d3bf",
+            "url": "https://api.github.com/repos/components/jquery/zipball/459648cda77875519c5da3ae1dd0ed5d170aa649",
+            "reference": "459648cda77875519c5da3ae1dd0ed5d170aa649",
             "shasum": ""
         },
-        "time": "2017-03-21T07:01:49+00:00",
+        "time": "2018-03-04T13:23:48+00:00",
         "type": "component",
         "extra": {
             "component": {
@@ -576,17 +576,17 @@
     },
     {
         "name": "symfony/browser-kit",
-        "version": "v3.4.2",
-        "version_normalized": "3.4.2.0",
+        "version": "v3.4.6",
+        "version_normalized": "3.4.6.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/browser-kit.git",
-            "reference": "f761b4ecdd23a451c2cae6fba704d8b207cbb045"
+            "reference": "490f27762705c8489bd042fe3e9377a191dba9b4"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/browser-kit/zipball/f761b4ecdd23a451c2cae6fba704d8b207cbb045",
-            "reference": "f761b4ecdd23a451c2cae6fba704d8b207cbb045",
+            "url": "https://api.github.com/repos/symfony/browser-kit/zipball/490f27762705c8489bd042fe3e9377a191dba9b4",
+            "reference": "490f27762705c8489bd042fe3e9377a191dba9b4",
             "shasum": ""
         },
         "require": {
@@ -600,7 +600,7 @@
         "suggest": {
             "symfony/process": ""
         },
-        "time": "2017-12-11T22:06:16+00:00",
+        "time": "2018-01-03T07:37:34+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -635,23 +635,23 @@
     },
     {
         "name": "symfony/css-selector",
-        "version": "v3.4.2",
-        "version_normalized": "3.4.2.0",
+        "version": "v3.4.6",
+        "version_normalized": "3.4.6.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/css-selector.git",
-            "reference": "eac760b414cf1f64362c3dd047b989e4db121332"
+            "reference": "544655f1fc078a9cd839fdda2b7b1e64627c826a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/css-selector/zipball/eac760b414cf1f64362c3dd047b989e4db121332",
-            "reference": "eac760b414cf1f64362c3dd047b989e4db121332",
+            "url": "https://api.github.com/repos/symfony/css-selector/zipball/544655f1fc078a9cd839fdda2b7b1e64627c826a",
+            "reference": "544655f1fc078a9cd839fdda2b7b1e64627c826a",
             "shasum": ""
         },
         "require": {
             "php": "^5.5.9|>=7.0.8"
         },
-        "time": "2017-12-14T19:40:10+00:00",
+        "time": "2018-02-03T14:55:07+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -690,17 +690,17 @@
     },
     {
         "name": "symfony/dom-crawler",
-        "version": "v3.4.2",
-        "version_normalized": "3.4.2.0",
+        "version": "v3.4.6",
+        "version_normalized": "3.4.6.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/dom-crawler.git",
-            "reference": "dc847845c66fa68ad4522ed27e62b9b9dd12ab3b"
+            "reference": "2bb5d3101cc01f4fe580e536daf4f1959bc2d24d"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/dc847845c66fa68ad4522ed27e62b9b9dd12ab3b",
-            "reference": "dc847845c66fa68ad4522ed27e62b9b9dd12ab3b",
+            "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/2bb5d3101cc01f4fe580e536daf4f1959bc2d24d",
+            "reference": "2bb5d3101cc01f4fe580e536daf4f1959bc2d24d",
             "shasum": ""
         },
         "require": {
@@ -713,7 +713,7 @@
         "suggest": {
             "symfony/css-selector": ""
         },
-        "time": "2017-12-14T19:40:10+00:00",
+        "time": "2018-02-22T10:48:49+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -748,17 +748,17 @@
     },
     {
         "name": "symfony/polyfill-mbstring",
-        "version": "v1.6.0",
-        "version_normalized": "1.6.0.0",
+        "version": "v1.7.0",
+        "version_normalized": "1.7.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-mbstring.git",
-            "reference": "2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296"
+            "reference": "78be803ce01e55d3491c1397cf1c64beb9c1b63b"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296",
-            "reference": "2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296",
+            "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/78be803ce01e55d3491c1397cf1c64beb9c1b63b",
+            "reference": "78be803ce01e55d3491c1397cf1c64beb9c1b63b",
             "shasum": ""
         },
         "require": {
@@ -767,11 +767,11 @@
         "suggest": {
             "ext-mbstring": "For best performance"
         },
-        "time": "2017-10-11T12:05:26+00:00",
+        "time": "2018-01-30T19:27:44+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.6-dev"
+                "dev-master": "1.7-dev"
             }
         },
         "installation-source": "dist",
