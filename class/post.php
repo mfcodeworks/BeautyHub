@@ -192,7 +192,9 @@
                     <div class='row'>
                         <div class='col-lg-2 col-xs-2'>
                             <p>
-                                <img src='".$author->ProfileImg()."' class='img-responsive img-circle' alt='' style='border: 0.1em solid #585757; margin-top: 1.6em; margin-left: 1em;'>
+                                <a href='profile.php?id=".$author->ID()."'>
+                                    <img src='".$author->ProfileImg()."' class='img-responsive img-circle' alt='' style='border: 0.1em solid #585757; margin-top: 1.6em; margin-left: 1em;'>
+                                </a>
                             </p>
                         </div>
                         <div class='col-lg-10 col-xs-10'>
@@ -201,26 +203,52 @@
                                 ".formatDateTime($this->datetime)."
                             </p>
                         </div>
-                    </div>
-                    <div class='row'>
-                        <div class='col-lg-12'>
-                            <p style='padding: 0.5rem; padding-left: 3rem;'>".$this->content."</p>
-                        </div>
                     </div>";
-            if($this->media != NULL) {
-                foreach($this->media as $m) {
-                    $string .= "
-                        <div class='row'>
-                            <div class='col-lg-1 col-xs-1'></div>
-                            <div class='col-xs-10 col-lg-10'>
-                                <div class='thumbnail'>
-                                    <img class='myImg' src='$m' name='$m'>
-                                </div>
+                    if(isset($this->content)) {
+                        $string .= 
+                        "<div class='row'>
+                            <div class='col-lg-12'>
+                                <p style='padding: 0.5rem; padding-left: 3rem;'>".$this->content."</p>
                             </div>
-                            <div class='col-lg-1 col-xs-1'></div>
-                        </div>
-                    ";
+                        </div>";
+                    }
+            if($this->media != NULL) {
+                $string .= "<div class='row' style='padding: 1em;'>";
+                switch( count($this->media) ) {
+                    case 1:
+                        $m = $this->media[0];
+                        $string .= "
+                                <div class='col-xs-12 col-lg-12 postImg'>
+                                    <div class='thumbnail'>
+                                        <img class='myImg' src='$m' name='$m'>
+                                    </div>
+                                </div>
+                        ";
+                        break;
+                    case 2:
+                        foreach($this->media as $m) {
+                            $string .= "
+                                    <div class='col-xs-12 col-lg-6 postImg'>
+                                        <div class='thumbnail'>
+                                            <img class='myImg' src='$m' name='$m'>
+                                        </div>
+                                    </div>
+                            ";
+                        }
+                        break;
+                    default:
+                        foreach($this->media as $m) {
+                            $string .= "
+                                    <div class='col-xs-12 col-lg-6 postImg'>
+                                        <div class='thumbnail'>
+                                            <img class='myImg' src='$m' name='$m'>
+                                        </div>
+                                    </div>
+                            ";
+                        }
+                        break;
                 }
+                $string .= "</div>";
             }
             $string .= "
                     </div>

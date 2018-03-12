@@ -13,24 +13,30 @@
             WHERE ID = " . $user->getID() . ";";
     $result = mysqli_query($conn,$sql);
     while($row = mysqli_fetch_assoc($result)) {
-        $following = json_decode($row['following'],true);
+        $following = json_decode($row['following'], false);
     }
 
     //Check if following
-    if(!in_array($id,$following)) {
-        //Add to following
-        array_push($following,$id);
+    if( in_array($id,$following) ) {
+
+        //Remove from following
+        unset($following[ array_search($id,$following) ]);
+        $following = array_values($following);
 
         //Save following
         $following = json_encode($following);
+
         $sql = "UPDATE users
                 SET following = '$following'
                 WHERE ID = " . $user->getID() . ";";
+
         //Return result
         if(mysqli_query($conn,$sql)) die("true");
-        else die("Error following user.");
+        else die("Error unfollowing user.");
+
     }
+    //If not following
     else {
-        die("Already following user.");
+        die("Not following user.");
     }
 ?>

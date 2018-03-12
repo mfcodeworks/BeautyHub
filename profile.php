@@ -28,14 +28,24 @@
                 <p class='lead'>
                     <?php 
                         $thisUser = new profile($_SESSION['user']->getID());
-                        echo "<strong>" . $profile->Username() . "</strong>";
+                        echo "<strong id='profileUsername'>" . $profile->Username() . "</strong>";
                         if($thisUser->isFollowing($profile->ID())) {
-                            echo "<button type='button' class='btn btn-success follow-button'>Following&nbsp;<i class='fa fa-check'></i></button>";
+                            echo "
+                                <button type='button' class='btn btn-success follow-button' id='unfollow' onclick='unfollowProfile(\"" . $profile->ID() . "\")'>
+                                    Unfollow&nbsp;<i class='fa fa-minus'></i>
+                                </button>";
                         }
                         else {
-                            echo "<button type='button' class='btn btn-primary follow-button' onclick='followProfile(\"" . $profile->ID() . "\")'>Follow&nbsp;<i class='fa fa-plus'></i></button>";
+                            echo "
+                            <button type='button' class='btn btn-primary follow-button' id='notFollowing' onclick='followProfile(\"" . $profile->ID() . "\")'>
+                                Follow&nbsp;<i class='fa fa-plus'></i>
+                            </button>";
                         }
-                        echo "<button type='button' class='btn btn-danger follow-button' onclick='reportProfile(\"" . $profile->ID() . "\")'>Report&nbsp;<i class='fa fa-exclamation'></i></button>";
+                        
+                        echo "
+                        <button type='button' class='btn btn-danger follow-button' onclick='reportProfile(\"" . $profile->ID() . "\")'>
+                            Report&nbsp;<i class='fa fa-exclamation' id='reportUser'></i>
+                        </button>";
                         echo "<br>" . $profile->Bio() . "<br><br>";
                         //Print selected foundation
                         if($profile->Foundation() != NULL) {
