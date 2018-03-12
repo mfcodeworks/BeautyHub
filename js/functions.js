@@ -105,16 +105,7 @@ $(document).ready(function() {
     });
 
     // Photo lightbox
-    $(".myImg").click(function() {
-        console.log("Image tapped. Source " + $(this).attr("name"));
-        $('#top').before(" \
-            <div id='myModal'> \
-                <img id='myModalImg' src='"+ $(this).attr("name") +"'> \
-            </div>\
-        ");
-        $("#myModal").show();
-        modalObserver();
-    });
+    myImgObserver();
 
     // Show form when button clicked
     $("#add-a-shade").click(function() {
@@ -712,6 +703,7 @@ if(page == "social.php") {
                     }
                     //Hide loading icon
                     $("#postLoading").hide();
+                    myImgObserver();
                 }
             });
         }
@@ -898,6 +890,34 @@ function followProfile(id) {
     },
     function(data,status){
         console.log(data);
+        if(data.indexOf("true") > -1) {
+            $("button#notFollowing").remove();
+            $("strong#profileUsername").after(
+                "<button type='button' class='btn btn-success follow-button' id='unfollow' onclick='unfollowProfile(\" "+ id + "\")'> \
+                Unfollow&nbsp;<i class='fa fa-minus'></i> \
+            </button>"
+            );
+        }
+    });
+};
+
+// Unfollow user
+function unfollowProfile(id) {
+    console.log("Unfollow profile.\nID: "+id);
+    $.post("scripts/unfollow-user.php",
+    {
+        id: id,
+    },
+    function(data,status){
+        console.log(data);
+        if(data.indexOf("true") > -1) {
+            $("button#unfollow").remove();
+            $("strong#profileUsername").after(
+                "<button type='button' class='btn btn-primary follow-button' id='notFollowing' onclick='followProfile(\"" + id + "\")'> \
+                    Follow&nbsp;<i class='fa fa-plus'></i> \
+                </button>"
+            );
+        }
     });
 };
 
@@ -910,6 +930,20 @@ function reportProfile(id) {
     },
     function(data,status){
         console.log(data);
+    });
+};
+
+//Display image lightbox
+function myImgObserver() {
+    $(".myImg").click(function() {
+        console.log("Image tapped. Source " + $(this).attr("name"));
+        $('#top').before(" \
+            <div id='myModal'> \
+                <img id='myModalImg' src='"+ $(this).attr("name") +"'> \
+            </div>\
+        ");
+        $("#myModal").show();
+        modalObserver();
     });
 };
 
