@@ -11,7 +11,7 @@
                 <div class="col-md-12">
 
                     <ul class="breadcrumb">
-                        <li><a href="javascript:void(0)">Home</a>
+                        <li><a href="index.php" class='nav-link'>Home</a>
                         </li>
                         <li>New account / Sign in</li>
                     </ul>

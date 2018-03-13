@@ -241,7 +241,7 @@
                             $string .= "
                                     <div class='col-xs-12 col-lg-6 postImg'>
                                         <div class='thumbnail'>
-                                            <img class='myImg' src='$m' name='$m'>
+                                            <div class='myImg img-preview' style='background-image: url($m);' name='$m'></div>
                                         </div>
                                     </div>
                             ";
