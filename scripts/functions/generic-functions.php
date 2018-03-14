@@ -22,11 +22,11 @@ function logConsole($data)
     loadJS("console.log('$data');");
 };
 // Mail message to administrative email
-function mailMessage($message, $subject = NULL, $to = ADMIN_EMAIL)
+function mailMessage($message, $subject = NULL, $to = ADMIN_EMAIL, $from = WEBMASTER_EMAIL)
 {
     $headers  = 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'Content-type: text/html; charset=ISO-8859-1' . "\r\n";
-    $headers .= "From: " . WEBMASTER_EMAIL . "\r\n".
+    $headers .= "From: " . $from . "\r\n".
                 'X-Mailer: PHP/' . phpversion();
 
     if(mail($to,$subject,$message,$headers))

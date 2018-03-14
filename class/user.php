@@ -4,6 +4,7 @@
      * Login, make user, change password
      * Save sensitive information
      */
+
     if(!defined("ABSPATH")) define( 'ABSPATH', dirname(dirname(__FILE__)) . '/' );
     require_once ABSPATH . "scripts/functions.php";
 
@@ -66,12 +67,12 @@
                     $this->login();
                 }
                 else {
-                    throw new Exception("User doesn't exist.");
+                    throw new Exception("User doesn't exist.\n");
                 }
             }
 
             else {
-                throw new Exception("User doesn't exist.");
+                throw new Exception("User doesn't exist.\n");
             }
 
             //Close DB connection
@@ -80,15 +81,17 @@
 
         //Register new user
         private function registerUser($username, $password, $email) {
-            if(!isset($username) || !isset($password) || !isset($email) || $username = "" || $password = "" || $email = "")
-                throw new Exception("Register requires Username, password and email.");
+            if(!isset($username) || !isset($password) || !isset($email) || $username == "" || $password == "" || $email == "") {
+                throw new Exception("Register requires Username, password and email.\n");
+            }
 
             //Connect to DB
             $conn = sqlConnect();
 
             //Check user doesn't exist
-            if($this->userExists($username,$password)) 
-                throw new Exception("User already exists");
+            if($this->userExists($username,$password)) {
+                throw new Exception("User already exists\n");
+            }
 
             //Get new unique ID to give user
             $id = getMaxId('users');
@@ -98,7 +101,8 @@
 
             //Build SQL statement
             $sql = "INSERT INTO users(id,username,pass,email) 
-                    VALUES($id,'$username','$password','$email');";
+                    VALUES($id,\"$username\",\"$password\",\"$email\");
+                    ";
 
             //Insert post data into DB
             try {
@@ -182,7 +186,7 @@
             
             //If no password match, throw exception
             else {
-                throw new Exception("Password incorrect");
+                throw new Exception("Password incorrect\n");
             }
         }
 

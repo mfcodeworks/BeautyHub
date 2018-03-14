@@ -54,15 +54,10 @@ table {
     padding-right: .5em;
 }
 .img-preview {
-    margin: 10px;
-    border-width: 0.1em;
-    border-style: solid;
-    border-color: #8a8a8a;
-    border-radius: 8px;
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: auto;
     background-size: cover;
-    background-position:center; 
+    background-position: center; 
 }
 
 /**

@@ -494,15 +494,51 @@ function loadComments($comments=null) {
             }
             echo "</span></p>
                 <p>".$comment->content()."</p>
-            </div>
-            <div class='col-lg-12 text-center'>";
+            </div>";
             if($comment->media() != null) {
-                for($i=0; $i<count($comment->media()); $i++) {
-                    $photoSource = $comment->media()[$i];
-                    echo "<div class='col-xs-12 col-lg-6 img-preview myImg' style='background-image: url($photoSource);' name='$photoSource'></div>";
+                $string = '';
+                $string .= "<div class='col-lg-12 col-xs-12 text-center'>";
+                switch( count( $comment->media() ) ) {
+                    case 1:
+                        $m = $comment->media()[0];
+                        $string .= "
+                                <div class='col-xs-12 col-lg-12 postImg'>
+                                    <div class='thumbnail'>
+                                        <div class='myImg img-preview' style='background-image: url($m);' name='$m'></div>
+                                    </div>
+                                </div>
+                        ";
+                        unset($m);
+                        break;
+                    case 2:
+                        foreach($comment->media() as $m) {
+                            $string .= "
+                                    <div class='col-xs-12 col-lg-6 postImg'>
+                                        <div class='thumbnail'>
+                                            <div class='myImg img-preview' style='background-image: url($m);' name='$m'></div>
+                                        </div>
+                                    </div>
+                            ";
+                            unset($m);
+                        }
+                        break;
+                    default:
+                        foreach($comment->media() as $m) {
+                            $string .= "
+                                    <div class='col-xs-12 col-lg-6 postImg'>
+                                        <div class='thumbnail'>
+                                            <div class='myImg img-preview' style='background-image: url($m);' name='$m'></div>
+                                        </div>
+                                    </div>
+                            ";
+                            unset($m);
+                        }
+                        break;
                 }
+                $string .= "</div>";
+                echo $string;
             }
-            echo "</div>
+            echo "
                 </div>
             <!-- /.comment -->
             <hr style='margin-top: 10px; border-top: 1px solid #d8d7d7;'>";
@@ -549,7 +585,7 @@ function loadCommentForm()
                         <div class='col-sm-6'>
                             <div class='form-group'>
                                 <label for='authorRating'>Rating<br><i class='fa fa-star-o' id='star1'></i><i class='fa fa-star-o' id='star2'></i><i class='fa fa-star-o' id='star3'></i><i class='fa fa-star-o' id='star4'></i><i class='fa fa-star-o' id='star5'></i></label>
-                                <input type='number' class='form-control' id='authorRating' style='display:none;'>
+                                <input type='number' class='form-control' id='authorRating' style='display:none;' name='authorRating'>
                             </div>
                         </div>
 

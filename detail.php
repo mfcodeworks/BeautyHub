@@ -213,10 +213,10 @@ function loadProductDetails($id,$dupeBrands=NULL)
 
     //Print comment form
     echo "<div class='box' id='comments-start'>
-            <div id='comments' data-animate='fadeInUp'>";
+            <div id='comments'>";
     loadComments();
     echo "</div>
-        <!-- /#comments -->";
+    <!-- /#comments -->";
 
     loadCommentForm();
 

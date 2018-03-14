@@ -49,7 +49,7 @@
                         else {
                             echo "
                             <div class='col-lg-12 col-xs-12'>
-                                <p class='lead-text'>Please <a href='register/'>Register</a> to follow and post on BeautyHub</p>
+                                <p class='lead-text'>Please <a href='register.php'>Register</a> to follow and post on BeautyHub</p>
                             </div>";
                         }
                     ?>
