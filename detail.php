@@ -3,11 +3,12 @@ require_once 'scripts/functions.php';
     session_start();
     extract($_GET);
 
-
+    //Check product exists and chck for dupe brand requirements
     if(!isset($id)) headerLocation('index.php');
     if(!sqlExists($id,'ID','products')) headerLocation('index.php');
     if(isset($dupeBrands)) $dupeBrands = explode(",",$dupeBrands);
 
+    //Load page
     loadHead();
     loadTopBar();
     loadNavBar();
@@ -93,10 +94,15 @@ function loadProductDetails($id,$dupeBrands=NULL)
                 <h3 class='panel-title'>Shades</h3>
             </div>
             <div class='panel-body'>";
+
     if($product->getShadeImg()[0]['shade']  != null) {
+
         echo "<select class='form-control' id='shade-selector'>";
-        foreach($product->getShadeImg() as $si)
+
+        foreach($product->getShadeImg() as $si) {
             echo "<option value='$si[img],$si[shade]'>$si[shade]</option>";
+        }
+
         echo "</select>
             <div style='margin:15px;'>
                 <img src='" . $product->getShadeImg()[0]['img'] . "' alt='' class='img-responsive' id='shade-img'>
@@ -106,7 +112,9 @@ function loadProductDetails($id,$dupeBrands=NULL)
             </div>
             </div>
             </div>";
+
     }
+
     else echo "<div class='text-center'>
                     <a href='javascript:void(0)' class='btn btn-primary' id='add-a-shade'>Add New Shade</a>
                 </div>

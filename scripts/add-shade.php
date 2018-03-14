@@ -4,52 +4,59 @@
 
     // Connect to DB
     $conn = sqlConnect();
+
+    // Check product exists
+    try {
+        $product = new product($id);
+    }
+    catch(Exception $exc) {
+        die($exc."\n");
+    }
+
     // Get shades for product
-    $sql = "SELECT shade FROM products WHERE ID=$id;";
+    $sql = "SELECT shade_img
+            FROM products 
+            WHERE ID = $id;";
+
     $result = mysqli_query($conn,$sql);
+
     // If result exists, save result
-    if($result) {
-        while($row = mysqli_fetch_assoc($result))
-            $shadeList = $row['shade'];
-    }
-    // If no result product doesn't exist
-    else {
-        echo "Product doesn't exist.\n";
-        return false;
+    while($row = mysqli_fetch_assoc($result)) {
+        $shadeList = json_decode($row['shade_img'],true);
     }
 
-    // If there's existing shades
-    if(isset($shadeList)) {
+    //Add new shade
+    $shadeList[] = array(
+        "shade" => $shade,
+        "img" => NULL
+    );
 
-        // Get shades as array
-        if(strpos($shadeList,',') != false) $shadeList = explode(",",$shadeList);
-        else $shadeList = array($shadeList);
-
-        // If new shade isn't in array, add it to array
-        if(!in_array($shade,$shadeList)) {
-            array_push($shadeList,$shade);
-            $shadeList = implode(",",$shadeList);
-        }
-    }
-
-    // If no shades exist, add this alone
-    else {
-        $shadeList = $shade;
-    }
-
-    // Add shades back to DB
-    $shadeList = trim($shadeList,",");
-    $sql = "UPDATE products SET shade = \"$shadeList\" WHERE ID=$id;";
+    //Save shades
+    $shadeList = json_encode($shadeList);
+    $sql = "UPDATE products 
+            SET shade_img = '$shadeList'
+            WHERE ID = $id;
+            ";
     echo "SQL: $sql\n\n";
+
     // If query successful return true
     if(mysqli_query($conn,$sql)) {
         mysqli_close($conn);
-        echo "Product saved successfully.\n";
-        return true;
+        $message = "
+        <html>
+            <body>
+                <div style='text-align: center'>
+                    <h2>New product shade added</h2>
+                    <p>A new shade was added for product $id, ".$product->getName().".<br>
+                    An image is needed for this shade.</p>
+                </div>
+            </body>
+        </html>";
+        mailMessage($message,"<BeautyHub> New Shade Added, Product $id");
     }
     // If unsuccessful return error
     else {
-        echo "Error saving shades to product.\n";
-        return false;
+        mysqli_close($conn);
+        die("Error saving shades to product.\n");
     }
 ?>
