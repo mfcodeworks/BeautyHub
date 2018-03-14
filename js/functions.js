@@ -96,6 +96,8 @@ $(document).ready(function() {
         },
         function(data,status){
             console.log(data);
+            $("#new-dupe-enter").hide();
+            pageReload();
         });
     })
 
@@ -133,8 +135,9 @@ $(document).ready(function() {
         },
         function(data,status){
             console.log(data);
+            $("#new-shade-enter").hide();
+            pageReload();
         })
-        $("#new-shade-enter").hide();
     });
 
     $(".fa-star-o")
@@ -666,6 +669,7 @@ $(document).ready(function() {
 var page;
 if(document.location.pathname.match(/[^\/]+$/)) page = document.location.pathname.match(/[^\/]+$/)[0];
 else page='index.php';
+
 //If posts exist add load more button 
 if($('.following-post').length > 0) {
     $("#following-post-area").after(
@@ -674,6 +678,7 @@ if($('.following-post').length > 0) {
         </div>");
     $("#postLoading").hide();
 };
+
 //Load more posts for social feed
 //Add infinite scroll loading for social feed
 if(page == "social.php") {
@@ -1044,6 +1049,11 @@ function hashtagObserver() {
         $("#tagSuggestions").remove();
     });
 };
+
+//Reload page
+function pageReload() {
+    location.reload();
+}
 
 //Check string is alhpanumeric
 function isAlphaNum(string) {

@@ -6,7 +6,6 @@
         private $id;
         private $brand;
         private $name;
-        private $shades;
         private $type;
         private $img;
         private $rating;
@@ -34,9 +33,6 @@
                 while($row = mysqli_fetch_assoc($result)) {
                     $this->brand = $row['brand'];
                     $this->name = $row['name'];
-                    if(isset($row['shade']) && $row['shade'] != "") {
-                        $this->shades = json_decode($row['shade']);
-                    }
                     $this->type = $row['product_type'];
                     if(isset($row['img'])) {
                         $this->img = $row['img'];
@@ -55,7 +51,6 @@
                     $this->view_count = $row['view_count'];
                 }
                 //Sort arrays
-                if(isset($this->shades)) sort($this->shades);
                 if(isset($this->dupes)) asort($this->dupes);
                 if(isset($this->shade_img)) asort($this->shade_img);
 
@@ -81,7 +76,12 @@
         public function getID() { return $this->id; }
         public function getBrand() { return $this->brand; }
         public function getName() { return $this->name; }
-        public function getShades() { return $this->shades; }
+        public function getShades() {
+            foreach($this->shade_img as $si) {
+                $shades[] = $si['shade'];
+            }
+            return $shades; 
+        }
         public function getType() { return $this->type; }
         public function getImg() { return $this->img; }
         public function getRating() { return $this->rating; }

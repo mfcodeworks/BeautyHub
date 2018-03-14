@@ -23,8 +23,11 @@
 
     //Set comment product
     $comment->forProduct($_SESSION['product-view']->getID());
-    $comment->saveContent($authorReview);
+
     //Check fields exist
+    if(isset($authorReview)) {
+        $comment->saveContent($authorReview);
+    }
     if(isset($authorRating)) {
         $comment->setRating($authorRating);
     }
@@ -38,19 +41,29 @@
          */
         //Get all ratings
         $conn = sqlConnect();
-        $sql = "SELECT rating FROM comments WHERE product_id = ".$_SESSION['product-view']->getID().";";
+        $sql = "SELECT rating 
+                FROM comments 
+                WHERE product_id = ".$_SESSION['product-view']->getID().";
+                ";
         $result = mysqli_query($conn,$sql);
 
         //Get amount of ratings
         if(mysqli_num_rows($result) > 0 ) {
-            $totalRatings = mysqli_num_rows($result);
+
+            $totalRatings = 0;
             $newRating = 0;
+
             while($row = mysqli_fetch_assoc($result)) {
                 $userRatings[] = $row['rating'];
             }
+
             foreach($userRatings as $r) {
-                $newRating += $r;
+                if(isset($r) && $r != "" && $r != " ") {
+                    $newRating += $r;
+                    $totalRatings += 1;
+                }
             }
+
             $finalRating = $newRating/$totalRatings;
 
             //Update ratings

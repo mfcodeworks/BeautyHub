@@ -63,7 +63,6 @@
         array_push($dupes,$dupe);
         $conn = sqlConnect();
         $dupes = json_encode($dupes);
-        var_dump($dupes);
         $sql = "UPDATE products
                 SET dupes = '$dupes'
                 WHERE ID = ".$_SESSION['product-view']->getID().";

@@ -339,8 +339,8 @@ function loadSearchFilters($dupeBrands = NULL) {
 //Load dupe selection
 function getDupeDetails($id,$shade,$dupeBrands=NULL,$dupeArray=NULL) {
     echo "<div class='row same-height-row' id='dupe-complete-list'>
-        <div class='col-md-3 col-sm-6'>
-            <div class='box same-height'>";
+            <div class='col-md-3 col-sm-6'>
+                <div class='box same-height'>";
     //Set product
     $product = new product($id);
 
