@@ -36,6 +36,15 @@ function mailMessage($message, $subject = NULL, $to = ADMIN_EMAIL, $from = WEBMA
         return false;
     }
 };
+// Check input exists and isn't whitespace
+function hasData($data) {
+    if(isset($data) && $data != "" && $data != " " && $data != NULL && $data != "NULL") {
+        return true;
+    }
+    else {
+        return false;
+    }
+};
 // Return todays date as yyyy-mm-dd
 function getDateNow($tz = NULL)
 {

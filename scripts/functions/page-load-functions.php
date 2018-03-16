@@ -189,12 +189,19 @@ function loadNavBar()
                         </li>
                         <li class='dropdown yamm-fw'>";
     $conn = sqlConnect();
-    $sql = "SELECT DISTINCT brand,product_type FROM products;";
+    $sql = "SELECT DISTINCT brand 
+            FROM products;";
     $result = mysqli_query($conn,$sql);
     while($row = mysqli_fetch_assoc($result)) {
         $brands[] = $row['brand'];
+    }
+    $sql = "SELECT DISTINCT product_type
+            FROM products;";
+    $result = mysqli_query($conn,$sql);
+    while($row = mysqli_fetch_assoc($result)) {
         $types[] = $row['product_type'];
     }
+    mysqli_close($conn);
     echo "<a href='#' class='dropdown-toggle' data-toggle='dropdown' data-hover='dropdown' data-delay='200'>Makeup <b class='caret'></b></a>
                         <ul class='dropdown-menu'>
                             <li>
@@ -419,46 +426,23 @@ function getDupeDetails($id,$shade,$dupeBrands=NULL,$dupeArray=NULL) {
 //Load most viewed products
 function loadTopProducts() {
     $conn = sqlConnect();
-    $sql = "SELECT id,name,img FROM products ORDER BY view_count DESC;";
+    $sql = "SELECT ID
+            FROM products 
+            ORDER BY view_count DESC
+            LIMIT 10;";
     $result = mysqli_query($conn,$sql);
     if($result) {
         while($row = mysqli_fetch_assoc($result)) {
-            $id[] = $row['id'];
-            $name[] = $row['name'];
-            $img[] = $row['img'];
+            $id[] = $row['ID'];
         }
     }
 
     //If products in DB > 6, load 6, otherwise load the max possible amount
-    $productLoadCount = (count($id) > 6) ? 6 : count($id);
+    //$productLoadCount = (count($id) > 6) ? 6 : count($id);
 
     //Load products
-    for($i=0; $i<$productLoadCount; $i++) {
-        $thisID = $id[$i];
-        $thisName = $name[$i];
-        if(!isset($img[$i]) || $img[$i] == "" || $img[$i] == " ") $thisImg = "https://via.placeholder.com/170x220";
-        else $thisImg = $img[$i];
-        echo "
-        <div class='item'>
-            <div class='product'>
-                <div>
-                    <div>
-                        <div>
-                            <a href='detail.php?id=$thisID'>
-                                <img src='$thisImg' alt='$thisName' class='img-responsive'>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class='text'>
-                    <h3>
-                        <a href='detail.php?id=$thisID'>$thisName</a>
-                    </h3>
-                </div>
-                <!-- /.text -->
-            </div>
-            <!-- /.product -->
-        </div>";
+    for($i = 0; $i < count($id); $i++) {
+        loadProduct($id[$i]);
     }
 };
 //Load the comments needed
@@ -711,9 +695,9 @@ function loadFoot()
                     <ul>
                         <li><a href='about.php'>About BeautyHub</a>
                         </li>
-                        <li><a href='privacy-policy.php'>Terms and conditions</a>
+                        <li><a href='privacy-policy.php'>Terms and Conditions</a>
                         </li>
-                        <li><a href='contact.php'>Contact us</a>
+                        <li><a href='contact.php'>Contact Us</a>
                         </li>
                     </ul>
                     <hr>
@@ -732,10 +716,10 @@ function loadFoot()
 
                 //Get top brands 
                 $conn = sqlConnect();
-                $sql = "SELECT brand,COUNT(*)
+                $sql = "SELECT brand,COUNT(id)
                         FROM products
                         GROUP BY brand
-                        ORDER BY COUNT(*) DESC
+                        ORDER BY COUNT(id) DESC
                         LIMIT 3;";
                 $result = mysqli_query($conn,$sql);
                 while($row = mysqli_fetch_assoc($result)) {
@@ -750,10 +734,10 @@ function loadFoot()
                     <ul>";
                 
                 //Get popular types
-                $sql = "SELECT product_type,COUNT(*)
+                $sql = "SELECT product_type
                         FROM products
                         GROUP BY product_type
-                        ORDER BY COUNT(*) DESC
+                        ORDER BY COUNT(id) DESC
                         LIMIT 4;";
                 $result = mysqli_query($conn,$sql);
                 while($row = mysqli_fetch_assoc($result)) {
@@ -875,7 +859,7 @@ function getPostID($offset = 0) {
             }
             $sql = trim($sql,"OR ") . "
                     ORDER BY datetime DESC
-                    LIMIT 2
+                    LIMIT 20
                     OFFSET $offset;";
             //Get and check result
             $result = mysqli_query($conn,$sql);

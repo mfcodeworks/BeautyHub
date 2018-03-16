@@ -204,11 +204,20 @@ function loadProductDetails($id,$dupeBrands=NULL)
                </p>
                <hr/>";
 
-//Print add to wishlist button
-    echo "<p class='text-center buttons'>
-            <a href='javascript:void(0)' class='btn btn-default' id='add-to-wishlist' name='$id'><i class='fa fa-heart'></i> Add to wishlist</a>
-        </p>
-    </div>";
+    //Print add to wishlist button
+    $currentUser = new profile($_SESSION['user']->getID());
+    if( $currentUser->isInWishlist($id,$product->getShades()[0]) ) {
+        echo "<p class='text-center buttons' id='wishlist-button'>
+                <a href='javascript:void(0)' class='btn btn-default' id='in-wishlist' name='$id'><i class='fa fa-check'></i> Added to wishlist</a>
+            </p>
+        </div>";
+    }
+    else {
+        echo "<p class='text-center buttons' id='wishlist-button'>
+                <a href='javascript:void(0)' class='btn btn-default' id='add-to-wishlist' name='$id'><i class='fa fa-heart'></i> Add to wishlist</a>
+            </p>
+        </div>";
+    }
 
     //Print description
     echo "</div>

@@ -23,4 +23,7 @@
     require_once(ABSPATH . "scripts/functions/product-functions.php");
     require_once(ABSPATH . "scripts/functions/sql-functions.php");
     require_once(ABSPATH . "scripts/functions/upload-file-functions.php");
+
+    //Begin session
+    session_start();
 ?>

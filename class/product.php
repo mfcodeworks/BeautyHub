@@ -72,6 +72,74 @@
             }
         }
 
+        // Create product function
+        public static function newProduct($name, $brand, $type, $img = NULL, $desc = NULL, $shades = NULL, $rating = NULL, $price = NULL, $site = NULL) {
+            
+            //Get new product id
+            $id = getMaxId('products');
+            //Build SQL
+            $sql = "INSERT INTO products(id,name,brand,product_type,img,description,shade_img,rating,price_site) ";
+            $values = "VALUES($id, \"$name\", \"$brand\", \"$type\", ";
+            //Check values aren't empty
+            if(hasData($img)) {
+                $values .= "\"$img\", ";
+            }
+            else {
+                $values .= "NULL, ";
+            }
+            if(hasData($desc)) {
+                $values .= "\"$desc\", ";
+            }
+            else {
+                $values .= "NULL, ";
+            }
+            if(hasData($shades)) {
+                $shadeArray = explode(",",$shades);
+                foreach($shadeArray as $s) {
+                    $shades[] = [
+                        "shade" => trim($s),
+                        "img" => "NULL"
+                    ];
+                }
+                $shades = json_encode($shades);
+                $values .= "\"$shades\", ";
+            }
+            else {
+                $values .= "NULL, ";
+            }
+            if(hasData($rating)) {
+                $rating = round($rating,2);
+                $values .= "\"$rating\", ";
+            }
+            else {
+                $values .= "NULL, ";
+            }
+            if(hasData($price) && hasData($site)) {
+                $price_site[] = [
+                    "price" => $price,
+                    "site" => $site
+                ];
+                $price_site = json_encode($price_site);
+                $values .= "'$price_site', ";
+            }
+            else {
+                $values .= "NULL, ";
+            }
+            $values = trim($values,", ");
+            $sql .= $values . ");";
+
+            //Try to save product
+            $conn = sqlConnect();
+            if(mysqli_query($conn,$sql)) {
+                mysqli_close($conn);
+                return $id;
+            }
+            else {
+                mysqli_close($conn);
+                throw new Exception("Couldn't save product");
+            }
+        }
+
         // get{} functions
         public function getID() { return $this->id; }
         public function getBrand() { return $this->brand; }

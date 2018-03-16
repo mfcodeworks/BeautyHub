@@ -53,8 +53,8 @@
             }
 
             // If has description, save description
-            $description = $crawler->filter('div.css-1e532l3')->each(function($node) {
-                return $node->text();
+            $description = $crawler->filter('div.css-8tl366')->each(function($node) {
+                return $node->html();
             });
 
             // Check description exists
@@ -62,33 +62,34 @@
 
                 // Set description
                 $descriptionText = $description[0];
+                
                 // Format decription
+                /* CHANGED: No longer needed
                 $descriptionText = formatSephoraDescription($descriptionText,"What it is:");
                 $descriptionText = formatSephoraDescription($descriptionText,"What it does:");
-                $descriptionText = formatSephoraDescription($descriptionText,"What else you need to know:");
+                $descriptionText = formatSephoraDescription($descriptionText,"What else you need to know:");*/
                 $descriptionText = str_replace("","-",$descriptionText);
             }
         }
     }
 
     // If description not found, save alert for product
-    if(!isset($descriptionText) || $descriptionText == "") {
+    if(!hasData($descriptionText)) {
         $descriptionText = "NULL";
         $log = "Couldn't scrape description for $search.<br>";
     }
-
     // If no image, save alert for product
-    if(!isset($imageURI) || $imageURI == "") {
+    if(!hasData($imageURI)) {
         $imageURI = "NULL";
-        $log = "Couldn't scrape image link for $search.<br>";
+        $log .= "Couldn't scrape image link for $search.<br>";
     }
-
+    $log .= "Check shades for $search<br>";
     // If anything not found, email alert for product
-    if(isset($log)) mailMessage("<html><body>$log</body></html>","[IMPORTANT] Error Scraping Product");
+    mailMessage("<html><body>$log</body></html>","<IMPORTANT> Error Scraping Product");
 
     // Return info
-    echo json_encode($array = [
+    echo json_encode([
         "img" => "https://" . $imageURI,
         "description" => str_replace('"',"'",$descriptionText),
-    ])
+    ]);
 ?>

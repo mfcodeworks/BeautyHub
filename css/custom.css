@@ -114,8 +114,8 @@ table {
 }
 @media screen and (max-width: 815px) and (orientation: portrait) {
     .popup {
-        margin-top: 50%;
-        width: 21em;
+        margin-top: 15%;
+        width: 34em;
         left: 15%;
         position: relative;
     }
@@ -123,15 +123,15 @@ table {
 @media screen and (max-width: 815px) and (orientation: landscape) {
     .popup {
         margin-top: 15%;
-        width: 35em;
+        width: 34em;
         left: 15%;
         position: relative;
     }
 }
 @media screen and (max-width: 1366px) and (min-width: 1024px) {
     .popup {
-        margin-top: 20em;
-        width: 35em;
+        margin-top: 15%;
+        width: 34em;
         left: 30%;
         position: relative;
     }
