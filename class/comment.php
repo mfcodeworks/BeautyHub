@@ -20,6 +20,7 @@
             "datetime" => NULL,
             "reply_to" => NULL,
             "product_id" => NULL,
+            "post_id" => NULL,
             "rating" => NULL
         ];
 
@@ -85,6 +86,11 @@
         //Add a reply to comment
         public function replyTo($id) {
             $this->data["reply_to"] = $id;
+        }
+
+        //Set comment post
+        public function forPost($id) {
+            $this->data["post_id"] = $id;
         }
 
         //Add a product 

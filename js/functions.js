@@ -97,6 +97,20 @@ function socialInfiniteScroll() {
     };
 };
 
+//Delete user post
+function deletePost(id) {
+    $.post("scripts/delete-post.php",
+    {
+        id: id,
+    },
+    function(data,status) {
+        console.log(data);
+        if( data.indexOf("true") > -1 ) {
+            $(".following-post[name="+id+"]").remove();
+        }
+    });
+};
+
 //Change site price listed
 function priceSiteSelector() {
     $('#price-site-select').change(function() {

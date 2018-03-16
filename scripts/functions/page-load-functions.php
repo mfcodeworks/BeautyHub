@@ -554,7 +554,114 @@ function loadComments($comments=null) {
         }
     }
 };
-//Load comment post form
+//Get post comments
+function getPostComments($id) {
+    //Connect to DB
+    $conn = sqlConnect();
+    //Get comments, oldest to newest
+    $sql = "SELECT ID
+            FROM comments
+            WHERE post_id = $id
+            ORDER BY datetime DESC;";
+    $result = mysqli_query($conn,$sql);
+    //Load each comment existing
+    if(hasData($result)) {
+        while($row = mysqli_fetch_assoc($result)) {
+            loadPostComment($row['ID']);
+        }
+    }
+};
+//Load post comment
+function loadPostComment($id) {
+    $comment = new comment($id);
+    $author = new profile($comment->author());
+    $string = "
+    <div class='row comment' style='padding-bottom:20px;' id='productComment".$comment->id()."'>
+        <div class='col-sm-3 col-md-2 text-center-xs'>
+            <p>
+                <img src='".$author->ProfileImg()."->' class='img-responsive img-circle' alt=''>
+            </p>
+        </div>
+        <div class='col-sm-9 col-md-10'>
+            <h5>".$author->Username()."</h5>
+            <p class='posted'>
+                <span style='font-size:8pt;'>".formatDatetime($comment->datetime())."</span></br>";
+    $string .= "<p>".$comment->content()."</p>
+        </div>";
+    if($comment->media() != null) {
+        $string .= "<div class='col-lg-12 col-xs-12 text-center'>";
+        switch( count( $comment->media() ) ) {
+            case 1:
+                $m = $comment->media()[0];
+                $string .= "
+                        <div class='col-xs-12 col-lg-12 postImg'>
+                            <div class='thumbnail'>
+                                <div class='myImg img-preview' style='background-image: url($m);' name='$m'></div>
+                            </div>
+                        </div>
+                ";
+                unset($m);
+                break;
+            case 2:
+                foreach($comment->media() as $m) {
+                    $string .= "
+                            <div class='col-xs-12 col-lg-6 postImg'>
+                                <div class='thumbnail'>
+                                    <div class='myImg img-preview' style='background-image: url($m);' name='$m'></div>
+                                </div>
+                            </div>
+                    ";
+                    unset($m);
+                }
+                break;
+            default:
+                foreach($comment->media() as $m) {
+                    $string .= "
+                            <div class='col-xs-12 col-lg-6 postImg'>
+                                <div class='thumbnail'>
+                                    <div class='myImg img-preview' style='background-image: url($m);' name='$m'></div>
+                                </div>
+                            </div>
+                    ";
+                    unset($m);
+                }
+                break;
+        }
+        $string .= "</div>";
+        return $string;
+    }
+    echo "
+        </div>
+    <!-- /.comment -->
+    <hr style='margin-top: 10px; border-top: 1px solid #d8d7d7;'>";
+};
+//Load post comment form
+function loadPostCommentForm($id) {
+    return "
+        <div class='col-lg-12'>
+            <form action='javacript:void(0)' enctype='multipart/form-data' id='user-comment-form-".$id."'>
+                <div class='row'>
+                    <div class='col-sm-12'>
+                        <div class='form-group'>
+                            <textarea class='form-control userReview' name='userReview' placeholder='Leave a comment...'></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-sm-6'>
+                        <div class='form-group'>
+                            <label for='userImg' class='btn btn-default'>Photos</label>
+                            <input type='file' class='userImg' name='userImg[]' style='display:none;' multiple>
+                        </div>
+                    </div>
+                    <div class='col-sm-6 text-right'>
+                        <button class='btn btn-primary' type='submit'><i class='fa fa-comment'></i> Post comment</button>
+                    </div>
+                </div>
+            </form>
+        </div>";
+};      
+//Load product comment form
 function loadCommentForm() 
 {
     if(isset($_SESSION['user']) && $_SESSION['user']->getID() != null) {
@@ -902,6 +1009,7 @@ function loadSuggestedUsers() {
         foreach($favourites as $a => $f) {
             $favouriteID[] = $f['id'];
         }
+        //If wishlist/favourites exist, create a comparison array
         $comparison = array_unique(array_merge($wishlistID,$favouriteID));
         shuffle($comparison);
         //Select users with similar wishlist/favourites

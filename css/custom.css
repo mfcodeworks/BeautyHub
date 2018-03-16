@@ -107,26 +107,10 @@ table {
 /* Popup class */
 
 .popup {
-    margin-top: 15em;
-    width: 35em;
-    left: 30%;
+    margin-top: 15%;
+    width: 34em;
+    left: 15%;
     position: relative;
-}
-@media screen and (max-width: 815px) and (orientation: portrait) {
-    .popup {
-        margin-top: 15%;
-        width: 34em;
-        left: 15%;
-        position: relative;
-    }
-}
-@media screen and (max-width: 815px) and (orientation: landscape) {
-    .popup {
-        margin-top: 15%;
-        width: 34em;
-        left: 15%;
-        position: relative;
-    }
 }
 @media screen and (max-width: 1366px) and (min-width: 1024px) {
     .popup {
