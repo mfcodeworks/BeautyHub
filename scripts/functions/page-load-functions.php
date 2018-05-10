@@ -189,12 +189,19 @@ function loadNavBar()
                         </li>
                         <li class='dropdown yamm-fw'>";
     $conn = sqlConnect();
-    $sql = "SELECT DISTINCT brand,product_type FROM products;";
+    $sql = "SELECT DISTINCT brand 
+            FROM products;";
     $result = mysqli_query($conn,$sql);
     while($row = mysqli_fetch_assoc($result)) {
         $brands[] = $row['brand'];
+    }
+    $sql = "SELECT DISTINCT product_type
+            FROM products;";
+    $result = mysqli_query($conn,$sql);
+    while($row = mysqli_fetch_assoc($result)) {
         $types[] = $row['product_type'];
     }
+    mysqli_close($conn);
     echo "<a href='#' class='dropdown-toggle' data-toggle='dropdown' data-hover='dropdown' data-delay='200'>Makeup <b class='caret'></b></a>
                         <ul class='dropdown-menu'>
                             <li>
@@ -419,46 +426,23 @@ function getDupeDetails($id,$shade,$dupeBrands=NULL,$dupeArray=NULL) {
 //Load most viewed products
 function loadTopProducts() {
     $conn = sqlConnect();
-    $sql = "SELECT id,name,img FROM products ORDER BY view_count DESC;";
+    $sql = "SELECT ID
+            FROM products 
+            ORDER BY view_count DESC
+            LIMIT 10;";
     $result = mysqli_query($conn,$sql);
     if($result) {
         while($row = mysqli_fetch_assoc($result)) {
-            $id[] = $row['id'];
-            $name[] = $row['name'];
-            $img[] = $row['img'];
+            $id[] = $row['ID'];
         }
     }
 
     //If products in DB > 6, load 6, otherwise load the max possible amount
-    $productLoadCount = (count($id) > 6) ? 6 : count($id);
+    //$productLoadCount = (count($id) > 6) ? 6 : count($id);
 
     //Load products
-    for($i=0; $i<$productLoadCount; $i++) {
-        $thisID = $id[$i];
-        $thisName = $name[$i];
-        if(!isset($img[$i]) || $img[$i] == "" || $img[$i] == " ") $thisImg = "https://via.placeholder.com/170x220";
-        else $thisImg = $img[$i];
-        echo "
-        <div class='item'>
-            <div class='product'>
-                <div>
-                    <div>
-                        <div>
-                            <a href='detail.php?id=$thisID'>
-                                <img src='$thisImg' alt='$thisName' class='img-responsive'>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class='text'>
-                    <h3>
-                        <a href='detail.php?id=$thisID'>$thisName</a>
-                    </h3>
-                </div>
-                <!-- /.text -->
-            </div>
-            <!-- /.product -->
-        </div>";
+    for($i = 0; $i < count($id); $i++) {
+        loadProduct($id[$i]);
     }
 };
 //Load the comments needed
@@ -570,7 +554,114 @@ function loadComments($comments=null) {
         }
     }
 };
-//Load comment post form
+//Get post comments
+function getPostComments($id) {
+    //Connect to DB
+    $conn = sqlConnect();
+    //Get comments, oldest to newest
+    $sql = "SELECT ID
+            FROM comments
+            WHERE post_id = $id
+            ORDER BY datetime DESC;";
+    $result = mysqli_query($conn,$sql);
+    //Load each comment existing
+    if(hasData($result)) {
+        while($row = mysqli_fetch_assoc($result)) {
+            loadPostComment($row['ID']);
+        }
+    }
+};
+//Load post comment
+function loadPostComment($id) {
+    $comment = new comment($id);
+    $author = new profile($comment->author());
+    $string = "
+    <div class='row comment' style='padding-bottom:20px;' id='productComment".$comment->id()."'>
+        <div class='col-sm-3 col-md-2 text-center-xs'>
+            <p>
+                <img src='".$author->ProfileImg()."->' class='img-responsive img-circle' alt=''>
+            </p>
+        </div>
+        <div class='col-sm-9 col-md-10'>
+            <h5>".$author->Username()."</h5>
+            <p class='posted'>
+                <span style='font-size:8pt;'>".formatDatetime($comment->datetime())."</span></br>";
+    $string .= "<p>".$comment->content()."</p>
+        </div>";
+    if($comment->media() != null) {
+        $string .= "<div class='col-lg-12 col-xs-12 text-center'>";
+        switch( count( $comment->media() ) ) {
+            case 1:
+                $m = $comment->media()[0];
+                $string .= "
+                        <div class='col-xs-12 col-lg-12 postImg'>
+                            <div class='thumbnail'>
+                                <div class='myImg img-preview' style='background-image: url($m);' name='$m'></div>
+                            </div>
+                        </div>
+                ";
+                unset($m);
+                break;
+            case 2:
+                foreach($comment->media() as $m) {
+                    $string .= "
+                            <div class='col-xs-12 col-lg-6 postImg'>
+                                <div class='thumbnail'>
+                                    <div class='myImg img-preview' style='background-image: url($m);' name='$m'></div>
+                                </div>
+                            </div>
+                    ";
+                    unset($m);
+                }
+                break;
+            default:
+                foreach($comment->media() as $m) {
+                    $string .= "
+                            <div class='col-xs-12 col-lg-6 postImg'>
+                                <div class='thumbnail'>
+                                    <div class='myImg img-preview' style='background-image: url($m);' name='$m'></div>
+                                </div>
+                            </div>
+                    ";
+                    unset($m);
+                }
+                break;
+        }
+        $string .= "</div>";
+        return $string;
+    }
+    echo "
+        </div>
+    <!-- /.comment -->
+    <hr style='margin-top: 10px; border-top: 1px solid #d8d7d7;'>";
+};
+//Load post comment form
+function loadPostCommentForm($id) {
+    return "
+        <div class='col-lg-12'>
+            <form action='javacript:void(0)' enctype='multipart/form-data' id='user-comment-form-".$id."'>
+                <div class='row'>
+                    <div class='col-sm-12'>
+                        <div class='form-group'>
+                            <textarea class='form-control userReview' name='userReview' placeholder='Leave a comment...'></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-sm-6'>
+                        <div class='form-group'>
+                            <label for='userImg' class='btn btn-default'>Photos</label>
+                            <input type='file' class='userImg' name='userImg[]' style='display:none;' multiple>
+                        </div>
+                    </div>
+                    <div class='col-sm-6 text-right'>
+                        <button class='btn btn-primary' type='submit'><i class='fa fa-comment'></i> Post comment</button>
+                    </div>
+                </div>
+            </form>
+        </div>";
+};      
+//Load product comment form
 function loadCommentForm() 
 {
     if(isset($_SESSION['user']) && $_SESSION['user']->getID() != null) {
@@ -711,9 +802,9 @@ function loadFoot()
                     <ul>
                         <li><a href='about.php'>About BeautyHub</a>
                         </li>
-                        <li><a href='privacy-policy.php'>Terms and conditions</a>
+                        <li><a href='privacy-policy.php'>Terms and Conditions</a>
                         </li>
-                        <li><a href='contact.php'>Contact us</a>
+                        <li><a href='contact.php'>Contact Us</a>
                         </li>
                     </ul>
                     <hr>
@@ -732,10 +823,10 @@ function loadFoot()
 
                 //Get top brands 
                 $conn = sqlConnect();
-                $sql = "SELECT brand,COUNT(*)
+                $sql = "SELECT brand,COUNT(id)
                         FROM products
                         GROUP BY brand
-                        ORDER BY COUNT(*) DESC
+                        ORDER BY COUNT(id) DESC
                         LIMIT 3;";
                 $result = mysqli_query($conn,$sql);
                 while($row = mysqli_fetch_assoc($result)) {
@@ -750,10 +841,10 @@ function loadFoot()
                     <ul>";
                 
                 //Get popular types
-                $sql = "SELECT product_type,COUNT(*)
+                $sql = "SELECT product_type
                         FROM products
                         GROUP BY product_type
-                        ORDER BY COUNT(*) DESC
+                        ORDER BY COUNT(id) DESC
                         LIMIT 4;";
                 $result = mysqli_query($conn,$sql);
                 while($row = mysqli_fetch_assoc($result)) {
@@ -875,7 +966,7 @@ function getPostID($offset = 0) {
             }
             $sql = trim($sql,"OR ") . "
                     ORDER BY datetime DESC
-                    LIMIT 2
+                    LIMIT 20
                     OFFSET $offset;";
             //Get and check result
             $result = mysqli_query($conn,$sql);
@@ -918,6 +1009,7 @@ function loadSuggestedUsers() {
         foreach($favourites as $a => $f) {
             $favouriteID[] = $f['id'];
         }
+        //If wishlist/favourites exist, create a comparison array
         $comparison = array_unique(array_merge($wishlistID,$favouriteID));
         shuffle($comparison);
         //Select users with similar wishlist/favourites

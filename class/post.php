@@ -17,7 +17,6 @@
         private $likes;
         private $media;
         private $album;
-        private $comments;
         private $datetime;
 
         //Create/get post
@@ -49,7 +48,6 @@
                     $this->likes = json_decode($row['likes']);
                     $this->media = json_decode($row['media']);
                     $this->album = $row['album'];
-                    $this->comments = json_decode($row['comments']);
                     $this->datetime = $row['datetime'];
                 }
             }
@@ -107,20 +105,6 @@
             }
             else {
                 return $this->album;
-            }
-        }
-
-        public function comments($comments = NULL) {
-            if($comments != NULL) {
-                if($this->comments != NULL) {
-                    array_push($this->comments,$comments);
-                }
-                else {
-                    $this->comments = array($comments);
-                }
-            }
-            else {
-                return $this->comments;
             }
         }
 
@@ -185,9 +169,10 @@
 
         //Post to string
         public function __toString() {
+            $user = $_SESSION['user'];
             $author = new profile($this->author);
             $string = "
-            <div class='following-post'>
+            <div class='following-post' name='".$this->id."'>
                 <div class='panel panel-default'>
                     <div class='row'>
                         <div class='col-lg-2 col-xs-2'>
@@ -199,8 +184,11 @@
                         </div>
                         <div class='col-lg-10 col-xs-10'>
                             <p>
-                                <h4 style='margin-bottom: 0.1em;'><a href='profile.php?id=".$author->ID()."'>".$author->Username()."</a></h4>
-                                ".formatDateTime($this->datetime)."
+                                <h4 style='margin-bottom: 0.1em;'><a href='profile.php?id=".$author->ID()."'>".$author->Username()."</a></h4>";
+            if($this->author == $user->getID()) {
+                $string.= "<span style='float: right; margin-top: -2rem; margin-right: 2rem;'><a href='javascript:void(0)' onclick='deletePost(".$this->id.")'>Delete<i class='fa fa-times'></i></a></span>";
+            }
+            $string .= formatDateTime($this->datetime)."
                             </p>
                         </div>
                     </div>";
@@ -250,7 +238,13 @@
                 }
                 $string .= "</div>";
             }
-            $string .= "
+            $string .= "<hr style='margin-left: 1rem; margin-right: 1rem; border: 0.5px solid #ccc;'>";
+            //TODO: Favourite function
+            //FIXME: Fix comments
+            $string .= "<div class='row post-comments-section' style='margin: 0rem;'>";
+            $string .= getPostComments($this->id);
+            $string .= loadPostCommentForm($this->id);
+            $string .= "</div>
                     </div>
                 </div>
             ";

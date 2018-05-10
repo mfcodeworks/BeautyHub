@@ -41,7 +41,7 @@ function loadAddProduct() {
                         <div class='form-group'>
                             <label for='productType'>Type*</label>
                             <select class='form-control' id='productType'>";
-                            $types = ["BB & CC Cream","Blusher","Bronzer","Concealer","Contouring","Eye Liner","Eyebrow Colour & Shaping","Eyeshadow","Finishing","Foundation","Highlighter","Lip & Cheek Tint","Lip Balm","Lip Pencil","Lip Plumper","Lipgloss","Lipstick","Liquid Lipstick","Mascara","Palette","Powder","Primer","Self Tan","Setting Spray & Powder","Special","Strobing","Tinted Moisturiser","Toner"];
+                            $types = ["BB & CC Cream","Blusher","Bronzer","Concealer","Contouring","Eye Liner","Eyebrow Colour & Shaping","Eyeshadow","Finishing","Foundation","Highlighter","Lip & Cheek Tint","Lip Balm","Lip Pencil","Lip Plumper","Lipgloss","Lipstick","Liquid Lipstick","Mascara","Palette","Powder","Primer","Self Tan","Setting Spray & Powder","Skin Care","Special","Strobing","Tinted Moisturiser","Toner"];
                             foreach($types as $t) echo "<option value='$t'>$t</option>";
                         echo "
                             </select>

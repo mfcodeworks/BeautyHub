@@ -80,6 +80,17 @@
             }
         }
         public function Wishlist() { return $this->wishlist; }
+        public function isInWishlist($id, $shade) {
+            if(!hasData($shade)) {
+                $shade = "NULL";
+            }
+            foreach($this->wishlist as $w) {
+                if($w['id'] == $id && $w['shade'] == $shade) {
+                    return true;
+                }
+            }
+            return false;
+        }
         public function Favourites() { return $this->favourites; }
         //Return social media links
         public function Facebook() {

@@ -52,7 +52,7 @@ function checkWishlist($dataArray,$colArray)
 };
 
 //Load product for wishlist/category/etc.
-function loadProduct($id,$page,$shade=NULL) {
+function loadProduct($id,$page=NULL,$shade=NULL) {
     if(session_status() == PHP_SESSION_NONE) session_start();
     
     if($shade == "NULL") unset($shade);
@@ -66,9 +66,18 @@ function loadProduct($id,$page,$shade=NULL) {
     $brand = $product->getBrand();
 
     //Set size
-    if($page == 'wishlist') echo "<div class='col-md-3 col-sm-4 display-product'>";
-    else if($page == 'search') echo "<div class='col-md-4 col-sm-6 display-product'>";
-
+    switch($page) {
+        case "wishlist":
+            echo "<div class='col-md-3 col-sm-4 display-product'>";
+            break;
+        case "search":
+            echo "<div class='col-md-4 col-sm-6 display-product'>";
+            break;
+        default:
+            echo "<div class='col-lg-12 col-xs-12'>";
+            break;
+    }
+    
     //Print product info
     echo "
         <div class='product' id='product-display-$id'>

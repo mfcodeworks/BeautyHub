@@ -2,6 +2,11 @@
     require_once 'functions.php';
     session_start();
     extract($_POST);
+    
+    //If post is empty, don't post
+    if($_FILES['postPicUpload']['name'][0] == "" && $newPost == "") {
+        return;
+    }
 
     //Check for photos
     if($_FILES['postPicUpload']['name'][0] != '') {
@@ -34,6 +39,7 @@
     //$post->album($newPostAlbum);
     try {
         $post->save();
+        echo $post;
     }
     catch(Exception $exc) {
         echo $exc;
