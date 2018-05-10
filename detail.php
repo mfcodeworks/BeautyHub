@@ -1,6 +1,5 @@
 <?php
-require_once 'scripts/functions.php';
-    session_start();
+    require_once 'scripts/functions.php';
     extract($_GET);
 
     //Check product exists and chck for dupe brand requirements
@@ -205,18 +204,26 @@ function loadProductDetails($id,$dupeBrands=NULL)
                <hr/>";
 
     //Print add to wishlist button
-    $currentUser = new profile($_SESSION['user']->getID());
-    if( $currentUser->isInWishlist($id,$product->getShades()[0]) ) {
-        echo "<p class='text-center buttons' id='wishlist-button'>
-                <a href='javascript:void(0)' class='btn btn-default' id='in-wishlist' name='$id'><i class='fa fa-check'></i> Added to wishlist</a>
-            </p>
-        </div>";
+    //TODO: Display login button for wishlist if not logged in
+    if(isset($_SESSION['user'])) {
+        $currentUser = new profile($_SESSION['user']->getID());
+    }
+    if(isset($currentUser)) {
+        if( $currentUser->isInWishlist($id,$product->getShades()[0]) ) {
+            echo "<p class='text-center buttons' id='wishlist-button'>
+                    <a href='javascript:void(0)' class='btn btn-default' id='in-wishlist' name='$id'><i class='fa fa-check'></i> Added to wishlist</a>
+                </p>
+            </div>";
+        }
+        else {
+            echo "<p class='text-center buttons' id='wishlist-button'>
+                    <a href='javascript:void(0)' class='btn btn-default' id='add-to-wishlist' name='$id'><i class='fa fa-heart'></i> Add to wishlist</a>
+                </p>
+            </div>";
+        }
     }
     else {
-        echo "<p class='text-center buttons' id='wishlist-button'>
-                <a href='javascript:void(0)' class='btn btn-default' id='add-to-wishlist' name='$id'><i class='fa fa-heart'></i> Add to wishlist</a>
-            </p>
-        </div>";
+        echo "</div>";
     }
 
     //Print description

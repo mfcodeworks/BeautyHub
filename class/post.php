@@ -240,6 +240,7 @@
             }
             $string .= "<hr style='margin-left: 1rem; margin-right: 1rem; border: 0.5px solid #ccc;'>";
             //TODO: Favourite function
+            //FIXME: Fix comments
             $string .= "<div class='row post-comments-section' style='margin: 0rem;'>";
             $string .= getPostComments($this->id);
             $string .= loadPostCommentForm($this->id);

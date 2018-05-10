@@ -24,6 +24,8 @@
     require_once(ABSPATH . "scripts/functions/sql-functions.php");
     require_once(ABSPATH . "scripts/functions/upload-file-functions.php");
 
-    //Begin session
-    session_start();
+    //Begin session if no session exists
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
 ?>
