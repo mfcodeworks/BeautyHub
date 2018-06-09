@@ -15,6 +15,8 @@
     require_once(ABSPATH . "class/profile.php");
     require_once(ABSPATH . "class/comment.php");
     require_once(ABSPATH . "class/post.php");
+    require_once(ABSPATH . "class/product-uri-scraper.php");
+    require_once(ABSPATH . "class/scrape-product-temptalia.php");
 
     // Require script functions
     require_once(ABSPATH . "scripts/functions/Encoding.php");
