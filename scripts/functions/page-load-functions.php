@@ -190,13 +190,15 @@ function loadNavBar()
                         <li class='dropdown yamm-fw'>";
     $conn = sqlConnect();
     $sql = "SELECT DISTINCT brand 
-            FROM products;";
+            FROM products
+            ORDER BY brand ASC;";
     $result = mysqli_query($conn,$sql);
     while($row = mysqli_fetch_assoc($result)) {
         $brands[] = $row['brand'];
     }
     $sql = "SELECT DISTINCT product_type
-            FROM products;";
+            FROM products
+            ORDER BY product_type ASC;";
     $result = mysqli_query($conn,$sql);
     while($row = mysqli_fetch_assoc($result)) {
         $types[] = $row['product_type'];

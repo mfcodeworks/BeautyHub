@@ -4,7 +4,8 @@
 
     //Get $brands,$type,$q(Search),etc.
     extract($_GET);
-    if(!isset($page)) $page = 1;
+    if(!isset($p)) $p = 1;
+    $offset = 30 * $p;
     loadHead();
     loadTopBar();
     loadNavBar();
@@ -33,10 +34,15 @@
     if(isset($q)) {
         $q = explode(" ",$q);
 
-        $sql .= "(SELECT * FROM products WHERE LOWER(name) LIKE LOWER(\"%$q[0]%\") OR LOWER(brand) LIKE LOWER(\"%$q[0]%\") OR LOWER(product_type) LIKE LOWER(\"%$q[0]%\")";
+        $sql .= "(SELECT * FROM products 
+                WHERE LOWER(name) LIKE LOWER(\"%$q[0]%\") 
+                OR LOWER(brand) LIKE LOWER(\"%$q[0]%\") 
+                OR LOWER(product_type) LIKE LOWER(\"%$q[0]%\")";
 
         for($i=1;$i<count($q);$i++) {
-            $sql .= " AND LOWER(name) LIKE LOWER(\"%$q[$i]%\") OR LOWER(brand) LIKE LOWER(\"%$q[$i]%\") OR LOWER(product_type) LIKE LOWER(\"%$q[$i]%\")";
+            $sql .= " AND LOWER(name) LIKE LOWER(\"%$q[$i]%\") 
+                    OR LOWER(brand) LIKE LOWER(\"%$q[$i]%\") 
+                    OR LOWER(product_type) LIKE LOWER(\"%$q[$i]%\")";
         }
 
         $sql .= ") as search ";
@@ -59,7 +65,7 @@
     //Get result
     $result = mysqli_query($conn,$sql);
 
-    if($result) {
+    if(mysqli_num_rows($result) > 0) {
         while($row = mysqli_fetch_assoc($result)) {
             $id[] = $row['ID'];
         }
@@ -70,10 +76,11 @@
 
     //Get total for printing/adding pages
     $total = count($id);
-    $end = (30*$page);
+    $end = (30*$p);
     $start = ($end-29);
     if($end>$total) $end = $total;
     if($start>$total) $start = $total;
+    error_log("Search total $total, Start $start, end $end");
 
     //Echo products
     echo "<div class='col-md-9'>
@@ -110,10 +117,10 @@
         $q = implode("+",$q);
         $currentURL .= "q=$q&";
     }
-    for($i=0;$i<(ceil($total/30));$i++) {
-        $page = $i+1;
-        $thisURL = $currentURL . "p=$page";
-        echo "<li id='$page'><a href='$thisURL'>$page</a>
+    for($i=0; $i<(ceil($total/30)); $i++) {
+        $p = $i+1;
+        $thisURL = $currentURL . "p=$p";
+        echo "<li id='$p'><a href='$thisURL'>$p</a>
               </li>";
     }
 

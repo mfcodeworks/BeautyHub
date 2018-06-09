@@ -82,7 +82,7 @@ function loadProduct($id,$page=NULL,$shade=NULL) {
     echo "
         <div class='product' id='product-display-$id'>
             <a href='detail.php?id=$id'>
-                <img src='$img' alt='$name' class='img-responsive'>
+                <img src='$img' alt='$name' class='img-responsive' style='max-height: 270px;'>
             </a>
             <div class='small text-center' >
                 <h4><a href='detail.php?id=$id' style='color:#333'>$brand<br>$name";
