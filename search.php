@@ -110,7 +110,7 @@
         <!-- /.products -->
         <div class='pages'>
             <ul class='pagination'>";
-    $currentURL = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]/BeautyHub/search.php?";
+    $currentURL = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]/search.php?";
     if(isset($brand)) $currentURL .= "brand=$brand&";
     if(isset($type)) $currentURL .= "type=$type&";
     if(isset($q)) {
