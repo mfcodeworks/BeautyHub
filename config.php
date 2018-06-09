@@ -9,7 +9,7 @@
     define('ADMIN_EMAIL','admin@email.com');
     define('WEBMASTER_EMAIL','webmaster@website.com');
     define('IMAGE_DIR', dirname(dirname(__FILE__)) . '/img/');
-    define('RELATIVE_IMAGE_DIR', "/BeautyHub/img/");
+    define('RELATIVE_IMAGE_DIR', "/SUB_DIRECTORY/img/");
     
     /**
      * SESSION settings for user data
