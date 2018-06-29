@@ -1,0 +1,17 @@
+/*
+ *  PeepSo
+ *  RTL Template of PeepSo
+ *  @author PeepSo, Inc
+ *  Copyright 2017 PeepSo, Inc. GPL 2.0 licensed.
+ */
+
+@import 'variables';
+
+// Override rounded corners setting
+$scss-rounded: true;
+
+// Override direction setting
+$scss-direction: rtl;
+
+@import '../../theme';
+@import 'custom';

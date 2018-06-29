@@ -1,0 +1,4580 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: peepso\n"
+"POT-Creation-Date: 2018-04-12 10:06+0700\n"
+"PO-Revision-Date: 2018-04-18 05:31-0400\n"
+"Last-Translator: peepso <company@peep.so>\n"
+"Language-Team: Persian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: crowdin.com\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: peepso.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Crowdin-Project: peepso\n"
+"X-Crowdin-Language: fa\n"
+"X-Crowdin-File: peepso-core.pot\n"
+"Language: fa_IR\n"
+
+#: activity/activitystream.php:104
+msgctxt "PeepSo Posts"
+msgid "PeepSo Posts"
+msgstr "پست های PeepSo"
+
+#: activity/activitystream.php:105
+msgctxt "PeepSo Post"
+msgid "PeepSo Post"
+msgstr "پست PeepSo"
+
+#: activity/activitystream.php:106 activity/activitystream.php:127
+#: activity/activitystream.php:128
+msgid "PeepSo Posts"
+msgstr "پست های PeepSo"
+
+#: activity/activitystream.php:107
+msgid "PeepSo Posts:"
+msgstr "پست های PeepSo:"
+
+#: activity/activitystream.php:108
+msgid "All PeepSo Posts"
+msgstr "تمام مطالب PeepSo"
+
+#: activity/activitystream.php:109
+msgid "View PeepSo Post"
+msgstr "مشاهده مطلب PeepSo"
+
+#: activity/activitystream.php:110 activity/activitystream.php:111
+msgid "Add New PeepSo Post"
+msgstr "افزودن مطلب جدید PeepSo"
+
+#: activity/activitystream.php:112
+msgid "Edit PeepSo Post"
+msgstr "ویرایش مطلب PeepSo"
+
+#: activity/activitystream.php:113
+msgid "Update PeepSo Post"
+msgstr "بروزرسانی مطلب PeepSo"
+
+#: activity/activitystream.php:114
+msgid "Search PeepSo Posts"
+msgstr "جستجوی مطالب PeepSo"
+
+#: activity/activitystream.php:115 activity/activitystream.php:162
+msgid "Not found"
+msgstr "یافت نشد"
+
+#: activity/activitystream.php:116 activity/activitystream.php:163
+msgid "Not found in Trash"
+msgstr "در سطل زباله یافت نشد"
+
+#: activity/activitystream.php:117
+msgid "posted"
+msgstr "ارسال شده"
+
+#: activity/activitystream.php:118 activity/classes/activity.php:265
+#: activity/classes/activity.php:398 activity/classes/activity.php:3753
+#: activity/classes/activitylisttable.php:252 classes/profile.php:729
+msgid "post"
+msgid_plural "posts"
+msgstr[0] "پست"
+msgstr[1] "پست ها"
+
+#: activity/activitystream.php:151 activity/activitystream.php:153
+#: activity/activitystream.php:174 activity/activitystream.php:175
+msgid "PeepSo Comments"
+msgstr "نظرات PeepSo"
+
+#: activity/activitystream.php:152
+msgid "PeepSo Comment"
+msgstr "نظر PeepSo"
+
+#: activity/activitystream.php:154
+msgid "PeepSo Comments:"
+msgstr "نظرات PeepSo:"
+
+#: activity/activitystream.php:155
+msgid "All PeepSo Comments"
+msgstr "همه نظرات PsspSo"
+
+#: activity/activitystream.php:156
+msgid "View PeepSo Comment"
+msgstr "مشاهده نظر PsspSo"
+
+#: activity/activitystream.php:157 activity/activitystream.php:158
+msgid "Add New PeepSo Comment"
+msgstr "افزودن نظر جدید PsspSo"
+
+#: activity/activitystream.php:159
+msgid "Edit PeepSo Comment"
+msgstr "ویرایش نظر PsspSo"
+
+#: activity/activitystream.php:160
+msgid "Update PeepSo Comment"
+msgstr "بروزرسانی نظر PsspSo"
+
+#: activity/activitystream.php:161
+msgid "Search PeepSo Comments"
+msgstr "جستجوی نظرات PsspSo"
+
+#: activity/activitystream.php:164 activity/classes/activity.php:402
+#: activity/classes/activity.php:430
+msgid "commented"
+msgstr "نظر داده شد"
+
+#: activity/activitystream.php:165 activity/classes/activity.php:1122
+msgid "comment"
+msgstr "نظر"
+
+#: activity/activitystream.php:221 activity/classes/activityadmin.php:33
+msgid "Activities"
+msgstr "فعالیت‌ها"
+
+#: activity/classes/activity.php:244
+msgid "Someone Posted on your profile"
+msgstr "شخصی روی پروفایل شما نوشت"
+
+#: activity/classes/activity.php:246
+msgid "wrote on your profile"
+msgstr "روی پروفایل شما نوشت"
+
+#: activity/classes/activity.php:268
+#, php-format
+msgid "Someone shared your %s"
+msgstr "شخصی %s شما را به اشتراک گذاشت"
+
+#: activity/classes/activity.php:270
+msgid "shared"
+msgstr "به اشتراک گذاشت"
+
+#: activity/classes/activity.php:401
+#, php-format
+msgid "Someone Commented on your %s"
+msgstr "یک نفر روی %s شما نظر داد"
+
+#: activity/classes/activity.php:409
+msgid "Someone Replied to your Comment!"
+msgstr "یک نفر به نظر شما پاسخ داد!"
+
+#: activity/classes/activity.php:410 classes/profile.php:758
+msgid "replied to"
+msgstr "پاسخ داد به"
+
+#: activity/classes/activity.php:455 activity/classes/activity.php:2113
+msgid "Comment is empty"
+msgstr "نظر خالی است"
+
+#: activity/classes/activity.php:525 activity/classes/activity.php:1546
+#: activity/classes/activity.php:1593 activity/classes/activity.php:1687
+msgid "You do not have permission to edit this post."
+msgstr "شما مجاز به ویرایش این پست نیستید."
+
+#: activity/classes/activity.php:1063 activity/classes/activity.php:1106
+#, php-format
+msgid "Show %d more %s"
+msgstr "نمایش %d %s بیشتر"
+
+#: activity/classes/activity.php:1110
+#, php-format
+msgid "All %d %s displayed."
+msgstr "تمام %d %s نمایش داده شد."
+
+#: activity/classes/activity.php:1123 classes/admin.php:1585
+msgid "comments"
+msgstr "نظرات"
+
+#: activity/classes/activity.php:1125
+msgid "reply"
+msgstr "پاسخ"
+
+#: activity/classes/activity.php:1126
+msgid "replies"
+msgstr "پاسخ ها"
+
+#: activity/classes/activity.php:1405
+msgid "Invalid User id"
+msgstr "شناسه کابری نادرست"
+
+#: activity/classes/activity.php:1504
+#, php-format
+msgid "Someone liked your %s"
+msgstr "کسی %s شما را پسندید"
+
+#: activity/classes/activity.php:1507
+#, php-format
+msgid "liked your %s"
+msgstr "%s شما را پسندید"
+
+#: activity/classes/activity.php:1512
+msgid "Unable to process"
+msgstr "قادر به انجام این کار نیست"
+
+#: activity/classes/activity.php:1563 activity/classes/activity.php:1613
+msgid "Post not found."
+msgstr "مطلب یافت نشد."
+
+#: activity/classes/activity.php:1646 activity/classes/activity.php:1682
+msgid "Could not update the description."
+msgstr "قادر به بروزرسانی توصیفات نیستیم."
+
+#: activity/classes/activity.php:1710
+msgid "Post is empty"
+msgstr "پست خالی است"
+
+#: activity/classes/activity.php:1738
+msgid "updated a post"
+msgstr "یک پست را بروزرسانی کرد"
+
+#: activity/classes/activity.php:1827 activity/classes/activity.php:1957
+#: activity/classes/activity.php:2004 activity/classes/activity.php:2060
+#: activity/classes/activity.php:2098 classes/admin.php:681
+msgid "You do not have permission to do that."
+msgstr "شما اجازه انجام این کار را ندارید."
+
+#: activity/classes/activity.php:1836
+msgid "You cannot ban yourself"
+msgstr "نمی توانید خود را مسدود کنید"
+
+#: activity/classes/activity.php:1844
+msgid "Invalid user"
+msgstr "کاربر نامعتبر"
+
+#: activity/classes/activity.php:1848 peepso.php:1787
+msgid "Notice"
+msgstr "توجه"
+
+#: activity/classes/activity.php:1852
+#, php-format
+msgid "%s has been unbanned"
+msgstr "%s رفع محرومیت شده است"
+
+#: activity/classes/activity.php:1884
+#, php-format
+msgid "%s has been banned until %s"
+msgstr "%s تا %s محروم شده است"
+
+#: activity/classes/activity.php:1893
+msgid "Missing ban period date"
+msgstr "تاریخ دوره ممنوعیت گم شده است"
+
+#: activity/classes/activity.php:1899
+#, php-format
+msgid "%s has been banned"
+msgstr "%s تعلیق شده است"
+
+#: activity/classes/activity.php:2046 classes/adminreport.php:108
+#: classes/adminreport.php:136 classes/adminreport.php:165
+msgid "Could not verify nonce."
+msgstr "فعلا تایید نمی شود."
+
+#: activity/classes/activity.php:2095
+msgid "This item has been reported"
+msgstr "این مورد گزارش شده است"
+
+#: activity/classes/activity.php:2122
+msgid "Activity not found"
+msgstr "فعالیت پیدا نشد"
+
+#: activity/classes/activity.php:2173
+msgid "The comment limit for this post has been reached."
+msgstr "فراتر از محدوده نظرات برای این پست."
+
+#: activity/classes/activity.php:2175
+msgid "Error in writing Activity Stream comment."
+msgstr "خطا در نوشتن نظر روی جریان فعالیت."
+
+#: activity/classes/activity.php:2179
+msgid "You don't have permissions for that "
+msgstr "شما اجازه انجام این کار را ندارید "
+
+#: activity/classes/activity.php:2209 activity/classes/activity.php:2744
+msgid "Report"
+msgstr "گزارش"
+
+#: activity/classes/activity.php:2233
+#: activity/classes/activityshortcode.php:137
+msgid "Reply"
+msgstr "پاسخ "
+
+#: activity/classes/activity.php:2256 templates/profile/profile-about.php:124
+msgid "Edit"
+msgstr "ویرایش"
+
+#: activity/classes/activity.php:2279 activity/classes/activity.php:2757
+msgid "Remove Link Preview"
+msgstr "حذف لینک پیش نمایش"
+
+#: activity/classes/activity.php:2311 activity/classes/activity.php:2809
+#: activity/classes/activity.php:3934
+msgid "Please register or log in to perform this action"
+msgstr "لطفا برای انجام این کار ابتدا ثبت نام کنید یا وارد شوید"
+
+#: activity/classes/activity.php:2483 classes/configsections.php:491
+msgid "Read more"
+msgstr "ادامه مطلب"
+
+#: activity/classes/activity.php:2545
+msgid "and"
+msgstr "و"
+
+#: activity/classes/activity.php:2737
+msgid "RePost"
+msgstr "ارسال مجدد"
+
+#: activity/classes/activity.php:2837
+msgid "Edit Post"
+msgstr "ویرایشِ پست"
+
+#: activity/classes/activity.php:2846
+msgid "Delete Post"
+msgstr "حذف پست"
+
+#: activity/classes/activity.php:2854
+msgid "Pin to top"
+msgstr "چسباندن به بالا"
+
+#: activity/classes/activity.php:2861
+msgid "Unpin"
+msgstr "لغو چسباندن"
+
+#: activity/classes/activity.php:2879
+#, php-format
+msgid "Pinned by %s"
+msgstr "چسبانده توسط %s"
+
+#: activity/classes/activity.php:2880
+#, php-format
+msgid "Pinned %s at %s"
+msgstr "%s را در %s چسباند"
+
+#: activity/classes/activity.php:3416
+msgid "Spam"
+msgstr "اسپم"
+
+#: activity/classes/activity.php:3422
+msgid "- select reason -"
+msgstr "-دلیل انتخاب کنید-"
+
+#: activity/classes/activity.php:3428 classes/profile.php:1638
+#: templates/admin/deactivation_feedback_modal.php:24
+msgid "Other"
+msgstr "سایر"
+
+#: activity/classes/activity.php:3432
+msgid "Report description..."
+msgstr "توضیحات گزارش..."
+
+#: activity/classes/activity.php:3473 activity/classes/activity.php:3586
+#: peepso.php:1796 peepso.php:1797
+msgid " person likes this"
+msgid_plural " people like this."
+msgstr[0] " کسی این را دوست دارد"
+msgstr[1] " کسانی این را دوست دارند."
+
+#: activity/classes/activity.php:3514
+msgid " likes this"
+msgid_plural " like this"
+msgstr[0] " این را دوست دارد"
+msgstr[1] " این را دوست دارد"
+
+#: activity/classes/activity.php:3536
+msgid "Invalid Action"
+msgstr "اقدام غیر معتبر"
+
+#: activity/classes/activity.php:3543
+msgid "Invalid Post ID"
+msgstr "شناسه پست نامعتبر است"
+
+#: activity/classes/activity.php:3550
+msgid "You do not have permission to do that"
+msgstr "شما اجازه انجام این کار را ندارید"
+
+#: activity/classes/activity.php:3583 classes/profile.php:984
+#: classes/profile.php:989
+msgid "Like"
+msgstr "پسندیدن"
+
+#: activity/classes/activity.php:3733
+msgid "Changes saved."
+msgstr "تغییرات ذخیره شد."
+
+#: activity/classes/activity.php:3736
+msgid "You do not have permission to change post privacy settings."
+msgstr "شما مجوز برای تغییر تنظیمات حریم خصوصی پست را ندارید."
+
+#: activity/classes/activity.php:3752
+#, php-format
+msgid "shared a %s"
+msgstr "یک %s به اشتراک گذاشت"
+
+#: activity/classes/activityadmin.php:15
+msgid "Search User"
+msgstr "جستجوی کاربران"
+
+#: activity/classes/activitylisttable.php:74
+msgid "Details"
+msgstr "جزئیات"
+
+#: activity/classes/activitylisttable.php:75
+msgid "ID (link)"
+msgstr "شناسه (لینک)"
+
+#: activity/classes/activitylisttable.php:76
+msgid "Created"
+msgstr "ایجاد شده"
+
+#: activity/classes/activitylisttable.php:77 classes/general.php:305
+#: classes/mailqueuelisttable.php:53
+msgid "Status"
+msgstr "وضعيت"
+
+#: activity/classes/activitylisttable.php:121
+msgid "Published"
+msgstr "منتشر شده"
+
+#: activity/classes/activitylisttable.php:125
+msgid "Archived"
+msgstr "بایگانی شده"
+
+#: activity/classes/activitylisttable.php:129
+msgid "Trash"
+msgstr "سطل زباله"
+
+#: activity/classes/activitylisttable.php:133
+msgid "Private"
+msgstr "خصوصی"
+
+#: activity/classes/activitylisttable.php:210
+msgid "Archive"
+msgstr "بایگانی"
+
+#: activity/classes/activitylisttable.php:211
+msgid "Publish"
+msgstr "انتشار"
+
+#: activity/classes/activitylisttable.php:212
+#: activity/classes/activityshortcode.php:128 classes/admin.php:354
+#: classes/modalcomments.php:143 classes/profile.php:1482 peepso.php:1627
+#: templates/activity/dialogs.php:58
+msgid "Delete"
+msgstr "حذف کردن"
+
+#: activity/classes/activitylisttable.php:235
+msgid "Updated"
+msgstr "به روز رسانی شده"
+
+#: activity/classes/activitylisttable.php:244
+msgid "Deleted"
+msgstr "حذف شده"
+
+#: activity/classes/activitylisttable.php:250
+#: classes/adminreportlisttable.php:276 classes/mailqueuelisttable.php:275
+#, php-format
+msgid "%1$d %2$s %3$s"
+msgstr "%1$d %2$s %3$s"
+
+#: activity/classes/activityshortcode.php:123 classes/admin.php:349
+#: peepso.php:1622 templates/activity/dialogs.php:63
+#: templates/profile/dialog-profile-deletion.php:30
+msgid "Confirm"
+msgstr "تایید"
+
+#: activity/classes/activityshortcode.php:124 classes/admin.php:350
+#: peepso.php:1623 templates/activity/dialogs.php:52
+#: templates/activity/dialogs.php:73
+msgid "Confirm Delete"
+msgstr "تایید حذف"
+
+#: activity/classes/activityshortcode.php:125 classes/admin.php:351
+#: peepso.php:1624 templates/activity/dialogs.php:54
+msgid "Are you sure you want to delete this?"
+msgstr "آیا مطمئن هستید می خواهید این را حذف کنید؟"
+
+#: activity/classes/activityshortcode.php:126 classes/admin.php:352
+#: peepso.php:1625
+msgid "Yes"
+msgstr "بله"
+
+#: activity/classes/activityshortcode.php:127 classes/admin.php:353
+#: classes/configsectionadvanced.php:151 peepso.php:1626
+msgid "No"
+msgstr "خیر"
+
+#: activity/classes/activityshortcode.php:129 classes/admin.php:355
+#: peepso.php:1615 peepso.php:1628
+#: templates/activity/activity-stream-filters.php:34
+#: templates/activity/activity-stream-filters.php:75
+#: templates/activity/activity-stream-filters.php:122
+#: templates/activity/comment-edit.php:8
+#: templates/activity/description-edit.php:16
+#: templates/activity/dialog-repost.php:32 templates/activity/dialogs.php:16
+#: templates/activity/dialogs.php:34 templates/activity/dialogs.php:57
+#: templates/activity/dialogs.php:82 templates/activity/post-edit.php:19
+#: templates/admin/profiles_field.php:90
+#: templates/admin/profiles_field_config_field_text.php:15
+#: templates/admin/profiles_no_plugin.php:8
+#: templates/general/postbox-legacy.php:27 templates/general/postbox.php:29
+#: templates/location/photo_album_show_extra_fields.php:35
+#: templates/profile/dialog-profile-deletion.php:25
+#: templates/profile/focus.php:55 templates/profile/profile-about.php:153
+msgid "Cancel"
+msgstr "انصراف"
+
+#: activity/classes/activityshortcode.php:130 classes/admin.php:356
+#: peepso.php:1629 templates/activity/dialogs.php:68
+msgid "Okay"
+msgstr "تایید"
+
+#: activity/classes/activityshortcode.php:138
+msgid "View Replies"
+msgstr "مشاهده پاسخ ها"
+
+#: admin/config/options.php:41
+msgid "Save Settings"
+msgstr "ذخیره تنظیمات"
+
+#: admin/config/options.php:47
+msgid "Reset"
+msgstr "تنظیم مجدد"
+
+#: admin/config/options.php:57
+msgid "YES---------NO"
+msgstr "بله---بدون"
+
+#: admin/config/welcome-screen.php:1
+msgid "Getting Started"
+msgstr "آغاز کار"
+
+#: classes/admin.php:102
+msgid "You have Registered or Verified users that need to be approved. To approve, change the user's role to PeepSo Member or other appropriate role."
+msgstr "شما کاربرانی را که نیاز به تایید داشته اند ثبت یا تایید کرده اید. جهت تثبیت، نقش کاربر را به عضو PeepSo یا نقش مناسب دیگر تغییر دهید."
+
+#: classes/admin.php:103
+#, php-format
+msgid " %1$sClick here%2$s for more information on assigning roles."
+msgstr " برای اطلاعات بیشتر درباره نقش های اختصاصی %1$s اینجا کلیک کنید%2$s."
+
+#: classes/admin.php:110
+msgid "PeepSo User Roles:"
+msgstr "نقش های کاربری PeepSo:"
+
+#: classes/admin.php:111
+#, php-format
+msgid "You can change Roles for PeepSo users by selecting the checkboxes for individual users and then selecting the desired Role from the %s dropdown."
+msgstr "جهت تغییر نقش های کاربران PeepSo با انتخاب چک باکس های کاربران مورد نظر و سپس انتخاب نقش دلخواه از فهرست کشویی  %s ، نسبت به تغیر نقش اقدام کنید."
+
+#: classes/admin.php:112
+msgid "- Select Role -"
+msgstr "-انتخاب نقش کاربری-"
+
+#: classes/admin.php:113
+#, php-format
+msgid "Once the new Role is selected, click on the %s button and those users will be updated."
+msgstr "وقتی نقش جدید انتخاب شد، بر روی دکمه  %s کلیک کنید تا کاربران مورد نظر بروزرسانی شوند."
+
+#: classes/admin.php:114 classes/admin.php:737
+msgid "Change Role"
+msgstr "تغییر سطح کاربر"
+
+#: classes/admin.php:115
+msgid "Meaning of user roles:"
+msgstr "معنی نقش های کاربر:"
+
+#. Author of the plugin/theme
+#: classes/admin.php:146
+msgid "PeepSo"
+msgstr "PeepSo"
+
+#: classes/admin.php:191 classes/admin.php:192 classes/admin.php:922
+msgid "Reported Items"
+msgstr "موارد گزارش شده"
+
+#: classes/admin.php:218
+msgid "Dashboard"
+msgstr "پیشخوان"
+
+#: classes/admin.php:327 peepso.php:1788
+msgid "View All"
+msgstr "مشاهده همه"
+
+#: classes/admin.php:328 peepso.php:1789
+msgid "Mark All as Read"
+msgstr "علامت همه به عنوان خوانده شده"
+
+#: classes/admin.php:329 peepso.php:1790
+msgid "Are you sure you want to mark all notifications as read?"
+msgstr "آیا مطمئن هستید که می خواهید تمام اعلان ها را به عنوان خوانده شده علامتگذاری کنید؟"
+
+#: classes/admin.php:330 peepso.php:1791
+msgid "Show unread only"
+msgstr "نمایش فقط خوانده نشده ها"
+
+#: classes/admin.php:331 peepso.php:1792
+msgid "Show all"
+msgstr "نمایش همه"
+
+#: classes/admin.php:380 classes/template.php:131 peepso.php:1704
+msgid "just now"
+msgstr "همین حالا"
+
+#: classes/admin.php:381 classes/admin.php:382 classes/admin.php:383
+#: classes/admin.php:384 classes/admin.php:385 classes/admin.php:386
+#: classes/admin.php:387 classes/admin.php:388 classes/admin.php:389
+#: classes/admin.php:390 classes/admin.php:391 classes/admin.php:392
+#: classes/template.php:133 peepso.php:1705 peepso.php:1706 peepso.php:1707
+#: peepso.php:1708 peepso.php:1709 peepso.php:1710 peepso.php:1711
+#: peepso.php:1712 peepso.php:1713 peepso.php:1714 peepso.php:1715
+#: peepso.php:1716
+#, php-format
+msgid "%s ago"
+msgstr "%s پیش"
+
+#: classes/admin.php:381 classes/admin.php:382 lib/helpers.php:19
+#: peepso.php:1705 peepso.php:1706
+#, php-format
+msgid "%s min"
+msgid_plural "%s mins"
+msgstr[0] "%s دقیقه"
+msgstr[1] "%s دقیقه"
+
+#: classes/admin.php:383 classes/admin.php:384 lib/helpers.php:24
+#: peepso.php:1707 peepso.php:1708
+#, php-format
+msgid "%s hour"
+msgid_plural "%s hours"
+msgstr[0] "%s ساعت"
+msgstr[1] "%s ساعت"
+
+#: classes/admin.php:385 classes/admin.php:386 lib/helpers.php:29
+#: peepso.php:1709 peepso.php:1710
+#, php-format
+msgid "%s day"
+msgid_plural "%s days"
+msgstr[0] "%s روز"
+msgstr[1] "%s روز"
+
+#: classes/admin.php:387 classes/admin.php:388 lib/helpers.php:34
+#: peepso.php:1711 peepso.php:1712
+#, php-format
+msgid "%s week"
+msgid_plural "%s weeks"
+msgstr[0] "%s هفته"
+msgstr[1] "%s هفته"
+
+#: classes/admin.php:389 classes/admin.php:390 lib/helpers.php:39
+#: peepso.php:1713 peepso.php:1714
+#, php-format
+msgid "%s month"
+msgid_plural "%s months"
+msgstr[0] "%s ماه"
+msgstr[1] "%s ماه"
+
+#: classes/admin.php:391 classes/admin.php:392 lib/helpers.php:44
+#: peepso.php:1715 peepso.php:1716
+#, php-format
+msgid "%s year"
+msgid_plural "%s years"
+msgstr[0] "%s سال"
+msgstr[1] "%s سال"
+
+#: classes/admin.php:413 classes/admin.php:1239 classes/general.php:53
+#: install/activate.php:362 peepso.php:2815
+#: templates/members/members-blocked.php:9 templates/members/members-tabs.php:6
+#: templates/members/search.php:7
+msgid "Members"
+msgstr "اعضاء"
+
+#: classes/admin.php:419 classes/configsectionadvanced.php:62
+msgid "Profiles"
+msgstr "نمایه‌ ها"
+
+#: classes/admin.php:426 classes/adminmailqueue.php:39
+msgid "Mail Queue"
+msgstr "صف پست"
+
+#: classes/admin.php:433 classes/admin.php:1938
+msgid "Addons"
+msgstr "افزودنی ها"
+
+#: classes/admin.php:436
+msgid "NEW!"
+msgstr "جدید!"
+
+#: classes/admin.php:448 classes/config.php:25
+msgid "Configuration"
+msgstr "پیکربندی"
+
+#: classes/admin.php:551
+msgid "PeepSo Role"
+msgstr "نقش کاربری PeepSo"
+
+#: classes/admin.php:656
+msgid " approved"
+msgstr " تایید شده"
+
+#: classes/admin.php:661
+msgid " banned"
+msgstr " ممنوع شده"
+
+#: classes/admin.php:666 classes/admin.php:1760
+msgid "Invalid action"
+msgstr "اقدام غیر معتبر"
+
+#: classes/admin.php:685
+msgid "Form is invalid."
+msgstr "فرم معتبر نیست."
+
+#: classes/admin.php:710
+msgid "Please select a PeepSo Role before clicking on \"Change Role\"."
+msgstr "لطفا نقش کاربری PeepSo را قبل از کلیک کردن روی \"تغییر نقش\" انتخاب کنید."
+
+#: classes/admin.php:727
+msgid "Set PeepSo Role:"
+msgstr "تنظیم نقش کاربری PeepSo:"
+
+#: classes/admin.php:729
+msgid " - Select Role -"
+msgstr " -نقش را انتخاب کنید-"
+
+#: classes/admin.php:756
+msgid "Full member, can write posts and participate"
+msgstr "عضو کامل، می تواند در نوشتن مطالب مشارکت کند"
+
+#: classes/admin.php:758
+msgid "PeepSo Administrator, can Moderate, edit users, etc."
+msgstr "مدیر PeepSo می تواند مدیریت و ویرایش کاربران و .. را انجام دهد."
+
+#: classes/admin.php:759
+msgid "Banned, cannot login or participate"
+msgstr "ممنوع الورود، مجاز به ورود یا مشارکت نیست"
+
+#: classes/admin.php:760
+msgid "Registered, awaiting email verification"
+msgstr "ثبت نام در انتظار تایید ایمیل"
+
+#: classes/admin.php:761
+msgid "Verified email, awaiting Adminstrator approval"
+msgstr "ایمیل تایید شده و در انتظار تایید مدیر است"
+
+#: classes/admin.php:772
+msgid "Community Member"
+msgstr "عضو جامعه"
+
+#: classes/admin.php:773
+msgid "Community Moderator"
+msgstr "مدیر انجمن"
+
+#: classes/admin.php:774
+msgid "Community Administrator"
+msgstr "مدیر انجمن"
+
+#: classes/admin.php:775
+msgid "Banned"
+msgstr "ممنوع شده"
+
+#: classes/admin.php:776
+msgid "Pending user email verification"
+msgstr "کاربر در انتظار تایید ایمیل"
+
+#: classes/admin.php:777
+msgid "Pending admin approval"
+msgstr "در انتظار تایید ادمین"
+
+#: classes/admin.php:812
+msgid "Profile Link"
+msgstr "لینک پروفایل"
+
+#: classes/admin.php:892
+msgid "System Requirements"
+msgstr "پیش نیازهای سیستم"
+
+#: classes/admin.php:901
+msgid "Get Free eBook Now! ($9.99 Value)"
+msgstr "دریافت کتاب رایگان! (ارزش $9.99)"
+
+#: classes/admin.php:909
+msgid "User Engagement"
+msgstr "اشتغال کاربر"
+
+#: classes/admin.php:916
+msgid "Users"
+msgstr "کاربران"
+
+#: classes/admin.php:928
+msgid "Most Recent Content"
+msgstr "محتوای اخیر"
+
+#: classes/admin.php:934
+msgid "User Demographics"
+msgstr "دموگرافی های کاربر"
+
+#: classes/admin.php:980
+#, php-format
+msgid "The minimum required PHP version is %s - your server has %s"
+msgstr "حداقل نسخه php مورد نیاز %s هست - نسخه سرور شما %s هست"
+
+#: classes/admin.php:984
+#, php-format
+msgid "The recommended PHP version is %s or higher - your server has %s. Please visit %s for more information."
+msgstr "نسخه توصیه شده php برای استفاده %s یا بالاتر است - نسخه سرور شما %s هست. لطفا %s را برای اطلاعات بیشتر مشاهده کنید."
+
+#: classes/admin.php:989
+msgid "The PHP EXIF extension is required"
+msgstr "اکستنشن PHP EXIF مورد نیاز است"
+
+#: classes/admin.php:994
+msgid "The PHP Imagick extension is recommended"
+msgstr "اکستنشن PHP Imagick توصیه می شود"
+
+#: classes/admin.php:999
+#, php-format
+msgid "The required memory limit is %s - your server has %s"
+msgstr "محدودیت حافظه مورد نیاز %s است - در سرور شما این محدوده %s هست"
+
+#: classes/admin.php:1004
+msgid "PHP session suppport is required"
+msgstr "پشتیبانی از PHP session مورد نیاز است"
+
+#: classes/admin.php:1009
+#, php-format
+msgid "The minimum required MySQL version is %s - your server has %s"
+msgstr "حداقل نسخه مورد نیاز MySQL نسخه %s است - نسخه سرور شما %s است"
+
+#: classes/admin.php:1014
+msgid "Can't connect to PeepSo.com. Please contact PeepSo support."
+msgstr "قادر به اتصال با PeepSo.com نیست. لطفا با پشتیبانی تماس بگیرید."
+
+#: classes/admin.php:1157
+msgid "Male"
+msgstr "مرد"
+
+#: classes/admin.php:1164
+msgid "Female"
+msgstr "زن"
+
+#: classes/admin.php:1171 classes/mailqueuelisttable.php:174
+msgid "Unknown"
+msgstr "نامشخص"
+
+#: classes/admin.php:1229
+msgid "Posts"
+msgstr "پست‌ها"
+
+#: classes/admin.php:1234 classes/configsections.php:464 peepso.php:1664
+msgid "Comments"
+msgstr "نظرات"
+
+#: classes/admin.php:1291 classes/admin.php:1353
+msgid "No recent posts."
+msgstr "مطلب جدیدی نیست."
+
+#: classes/admin.php:1311 classes/admin.php:1388 classes/admin.php:1440
+#: classes/admin.php:1446 classes/admin.php:1624 classes/admin.php:1630
+msgid "View profile"
+msgstr "مشاهده پروفایل"
+
+#: classes/admin.php:1316
+msgid "View post"
+msgstr "مشاهده مطلب"
+
+#: classes/admin.php:1328
+msgid "See all Activities"
+msgstr "مشاهده تمام فعالیت ها"
+
+#: classes/admin.php:1395
+msgid "View comment"
+msgstr "مشاهده نظر"
+
+#: classes/admin.php:1426
+msgid "No users found"
+msgstr "هیچ کاربری یافت نشد"
+
+#: classes/admin.php:1454
+msgid "Edit this user"
+msgstr "ویرایش کاربر"
+
+#: classes/admin.php:1465
+msgid "See all Members"
+msgstr "مشاهده تمام اعضا"
+
+#: classes/admin.php:1492 peepso.php:2830
+msgid "Stream"
+msgstr "جریان"
+
+#: classes/admin.php:1535
+msgid "This week"
+msgstr "این هفته"
+
+#: classes/admin.php:1536
+msgid "Last week"
+msgstr "هفته گذشته"
+
+#: classes/admin.php:1537
+msgid "This month"
+msgstr "این ماه"
+
+#: classes/admin.php:1538
+msgid "Last month"
+msgstr "ماه گذشته"
+
+#: classes/admin.php:1581
+msgid "posts"
+msgstr "مطالب"
+
+#: classes/admin.php:1589
+msgid "likes"
+msgstr "پسندها"
+
+#: classes/admin.php:1614 classes/admin.php:1711
+msgid "The list is empty"
+msgstr "لیست خالی است"
+
+#: classes/admin.php:1636
+msgid "Approve"
+msgstr "تایید"
+
+#: classes/admin.php:1637
+msgid "Dismiss and Ban"
+msgstr "رد کردن و ممنوعیت"
+
+#: classes/admin.php:1648
+msgid "See all Pending Members"
+msgstr "مشاهده تمام اعضای در انتظار"
+
+#: classes/admin.php:1675
+msgid "Amount of reports"
+msgstr "میزان گزارش ها"
+
+#: classes/admin.php:1683 classes/profile.php:1122 classes/profile.php:1634
+msgid "Profile"
+msgstr "نمایه کاربر"
+
+#: classes/admin.php:1686
+msgid "Content"
+msgstr "محتوا"
+
+#: classes/admin.php:1716
+msgid "See all Reported Items"
+msgstr "دیدن تمام موارد گزارش شده"
+
+#: classes/admin.php:1745
+msgid "Report dismissed."
+msgstr "گزارش رد شد."
+
+#: classes/admin.php:1749
+msgid "User banned."
+msgstr "کاربر ممنوع شده است."
+
+#: classes/admin.php:1753
+msgid "Post unpublished."
+msgstr "پست منتشر نشده."
+
+#: classes/admin.php:1853
+msgid "Once registered, you will receive updates and special offers from PeepSo. We will only send once, your administrator's e-mail and site URL to PeepSo server."
+msgstr "پس از ثبت نام، شما بروزرسانی ها و پیشنهاد های ویژه از PeepSo دریافت خواهید کرد. ما فقط یک بار، آدرس سایت و ایمیل ادمین شما را به سرور PeepSo ارسال می‌کنیم."
+
+#: classes/admin.php:1854
+msgid "No additional information will be ever collected or sent."
+msgstr "هیچ اطلاعات اضافی هرگز ذخیره یا ارسال نخواهد شد."
+
+#: classes/admin.php:1866
+msgid "I don't want to register"
+msgstr "من نمی خواهم ثبت نام کنم"
+
+#: classes/admin.php:1944 templates/admin/extensions.php:82
+msgid "Hide Installed Plugins"
+msgstr "پنهان کردن افزونه های نصب شده"
+
+#: classes/admin.php:1945
+msgid "Show Installed Plugins"
+msgstr "نمایش افزونه های نصب شده"
+
+#: classes/admin.php:1993
+#, php-format
+msgid "The <a href=\"%s\">file system directory</a> seems to be unwritable. Please adjust it. If you don't feel comfortable doing it yourself, please contact PeepSo support "
+msgstr "<a href=\"%s\">پوشه فایل سیستمی</a> به نظر می رسد که امکان ویرایش ندارد. لطفا آن را به سورت دستی تنظیم کنید. اگر شما وارد به این کار نیستید لطفا با پشتیبانی PeepSo تماس بگیرید "
+
+#: classes/admin.php:1995 classes/configsectionlocation.php:24
+msgid "here"
+msgstr "اینجا"
+
+#: classes/admin.php:2049
+#, php-format
+msgid "New Plugin for PeepSo is available! See it in the <a href=\"%s\">Addons</a> page."
+msgstr "افزونه جدید برای پیپ سو موجود است. آن را در برگه  <a href=\"%s\">ضمیمه ها</a> مشاهده کنید."
+
+#: classes/adminconfigfields.php:9 classes/adminconfigfields.php:35
+#: classes/adminconfigfields.php:70 classes/adminconfigfields.php:89
+#: classes/adminconfiglicense.php:13 classes/adminengagementdashboard.php:18
+#: classes/adminreport.php:38 classes/adminreport.php:103
+#: classes/adminreport.php:131 classes/adminreport.php:160
+#: classes/adminsendy.php:9
+msgid "Insufficient permissions."
+msgstr "مجوز كافي نيست."
+
+#: classes/adminconfiglicense.php:37
+#, php-format
+msgid "%s remaining"
+msgstr "%s باقی مانده"
+
+#: classes/adminconfiglicense.php:40
+#, php-format
+msgid "Expired on %s"
+msgstr "انقضا در %s"
+
+#: classes/adminmailqueue.php:23
+#, php-format
+msgid "%1$d %2$s processed in %3$d seconds"
+msgstr "%1$d %2$s پردازش شده در %3$d ثانیه"
+
+#: classes/adminmailqueue.php:25 classes/mailqueuelisttable.php:277
+msgid "email"
+msgid_plural "emails"
+msgstr[0] "ایمیل"
+msgstr[1] "ایمیل"
+
+#: classes/adminmailqueue.php:29
+msgid "The Mail Queue is empty."
+msgstr "صف پست خالی است."
+
+#: classes/adminprofiles.php:12
+msgid "To be able to add new Profile Fields. Please install PeepSo Extended Profile Fields plugin. You can find it <a href=\"https://peepso.com/pricing\" target=\"_blank\">here</a>."
+msgstr "جهت افزودن فیلدهای پروفایل لطفا افزونه فیلدهای اضافی پروفایل را نصب کنید. سایت اصلی جهت دریافت <a href=\"https://peepso.com/pricing\" target=\"_blank\">"
+
+#: classes/adminprofiles.php:18
+msgid "Value should be greater than or equal to 0."
+msgstr "مقدار باید بزرگتر یا مساوی 0 است."
+
+#: classes/adminprofiles.php:19
+#, php-format
+msgid "Maximum value should be greater than or equal to %d (minimum value)."
+msgstr "بیشترین مقدار باید بزرگتر یا مساوی با %d (کمترین مقدار) باشد."
+
+#: classes/adminprofiles.php:20
+#, php-format
+msgid "Minimum value should be less than or equal to %d (maximum value)."
+msgstr "حد اقل باید کمتر یا برابر با %d (حداکثر مقدار) باشد."
+
+#: classes/adminreport.php:17
+msgid "User Reported Items"
+msgstr "آیتم های گزارش شده توسط کاربر"
+
+#: classes/adminreport.php:76 classes/listtable.php:36
+#, php-format
+msgid "1 item"
+msgid_plural "%s items"
+msgstr[0] "1 مورد"
+msgstr[1] "%s مورد"
+
+#: classes/adminreport.php:114
+msgid "The reported item has been successfully unpublished."
+msgstr "مورد گزارش شده با موفقیت لغو انتشار شد."
+
+#: classes/adminreport.php:142
+msgid "The reported item has been successfully dismissed."
+msgstr "مورد گزارش شده با موفقیت رد شده است."
+
+#: classes/adminreport.php:171
+msgid "The reported item has been successfully banned."
+msgstr "مورد گزارش شده با موفقیت ممنوع شده است."
+
+#: classes/adminreportlisttable.php:79
+msgid "Content Summary"
+msgstr "خلاصه مطلب"
+
+#: classes/adminreportlisttable.php:80
+msgid "Report Summary"
+msgstr "خلاصه گزارش"
+
+#: classes/adminreportlisttable.php:81
+msgid "Link"
+msgstr "پیوند"
+
+#: classes/adminreportlisttable.php:82
+msgid "Date Submitted"
+msgstr "تاریخ ارسال"
+
+#: classes/adminreportlisttable.php:83
+msgid "Actions"
+msgstr "فعالیت ها"
+
+#: classes/adminreportlisttable.php:184
+msgid "Reports"
+msgstr "گزارشات"
+
+#: classes/adminreportlisttable.php:185
+msgid "Reason"
+msgstr "دلیل"
+
+#: classes/adminreportlisttable.php:209 classes/adminreportlisttable.php:248
+msgid "Dismiss"
+msgstr "نادیده گرفتن"
+
+#: classes/adminreportlisttable.php:210
+msgid "Delete this item, leave the post alone."
+msgstr "حذف این مورد، پست را رها کن."
+
+#: classes/adminreportlisttable.php:216
+msgid "Ban Profile"
+msgstr "مسدود کردن نمایه"
+
+#: classes/adminreportlisttable.php:217
+msgid "Ban this profile, but not deleted"
+msgstr "مسدود کردن این پروفایل، حذف نمی شود"
+
+#: classes/adminreportlisttable.php:221 classes/adminreportlisttable.php:247
+msgid "Unpublish"
+msgstr "عدم انتشار"
+
+#: classes/adminreportlisttable.php:222
+msgid "Make this item no longer published, but not deleted"
+msgstr "تغییر وضعیت این آیتم به منتشر نشده، و نه حذف شده"
+
+#: classes/adminreportlisttable.php:267
+msgid "unpublished"
+msgstr "منتشر نشده"
+
+#: classes/adminreportlisttable.php:272
+msgid "dismissed"
+msgstr "رد شده"
+
+#: classes/adminreportlisttable.php:278
+msgid "report"
+msgid_plural "reports"
+msgstr[0] "گزارش"
+msgstr[1] "گزارش ها"
+
+#: classes/ajaxhandler.php:58
+msgid "Login required"
+msgstr "باید وارد شوید"
+
+#: classes/auth.php:26 classes/auth.php:59
+msgid "Login Error"
+msgstr "خطا در ورود به سیستم"
+
+#: classes/auth.php:27
+msgid "Sorry, your login attempt failed. Please refresh the page and try again.<br><br>Contact the webmaster if the problem persists."
+msgstr "با عرض پوزش، ورود به سیستم انجام نشد. صفحه را نوسازی کنید و دوباره سعی کنید.<br><br>تماس با مدیر سایت اگر مشکل ادامه یابد."
+
+#: classes/auth.php:62
+msgid "Username and password required."
+msgstr "نام کاربری و رمز عبور لازم است."
+
+#: classes/config.php:60
+msgid "Class must be instance of PeepSoConfigSectionAbstract"
+msgstr "کلاس باید مانند PeepSoConfigSectionAbstract باشد"
+
+#: classes/config.php:166
+msgid "Tab titles"
+msgstr "عناوین تب"
+
+#: classes/config.php:173
+msgid "Field descriptions"
+msgstr "توصیف فیلد"
+
+#: classes/config.php:184
+msgid "Some settings have been changed. Be sure to save your changes."
+msgstr "برخی از تنظیمات تغییر کرده است. حتما تغییرات را ذخیره نمایید."
+
+#: classes/config.php:279 classes/configsectionappearance.php:290
+#: classes/configsectionlocation.php:37 classes/configsections.php:366
+#: templates/admin/profiles_field.php:36
+msgid "General"
+msgstr "عمومی"
+
+#: classes/config.php:282
+msgid "General configuration settings for PeepSo"
+msgstr "تنظیمات عمومی برای PeepSo"
+
+#: classes/config.php:288 templates/admin/profiles_field.php:37
+msgid "Appearance"
+msgstr "نمای ظاهری"
+
+#: classes/config.php:290
+msgid "Look and feel settings"
+msgstr "تنظیمات نمای ظاهری"
+
+#: classes/config.php:296
+msgid "Edit Emails"
+msgstr "ویرایش ایمیل ها"
+
+#: classes/config.php:299
+msgid "Edit content of emails sent by PeepSo to users and Admins"
+msgstr "ویرایش محتوای ایمیل های ارسال شده توسط PeepSo برای کاربران و مدیران"
+
+#: classes/config.php:303
+msgid "Advanced"
+msgstr "پیشرفته"
+
+#: classes/config.php:306
+msgid "Avanced System options"
+msgstr "تنظیمات پیشرفته سیستم"
+
+#: classes/config.php:311 classes/location.php:83 classes/location.php:125
+#: classes/profilefields.php:211
+msgid "Location"
+msgstr "موقعیت مکانی"
+
+#: classes/config.php:407
+msgid "Options updated"
+msgstr "تنظیمات بروز شد"
+
+#: classes/config.php:410
+msgid "Please correct the errors below"
+msgstr "لطفا خطاهای زیر را تصحیح کنید"
+
+#: classes/config.php:502
+#, php-format
+msgid "Toggle panel: %s"
+msgstr "باز و بسته کردن پنل: %s"
+
+#: classes/configemails.php:17
+msgid "New User Email"
+msgstr "ایمیل کاربر جدید"
+
+#: classes/configemails.php:18
+msgid "This will be sent to new users upon completion of the registration process"
+msgstr "این به کاربران جدید پس از اتمام مراحل ثبت نام ارسال خواهد شد"
+
+#: classes/configemails.php:20
+msgid "New User Email (No Account Verification)"
+msgstr "ایمیل کاربر جدید (بدون تایید حساب)"
+
+#: classes/configemails.php:21
+msgid "This will be sent to new users upon completion of the registration process when Account Verification is disabled"
+msgstr "این به کاربران جدید در هنگام تکمیل مراحل ثبت نام زمانی که گزینه تایید حساب غیرفعال است ارسال خواهد شد"
+
+#: classes/configemails.php:23
+msgid "Account Approved"
+msgstr "حساب تایید شد"
+
+#: classes/configemails.php:24
+msgid "This will be sent when an Admin approves a user registration."
+msgstr "این زمانی که مدیر ثبت نام یک کاربر را تایید می کند ارسال می گردد."
+
+#: classes/configemails.php:26
+msgid "Activity Notice"
+msgstr "اعلان فعالیت"
+
+#: classes/configemails.php:27
+msgid "This will be sent when someone interacts with a user's Activity Stream"
+msgstr "این در زمانی که کسی با جریان فعالیت کاربری تعامل کند ارسال خواهد شد"
+
+#: classes/configemails.php:29
+msgid "Like Post"
+msgstr "پسندیدن مطلب"
+
+#: classes/configemails.php:30
+msgid "This will be sent when a user \"likes\" another user's post"
+msgstr "زمانی که یک کاربر مطلب کاربر دیگری را بپسندد ارسال خواهد شد"
+
+#: classes/configemails.php:32
+msgid "User Comment"
+msgstr "نظر کاربر"
+
+#: classes/configemails.php:33
+msgid "This will be sent to a post owner when another user comments on the post"
+msgstr "وقتی کاربری روی مطلب کاربر دیگری نظر دهد به نویسنده ارسال خواهد شد"
+
+#: classes/configemails.php:35
+msgid "User Reply Comment"
+msgstr "پاسخ کاربر"
+
+#: classes/configemails.php:36
+msgid "This will be sent to a comment owner when another user comments on the comment"
+msgstr "وقتی کاربری به نظری پاسخ دهد به صاحب نظر ارسال خواهد شد"
+
+#: classes/configemails.php:38
+msgid "Like User Comment"
+msgstr "پسندیدن نظر کاربر"
+
+#: classes/configemails.php:39
+msgid "This will be sent when a user \"likes\" another user's comments on the post"
+msgstr "زمانی که یک کاربر نظر کاربر دیگری را بپسندد ارسال خواهد شد"
+
+#: classes/configemails.php:41
+msgid "Wall Post"
+msgstr "پست دیوار"
+
+#: classes/configemails.php:42
+msgid "This will be sent when a user writes on another user's wall"
+msgstr "وقتی کاربری روی دیوار کاربر دیگری بنویسد ارسال خواهد شد"
+
+#: classes/configemails.php:44
+msgid "Share Post"
+msgstr "اشتراک گذاری مطلب"
+
+#: classes/configemails.php:45
+msgid "This will be sent when a user \"shared\" another user's post"
+msgstr "وقتی کاربری مطلب کاربر دیگری را به اشتراک بگذارد ارسال خواهد شد"
+
+#: classes/configemails.php:47 install/activate.php:352
+#: templates/general/login.php:28 templates/general/recover-password.php:10
+#: templates/widgets/me.tpl.php:207
+msgid "Recover Password"
+msgstr "بازیابی رمز عبور"
+
+#: classes/configemails.php:48
+msgid "This will be sent when a user requests a password recovery"
+msgstr "وقتی کاربری درخواست بازیابی رمز عبور دهد ارسال خواهد شد"
+
+#: classes/configemails.php:50
+msgid "Password Changed"
+msgstr "رمز عبور تغییر یافت"
+
+#: classes/configemails.php:51
+msgid "This will be sent when a user changes their password after recovery"
+msgstr "هنگامی که یک کاربر رمز عبور خود را تغییر دهد ارسال خواهد شد"
+
+#: classes/configemails.php:53
+msgid "Like Profile"
+msgstr "پسندیدن پروفایل"
+
+#: classes/configemails.php:54
+msgid "This will be sent when a user \"likes\" another user's profile"
+msgstr "وقتی کاربری پروفایل کاربر دیگری را بپسندد ارسال خواهد شد"
+
+#: classes/configemails.php:56 lib/pluggable.php:46
+msgid "New User Registration"
+msgstr "ثبت نام کاربر جدید"
+
+#: classes/configemails.php:58
+msgid "This will be sent to admin user when new user needs approval"
+msgstr "هنگام ثبت نام کاربر جدید به مدیر ارسال خواهد شد"
+
+#: classes/configemails.php:60
+msgid "These emails will be sent to the email account setup in WordPress settings. <a href=\"options-general.php\" target=\"_blank\">You can change it here</a>."
+msgstr "این ایمیل ها به ایمیل تنظیمات حساب در تنظیمات وردپرس ارسال خواهد شد. <a href=\"options-general.php\" target=\"_blank\">می توانید از اینجا تغییرش دهید</a>."
+
+#: classes/configemails.php:99
+msgid "Reset all emails"
+msgstr "تنظیم مجدد تمام ایمیل ها"
+
+#: classes/configemails.php:102
+msgid "This will  reset all email templates to default values"
+msgstr "این تمام ایمیل ها را به قالب های پیشفرض اولیه بازخواهد گرداند"
+
+#: classes/configemails.php:109
+msgid "Yes, I'm sure!"
+msgstr "بله، من مطمئن هستم!"
+
+#: classes/configemails.php:117
+msgid "Allowed Tokens"
+msgstr "نشانه های مجاز"
+
+#: classes/configemails.php:119
+msgid "The following tokens can be used within the content of emails:"
+msgstr "نشانه های زیر می تواند در داخل محتوای ایمیل مورد استفاده قرار گیرد:"
+
+#: classes/configemails.php:121
+msgid "Current date in the format that WordPress displays dates."
+msgstr "تاریخ جاری در فرمتی که وردپرس تاریخ ها را نمایش می دهد."
+
+#: classes/configemails.php:122
+msgid "Current date and time in the format that WordPress displays dates with time."
+msgstr "تاریخ و ساعت جاری در فرمتی که وردپرس تاریخ و ساعت را نمایش می دهد."
+
+#: classes/configemails.php:123
+msgid "Name of your site from the WordPress title configuration."
+msgstr "نام سایت شما از پیکربندی نام وردپرس."
+
+#: classes/configemails.php:124
+msgid "URL of your site."
+msgstr "آدرس وب سایت شما."
+
+#: classes/configemails.php:125
+msgid "URL to receiving user's Alert Configuration page."
+msgstr "نشانی برای دریافت صفحه تنظیمات اعلان های کاربر."
+
+#: classes/configemails.php:126
+msgid "The current four digit year."
+msgstr "سال جاری چهار رقمی."
+
+#: classes/configemails.php:127
+msgid "Link to the post, comment or other item referenced; context specific."
+msgstr "لینک به پست، نظر یا آیتم های مرجع دیگر؛ چهارچوب خاص."
+
+#: classes/configemails.php:130
+msgid "These are referring to the user causing the alert, such as \"{fromlogin} liked your post...\":"
+msgstr "این ها متناسب با شکلی است که کاربر باعث اعلان شده است، مثل \"{fromlogin} مطلب شما را پسندید...\":"
+
+#: classes/configemails.php:132
+msgid "Message sender's email address."
+msgstr "آدرس ایمیل فرستنده پیام."
+
+#: classes/configemails.php:133
+msgid "Message sender's full name."
+msgstr "نام کامل فرستنده پیام."
+
+#: classes/configemails.php:134
+msgid "Message sender's first name."
+msgstr "نام فرستنده پیام."
+
+#: classes/configemails.php:135
+msgid "Message sender's username."
+msgstr "نام کاربری فرستنده پیام."
+
+#: classes/configemails.php:138
+msgid "These are referring to the receiving user on all messages, such as \"Welcome {userfirstname}...\":"
+msgstr "این ها اشاره به کاربر دریافت کننده همه پیام ها دارد مثل \"خوش آمدید {userfirstname}\":"
+
+#: classes/configemails.php:140
+msgid "Message recipient's email address."
+msgstr "آدرس ایمیل گیرنده پیام."
+
+#: classes/configemails.php:141
+msgid "Message recipient's full name"
+msgstr "نام و نام خانوادگی گیرنده پیام"
+
+#: classes/configemails.php:142
+msgid "Message recipient's first name"
+msgstr "نام گیرنده پیام"
+
+#: classes/configemails.php:143
+msgid "Message recipient's username"
+msgstr "نام کاربری گیرنده پیام"
+
+#: classes/configemails.php:221
+msgid "Email contents updated."
+msgstr "محتوای ایمیل بروزرسانی شد."
+
+#: classes/configemails.php:244
+msgid "Email contents reset."
+msgstr "محتوای ایمیل بازنشانی شد."
+
+#: classes/configsectionadvanced.php:51
+#, php-format
+msgid "One tab name per line. \"Stream\" and \"About\" will always be first. Current order: %s"
+msgstr "یک نام تب در هر خط. دیوار/جریان فعالیت و درباره همیشه اول خواهند بود. چینش فعلی: %s"
+
+#: classes/configsectionadvanced.php:55
+msgid "Profile tabs order (beta)"
+msgstr "چینش تب های پروفایل (بتا)"
+
+#: classes/configsectionadvanced.php:72
+msgid "This setting is to be changed upon very first PeepSo activation or in case of site migration. If changed in any other case it will result in missing content including user avatars, covers, photos etc. (error 404)."
+msgstr "این تنظیمات در اولین فعالسازی PeepSo و یا پس از مهاجرت به هاست دیگر تغییر می کند. در صورتی که در موقعیت های دیگری تغییر کند ممکن است باعث از دست رفتن محتوا مانند آواتارها، کاورها، عکس ها و .. شود. (خطای 404)."
+
+#: classes/configsectionadvanced.php:79
+msgid "PeepSo allows users to upload images that are stored on your server. Enter a location where these files are to be stored.<br/>This must be a directory that is writable by your web server and and is accessible via the web. If the directory specified does not exist, it will be created."
+msgstr "PeepSo به کاربران اجازه بارگذاری عکس هایی که بر روی سرور شما نگهداری می شوند را می دهد. مکانی را که این فایل ها باید در آن ذخیره شوند وارد کنید. <br/> این می تواند یک پوشه که توسط وب سرور شما قابل نوشتن و از طریق وب قابل دسترسی است باشد. اگر پوشه مورد نظر موجود نباشد ساخته خواهد شد."
+
+#: classes/configsectionadvanced.php:91
+msgid "Can not write to directory"
+msgstr "پوشه قابل نوشتن نیست"
+
+#: classes/configsectionadvanced.php:98
+msgid "Uploads Directory"
+msgstr "پوشه آپلودها"
+
+#: classes/configsectionadvanced.php:104
+msgid "File System"
+msgstr "فایل سیستم"
+
+#: classes/configsectionadvanced.php:111
+msgid "Enabled: various debug information is written to a log file."
+msgstr "فعال: اطلاعات مختلف عیب یابی بر روی یک فایل لاگ یادداشت شد."
+
+#: classes/configsectionadvanced.php:111
+msgid "This can impact website speed and should ONLY be enabled when someone is debugging PeepSo."
+msgstr "این گزینه می تواند روی سرعت وبسایت اثر بگذارد و تنها باید در زمانی فعال شود که کسی می خواهد پیپ سو را عیب یابی کند."
+
+#: classes/configsectionadvanced.php:114
+msgid "Enable Logging"
+msgstr "فعال سازی ثبت گزارش"
+
+#: classes/configsectionadvanced.php:119
+msgid "Strict Version Lock makes sure that it's impossible to upgrade PeepSo Core before all of the child plugins have been updated."
+msgstr "قفل سخت نسخه شما را مطمئن می کند که ارتقای پیپ سو، قبل از بروزرسانی تمام افزونه های ضمیمه آن غیر ممکن خواهد بود."
+
+#: classes/configsectionadvanced.php:119
+msgid "Please DO NOT enable this unless you are having issues with updating PeepSo Core."
+msgstr "لطفا این گزینه را فعال نکنید مگر زمانی که با بروزرسانی هسته پیپ سو مشکل داشته باشید."
+
+#: classes/configsectionadvanced.php:122
+msgid "Override Strict Version Lock"
+msgstr "قفل سخت نسخه را نادیده بگیرید"
+
+#: classes/configsectionadvanced.php:128
+msgid "Maintenance & debugging"
+msgstr "نگهداری & اشکال زدایی"
+
+#: classes/configsectionadvanced.php:137
+msgid "Disables infinite loading of activities, members lists etc until the users clicks the \"load more\" button."
+msgstr "بارگذاری بی نهایت فعالیت ها، فهرست اعضا و .. را غیر فعال می کند تا زمانی که کاربر بر روی دکمه \"بارگذاری بیشتر\" کلیک کند."
+
+#: classes/configsectionadvanced.php:140
+msgid "Enable \"load more:\" button"
+msgstr "فعال کردن دکمه \"بارگذاری بیشتر\""
+
+#: classes/configsectionadvanced.php:149
+#, php-format
+msgid "Every %d posts"
+msgstr "هز %d پست"
+
+#: classes/configsectionadvanced.php:157
+msgid "By default all posts load in an \"infinite scroll\"."
+msgstr "به طور پیشفرض همه پست ها در حالت \"اسکرول نامحدود \" بارگذاری می شوند."
+
+#: classes/configsectionadvanced.php:157
+msgid "You can choose to have a specified batch of posts to loade before showing the \"load button\" again."
+msgstr "شما می توانید یک مجموعه انتخابی از پست ها را جهت بارگذاری قبل از نمایش مجدد دکمه \"بارگذاری بیشتر\" تعیین کنید."
+
+#: classes/configsectionadvanced.php:160
+msgid "Repeat \"load more\" button?"
+msgstr "تکرار دکمه \"بارگذاری بیشتر\"؟"
+
+#: classes/configsectionadvanced.php:168
+#, php-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d ثانیه"
+msgstr[1] "%d ثانیه"
+
+#: classes/configsectionadvanced.php:170 classes/configsectionadvanced.php:199
+#: classes/configsectionadvanced.php:219
+msgid "default"
+msgstr "پیش‌فرض"
+
+#: classes/configsectionadvanced.php:176
+msgid "How often to run  new notification check for each user that is logged in"
+msgstr "هر چند وقت یک بار، بررسی اعلان جدید برای کاربری که وارد می شود صورت پذیرد؟"
+
+#: classes/configsectionadvanced.php:176
+msgid "Lower number means more robust notifications, but also higher server load"
+msgstr "اعداد کوچکتر به معنی اعلان های قدرتمندتر و در عین حال زمان بازگذاری بیشتر برای سرور است"
+
+#: classes/configsectionadvanced.php:179
+msgid "AJAX call intensity"
+msgstr "شدت ارتباط ای جاکس"
+
+#: classes/configsectionadvanced.php:186
+msgid "Performance"
+msgstr "عملکرد"
+
+#: classes/configsectionadvanced.php:197
+#, php-format
+msgid "%d pixels"
+msgstr "%d پیکسل"
+
+#: classes/configsectionadvanced.php:205
+msgid "Bigger images use more storage, but will look better - especially on high resolution screens."
+msgstr "عکس های بزرگ تر، فضای بیشتری اشغال می کنند اما ظاهرشان بهتر به نظر می آید - بخصوص در نمایشگرهای با وضوح بالاتر"
+
+#: classes/configsectionadvanced.php:208
+msgid "Avatar size"
+msgstr "اندازه آواتار"
+
+#: classes/configsectionadvanced.php:217
+#, php-format
+msgid "%d%%"
+msgstr "%d%%"
+
+#: classes/configsectionadvanced.php:225
+msgid "Higher quality will use more storage, but the images will look better"
+msgstr "کیفیت بالاتر فضای بیشتری اشغال می کند اما تصاویر بهتر به نظر خواهند رسید"
+
+#: classes/configsectionadvanced.php:228
+msgid "Avatar quality"
+msgstr "کیفیت تصویر آواتار"
+
+#: classes/configsectionadvanced.php:235
+msgid "Storage"
+msgstr "حافظه"
+
+#: classes/configsectionadvanced.php:236
+msgid "These settings control the dimensions and compression levels, and will only be applied to newly uploaded images."
+msgstr "این تنظیمات، ابعاد و سطح فشرده سازی را کنترل می کند و تنها بر روی تصاویر جدید اعمال می شود."
+
+#: classes/configsectionadvanced.php:243
+msgid "Enables non-SSL (http://) link fetching. This can lead to \"insecure content\" warnings if your site is using SSL"
+msgstr "فعالسازی بارگذاری لینک غیر SSL. این می تواند منجر به هشدار \"محتوای غیر امن\" شود اگر سایت شما از SSL استفاده می کند"
+
+#: classes/configsectionadvanced.php:246
+msgid "Allow non-SSL embeds"
+msgstr "اجازه دادن به جاسازی (امبد) غیرSSL"
+
+#: classes/configsectionadvanced.php:251
+msgid "When enabled, users will be shown a warning page when clicking an external link inside any PeepSo page. The warning page is the one containing peepso_external_link_warning shortcode."
+msgstr "در صورت فعالسازی، کاربران در هنگام کلیک بر روی یک لینک خارجی در داخل برگه های پیپ سو با یک برگه هشدار مواجه خواهند شد. برگه هشدار آن است که حاوی شورت کد peepso_external_link_warnin باشد."
+
+#: classes/configsectionadvanced.php:254
+msgid "Enable \"external link warning\" page"
+msgstr "فعال کردن برگه \"هشدار لینک خارجی\""
+
+#: classes/configsectionadvanced.php:260
+msgid "Domains that do not require a warning page, without \"www\" or \"http(s). One domain name per line. Your website is whitelisted by default. "
+msgstr "دامنه هایی که به برگه هشدار نیازی ندارند، با یا بدون \"www\" یا http(s). یک دامنه در هر خط. وبسایت شما به طور پیشفرض با فهرست سفید اضافه شده. "
+
+#: classes/configsectionadvanced.php:260
+msgid "Example domains:"
+msgstr "دامنه های نمونه:"
+
+#: classes/configsectionadvanced.php:264
+msgid "Domain whitelist"
+msgstr "فهرست سفید دامنه"
+
+#: classes/configsectionadvanced.php:271
+msgid "Security"
+msgstr "امنیت"
+
+#: classes/configsectionadvanced.php:282
+msgid "Should be between 1 and 64 characters long."
+msgstr "باید بین 1 تا 64 نویسه باشد."
+
+#: classes/configsectionadvanced.php:288
+msgid "Email sender"
+msgstr "فرستنده‌ی ایمیل"
+
+#: classes/configsectionadvanced.php:296
+msgid "Email format is invalid."
+msgstr "قالب ایمیل نامعتبر است."
+
+#: classes/configsectionadvanced.php:300
+msgid "Admin Email"
+msgstr "ایمیل مدیر"
+
+#: classes/configsectionadvanced.php:306
+msgid "This should be only enabled if you are planning to use an external cron job to process the PeepSo mail queue.<br/>External cron job is recommended for bigger communities.<br/>Please refer to <a href=\"http://peep.so/mailqueue/\" target=\"_blank\">the documentation</a>."
+msgstr "این تنها زمانی باید فعال شود که شما در نظر دارید از یک کرون جاب خارجی برای پردازش ایمیلهای پیپ سو استفاده کنید. <br/> کرون جاب خارجی فقط برای اجتماعات بزرگ توصیه می شود. لطفا <a href=\"http://peep.so/mailqueue/\" target=\"_blank\">مستندات</a> را مطالعه کنید."
+
+#: classes/configsectionadvanced.php:309
+msgid "Disable PeepSo Default Mailqueue"
+msgstr "غیرفعال کردن صف ایمیل پیشفرض PeepSo"
+
+#: classes/configsectionadvanced.php:314
+msgid "All new members will have their e-mail notifications disabled by default"
+msgstr "اعلان های ایمیلی به طور پیشفرض برای تمام اعضای جدید غیرفعال است"
+
+#: classes/configsectionadvanced.php:317
+msgid "Don't subscribe new members to any e-mail notifications"
+msgstr "هیچ عضو جدیدی را در اعلان های ایمیلی مشترک نکن"
+
+#: classes/configsectionadvanced.php:323
+msgid "Customize entire e-mail layout"
+msgstr "سفارشی کردن صفحه آرایی کل ایمیل"
+
+#: classes/configsectionadvanced.php:329
+msgid "Text, HTML and inline CSS only (no PHP or shortcodes). Leave empty for the default layout."
+msgstr "متن HTML و CSS درون خطی تنها (بدون پی اچ پی و یا shortcodes). برای طرح پیش فرض خالی بگذارید."
+
+#: classes/configsectionadvanced.php:331
+#, php-format
+msgid "<a href=\"%s\" target=\"_blank\">Click here</a> after saving to test your changes."
+msgstr "برای آزمایش تغییرات پس از ذخیره بر روی <a href=\"%s\" target=\"_blank\">کلیک کنید</a>."
+
+#: classes/configsectionadvanced.php:333
+msgid "Available variables: <br/>{email_contents} - e-mail contents <font color=\"red\">*</font><br/>{unsubscribeurl} - URL of the user notification preferences <font color=\"red\">*</font><br/>{currentuserfullname} - full name of the recicpient<br>{useremail} - e-mail of the recipient<br/>{sitename} - the name of your site<br/>{siteurl} - the URL of your site<br/><br/><font color=\"red\">*</font>) is required"
+msgstr "متغیر های موجود: <br/>{email_contents} - <font color=\"red\">ایمیل مطالب *</font><br/>{unsubscribeurl} - آدرس مذیریت اعلان های کاربر <font color=\"red\">*</font><br/>{currentuserfullname} - نام کامل گیرنده <br> {useremail} - ایمیل گیرنده <br/>{sitename} - نام سایت شما <br/>{siteurl} - نشانی سایت شما <br/><br/><font color=\"red\">*</font> مورد نیاز است"
+
+#: classes/configsectionadvanced.php:342
+msgid "Missing variable {emails_contents} or {unsubscribeurl}"
+msgstr "متغیرهای گم شده {emails_contents} یا {unsubscribeurl}"
+
+#: classes/configsectionadvanced.php:349
+msgid "Override entire HTML"
+msgstr "کل HTML را نادیده بگیرید"
+
+#: classes/configsectionadvanced.php:356
+msgid "Emails"
+msgstr "ایمیل ها"
+
+#: classes/configsectionadvanced.php:367
+msgid "Delete Post and Comment data"
+msgstr "حذف پست و نظرات"
+
+#: classes/configsectionadvanced.php:376
+msgid "Delete all data and settings"
+msgstr "حذف کامل اطلاعات و تنظیمات"
+
+#: classes/configsectionadvanced.php:381
+msgid "When set to \"YES\", all <em>PeepSo</em> data will be deleted upon plugin Uninstall (but not Deactivation).<br/>Once deleted, <u>all data is lost</u> and cannot be recovered."
+msgstr "وقتی روی \"بله\" قرار گیرد, همه داده های <em>PeepSo</em>هنگام لغو نصب (و نه غیر فعال کردن) پاک خواهند شد. <br/>پس از حذف, <u>همه داده ها از دست رفته</u> و قابل بازیابی نخواهد بود."
+
+#: classes/configsectionadvanced.php:386
+msgid "PeepSo Uninstall"
+msgstr "حذف PeepSo"
+
+#: classes/configsectionadvanced.php:387
+msgid "Control behavior of PeepSo when uninstalling / deactivating"
+msgstr "کنترل رفتار PeepSo در هنگام حذف / غیرفعالسازی"
+
+#: classes/configsectionadvanced.php:395
+msgid "Enable Open Graph"
+msgstr "فعالسازی Open Graph"
+
+#: classes/configsectionadvanced.php:402
+msgid "Title (og:title)"
+msgstr "عنوان (و:عنوان)"
+
+#: classes/configsectionadvanced.php:409
+msgid "Description (og:description)"
+msgstr "توضیحات (و: توضیحات)"
+
+#: classes/configsectionadvanced.php:416
+msgid "Image (og:image)"
+msgstr "تصویر (و:تصویر)"
+
+#: classes/configsectionadvanced.php:421
+msgid "This feature is currently in BETA and should be considered experimental. It will remove \"?\" from certain PeepSo URLs, such as \"profile/?username/about\"."
+msgstr "این قابلیت در حال حاضر در نسخه بتا و برای آزمایش است. این علامت \"?\" را از نشانی دقیق پیپ سود مانند \"profile/?username/about\" حذف می کند."
+
+#: classes/configsectionadvanced.php:424
+msgid "Enable SEO Friendly links"
+msgstr "فعالسازی لینک های مطابق با سئوی خوب"
+
+#: classes/configsectionadvanced.php:433
+msgid "You are currently using [peepso_activity] as your home page. Because of that, single activity URLs will have to contain \"?\" no matter what the above setting is."
+msgstr "شما در حال حاضر از [peepso_activity] در برگه خانگی سایت تان استفاده می کنید. به خاطر همین نشانی های فعالیت تکی علامت \"?\" را بدون توجه به تنظیمات بالا خواهند داشت."
+
+#: classes/configsectionadvanced.php:440
+msgid "This advanced feature causes PeepSo pages to override the global WP_Query for better SEO."
+msgstr "این ویژگی پیشرفته موجب می شود برگه های پیپ سو، WP_Query عمومی را برای سئوی بهتر نادیده بگیرند."
+
+#: classes/configsectionadvanced.php:440
+msgid "This can interfere with SEO plugins, so use with caution."
+msgstr "این گزینه می تواند با افزونه های سئو تداخل پیدا کند پس با احتیاط استفاده کنید."
+
+#: classes/configsectionadvanced.php:443
+msgid "PeepSo can reset WP_Query"
+msgstr "پیپ سو می تواند WP_Query را بازنشانی کند"
+
+#: classes/configsectionadvanced.php:450
+msgid "SEO & Open Graph"
+msgstr "سئو و اپن گراف"
+
+#: classes/configsectionadvanced.php:451
+msgid "The Open Graph protocol enables sites shared for example to Facebook carry information that render shared URLs in a great way. Having a photo, title and description. You can learn more about it in our documentation. Just search for 'Open Graph'."
+msgstr "پروتکل اپن گراف، سایت های اشتراک گذاشته شده مثلا در فیسبوک را قادر به حمل اطلاعاتی که آدرس های اشتراکی رندر می کنند به شکلی عالی می سازد. داشتن یک عکس، عنوان و توضیحات. برای اطلاعات بیشتر به راهنمای ما مراجعه کرده و عبارت 'Open Graph' را جستجو کنید."
+
+#: classes/configsectionappearance.php:26
+msgid "Real Names"
+msgstr "نام واقعی"
+
+#: classes/configsectionappearance.php:27
+msgid "Usernames"
+msgstr "نام های کاربری"
+
+#: classes/configsectionappearance.php:34
+msgid "Display Name Style"
+msgstr "سبک نام نمایشی"
+
+#: classes/configsectionappearance.php:41
+msgid "Users Can Override Display Name Style"
+msgstr "کاربران می توانند سبک نام نمایشی را نادیده بگیرید"
+
+#: classes/configsectionappearance.php:46
+msgid "Users can permanently delete their profiles"
+msgstr "کاربران می توانند پروفایل های شان را به صورت دائمی پاک کنند"
+
+#: classes/configsectionappearance.php:49 classes/profile.php:1452
+#: templates/profile/profile-about-account.php:48
+msgid "Profile Deletion"
+msgstr "حذف پروفایل"
+
+#: classes/configsectionappearance.php:54
+msgid "User profiles are shareable to social networks"
+msgstr "نمایه یا پروفایل کابران قابل اشتراک گذاری در شبکه های اجتماعی است"
+
+#: classes/configsectionappearance.php:57
+msgid "Profile Sharing"
+msgstr "به اشتراک گذاری نمایه"
+
+#: classes/configsectionappearance.php:62
+msgid "Users can \"like\" each other's  profiles"
+msgstr "کاربران می توانند نمایه های یکدیگر را لایک کنند"
+
+#: classes/configsectionappearance.php:65
+msgid "Profile Likes"
+msgstr "پسندهای نمایه"
+
+#: classes/configsectionappearance.php:72
+msgid "Always link to PeepSo Profile"
+msgstr "همیشه لینک به پروفایل PeepSo داده شود"
+
+#: classes/configsectionappearance.php:83
+msgid "Avatars and Covers"
+msgstr "آواتار و کاور"
+
+#: classes/configsectionappearance.php:90
+msgid "Use square avatars"
+msgstr "استفاده از آواتار های مربع"
+
+#: classes/configsectionappearance.php:97
+msgid "Use WordPress Avatars"
+msgstr "استفاده از آواتار وردپرس"
+
+#: classes/configsectionappearance.php:104
+msgid "The users will be unable to change their avatars in their PeepSo profiles. PeepSo will inherit the avatars from your WordPress site"
+msgstr "کاربران قادر به تغییر آواتارهای خود در پروفایل ها نخواهند بود. PeepSo آواتارها را از سایت وردپرسی شما می گیرد"
+
+#: classes/configsectionappearance.php:111
+msgid "Use PeepSo avatars everywhere"
+msgstr "استفاده از آواتار PeepSo همه جا"
+
+#: classes/configsectionappearance.php:118
+msgid "Allow Gravatar avatars"
+msgstr "اجازه استفاده از گراواتار"
+
+#: classes/configsectionappearance.php:122
+msgid "By default the full cover displays only in the header of the \"Stream\" section"
+msgstr "به طور پیشفرض کاور کامل تنها در سربرگ بخش استریم/دیوار/جریان فعالیت نمایش داده می شود"
+
+#: classes/configsectionappearance.php:125
+msgid "Always use full covers"
+msgstr "همیشه از کاور کامل استفاده کن"
+
+#: classes/configsectionappearance.php:132
+msgid "User Profiles"
+msgstr "پروفایلهای کاربر"
+
+#: classes/configsectionappearance.php:144
+msgid "Customize text"
+msgstr "متن سفارشی"
+
+#: classes/configsectionappearance.php:151
+msgid "Callout Header"
+msgstr "بالون سربرگ"
+
+#: classes/configsectionappearance.php:158
+msgid "Callout Text"
+msgstr "متن نمایش تشریحی"
+
+#: classes/configsectionappearance.php:165
+msgid "Button Text"
+msgstr "متن دکمه"
+
+#: classes/configsectionappearance.php:173
+msgid "Landing Page Image"
+msgstr "تصویر صفحه فرود"
+
+#: classes/configsectionappearance.php:181
+msgid "Suggested Landing Page image size is: 1140px x 469px."
+msgstr "اندازه تصویر پیشنهاد شده برای صفحه فرود: 1140px x 469px."
+
+#: classes/configsectionappearance.php:191
+msgid "Selected Image"
+msgstr "تصویر انتخاب شده"
+
+#: classes/configsectionappearance.php:205 classes/configsections.php:278
+msgid "Registration"
+msgstr "ثبت نام"
+
+#: classes/configsectionappearance.php:212
+msgid "Light"
+msgstr "روشن"
+
+#: classes/configsectionappearance.php:237
+msgid "Color scheme"
+msgstr "طرح رنگ"
+
+#: classes/configsectionappearance.php:245
+msgid "Rounded corners"
+msgstr "گوشه های گرد"
+
+#: classes/configsectionappearance.php:252
+msgid "PeepSo Style"
+msgstr "استایل پیپ سو"
+
+#: classes/configsectionappearance.php:260
+msgid "Show notification icons on WP Toolbar"
+msgstr "نشان دادن نمادهای اعلان در نوار ابزار وپ"
+
+#: classes/configsectionappearance.php:266
+msgid "never"
+msgstr "هرگز"
+
+#: classes/configsectionappearance.php:267
+msgid "always"
+msgstr "همیشه"
+
+#: classes/configsectionappearance.php:268
+msgid "if older than 24 hours"
+msgstr "اگر قدیمی تر از 24 ساعت باشد"
+
+#: classes/configsectionappearance.php:273
+msgid "\"Relative\" date is a human readable date, for example \"3 days ago\""
+msgstr "تاریخ نسبی یک تاریخ قابل خواندن توسط انسان است، برای مثال \"3 روز پیش\""
+
+#: classes/configsectionappearance.php:273
+#, php-format
+msgid "\"Absolute\" date is a simple datestamp such as %s"
+msgstr "تاریخ دقیق یک امضای تاریخ ساده است مثل %s"
+
+#: classes/configsectionappearance.php:276
+msgid "Use absolute dates"
+msgstr "استفاده از تاریخ دقیق"
+
+#: classes/configsectionappearance.php:283
+msgid "Show \"Powered by PeepSo\" link"
+msgstr "نمایش لینک \"طراحی شده توسط PeepSo\""
+
+#: classes/configsectionappearance.php:298 templates/members/search.php:58
+msgid "Alphabetical"
+msgstr "بر اساس حروف الفبا"
+
+#: classes/configsectionappearance.php:299 templates/members/search.php:59
+msgid "Recently online"
+msgstr "اخیرا آنلاین"
+
+#: classes/configsectionappearance.php:300 templates/members/search.php:60
+msgid "Latest members"
+msgstr "آخرین اعضا"
+
+#: classes/configsectionappearance.php:307
+msgid "Default Sorting"
+msgstr "مرتب سازی پیش فرض"
+
+#: classes/configsectionappearance.php:312
+msgid "Users can hide from Members Page, Widgets etc"
+msgstr "کاربران می توانند از صفحه اعضا، ابزارک ها و... پنهان باشند"
+
+#: classes/configsectionappearance.php:315
+msgid "Users can hide from user listings"
+msgstr "کاربران می توانند از فهرست های اعضا مخفی باشند"
+
+#: classes/configsectionappearance.php:323
+msgid "Allow guest access to members listing"
+msgstr "اجازه به مهمان برای دسترسی به لیست اعضا"
+
+#: classes/configsectionappearance.php:330
+msgid "Member listings"
+msgstr "فهرست های اعضا"
+
+#: classes/configsectionlocation.php:18
+msgid "A Google maps API key is required for the Location suggestions to work properly"
+msgstr "کلید API نقشه های گوگل برای درست کار کردن پیشنهادات مکانی ضروری است"
+
+#: classes/configsectionlocation.php:22
+msgid "You can get the API key"
+msgstr "شما می توانید کلید API را به دست آورید"
+
+#: classes/configsectionlocation.php:31
+msgid "Google Maps API Key (v3)"
+msgstr "کلید API نقشه های گوگل (v3)"
+
+#: classes/configsections.php:32
+msgid "Enable Reporting"
+msgstr "فعال کردن گزارش"
+
+#: classes/configsections.php:42
+msgid "Predefined Text (Separated by a New Line)"
+msgstr "متن از پیش تعریف شده (جدا شده توسط خط جدید)"
+
+#: classes/configsections.php:49
+msgid "Reporting"
+msgstr "گزارش"
+
+#: classes/configsections.php:50
+msgid "These settings are used to control users' ability to report inappropriate content."
+msgstr "این تنظیمات برای کنترل توانایی کاربران به ارسال گزارش محتوای نامناسب استفاده می شود."
+
+#: classes/configsections.php:61
+msgid "Admin Account Verification"
+msgstr "تأیید صحت حساب مدیر"
+
+#: classes/configsections.php:66
+msgid "Users always must confirm their email address."
+msgstr "کاربران همیشه باید آدرس ایمیل خود را تأیید کنید."
+
+#: classes/configsections.php:67
+msgid "With the \"Admin Account Verification\" set to: NO, users register, confirm their email address and can immediately participate in your community."
+msgstr "با تغییر گزینه امکان \"تایید حساب توسط مدیر\" به نه، کاربران می توانند پس از ثبت نام و تاید ایمیل بلافاصله در جامعه کاربری شروع به مشارکت کنند."
+
+#: classes/configsections.php:68
+msgid "With the \"Admin Account Verification\" set to: YES, users register, confirm their email address and must be accepted by an Admin to be able to participate in your community. Users are notified by email when they're approved."
+msgstr "با تغییر گزینه امکان \"تایید حساب توسط مدیر\" به بله، کاربران باید پس از ثبت نام و تایید ایمیل شان، توسط مدیر تایید شوند تا بتوانند در جامعه کاربری فعالیت کنند. پس از تایید از طریق ایمیل به کاربران اطلاع رسانی می شود."
+
+#: classes/configsections.php:79
+msgid "Force Profile Completion"
+msgstr "اجبار به تکمیل پروفایل"
+
+#: classes/configsections.php:83
+msgid "Switching this setting on will force user profile completion. This means, that user will have to fill in all required fields before being able to participate in the community."
+msgstr "روشن کردن این گزینه کاربر را به تکمیل پروفایل خود وادار می کند. این بدان معناست که کاربر می بایست تمام فیلدهای الزامی پروفایل خود را تکمیل کند تا بتواند در جامعه کاربری مشغول فعالیت شود."
+
+#: classes/configsections.php:111 classes/configsections.php:166
+msgid "Home page"
+msgstr "صفحه اصلی"
+
+#: classes/configsections.php:112 classes/configsections.php:167
+msgid "No redirect"
+msgstr "بدون تغییر مسیر"
+
+#: classes/configsections.php:125 classes/configsections.php:180
+msgid "Page:"
+msgstr "صفحه:"
+
+#: classes/configsections.php:132
+msgid "Log-in redirect"
+msgstr "تغییر مسیر ورود"
+
+#: classes/configsections.php:141
+msgid "Always check remember me by default"
+msgstr "همیشه تیک \"مرا به خاطر بسپار\" را فعال کن"
+
+#: classes/configsections.php:187
+msgid "Log-out redirect"
+msgstr "تغییر مسیر خروج"
+
+#: classes/configsections.php:196
+msgid "Force SSL on Registration Page"
+msgstr "اجبار به گواهینامه SSL در صفحات ثبت نام"
+
+#: classes/configsections.php:202
+msgid "Requires a valid SSL certificate. Enabling this option without a valid certificate might break your site."
+msgstr "گواهینامه معتبر SSL نیاز است. فعال کردن این گزینه بدون برخورداری از یک گواهینامه معتبر ممکن است سایت شما را از کار بیندازد."
+
+#: classes/configsections.php:211
+msgid "ReCaptcha"
+msgstr "ReCaptcha"
+
+#: classes/configsections.php:218
+msgid "Enable ReCaptcha"
+msgstr "فعال‌کردن تصویر امنیتی"
+
+#: classes/configsections.php:225
+msgid "Site Key"
+msgstr "کلید سایت"
+
+#: classes/configsections.php:232
+msgid "Secret Key"
+msgstr "کلید رمز"
+
+#: classes/configsections.php:239
+msgid "Since version 1.8.6 PeepSo is using the new Google INVISIBLE ReCaptcha. If you used ReCaptcha prior to this release you need to generate NEW API keys for ReCaptcha to work on your site."
+msgstr "از نسخه 1.8.6 پیپ سو از کپچای نامرئی گوگل استفاده می کند. شما اگر از کپچای قبلی استفاده می کردید می بایستی کلیدهای API جدیدی برای استفاده در سایت تان تولید کنید."
+
+#: classes/configsections.php:241
+msgid "Get ReCaptcha keys <a href=\"https://www.google.com/recaptcha/\" target=\"_blank\">here</a></strong>."
+msgstr "کلیدهای ری کپچا را از <a href=\"https://www.google.com/recaptcha/\" target=\"_blank\">اینجا</a></strong> تهیه کنید."
+
+#: classes/configsections.php:243 peepso.php:174
+msgid "Having issues or questions? Please refer to the <a href=\"http://peep.so/recaptcha\" target=\"_blank\">documentation</a> or contact PeepSo Support."
+msgstr "مشکل یا پرسشی دارید؟ <a href=\"http://peep.so/recaptcha\" target=\"_blank\">مستندات پیپ سو</a> را مطالعه کرده و با با پشتیبانی تماس بگیرید."
+
+#: classes/configsections.php:252
+msgid "Terms & Conditions"
+msgstr "شرایط و ضوابط"
+
+#: classes/configsections.php:259
+msgid "Enable Terms &amp; Conditions"
+msgstr "فعالسازی شرایط و ضوابط"
+
+#: classes/configsections.php:268
+msgid "Terms &amp; Conditions"
+msgstr "شرایط و ضوابط"
+
+#: classes/configsections.php:279
+msgid "These settings allow you to customize the Registration process."
+msgstr "این تنظیمات به شما اجازه سفارشی کردن مراحل ثبت نام را می دهد."
+
+#: classes/configsections.php:290
+msgid "WordPress Social Invites"
+msgstr "دعوت های اجتماعی وردپرس"
+
+#: classes/configsections.php:299 classes/configsections.php:333
+#, php-format
+msgid "Requires %s to be installed and properly configured."
+msgstr "نیازمند نصب و پیکربندی صحیح %s است."
+
+#: classes/configsections.php:307
+msgid "Show WSI on Members Page"
+msgstr "نمایش WSI در صفحه اعضا"
+
+#: classes/configsections.php:313 classes/configsections.php:348
+#, php-format
+msgid "%s not found! Please install the plugin to see the configuration setting."
+msgstr "%s پیدا نشد! لطفا ابتدا افزونه را نصب کنید تا به تنظیمات پیکربندی دسترسی پیدا کنید."
+
+#: classes/configsections.php:324
+msgid "WooCommerce Social Login"
+msgstr "ورود اجتماعی ووکامرس"
+
+#: classes/configsections.php:339
+msgid "WooCommerce Social Login configuration"
+msgstr "پیکربندی ورود اجتماعی ووکامرس"
+
+#: classes/configsections.php:342
+#, php-format
+msgid "You may go to %s."
+msgstr "شما باید به %s بروید."
+
+#: classes/configsections.php:356
+msgid "Core Integrations"
+msgstr "ادغام های هسته"
+
+#: classes/configsections.php:357
+msgid "Settings for built-in integrations between PeepSo Core and third party plugins."
+msgstr "تنظیمات برای ادغام های داخلی بین هسته پیپ سو و افزونه های شخص ثالث."
+
+#: classes/configsections.php:387
+msgid "Default stream filter"
+msgstr "فیلتر پیشفرض استریم"
+
+#: classes/configsections.php:403
+msgid "Defines the default starting privacy level for new posts. Users can change it, and the postbox will always remember their last choice."
+msgstr "سطح حریم خصوصی اولیه پیشفرض برای پست های جدید را تعیین می کند. کاربران می توانند آن را تغییر دهند و جعبه پست همیشه آخرین انتخاب آنها را به خاطر خواهد سپرد."
+
+#: classes/configsections.php:407
+msgid "Default post privacy"
+msgstr "حریم خصوصی پیشفرض پست"
+
+#: classes/configsections.php:417
+msgid "Maximum size of Post"
+msgstr "حداکثر اندازه مطلب"
+
+#: classes/configsections.php:424
+msgid "Open links in new tab"
+msgstr "بازكردن دربرگه نو"
+
+#: classes/configsections.php:431
+msgid "Hide Activity Stream from Non-logged in Users"
+msgstr "پنهان کردن جریان فعالیت از کاربران وارد نشده"
+
+#: classes/configsections.php:438
+msgid "Enable Repost"
+msgstr "فعال کردن باز ارسال"
+
+#: classes/configsections.php:473
+msgid "Number of Comments to display"
+msgstr "تعداد نظرات برای نمایش"
+
+#: classes/configsections.php:482
+msgid "Show X more comments"
+msgstr "نمایش X نظرات بیشتر"
+
+#: classes/configsections.php:501
+msgid "Show 'read more' after: [n] characters"
+msgstr "نمایش \"ادامه مطلب\" پس از: [n] کاراکتر"
+
+#: classes/configsections.php:512
+msgid "Redirect to single post view when post is longer than: [n] characters"
+msgstr "تغییر مسیر به نمایش پست تکی وقتی که مطلب بیش تر از: [n] کاراکتر باشد"
+
+#: classes/configsections.php:519
+msgid "Profile Posts"
+msgstr "مطالب پروفایل"
+
+#: classes/configsections.php:535
+msgid " (profile owner)"
+msgstr " (مالک پروفایل)"
+
+#: classes/configsections.php:541
+msgid "Who can post on \"my profile\" page"
+msgstr "چه کسی می تواند روی برگه \"پروفایل من\" پست کند"
+
+#: classes/configsections.php:548
+msgid "Let users override this setting"
+msgstr "اجازه به کاربران برای نادیده گرفتن این تنظیمات"
+
+#: classes/configsections.php:556 classes/general.php:40 peepso.php:2809
+msgid "Activity"
+msgstr "فعالیت‌"
+
+#: classes/configsections.php:557
+msgid "These settings control how many posts and comments will be displayed in the Activity Stream, as well as \"read more\" settings and permissions to post on another user's profiles."
+msgstr "این تنظیمات کنترل می کنند که چه تعداد مطلب و نظر می توانند در جریان فعالیت نمایش داده شوند، مانند تنظیمات \"ادامه مطلب\" و مجوزها برای ارسال پست روی پروفایل های کاربران."
+
+#: classes/configsections.php:565
+msgid "I have an Ultimate Bundle license"
+msgstr "من یک مجوز نهایی دارم"
+
+#: classes/configsections.php:571
+msgid "Ultimate Bundle License Key"
+msgstr "مجوز لایسنس نهایی بسته"
+
+#: classes/configsections.php:657
+msgid "License Key Configuration"
+msgstr "پیکربندی کلید مجوز"
+
+#: classes/configsections.php:658
+msgid "This is where you configure the license keys for each PeepSo add-on. You can find your license numbers on <a target=\"_blank\" href=\"http://peepso.com/my-account/\">My Orders</a> page. Please copy them here and click SAVE at the bottom of this page."
+msgstr "از اینجا شما می توانید کلیدهای مجوز افزونه های پیپ سو را پیکربندی کنید. کلیدها را از اینجا پیدا کنید <a target=\"_blank\" href=\"http://peepso.com/my-account/\">سفارشات من</a> لطفا کلیدها را اینجا کپی کرده و از پایین صفحه بر روی ذخیره کلیک کنید."
+
+#: classes/configsections.php:658
+msgid "If some licenses are not validating, please make sure to click the SAVE button."
+msgstr "اگر بعضی مجوزها تایید نشدند مطمئن شوید بر روی دکمه خیره کلیک کرده اید."
+
+#: classes/configsections.php:658
+msgid "If that does not help, please contact Support."
+msgstr "اگر کمکی نکرد با پشتیبانی تماس بگیرید."
+
+#: classes/exif.php:33
+msgid "no file given"
+msgstr "هیچ فایل داده نشده"
+
+#: classes/exif.php:37
+msgid "unable to open file"
+msgstr "قادر به گشایش پرونده نیست"
+
+#: classes/exif.php:48
+msgid "JPG header not found"
+msgstr "هدر JPG پیدا نشد"
+
+#: classes/exif.php:68
+msgid "Exif data not found "
+msgstr "داده Exif پیدا نشد "
+
+#: classes/exif.php:75
+msgid "bad IFD entry length"
+msgstr "طول ورودی IFD نادرست"
+
+#: classes/exif.php:83
+msgid "unable to determine byte order"
+msgstr "قادر به تعیین ترتیب بایت نیست"
+
+#: classes/exif.php:88 classes/exif.php:93
+msgid "invalid tag mark"
+msgstr "علامت نامعتبر برچسب"
+
+#: classes/exif.php:90 classes/exif.php:95
+msgid "unrecognized Tag mark: 0x"
+msgstr "برچسب علامت تشخیص داده نشده: 0 x"
+
+#: classes/exif.php:102 classes/exif.php:104 classes/exif.php:111
+#: classes/exif.php:113
+msgid "invalid IFD offset"
+msgstr "افست IFD نامعتبر"
+
+#: classes/exif.php:120
+msgid "invalid offset"
+msgstr "افست نامعتبر"
+
+#: classes/exif.php:134
+msgid "invalid number of tags: "
+msgstr "شماره نامعتبر برچسب ها: "
+
+#: classes/exif.php:142
+msgid "exceeded end of data segment"
+msgstr "گذر از پایان بخش داده"
+
+#: classes/exif.php:157
+msgid "number of bytes is zero"
+msgstr "تعداد بایت ها صفر است"
+
+#: classes/exif.php:164
+msgid "orientation value is 0"
+msgstr "مقدار گرایش 0 است"
+
+#: classes/exif.php:168
+msgid "orientagion value is 0"
+msgstr "مقدار گرایش 0 است"
+
+#: classes/exif.php:173
+msgid "invalid orientation tag:"
+msgstr "برچسب نامعتبر جهت:"
+
+#: classes/exif.php:186
+msgid "premature EOF"
+msgstr "premature EOF"
+
+#: classes/exif.php:199
+msgid "premature eof"
+msgstr "premature eof"
+
+#: classes/fields/field.php:147
+msgid "Enter data"
+msgstr "داده ها را وارد کنید"
+
+#: classes/fields/field.php:196
+msgid "Stay safe! Be careful about disclosing personal information."
+msgstr "امن بمانید! درباره افشای اطلاعات خصوصی تان احتیاط کنید."
+
+#: classes/fields/field.php:704 classes/fields/field.php:712
+msgid "Some fields privacy is defined by the administrators"
+msgstr "برخی از زمینه های حفظ حریم خصوصی تعریف شده توسط مدیران"
+
+#: classes/fields/field.php:726
+msgid "Edit privacy of "
+msgstr "ویرایش حریم خصوصی "
+
+#: classes/fields/fieldlocation.php:11 classes/fields/fieldtexturl.php:21
+msgid "clickable link"
+msgstr "لینک قابل کلیک"
+
+#: classes/fields/fieldlocation.php:12
+msgid "Map selector"
+msgstr "انتخابگر نقشه"
+
+#: classes/fields/fieldlocation.php:14 classes/profilefields.php:212
+msgid "Share your location"
+msgstr "اشتراک‌گذاری موقعیت مکانی شما"
+
+#: classes/fields/fieldlocation.php:51
+msgid "Enter location name"
+msgstr "وارد کردن نام محل"
+
+#: classes/fields/fieldselectsingle.php:18
+msgid "dropdown"
+msgstr "کشویی"
+
+#: classes/fields/fieldselectsingle.php:19
+msgid "checklist"
+msgstr "چک لیست"
+
+#: classes/fields/fieldselectsingle.php:22
+msgid "Pick only one."
+msgstr "فقط یکی را انتخاب کنید."
+
+#: classes/fields/fieldselectsingle.php:73
+#: classes/fields/fieldselectsingle.php:106
+msgid "Select an option..."
+msgstr "یک گزینه را انتخاب کنید..."
+
+#: classes/fields/fieldtext.php:12
+msgid "input (single line)"
+msgstr "ورودی (تک خط)"
+
+#: classes/fields/fieldtext.php:13
+msgid "textarea (multiple lines)"
+msgstr "textarea (چند خط)"
+
+#: classes/fields/fieldtext.php:25
+msgid "Tell us about it."
+msgstr "در مورد آن به ما بگویید."
+
+#: classes/fields/fieldtextdate.php:15
+msgid "date picker"
+msgstr "انتخاب کننده تاریخ"
+
+#: classes/fields/fieldtextdate.php:21
+msgid "date (WordPress format)"
+msgstr "تاریخ (قالب وردپرس)"
+
+#: classes/fields/fieldtextdate.php:22
+msgid "relative - time passed (ie 1 month, 5 years)"
+msgstr "نسبی - گذشت زمان (یعنی 1 ماه, 5 سال)"
+
+#: classes/fields/fieldtextdate.php:23
+msgid "relative - age (ie 25 years old)"
+msgstr "نسبی - سن (یعنی 25 سال)"
+
+#: classes/fields/fieldtextdate.php:28
+msgid "When did it happen?"
+msgstr "زمانی که این اتفاق رخ داد؟"
+
+#: classes/fields/fieldtextdate.php:59
+msgid "ago"
+msgstr "قبل"
+
+#: classes/fields/fieldtextdate.php:62
+msgid "from now"
+msgstr "از حالا"
+
+#: classes/fields/fieldtextdate.php:78
+msgid "old"
+msgstr "قدیمی"
+
+#: classes/fields/fieldtextdate.php:97 classes/fields/fieldtextdate.php:126
+msgid "Set date"
+msgstr "تنظیم تاریخ"
+
+#: classes/fields/fieldtextdate.php:103 classes/fields/fieldtextdate.php:131
+msgid "Toggle datepicker"
+msgstr "تغییر انتخابگر تاریخ"
+
+#: classes/fields/fieldtexturl.php:16 classes/fields/fieldtexturl.php:27
+msgid "What's the site's address?"
+msgstr "آدرس این سایت چیست؟"
+
+#: classes/fields/tests/fieldtestdateagemax.php:20
+#, php-format
+msgid "Maximum age: %s"
+msgstr "حداکثر سن: %s"
+
+#: classes/fields/tests/fieldtestdateagemin.php:20
+#, php-format
+msgid "Minimum age: %s"
+msgstr "حداقل سن: %s"
+
+#: classes/fields/tests/fieldtestlengthmax.php:9
+msgid "Maximum length"
+msgstr "حداکثر طول"
+
+#: classes/fields/tests/fieldtestlengthmax.php:12
+#: classes/fields/tests/fieldtestlengthmin.php:12
+msgid "character(s)"
+msgstr "نویسه‌ها"
+
+#: classes/fields/tests/fieldtestlengthmax.php:14
+#, php-format
+msgid "Maximum length: %s"
+msgstr "حداکثر طول: %s"
+
+#: classes/fields/tests/fieldtestlengthmin.php:9
+msgid "Minimum length"
+msgstr "حداکثر طول"
+
+#: classes/fields/tests/fieldtestlengthmin.php:14
+#, php-format
+msgid "Minimum length: %s"
+msgstr "حداقل طول: %s"
+
+#: classes/fields/tests/fieldtestpatternurl.php:10
+msgid "Force valid http(s):// links"
+msgstr "اجبار به نشانی صحیح http(s):// links"
+
+#: classes/fields/tests/fieldtestpatternurl.php:13
+msgid "Must be a valid URL with http(s)://"
+msgstr "باید یک یو آر ال صحیح با http(s):// باشد"
+
+#: classes/fields/tests/fieldtestrequired.php:10
+msgid "Required"
+msgstr "الزامی"
+
+#: classes/fields/tests/fieldtestrequired.php:27
+msgid "This field is required"
+msgstr "این فیلد الزامی است"
+
+#: classes/form.php:800
+msgid "ReCaptcha security check failed"
+msgstr "خطا در پرسش امنیتی ReCaptcha"
+
+#: classes/formvalidate.php:26
+msgid "This field is required."
+msgstr "این فیلد الزامی است."
+
+#: classes/formvalidate.php:27
+msgid "This field must be a number."
+msgstr "این زمینه باید یک عدد باشد."
+
+#: classes/formvalidate.php:28
+msgid "This field must be an email."
+msgstr "این زمینه باید یک ایمیل باشد."
+
+#: classes/formvalidate.php:29
+msgid "This field only accepts alphanumeric characters."
+msgstr "این فیلد فقط کاراکترهای الفبایی را می پذیرد."
+
+#: classes/formvalidate.php:30
+msgid "This field only accepts alpha letters."
+msgstr "این زمینه فقط حروف یونانی را می پذیرد."
+
+#: classes/formvalidate.php:31
+msgid "This field only accepts alpha letters, spaces, dashes(-), and apostrophes(')."
+msgstr "این فیلد فقط حروف یونانی، فاصله، خط تیره، و آپوستروف (') را می پذیرد."
+
+#: classes/formvalidate.php:32
+msgid "This field accepts all letters and numbers except for HTML code."
+msgstr "این زمینه تمام حروف و اعداد به غیر از کد html را می پذیرد."
+
+#: classes/formvalidate.php:33
+msgid "This field only accepts alpha letters, numbers, dashes(-), and underscores(_), or email addresses."
+msgstr "این زمینه تنها حروف یونانی، اعداد، خط تیره، زیرخط، و یا آدرس های ایمیل را می پذیرد."
+
+#: classes/formvalidate.php:34
+msgid "Please enter a date in the past."
+msgstr "لطفا یک تاریخ از گذشته وارد کنید."
+
+#: classes/formvalidate.php:35
+#, php-format
+msgid "This field is too long, maximum length: %d."
+msgstr "این فیلد بیش از حد طولانی است ، حداکثر طول: %d."
+
+#: classes/formvalidate.php:36
+#, php-format
+msgid "This field is too short, minimum length: %d."
+msgstr "این زمینه خیلی کوتاه است، حداقل طول: %d."
+
+#: classes/formvalidate.php:37
+msgid "This field must be a valid website."
+msgstr "این زمینه باید یک وب سایت معتبر باشد."
+
+#: classes/formvalidate.php:38
+msgid "This field must be a valid date."
+msgstr "این زمینه باید یک تاریخ معتبر باشد."
+
+#: classes/formvalidate.php:39
+msgid "This field must be positive."
+msgstr "این زمینه باید مثبت باشد."
+
+#: classes/formvalidate.php:40
+msgid "This field must an integer."
+msgstr "این زمینه باید یک عدد باشد."
+
+#: classes/formvalidate.php:41
+#, php-format
+msgid "This field value should be no more than %d."
+msgstr "مقدار این فیلد نباید بیش از %d باشد."
+
+#: classes/formvalidate.php:42
+#, php-format
+msgid "This field value should be at least %d."
+msgstr "مقدار این فیلد باید حداقل %d باشد."
+
+#: classes/formvalidate.php:43
+#, php-format
+msgid "The password should be at least %d characters."
+msgstr "رمز ورود باید حداقل %d نویسه داشته باشد."
+
+#: classes/formvalidate.php:119
+msgid "Error message must be set for custom validation"
+msgstr "پیام خطا باید برای ارزیابی سفارشی تنظیم شود"
+
+#: classes/general.php:107 classes/widgets/widgetme.php:78
+msgid "Pending Notifications"
+msgstr "اعلان های در انتظار"
+
+#: classes/general.php:171 classes/profileshortcode.php:551
+#: templates/widgets/me.tpl.php:125
+msgid "Preferences"
+msgstr "تنظیمات"
+
+#: classes/general.php:186 templates/widgets/me.tpl.php:140
+msgid "Log Out"
+msgstr "خروج"
+
+#: classes/general.php:218 classes/privacy.php:25
+msgid "Public"
+msgstr "عمومی"
+
+#: classes/general.php:219
+msgid "Can be seen by everyone, even if they're not members"
+msgstr "توسط هر کس حتی غیر اعضا می تواند دیده شود"
+
+#: classes/general.php:223 classes/privacy.php:26
+msgid "Site Members"
+msgstr "اعضای سایت"
+
+#: classes/general.php:224
+msgid "Can be seen by registered members"
+msgstr "تنها توسط اعضای ثبت نام شده دیده می شود"
+
+#: classes/general.php:228
+msgid "Friends"
+msgstr "دوستان"
+
+#: classes/general.php:229
+msgid "Can be seen by your friends"
+msgstr "فقط دوستان تان می توانند ببینند"
+
+#: classes/general.php:233 classes/privacy.php:27
+msgid "Only Me"
+msgstr "تنها من"
+
+#: classes/general.php:234
+msgid "Can only be seen by you"
+msgstr "فقط خودتان می بینید"
+
+#: classes/license_edd_helper.php:147
+#, php-format
+msgid "There is a new version of %1$s available. %2$sView version %3$s details%4$s."
+msgstr "نسخه جدید %1$s موجود است. %2$s مشاهده اطلاعات %3$s نسخه %4$s."
+
+#: classes/license_edd_helper.php:155
+#, php-format
+msgid "There is a new version of %1$s available. %2$sView version %3$s details%4$s or %5$supdate now%6$s."
+msgstr "نسخه جدید %1$s موجود است. %2$s مشاهده اطلاعات %3$s نسخه %4$s یا %5$s بروزرسانی کردن %6$s."
+
+#: classes/license_edd_helper.php:301
+msgid "You do not have permission to install plugin updates"
+msgstr "شما مجاز به نصب بروزرسانی های افزونه نیستید"
+
+#: classes/license_edd_helper.php:301 peepso.php:1786
+msgid "Error"
+msgstr "خطا"
+
+#: classes/listtable.php:54
+msgid "Go to the first page"
+msgstr "ارجاع به صفحه نخست"
+
+#: classes/listtable.php:61
+msgid "Go to the previous page"
+msgstr "رفتن به صفحه قبلی"
+
+#: classes/listtable.php:70
+msgid "Current page"
+msgstr "صفحه کنونی"
+
+#: classes/listtable.php:76
+#, php-format
+msgctxt "paging"
+msgid "%1$s of %2$s"
+msgstr "%1$s از %2$s"
+
+#: classes/listtable.php:80
+msgid "Go to the next page"
+msgstr "رفتن به صفحه بعد"
+
+#: classes/listtable.php:87
+msgid "Go to the last page"
+msgstr "رفتن به آخرین صفحه"
+
+#: classes/location.php:88
+msgid "Set a Location for your post"
+msgstr "تعیین محل جغرافیایی پست شما"
+
+#: classes/location.php:170
+msgid "Request could not be verified."
+msgstr "درخواست تأیید نمی شود."
+
+#: classes/location.php:179
+msgid "Photo album location saved."
+msgstr "محل آلبوم عکس دخیره شد."
+
+#: classes/location.php:182
+msgid "Missing field location."
+msgstr "فیلد موقعیت مکانی جا افتاده."
+
+#: classes/location.php:186
+msgid "You are not authorized to change this album location."
+msgstr "شما مجاز به تغیر محل این آلبوم نیستید."
+
+#: classes/location.php:295
+msgid "PeepSo Location requires a Google Maps API key."
+msgstr "موقعیت مکانی پیپ سو نیاز به کلید API نقشه ها دارد."
+
+#: classes/location.php:296
+msgid "Click here to configure it"
+msgstr "برای پیکربندی اینجا را کلیک کنید"
+
+#: classes/mailqueuelisttable.php:49
+msgid "Recipient & Subject"
+msgstr "گیرنده & موضوع"
+
+#: classes/mailqueuelisttable.php:50
+msgid "Message"
+msgstr "پیغام"
+
+#: classes/mailqueuelisttable.php:52
+msgid "Date Created"
+msgstr "تاریخ ایجاد"
+
+#: classes/mailqueuelisttable.php:154
+msgid "Waiting"
+msgstr "در انتظار"
+
+#: classes/mailqueuelisttable.php:157
+msgid "Processing"
+msgstr "در حال پردازش"
+
+#: classes/mailqueuelisttable.php:160
+msgid "Delay"
+msgstr "تاخیر"
+
+#: classes/mailqueuelisttable.php:163
+msgid "Failed"
+msgstr "ناموفق"
+
+#: classes/mailqueuelisttable.php:167
+msgid "Retry"
+msgstr "سعی مجدد"
+
+#: classes/mailqueuelisttable.php:231
+msgid "Delay items"
+msgstr "موارد تاخیر"
+
+#: classes/mailqueuelisttable.php:232
+msgid "Set items to waiting"
+msgstr "تنظیم موارد به در حال انتظار"
+
+#: classes/mailqueuelisttable.php:233
+msgid "Delete items"
+msgstr "حذف موارد"
+
+#: classes/mailqueuelisttable.php:254
+msgid "deleted"
+msgstr "حذف شده"
+
+#: classes/mailqueuelisttable.php:270
+msgid "updated"
+msgstr "به روز رسانی شده"
+
+#: classes/mailqueuelisttable.php:298
+msgid "Process Emails"
+msgstr "ایمیل های فرآیند"
+
+#: classes/mailqueuelisttable.php:309
+#, php-format
+msgid "Estimated time until Mail Queue is empty: %1$d %2$s."
+msgstr "برآورد زمان تا صف پست خالی است: %1$d %2$s."
+
+#: classes/mailqueuelisttable.php:310
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "دقیقه"
+msgstr[1] "دقیقه"
+
+#: classes/mailqueuelisttable.php:315
+msgid "The default Mailqueue is disabled"
+msgstr "پیشفرض غیرفعال شده است"
+
+#: classes/membersearch.php:133 classes/membersearch.php:140
+msgid "No users found."
+msgstr "هیچ کاربری یافت نشد."
+
+#: classes/membersearch.php:262
+msgid "Unblock User"
+msgstr "لغو مسدودیت کاربر"
+
+#: classes/membersearch.php:264
+msgid "Allow this user to see all of your activities"
+msgstr "به این کاربر اجازه بده تمام فعالیت های شما را مشاهده کند"
+
+#: classes/membersearch.php:271
+msgid "Block User"
+msgstr "مسدود کردن کاربر"
+
+#: classes/membersearch.php:273
+msgid "This user will be blocked from all of your activities"
+msgstr "این کاربر از مشاهده تمام فعالیت های شما محروم خواهد شد"
+
+#: classes/membersearch.php:281
+msgid "Ban"
+msgstr "ممنوعیت"
+
+#: classes/membersearch.php:289
+msgid "Unban"
+msgstr "لغو ممنوعیت"
+
+#: classes/modalcomments.php:28 classes/modalcomments.php:49
+msgid "Could not find the post."
+msgstr "قادر به یافتن پست نمی باشد."
+
+#: classes/modalcomments.php:154
+msgid "Edit Caption"
+msgstr "ویرایش زیرنویس"
+
+#: classes/moods.php:61
+msgid "joyful"
+msgstr "شاد"
+
+#: classes/moods.php:62
+msgid "meh"
+msgstr "مهربان"
+
+#: classes/moods.php:63
+msgid "love"
+msgstr "عشق"
+
+#: classes/moods.php:64
+msgid "flattered"
+msgstr "تملق"
+
+#: classes/moods.php:65
+msgid "crazy"
+msgstr "دیوانه"
+
+#: classes/moods.php:66
+msgid "cool"
+msgstr "خونسرد"
+
+#: classes/moods.php:67
+msgid "tired"
+msgstr "خسته"
+
+#: classes/moods.php:68
+msgid "confused"
+msgstr "گیج"
+
+#: classes/moods.php:69
+msgid "speechless"
+msgstr "لال"
+
+#: classes/moods.php:70
+msgid "confident"
+msgstr "مطمئن"
+
+#: classes/moods.php:71
+msgid "relaxed"
+msgstr "آرام"
+
+#: classes/moods.php:72
+msgid "strong"
+msgstr "قوی"
+
+#: classes/moods.php:73
+msgid "happy"
+msgstr "خوشحال"
+
+#: classes/moods.php:74
+msgid "angry"
+msgstr "عصبانی"
+
+#: classes/moods.php:75
+msgid "scared"
+msgstr "ترسیده"
+
+#: classes/moods.php:76
+msgid "sick"
+msgstr "بیمار"
+
+#: classes/moods.php:77
+msgid "sad"
+msgstr "غمگین"
+
+#: classes/moods.php:78
+msgid "blessed"
+msgstr "خجسته"
+
+#: classes/moods.php:111
+msgid "Remove Mood"
+msgstr "حذف حالت"
+
+#: classes/moods.php:114 classes/moods.php:167
+msgid " feeling "
+msgstr " احساس "
+
+#: classes/moods.php:118
+msgid "Mood"
+msgstr "حالت"
+
+#: classes/moods.php:123
+msgid "Mood settings for your post"
+msgstr "تنظیمات حالت برای مطلب شما"
+
+#: classes/notificationsajax.php:28 classes/notificationsajax.php:36
+msgid "You currently have no unread notifications"
+msgstr "شما در حال حاضر اعلان خوانده نشده ای ندارید"
+
+#: classes/notificationsajax.php:38
+msgid "You currently have no notifications"
+msgstr "شما در حال حاضر اعلانی ندارید"
+
+#: classes/notificationsajax.php:73
+msgid "Something went wrong"
+msgstr "مشکلی پیش آمده"
+
+#: classes/notificationsajax.php:98
+msgid "You don't have permission to do that"
+msgstr "شما اجازه انجام این کار را ندارید"
+
+#: classes/notificationsajax.php:104
+msgid "Missing notification ID"
+msgstr "شناسه اعلان مفقود شده"
+
+#: classes/postbox.php:32
+#, php-format
+msgid "You can only enter up to %d characters"
+msgstr "شما تا سقف %d کاراکتر می توانید وارد کنید"
+
+#: classes/postbox.php:143
+msgid "Privacy settings for your post"
+msgstr "تنظیمات حریم خصوصی برای مطلب شما"
+
+#: classes/postbox.php:162
+msgid "Post a Status"
+msgstr "یک استاتوس بفرستید"
+
+#: classes/postbox.php:267
+msgid "This post was successfully shared."
+msgstr "این پست با موفقیت به اشتراک گذاشته شده است."
+
+#: classes/postbox.php:269
+msgid "Post added."
+msgstr "مطلب اضافه شد."
+
+#: classes/profile.php:169
+msgid "Please enter the same password in the verify password field."
+msgstr "لطفا همان رمز عبور را در کادر تایید رمز عبور وارد کنید."
+
+#: classes/profile.php:243
+#, php-format
+msgid "Minimum avatar resolution is %d x %d pixels."
+msgstr "حداقل وضوح تصویر آواتار %d در %d پیکسل می باشد."
+
+#: classes/profile.php:477
+msgid "Please select at least one notification to delete."
+msgstr "لطفا حداقل یک اطلاع رسانی را برای حذف انتخاب کنید."
+
+#: classes/profile.php:516
+msgid "Your account has been completely removed from our system."
+msgstr "حساب شما به طور کامل از سیستم ما حذف شده است."
+
+#: classes/profile.php:519
+msgid "You don't have permissions to do this."
+msgstr "شما اجازه انجام این کار را ندارید."
+
+#: classes/profile.php:523
+msgid "Invalid password."
+msgstr "گذرواژه نادرست است"
+
+#: classes/profile.php:550
+msgid "Someone liked your profile"
+msgstr "کسی پروفایل شما را پسندید"
+
+#: classes/profile.php:553
+msgid "liked your profile"
+msgstr "پروفایل شما را پسندید"
+
+#: classes/profile.php:586
+msgid "This profile has been reported"
+msgstr "این پروفایل گزارش شده است"
+
+#: classes/profile.php:755 classes/tags.php:352
+msgid "a comment"
+msgstr "یک نظر"
+
+#: classes/profile.php:758
+msgid "on "
+msgstr "در "
+
+#: classes/profile.php:759
+msgid "your comment"
+msgstr "نظر شما"
+
+#: classes/profile.php:813 classes/profile.php:819 classes/profile.php:825
+msgid "on"
+msgstr "در"
+
+#: classes/profile.php:814 classes/profile.php:829
+#, php-format
+msgid "a %s"
+msgstr "یک %s"
+
+#: classes/profile.php:820 classes/profile.php:857
+#, php-format
+msgid "your %s"
+msgstr "%s شما"
+
+#: classes/profile.php:827
+#, php-format
+msgid "an %s"
+msgstr "یک %s"
+
+#: classes/profile.php:921
+msgid "Update Info"
+msgstr "به روز رسانی اطلاعات"
+
+#: classes/profile.php:923
+msgid "Redirect to about page"
+msgstr "تغییر مسیر به صفحه درباره"
+
+#: classes/profile.php:968 templates/activity/dialog-repost.php:33
+msgid "Share"
+msgstr "به اشتراک گذاری"
+
+#: classes/profile.php:969
+msgid "Share this Profile"
+msgstr "اشتراک گذاری این پروفایل"
+
+#: classes/profile.php:985
+msgid "Like this Profile"
+msgstr "پسندیدن این پروفایل"
+
+#: classes/profile.php:990
+msgid "Unlike this Profile"
+msgstr "نپسندیدن این پروفایل"
+
+#: classes/profile.php:1007
+msgid "Report User"
+msgstr "گزارش کاربر"
+
+#: classes/profile.php:1008
+msgid "Report this Profile"
+msgstr "گزارش این پروفایل"
+
+#: classes/profile.php:1017
+msgid "Views"
+msgstr "نمایش ها"
+
+#: classes/profile.php:1018
+msgid "Profile Views"
+msgstr "تعداد نمایش های پروفایل"
+
+#: classes/profile.php:1076 peepso.php:3233
+msgid "Activity Stream"
+msgstr "جریان فعالیت"
+
+#: classes/profile.php:1091
+msgid "Someone wrote a post on my Profile"
+msgstr "کسی روی پروفایل من نوشت"
+
+#: classes/profile.php:1096
+msgid "Someone commented on my Post"
+msgstr "کسی روی پست من نظر داد"
+
+#: classes/profile.php:1101
+msgid "Someone liked my Post"
+msgstr "کسی مطلب مرا پسندید"
+
+#: classes/profile.php:1106
+msgid "Someone liked my Comment"
+msgstr "کسی نظر مرا پسندید"
+
+#: classes/profile.php:1111
+msgid "Someone shared my Post"
+msgstr "کسی مطلب مرا به اشتراک گذاشت"
+
+#: classes/profile.php:1125
+msgid "Someone liked my Profile"
+msgstr "کسی پروفایل مرا پسندید"
+
+#: classes/profile.php:1189 classes/profile.php:1321 classes/profile.php:1332
+#: classes/register.php:73
+msgid "Email"
+msgstr "ایمیل"
+
+#: classes/profile.php:1194
+msgid "On-Site"
+msgstr "در سایت"
+
+#: classes/profile.php:1293 classes/profile.php:1301 classes/profile.php:1320
+#: classes/profile.php:1331 templates/profile/profile-about-account.php:36
+msgid "Basic Information"
+msgstr "اطلاعات پایه"
+
+#: classes/profile.php:1294 classes/profile.php:1302 classes/profile.php:1453
+msgid "User Name"
+msgstr "نام كاربر"
+
+#: classes/profile.php:1303
+msgid "Enter your user name"
+msgstr "نام کاربری خود را وارد کنید"
+
+#: classes/profile.php:1315
+msgid "That name is already in use by someone else."
+msgstr "این نام در حال حاضر توسط شخص دیگری در حال استفاده است."
+
+#: classes/profile.php:1333 classes/register.php:74
+msgid "Enter your email address"
+msgstr "آدرس ایمیل‌تان را وارد نمایید"
+
+#: classes/profile.php:1344
+msgid "This email is already in use by someone else."
+msgstr "این ایمیل در حال حاضر توسط شخص دیگری در حال استفاده است."
+
+#: classes/profile.php:1349
+msgid "Change Password"
+msgstr "تغییر رمز عبور"
+
+#: classes/profile.php:1350
+msgid "Enter password to change"
+msgstr "رمز را برای تغییر وارد کنید"
+
+#: classes/profile.php:1360 classes/register.php:93
+msgid "Verify Password"
+msgstr "تایید رمز عبور"
+
+#: classes/profile.php:1361
+msgid "Enter password to verify"
+msgstr "رمز را جهت تایید وارد کنید"
+
+#: classes/profile.php:1390 templates/activity/comment-edit.php:9
+#: templates/activity/description-edit.php:17
+#: templates/admin/profiles_field.php:91
+#: templates/admin/profiles_field_config_field_text.php:16
+#: templates/profile/focus.php:56 templates/profile/profile-about.php:159
+msgid "Save"
+msgstr "ذخيره"
+
+#: classes/profile.php:1566
+msgid "Display My Name as"
+msgstr "نمایش نام من به عنوان"
+
+#: classes/profile.php:1570
+msgid "My Real Name"
+msgstr "اسم واقعی من"
+
+#: classes/profile.php:1571
+msgid "My Username"
+msgstr "نام کاربری من"
+
+#: classes/profile.php:1579
+msgid "Allow others to \"like\" my profile"
+msgstr "اجازه به دیگران برای پسندیدن پروفایل من"
+
+#: classes/profile.php:1585
+msgid "Who can see my profile"
+msgstr "چه کسی می تواند پروفایل مرا ببیند"
+
+#: classes/profile.php:1592
+msgid "Who can post on my profile"
+msgstr "چه کسی می تواند روی برگه \"پروفایل من\" پست کند"
+
+#: classes/profile.php:1603
+msgid "Hide my profile from all user listings"
+msgstr "پنهان کردن پروفایل من از تمام لیست های کاربر"
+
+#: classes/profile.php:1612
+msgid "Don't show my online status"
+msgstr "عدم نمایش وضعیت آنلاین من"
+
+#: classes/profile.php:1619
+msgid "My timezone"
+msgstr "منطقه زمانی من"
+
+#: classes/profile.php:1620
+msgid "Display all activity date and time in your own timezone"
+msgstr "نمایش تمام تاریخ و زمان فعالیت با منطقه زمانی خودتان"
+
+#: classes/profilefields.php:86
+msgid "First Name"
+msgstr "نام"
+
+#: classes/profilefields.php:87
+msgid "What's your name?"
+msgstr "نام شما چیست؟"
+
+#: classes/profilefields.php:114
+msgid "Last Name"
+msgstr "نام خانوادگی"
+
+#: classes/profilefields.php:115
+msgid "What's your last name?"
+msgstr "نام خانوادگی شما چیست؟"
+
+#: classes/profilefields.php:143
+msgid "Gender"
+msgstr "جنسیت"
+
+#: classes/profilefields.php:144
+msgid "What's your gender?"
+msgstr "جنسیت شما چیست؟"
+
+#: classes/profilefields.php:162
+msgid "Birthdate"
+msgstr "تاریخ تولد"
+
+#: classes/profilefields.php:163
+msgid "When were you born?"
+msgstr "چه زمانی متولد شدید؟"
+
+#: classes/profilefields.php:180
+msgid "About Me"
+msgstr "درباره من"
+
+#: classes/profilefields.php:181
+msgid "Tell us something about yourself."
+msgstr "چیزی درباره خودتان بگویید."
+
+#: classes/profilefields.php:196
+msgid "Website"
+msgstr "وب‌سایت"
+
+#: classes/profilefields.php:197
+msgid "What's your website's address?"
+msgstr "آدرس وب سایت شما چیست؟"
+
+#: classes/profilefields.php:368
+#, php-format
+msgid "Your profile is %d%% complete"
+msgstr "پروفایل شما %% کامل شده است"
+
+#: classes/profilefields.php:371
+msgid "fill in missing required fields to be able to participate in the community."
+msgstr "فیلدهای خالی موردنیاز را ÷ر کنید تا بتوانید در این انجمن شرکت کنید."
+
+#: classes/profilefields.php:380
+#, php-format
+msgid "%d required field(s) missing"
+msgstr "فیلدهای الزامی %d مفقود شده است"
+
+#: classes/profilefieldsajax.php:138
+msgid "Couldn't save privacy"
+msgstr "قادر به ذخیره سازی حریم خصوصی نیست"
+
+#: classes/profilefieldsajax.php:169 classes/registershortcode.php:157
+msgid "That user name is already in use."
+msgstr "این نام کاربری قبلا انتخاب شده است."
+
+#: classes/profilefieldsajax.php:177 classes/registershortcode.php:151
+msgid "That email address is already in use."
+msgstr "این آدرس پست الکترونیک پیش از این استفاده شده است."
+
+#: classes/profilefieldsajax.php:188 classes/registershortcode.php:162
+msgid "The passwords you submitted do not match."
+msgstr "کلمه‌های عبور وارد شده با هم مطابقت ندارند."
+
+#: classes/profilepreferencesajax.php:46
+msgid "Preferences saved."
+msgstr "تنظیمات ذخیره شد."
+
+#: classes/profilepreferencesajax.php:51
+msgid "Failed to save changes."
+msgstr "تغییرات ذخیره نشد."
+
+#: classes/profilepreferencesajax.php:97
+msgid "Preferences saved"
+msgstr "تنظیمات ذخیره شد"
+
+#: classes/profilepreferencesajax.php:102
+msgid "Failed to save"
+msgstr "ذخیره انجام نشد"
+
+#: classes/profileshortcode.php:225 classes/profileshortcode.php:272
+msgid "You do not have enough permissions."
+msgstr "شما مجوزهای کافی ندارید."
+
+#: classes/profileshortcode.php:245 classes/profileshortcode.php:299
+#: peepso.php:1793
+msgid "The file type you uploaded is not allowed."
+msgstr "نوع فایل آپلود شده شما مجاز نیست."
+
+#: classes/profileshortcode.php:250 classes/profileshortcode.php:294
+msgid "The file you uploaded is either missing or too large."
+msgstr "فایل های آپلود شده شما مفقود شده و یا بیش از حد بزرگ است."
+
+#: classes/profileshortcode.php:258 classes/profileshortcode.php:308
+msgid "No file uploaded."
+msgstr "فایلی بارگذاری نشده است."
+
+#: classes/profileshortcode.php:280
+msgid "No user defined."
+msgstr "کاربری تعریف نشده است."
+
+#: classes/profileshortcode.php:401
+msgid "Changes successfully saved."
+msgstr "تغییرات با موفقیت ذخیره شد."
+
+#: classes/profileshortcode.php:547 peepso.php:2835
+msgid "About"
+msgstr "درباره"
+
+#: classes/profileshortcode.php:555
+msgid "Notifications"
+msgstr "اعلان‌ ها"
+
+#: classes/profileshortcode.php:559
+msgid "Account"
+msgstr "حساب"
+
+#: classes/recoverpasswordshortcode.php:36
+msgid "Invalid form contents, please resubmit"
+msgstr "محتوای فرم نامعتبر است. لطفا دوباره ثبت کنید"
+
+#: classes/recoverpasswordshortcode.php:65
+#: classes/resetpasswordshortcode.php:85
+msgid "Invalid captcha, please try again"
+msgstr "کیچا نامعتبر است. لطفا دوباره سعی کنید"
+
+#: classes/recoverpasswordshortcode.php:119
+msgid "<strong>ERROR</strong>: Please enter your email address."
+msgstr "<strong>خطا</strong>: لطفا آدرس ایمیل خود را وارد کنید."
+
+#: classes/recoverpasswordshortcode.php:124
+msgid "<strong>ERROR</strong>: There is no user registered with that email address."
+msgstr "<strong>خطا</strong>: کاربری با این آدرس ایمیل ثبت نشده است."
+
+#: classes/recoverpasswordshortcode.php:138
+msgid "<strong>ERROR</strong>: Invalid email address provided."
+msgstr "<strong>خطا</strong>: آدرس ایمیل نامعتبر است."
+
+#: classes/recoverpasswordshortcode.php:169
+msgid "Password reset is not allowed for this user"
+msgstr "بازیابی کلمه عبور برای این کاربر مجاز نمی باشد"
+
+#: classes/recoverpasswordshortcode.php:206 lib/pluggable.php:63
+#, php-format
+msgid "%s Password Reset"
+msgstr "%s بازیابی کلمه عبور"
+
+#: classes/register.php:51
+msgid "Enter Your User Information"
+msgstr "اطلاعات کاربری را وارد کنید"
+
+#: classes/register.php:55 templates/general/login.php:7
+#: templates/widgets/me.tpl.php:192
+msgid "Username"
+msgstr "نام کاربری"
+
+#: classes/register.php:56
+msgid "Enter your desired username"
+msgstr "لطفا نام کاربری دلخواه خود را وارد نمایید"
+
+#: classes/register.php:67
+msgid "Username must not be the same as your password."
+msgstr "نام کاربری نباید با رمز عبور یکی باشد."
+
+#: classes/register.php:85 templates/general/login.php:12
+#: templates/profile/dialog-profile-deletion.php:12
+#: templates/widgets/me.tpl.php:197
+msgid "Password"
+msgstr "رمزعبور"
+
+#: classes/register.php:86
+msgid "Enter your desired password"
+msgstr "رمز عبور مورد نظر خود را وارد نمایید"
+
+#: classes/register.php:94
+msgid "Please re-enter your password"
+msgstr "لطفا رمز عبور خود را مجدداً وارد کنید"
+
+#: classes/register.php:134
+#, php-format
+msgid "I agree to the %s."
+msgstr "من با %s موافق هستم."
+
+#: classes/register.php:135 templates/register/register.php:32
+msgid "Terms and Conditions"
+msgstr "شرایط و ضوابط"
+
+#: classes/register.php:142 templates/profile/profile-about-account.php:41
+msgid "Fields marked with an asterisk (<span class=\"required-sign\">*</span>) are required."
+msgstr "زمینه های مشخص شده با علامت (<span class=\"required-sign\"></span> *) مورد نیاز است."
+
+#: classes/register.php:158
+msgid "Next"
+msgstr "بعدی"
+
+#: classes/registershortcode.php:129 classes/registershortcode.php:135
+msgid "Form contents are invalid."
+msgstr "محتوای فرم نامعتبر است."
+
+#: classes/registershortcode.php:140
+msgid "Required form fields are missing."
+msgstr "فرم های مورد نیاز مفقود شده است."
+
+#: classes/registershortcode.php:145
+msgid "Please enter a valid email address."
+msgstr "لطفاً یک ایمیل معتبر وارد کنید."
+
+#: classes/registershortcode.php:170
+msgid "Additional fields are invalid."
+msgstr "زمینه های دیگر معتبر نیست."
+
+#: classes/registershortcode.php:178
+msgid "Incomplete form contents."
+msgstr "محتویات فرم ناقص است."
+
+#: classes/registershortcode.php:206 classes/registershortcode.php:219
+msgid "Invalid form contents."
+msgstr "محتویات فرم نامعتبر است."
+
+#: classes/registershortcode.php:212
+msgid "Please enter a valid email address"
+msgstr "لطفا یک آدرس ایمیل معتبر را وارد کنید"
+
+#: classes/registershortcode.php:280
+msgid "Please enter an activation code"
+msgstr "لطفا کد فعال سازی را وارد کنید"
+
+#: classes/registershortcode.php:327 classes/registershortcode.php:334
+msgid "{sitename} - New User Registration"
+msgstr "{sitename} - ثبت نام کاربر جدید"
+
+#: classes/registershortcode.php:355
+msgid "We are unable to find an account for this activation code"
+msgstr "ما قادر به یافتن یک حساب برای این نام کاربری نیستیم"
+
+#: classes/resetpasswordshortcode.php:42 classes/resetpasswordshortcode.php:44
+#: classes/resetpasswordshortcode.php:132
+#: classes/resetpasswordshortcode.php:134
+msgid "<strong>ERROR</strong>: The password reset link you used is not valid anymore."
+msgstr "<strong>خطا</strong>: لینک بازنشانی رمز عبور که استفاده کرده اید دیگر معتبر نیست."
+
+#: classes/resetpasswordshortcode.php:49
+msgid "<strong>ERROR</strong>: Invalid password reset link."
+msgstr "<strong>خطا</strong>: لینک بازنشانی رمز عبور نامعتبر است."
+
+#: classes/resetpasswordshortcode.php:56
+msgid "<strong>ERROR</strong>: Invalid form contents, please resubmit"
+msgstr "<strong>خطا</strong>: محتوای فرم نامعتبر است، لطفا مجددا ثبت کنید"
+
+#: classes/resetpasswordshortcode.php:141
+msgid "<strong>ERROR</strong>: Invalid request."
+msgstr "<strong>خطا</strong>: درخواست نامعتبر است."
+
+#: classes/resetpasswordshortcode.php:146
+msgid "<strong>ERROR</strong>: The two passwords you entered don't match."
+msgstr "<strong>خطا</strong>: رمزهای عبور با هم مطابقت ندارند."
+
+#: classes/tags.php:134 classes/tags.php:220 classes/tags.php:286
+msgid "mentioned you"
+msgstr "به شما اشاره کرد"
+
+#: classes/tags.php:152
+msgid "Someone tagged you in a post"
+msgstr "کسی شما را در یک پست برچسب زد"
+
+#: classes/tags.php:252
+msgid "Someone tagged you in a comment"
+msgstr "کسی شما را در یک نظر برچسب زده"
+
+#: classes/tags.php:284
+msgid "wrote and mentioned you on your wall"
+msgstr "روی دیوار شما نوشته و به شما اشاره کرده"
+
+#: classes/tags.php:347 classes/tags.php:352
+msgid "in"
+msgstr "در"
+
+#: classes/tags.php:347
+msgid "a post"
+msgstr "یک مطلب"
+
+#: classes/tags.php:374
+msgid "User Tagged In Post"
+msgstr "کاربر در پست برجسب زد"
+
+#: classes/tags.php:375
+msgid "This will be sent to a user when tagged in post."
+msgstr "این در هنگامی که یک کاربر در یک پست برچسب زده شد ارسال می شود."
+
+#: classes/tags.php:379
+msgid "User Tagged In Comment"
+msgstr "کاربر در یک نظر برچسب زده شد"
+
+#: classes/tags.php:380
+msgid "This will be sent to a user when tagged in comment."
+msgstr "این در هنگامی که یک کاربر در یک نظر برچسب زده شد ارسال می شود."
+
+#: classes/tags.php:393
+msgid "Tags"
+msgstr "برچسب ها"
+
+#: classes/tags.php:396
+msgid "Someone tagged me in a Post"
+msgstr "کسی به من در یک مطلب برچسب زده"
+
+#: classes/tags.php:401
+msgid "Someone tagged me in a Comment"
+msgstr "کسی به من در یک نظر برچسب زده"
+
+#: classes/template.php:104
+#, php-format
+msgid "Powered by %1$sPeepSo%2$s!"
+msgstr "قدرت گرفته از %1$sPeepSo%2$s!"
+
+#: classes/template.php:105
+msgid "Social Networking for WordPress!"
+msgstr "افزونه شبکه اجتماعی برای وردپرس!"
+
+#: classes/user.php:600
+msgid "Never"
+msgstr "هرگز"
+
+#: classes/user.php:888
+#, php-format
+msgid "Welcome to %s"
+msgstr "به %s خوش آمدید"
+
+#: classes/user.php:1396
+msgid "Account activated"
+msgstr "حساب فعال شد"
+
+#: classes/widgetajax.php:84 classes/widgetajax.php:185
+msgid "Members count"
+msgstr "تعداد اعضا"
+
+#: classes/widgetajax.php:88
+msgid "No latest members"
+msgstr "بدون آخرین اعضا"
+
+#: classes/widgetajax.php:189
+msgid "No online members"
+msgstr "عضو آنلاینی وجود ندارد"
+
+#: classes/widgets/widgetlatestmembers.php:12
+msgid "PeepSo Latest Members"
+msgstr "جدیدترین کاربران PeepSo"
+
+#: classes/widgets/widgetlatestmembers.php:13
+msgid "PeepSo Latest Members Widget"
+msgstr "ابزارک جدیدترین کاربران PeepSo"
+
+#: classes/widgets/widgetlatestmembers.php:78
+msgid "Latest Members"
+msgstr "آخرین اعضا"
+
+#: classes/widgets/widgetme.php:12
+msgid "PeepSo Profile"
+msgstr "پروفایل PeepSo"
+
+#: classes/widgets/widgetme.php:13
+msgid "PeepSo Profile Widget"
+msgstr "ابزارک پروفایل PeepSo"
+
+#: classes/widgets/widgetme.php:145
+msgid "Guest view"
+msgstr "نمایش مهمان"
+
+#: classes/widgets/widgetme.php:148
+msgid "Log-in form"
+msgstr "فرم ورود به سیستم"
+
+#: classes/widgets/widgetme.php:149
+msgid "Hide"
+msgstr "پنهان کردن"
+
+#: classes/widgets/widgetme.php:159
+msgid "Show notifications"
+msgstr "نمایش اعلان‌ها"
+
+#: classes/widgets/widgetme.php:167
+msgid "Show community links"
+msgstr "نمایش لینک های انجمن"
+
+#: classes/widgets/widgetme.php:176
+msgid "Show cover"
+msgstr "نمایش کاور"
+
+#: classes/widgets/widgetonlinemembers.php:12
+msgid "PeepSo Online Members"
+msgstr "کاربران آنلاین PeepSo"
+
+#: classes/widgets/widgetonlinemembers.php:13
+msgid "PeepSo Online Members Widget"
+msgstr "ابزارک کاربران آنلاین PeepSo"
+
+#: classes/widgets/widgetonlinemembers.php:74
+msgid "Online Members"
+msgstr "کاربران آنلاین"
+
+#: install/activate.php:331
+msgid "Home"
+msgstr "خانه"
+
+#: install/activate.php:336
+msgid "Recent Activity"
+msgstr "فعالیت اخیر"
+
+#: install/activate.php:342
+msgid "User Profile"
+msgstr "نمایه کاربر"
+
+#: install/activate.php:347
+msgid "Site Registration"
+msgstr "ثبت نام در سایت"
+
+#: install/activate.php:357
+msgid "Reset Password"
+msgstr "بازنشانی رمز عبور"
+
+#: install/activate.php:367
+msgid "You are about to be redirected"
+msgstr "شما در حال تغییر مسیر هستید"
+
+#: lib/helpers.php:403
+msgid "Today"
+msgstr "امروز"
+
+#: lib/helpers.php:404 templates/activity/comment-modal-attachment.php:102
+#: templates/activity/comment-reply.php:40 templates/activity/post.php:125
+msgid "Clear"
+msgstr "پاک کردن"
+
+#: peepso.php:170
+msgid "Since version 1.8.6 PeepSo is using the new INVISIBLE ReCaptcha."
+msgstr "از نسخه 1.8.6 پیپ سو از کپچای نامرئی استفاده می کند."
+
+#: peepso.php:171
+msgid "You can get the new ReCaptcha keys <a href=\"https://www.google.com/recaptcha/\" target=\"_blank\">here</a></strong>."
+msgstr "کلیدهای ری کپچا را از <a href=\"https://www.google.com/recaptcha/\" target=\"_blank\">اینجا</a></strong> تهیه کنید."
+
+#: peepso.php:270
+#, php-format
+msgid "There is a new version of PeepSo Core available (%s), but it cannot be installed yet."
+msgstr "نسخه جدید از هسته پیپ سو موجود است(%s)، اما نمی تواند نصب شود."
+
+#: peepso.php:277
+#, php-format
+msgid "To avoid conflicts and issues, please make sure the following plugins are %s:"
+msgstr "برای جلوگیری از تداخل و مشکل لطفا مطمئن شوید افزونه های زیر %s هستند:"
+
+#: peepso.php:288
+msgid "After updating these plugins please refresh this page, update PeepSo Core and reactivate all plugins."
+msgstr "پس از بروزرسانی این افزونه ها لطفا صفحه را بارگذاری مجدد کنید، هسته پیپ سو را بروزرسانی کرده و افزونه ها را مجددا فعال کنید."
+
+#: peepso.php:292
+#, php-format
+msgid "If you are experiencing issues updating any plugins, try using the <a href=\"%s\">Updates Dashboard</a>."
+msgstr "اگر برای بروزرسانی هر افزونه ای با مشکل مواجه شدید از <a href=\"%s\">پیشخوان بروزرسانی ها </a> استفاده کنید."
+
+#: peepso.php:308
+msgid "Visit Community"
+msgstr "مشاهده انجمن"
+
+#: peepso.php:507
+#, php-format
+msgid "Disabled %d e-mail notifications"
+msgstr "اعلان های ایمیلی غیرفعال %d"
+
+#: peepso.php:512
+#, php-format
+msgid "Disabled %d group e-mail subscriptions"
+msgstr "اشتراک های ایمیلی گروه غیرفعال %d"
+
+#: peepso.php:519
+msgid "Disabled Email Digest subscription"
+msgstr "اشتراک گزیده نامه ایمیلی غیرفعال"
+
+#: peepso.php:521
+msgid "Email Digest was already disabled"
+msgstr "گزیده نامه ایمیلی در حال حاضر غیرفعال است"
+
+#: peepso.php:899
+msgid "stream"
+msgstr "جریان"
+
+#: peepso.php:965
+#, php-format
+msgid "via %s"
+msgstr "از طریق %s"
+
+#: peepso.php:1118 templates/widgets/me.tpl.php:169
+msgid "Community"
+msgstr "جامعه کابری"
+
+#: peepso.php:1119
+msgid "Posts from the entire Community"
+msgstr "پست ها از کل انجمن/سایت"
+
+#: peepso.php:1125
+msgid "members"
+msgstr "اعضا"
+
+#: peepso.php:1126
+msgid "groups"
+msgstr "گروه ها"
+
+#: peepso.php:1127
+msgid "pages"
+msgstr "صفحات"
+
+#: peepso.php:1131
+msgid "&amp;"
+msgstr "&amp;"
+
+#: peepso.php:1134 templates/members/search.php:66
+msgid "Following"
+msgstr "در حال دتبال کردن"
+
+#: peepso.php:1135
+#, php-format
+msgid "Posts only from %s you follow"
+msgstr "پست ها فقط از %sیی که شما دنبال می کنید"
+
+#: peepso.php:1346 peepso.php:2693
+msgid "Your account has been suspended."
+msgstr "حساب شما به تعلیق درآمده است."
+
+#: peepso.php:1359 peepso.php:2683
+#, php-format
+msgid "Your account has been suspended until %s."
+msgstr "حساب شده است تا %s متوقف شده است."
+
+#: peepso.php:1515
+#, php-format
+msgid "Cannot activate PeepSo; it requires <b>Permalinks</b> to be enabled. Go to <a href=\"%1$s\">Settings -&gt; Permalinks</a> and select anything but the <i>Default</i> option."
+msgstr "نمی توانید PeepSo را فعال کنید؛ این به <b>ذخیره پیوندهای یکتا</b> نیاز دارد تا فعال شود. به تنظیمات&gt; پیوندهای یکتا رفته و </a> هر چیزی را به جز گزینه <i> پیشفرض</i> انتخاب کنید."
+
+#: peepso.php:1612 peepso.php:1614
+msgid "Ban this user"
+msgstr "مسدود کردن این کاربر"
+
+#: peepso.php:1647 templates/profile/dialog-profile-avatar.php:72
+#: templates/profile/dialog-profile-cover.php:34
+msgid "The file type you uploaded is not allowed. Only JPEG/PNG allowed."
+msgstr "نوع فایل آپلود شده شما مجاز نیست. تنها JPEG/PNG مجازاست."
+
+#: peepso.php:1648 templates/profile/dialog-profile-avatar.php:73
+#: templates/profile/dialog-profile-cover.php:35
+#, php-format
+msgid "The file size you uploaded is too big. The maximum file size is %s."
+msgstr "حجم فایل آپلود شما بیش از حد بزرگ است. حداکثر اندازه پرونده %s است."
+
+#: peepso.php:1665
+msgid "View full image"
+msgstr "مشاهده تصویر کامل"
+
+#: peepso.php:1794
+msgid "Please login to continue"
+msgstr "لطفا برای ادامه وارد شوید"
+
+#: peepso.php:1798
+msgid "There are unsaved changes on this page."
+msgstr "تغییرات ذخیره نشده در این صفحه وجود دارد."
+
+#: peepso.php:1799
+msgid "The system is currently saving your changes."
+msgstr "سیستم در حال تغییره تغییرات شماست."
+
+#: peepso.php:2698
+msgid "Your account is awaiting admin approval."
+msgstr "حساب شما منتظر تایید مدیر است."
+
+#: peepso.php:2702
+msgid "Please verify the email address you have provided using the link in the email that was sent to you."
+msgstr "لطفا جهت تایید حساب تان بر روی لینکی که در ایمیل ارسال شده وجود دارد کلیک کنید."
+
+#: peepso.php:2738
+msgid "This user may not login at the moment."
+msgstr "این کاربر در حال حاضر نمی توان وارد شود."
+
+#: peepso.php:3023
+msgid "This domain is not registered for PLUGIN_NAME. You can register your domain <a target=\"_blank\" href=\"PEEPSOCOM_LICENSES\">here</a>."
+msgstr "این دامین برای PLUGIN_NAME ثبت نشده است. شما می توانید دامنه خود را از <a target=\"_blank\" href=\"PEEPSOCOM_LICENSES\">اینجا</a> ثبت کنید."
+
+#: peepso.php:3026
+msgid "License for PLUGIN_NAME has expired. The plugin will work, but it will not receive updates. You can renew your license <a target=\"_blank\" href=\"PEEPSOCOM_LICENSES\">here</a>."
+msgstr "مجوز برای PLUGIN_NAME منقضی شده است. افزونه کار می کند اما بروزرسانی های خودکار را دریافت نخواهد کرد. شما می توانید مجوز خود را از <a target=\"_blank\" href=\"PEEPSOCOM_LICENSES\">اینجا</a> تمدید کنید."
+
+#: peepso.php:3032
+msgid "License for PLUGIN_NAME is missing or invalid. Please <a href=\"ENTER_LICENSE\">enter a valid license</a> and click \"SAVE\" to activate it. You can get your license key <a target=\"_blank\" href=\"PEEPSOCOM_LICENSES\">here</a>."
+msgstr "مجوز برای PLUGIN_NAME نامعتبر و یا مفقود شده است. لطفا <a href=\"ENTER_LICENSE\">یک کلید معتبر وارد کنید</a> و بر روی \"ذخیره\" کلیک کنید تا آن را فعال کنید. شما می توانید کلید مجوز خود را <a target=\"_blank\" href=\"PEEPSOCOM_LICENSES\">از اینجا</a> دریافت کنید."
+
+#: peepso.php:3060
+msgid "It looks like PeepSo emails were not processing properly. We just tried to fix it automatically.<br> If you see this message repeatedly, consider deactivating and re-activating PeepSo or contacting Support"
+msgstr "به نظر می رسد ایمیل های PeepSo درست پردازش نمی شوند. ما سعی کردیم آن را به صورت خودکار تعمیر کنیم. <br>اگر این پیغام را مرتبا مشاهده می کنید، لطفا یک بار PeepSo را غیرفعال و مجدد فعال کنید و یا با پشتیبانی تماس بگیرید"
+
+#: peepso.php:3101
+#, php-format
+msgid "is not fully compatible with <strong>PeepSo %s</strong>. "
+msgstr "به طور کامل با <strong>PeepSo %s</strong> سازگار نیست. "
+
+#: peepso.php:3104
+#, php-format
+msgid "is not compatible with <strong>PeepSo %s</strong> and has been deactivated. "
+msgstr "با <strong>پیپ سو %s</strong> سازگار نبوده و غیرفعال شد. "
+
+#: peepso.php:3110
+#, php-format
+msgid "was only tested up to <strong>PeepSo %s</strong>. "
+msgstr "فقط تا <strong>PeepSo %s</strong> مورد بررسی قرار گرفت. "
+
+#: peepso.php:3113
+#, php-format
+msgid "has been disabled because it requires <strong>PeepSo %s</strong>. "
+msgstr "غیرفعال شده به خاطر این که به <strong>PeepSo %s</strong> نیازمند است. "
+
+#: peepso.php:3116
+#, php-format
+msgid "You are running PeepSo %s."
+msgstr "شما در حال اجرای PeepSo %s هستید."
+
+#: peepso.php:3123
+#, php-format
+msgid "Please upgrade %s and PeepSo Core to avoid conflicts and issues. "
+msgstr "لطفا %s و هسته PeepSo را ارتقا دهید تا از اشکالات و ناسازگاری اجتناب شود. "
+
+#: peepso.php:3126
+msgid "Upgrade now!"
+msgstr "هم اکنون ارتقا دهيد!"
+
+#: peepso.php:3136
+msgid "PeepSo E-mail Notifications"
+msgstr "اعلان های ایمیلی پیپ سو"
+
+#: peepso.php:3140
+msgid "E-mail preferences"
+msgstr "تنظیمات ایمیل"
+
+#: peepso.php:3142
+msgid "Unsubscribe this user from all e-mail notifications"
+msgstr "لغو اشتراک این کاربر از تمام اعلان های ایمیلی"
+
+#: peepso.php:3201
+msgid "Every One Minute"
+msgstr "هر یک دقیقه"
+
+#: peepso.php:3207
+msgid "Every Five Minutes"
+msgstr "هر پنج دقیقه"
+
+#: peepso.php:3213
+msgid "Once Weekly"
+msgstr "یکبار در هفته"
+
+#: peepso.php:3238 templates/activity/activity-stream-filters.php:94
+#: templates/activity/activity-stream-filters.php:123
+msgid "Search"
+msgstr "جستجو"
+
+#: peepso.php:3243
+msgid "Profile Pages"
+msgstr "صفحات پروفایل"
+
+#: templates/activity/activity-load-more.php:2
+msgid "Load more"
+msgstr "بارگذاری بیشتر"
+
+#: templates/activity/activity-no-more.php:1 templates/activity/activity.php:54
+#: templates/profile/profile.php:60
+msgid "Nothing more to show."
+msgstr "چیز بیشتری برای نمایش نیست."
+
+#: templates/activity/activity-stream-filters.php:35
+#: templates/activity/activity-stream-filters.php:76
+msgid "Apply"
+msgstr "اعمال کن"
+
+#: templates/activity/activity-stream-filters.php:48
+#: templates/activity/activity-stream-filters.php:60
+msgid "Show my posts"
+msgstr "نمایش پست های من"
+
+#: templates/activity/activity-stream-filters.php:49
+#: templates/activity/activity-stream-filters.php:60
+msgid "Hide my posts"
+msgstr "پنهان کردن پست های من"
+
+#: templates/activity/activity-stream-filters.php:97
+msgid "Search: "
+msgstr "جستجو: "
+
+#: templates/activity/activity-stream-filters.php:102
+msgid "Type to search"
+msgstr "برای جستجو تایپ کنید"
+
+#: templates/activity/activity-stream-filters.php:109
+msgid "Exact phrase"
+msgstr "عین عبارت"
+
+#: templates/activity/activity-stream-filters.php:117
+msgid "Any of the words"
+msgstr "هر یک از کلمات"
+
+#: templates/activity/activity.php:52 templates/profile/profile.php:58
+msgid "No posts found. Be the first one to share something amazing!"
+msgstr "نوشته ای وجود ندارد. اولین کسی باشید که چیز جالبی را به اشتراک می گذارد!"
+
+#: templates/activity/activity.php:53 templates/profile/profile.php:59
+msgid "No posts found."
+msgstr "نتیجه ای یافت نشد."
+
+#: templates/activity/comment-edit.php:4
+#: templates/activity/comment-modal-attachment.php:88
+#: templates/activity/post.php:113
+msgid "Write a comment..."
+msgstr "نوشتن نظر..."
+
+#: templates/activity/comment-modal-attachment.php:103
+#: templates/activity/comment-reply.php:41 templates/activity/post-edit.php:20
+#: templates/activity/post.php:126 templates/general/postbox-legacy.php:28
+#: templates/general/postbox.php:30
+msgid "Post"
+msgstr "ارسال"
+
+#: templates/activity/comment-reply.php:28
+msgid "Write a reply..."
+msgstr "نوشتن پاسخ..."
+
+#: templates/activity/dialog-repost.php:6
+msgid "Share This Post"
+msgstr "این مطلب را به اشتراک بگذارید"
+
+#: templates/activity/dialog-repost.php:10
+msgid "Say what is on your mind..."
+msgstr "چه در ذهن تان دارید..."
+
+#: templates/activity/dialogs.php:17
+msgid "Post Comment"
+msgstr "ارسال نظر"
+
+#: templates/activity/dialogs.php:24
+msgid "Report Content to Admin"
+msgstr "محتوای گزارش به مدیر"
+
+#: templates/activity/dialogs.php:27
+msgid "Reason for Report:"
+msgstr "دلیل برای گزارش:"
+
+#: templates/activity/dialogs.php:35
+msgid "Submit Report"
+msgstr "ارائه گزارش"
+
+#: templates/activity/dialogs.php:39
+msgid "ERROR: Please select Reason for Report."
+msgstr "خطا: لطفا دلیل گزارش را انتخاب کنید."
+
+#: templates/activity/dialogs.php:40
+msgid "ERROR: Please fill Reason for Report."
+msgstr "خطا: لطفا دلیل گزارش را انتخاب کنید."
+
+#: templates/activity/dialogs.php:43
+msgid "Share This"
+msgstr "اشتراک گذاری"
+
+#: templates/activity/dialogs.php:45
+msgid "Share this via Link:"
+msgstr "اشتراک گذاری از طریق لینک:"
+
+#: templates/activity/dialogs.php:76
+msgid "Are you sure you want to delete your Profile?"
+msgstr "آیا مطمئنید می خواهید پروفایل‌تان را حذف کنید؟"
+
+#: templates/activity/dialogs.php:78
+msgid "This will remove all of your posts, saved information and delete your account."
+msgstr "این همه‌ی پست‌ها، اطلاعات ذخیره شده و حساب‌تان را پاک می‌کند."
+
+#: templates/activity/dialogs.php:80
+msgid "The delete cannot be undone."
+msgstr "این اقدام را نمی توان باز گرداند."
+
+#: templates/activity/dialogs.php:84
+msgid "Delete My Profile"
+msgstr "حذف پروفایل من"
+
+#: templates/activity/post.php:20
+msgid "This pinned post will not display to all users because of its privacy settings."
+msgstr "این پست متصل به خاطر تنظیمات حریم خصوصی اش به همه کاربران نشان داده نخواهد شد."
+
+#: templates/activity/post.php:25
+msgid "Pinned"
+msgstr "متصل شده"
+
+#: templates/activity/repost-private.php:3
+msgid "The user has decided to keep this post private."
+msgstr "این کاربر تصمیم گرفته تا این مطلب را خصوصی نگه دارد."
+
+#: templates/admin/deactivation_feedback_modal.php:14
+msgid "Plugin Usage Feedback"
+msgstr "بازخورد استفاده از افزونه"
+
+#: templates/admin/deactivation_feedback_modal.php:18
+msgid "Please tell us how can we make this plugin better for you?"
+msgstr "لطفا به ما بگویید چگونه این افزونه را برای استفاده شما بهتر کنیم؟"
+
+#: templates/admin/deactivation_feedback_modal.php:21
+msgid "It\\'s not what I\\'m looking for"
+msgstr "این چیزی نیست که به دنبالش هستم"
+
+#: templates/admin/deactivation_feedback_modal.php:22
+msgid "I Found a better alternative"
+msgstr "من یک جایگزین بهتر پیدا کردم"
+
+#: templates/admin/deactivation_feedback_modal.php:23
+msgid "It didn\\'t work for me, technical problems"
+msgstr "برای من کار نمی کند به خاطر مشکلات فنی"
+
+#: templates/admin/deactivation_feedback_modal.php:29
+msgid "If you\\'re experiencing technical problems please consider contacting our support. You can open a support ticket here: "
+msgstr "اگر با مشکلات فنی مواجه شدید لطفا با پشتیبانی ما تماس بگیرید. شما می توانید از اینجا یک تیکت باز کنید: "
+
+#: templates/admin/deactivation_feedback_modal.php:31
+msgid "Your feedback will only be used to improve this plugin"
+msgstr "بازخورد شما تنها در جهت ارتقای افزونه مورد استفاده قرار می گیرد"
+
+#: templates/admin/deactivation_feedback_modal.php:35
+msgctxt "the text of the cancel button of the plugin deactivation dialog box."
+msgid "Cancel"
+msgstr "انصراف"
+
+#: templates/admin/deactivation_feedback_modal.php:182
+msgid "Yes - Deactivate"
+msgstr "بله - غیر فعال کن"
+
+#: templates/admin/deactivation_feedback_modal.php:184
+msgid "Deactivate"
+msgstr "غیرفعال کردن"
+
+#: templates/admin/extensions.php:19
+msgid "Get this addon"
+msgstr "دریافت این افزونه"
+
+#: templates/admin/extensions.php:27
+msgid "Get this bundle"
+msgstr "دریافت این بسته"
+
+#: templates/admin/extensions.php:66
+msgid "Enter a keyword..."
+msgstr "کلمه کلیدی را وارد کنید..."
+
+#: templates/admin/extensions.php:121
+msgid "Installed and Activated"
+msgstr "نصب و فعال شده"
+
+#: templates/admin/extensions.php:130
+msgid "Please try again later"
+msgstr "لطفا بعدا دوباره تلاش کنید"
+
+#: templates/admin/extensions.php:140
+msgid "All plugins in this category are already installed and activated on your site. To view other plugins, not yet installed or activated on your site, click the button below."
+msgstr "تمام افزوه های این دسته در سایت شما نصب و فعال شده است. برای مشاهده سایر افزونه هایی که هنوز در سایت شما نصب یا فعال نشده است بر لینک زیر کلیک کنید."
+
+#: templates/admin/extensions.php:144
+msgid "Browse All Addons"
+msgstr "مرور تمام افزوده ها"
+
+#: templates/admin/profiles_buttons.php:4
+msgid "Expand All"
+msgstr "گستردن همه"
+
+#: templates/admin/profiles_buttons.php:7
+msgid "Collapse All"
+msgstr "بستن همه"
+
+#: templates/admin/profiles_buttons.php:13
+msgid "Add New"
+msgstr "افزودن جدید"
+
+#: templates/admin/profiles_field.php:23
+msgid "no title"
+msgstr "بدون عنوان"
+
+#: templates/admin/profiles_field.php:26
+#, php-format
+msgid "Core %s: "
+msgstr "هسته %s: "
+
+#: templates/admin/profiles_field.php:38
+msgid "Privacy"
+msgstr "حریم خصوصی"
+
+#: templates/admin/profiles_field.php:39
+msgid "Validation"
+msgstr "تایید اعتبار"
+
+#: templates/admin/profiles_field.php:135
+msgid "Enabled"
+msgstr "فعال شده"
+
+#: templates/admin/profiles_field.php:194
+msgid "Display"
+msgstr "نمایش"
+
+#: templates/admin/profiles_field.php:212
+msgid "Edit method"
+msgstr "روش ویرایش"
+
+#: templates/admin/profiles_field.php:228
+msgid "Placeholder"
+msgstr "نگاهدارنده جا"
+
+#: templates/admin/profiles_field.php:265
+msgid "Default Privacy"
+msgstr "حریم خصوصی پیشفرض"
+
+#: templates/admin/profiles_field.php:288
+msgid "Disable user privacy setting"
+msgstr "غیر فعال کردن تنظیمات حریم خصوصی"
+
+#: templates/admin/profiles_field.php:389
+msgid "Minimum year allowed"
+msgstr "حداقل سال مجاز"
+
+#: templates/admin/profiles_field.php:390
+msgid "years ago"
+msgstr "سال پیش"
+
+#: templates/admin/profiles_field.php:405
+msgid "Maximum year allowed"
+msgstr "حداکثر سال مجاز"
+
+#: templates/admin/profiles_field.php:406
+msgid "years in the future"
+msgstr "سال در آینده"
+
+#: templates/admin/profiles_field_list.php:2
+msgid "Profile Fields"
+msgstr "فیلدهای پروفایل"
+
+#: templates/admin/profiles_no_plugin.php:9
+msgid "Get Extended Profiles"
+msgstr "دریافت افزونه پروفایل های توسعه یافته"
+
+#: templates/general/404-ajax.php:1 templates/general/404.php:7
+msgid "This content is not available at this time."
+msgstr "این مطلب در این زمان در دسترس نمی باشد."
+
+#: templates/general/404.php:9
+msgid "Possible causes for the content of the page not to show:"
+msgstr "دلایل ممکن برای عدم نمایش محتویات صفحه:"
+
+#: templates/general/404.php:12
+msgid "It has been removed."
+msgstr "مطلب مذکور حذف شده است."
+
+#: templates/general/404.php:13
+msgid "You may not have the necessary permissions to view it."
+msgstr "شما ممکن است مجاز به مشاهده صفحه نباشید."
+
+#: templates/general/email-footer.php:1
+msgid "This email was sent to {currentuserfullname} ({useremail})."
+msgstr "این ایمیل به {currentuserfullname}{useremail} فرستاده شد."
+
+#: templates/general/email-footer.php:3
+msgid "If you do not wish to receive these emails from {sitename}, you can <a href=\"{unsubscribeurl}\">manage your preferences</a> here."
+msgstr "اگر شما تمایلی به دریافت ایمیل از {sitename} ندارید، می توانید از <a href=\"{unsubscribeurl}\">اینجا</a> اشتراک خود ار مدیریت کنید."
+
+#: templates/general/email-footer.php:5
+msgid "Copyright (c) {year} {sitename}"
+msgstr "کپی رایت (c) {year} {sitename}"
+
+#: templates/general/external-link-warning.php:58
+#, php-format
+msgid "The link you just clicked redirects to: <span class=\"ps-redirect__link\">%s</span>"
+msgstr "لینکی که شما بر روی آن کلیک کردید می خواهد به <span class=\"ps-redirect__link\">%s</span> اغییر مسیر دهد"
+
+#: templates/general/external-link-warning.php:60
+msgid "Do you want to continue?"
+msgstr "آیا می خواهید ادامه دهید؟"
+
+#: templates/general/external-link-warning.php:63
+msgid "No, take me back"
+msgstr "نه مرا برگردان"
+
+#: templates/general/external-link-warning.php:65
+msgid "Yes, take me there"
+msgstr "بله مرا به آنجا ببر"
+
+#: templates/general/login-profile-tab.php:1
+msgid "Please login"
+msgstr "لطفا وارد شوید"
+
+#: templates/general/login.php:17 templates/profile/no-access.php:50
+#: templates/widgets/me.tpl.php:212
+msgid "Login"
+msgstr "ورود"
+
+#: templates/general/login.php:25 templates/general/login.php:26
+#: templates/widgets/me.tpl.php:201 templates/widgets/me.tpl.php:202
+msgid "Remember Me"
+msgstr "مرا به خاطر بسپار"
+
+#: templates/general/login.php:29 templates/widgets/me.tpl.php:208
+msgid "Resend activation code"
+msgstr "ارسال دوباره کد فعال سازی"
+
+#: templates/general/notification-popover-item.php:48
+#: templates/general/notification-popover-item.php:51
+msgid "Mark as read"
+msgstr "علامتگذاری بعنوان خوانده شده"
+
+#: templates/general/recover-password-sent.php:3
+msgid "We have sent you an email with password recovery instructions. Follow the link in the email to finish the process of resetting your password."
+msgstr "ما برای شما یک ایمیل به همراه دستورالعمل هایی برای بازیابی رمز عبور ارسال کرده ایم. از لینک ها پیروی کرده تا فرآیند بازیابی رمز را به سادگی به پایان برسانید."
+
+#: templates/general/recover-password.php:14
+msgid "Please enter the email address for your account. A verification code will be sent to you. Once you have received the verification code, you will be able to choose a new password for your account."
+msgstr "لطفا یک آدرس ایمیل مربوط به حساب خود را وارد کنید. یک کد فعالسازی برای شما ارسال خواهد شد. به هنگام دریافت، شما قادر به انتخاب یک رمز عبور جدید برای حساب خود خواهید بود."
+
+#: templates/general/recover-password.php:27
+msgid "Email Address:"
+msgstr "آدرس ایمیل:"
+
+#: templates/general/recover-password.php:31
+#: templates/register/register-resend.php:27
+msgid "Email address"
+msgstr "آدرس ایمیل"
+
+#: templates/general/recover-password.php:37
+#: templates/general/reset-password.php:53
+#: templates/register/register-activate.php:32
+#: templates/register/register-resend.php:32
+msgid "Submit"
+msgstr "ارسال"
+
+#: templates/general/recover-password.php:42
+#: templates/general/reset-password.php:64
+#: templates/register/register-activate.php:38
+#: templates/register/register-complete.php:16
+#: templates/register/register-resend.php:38
+#: templates/register/register-resent.php:18
+#: templates/register/register-verified.php:12
+msgid "Back to Home"
+msgstr "بازگشت به صفحه اصلی"
+
+#: templates/general/register-panel.php:20
+msgid "Thank you"
+msgstr "متشکرم"
+
+#: templates/general/register-panel.php:21
+msgid "Your e-mail address was confirmed. You can now log in."
+msgstr "آدرس پست الکترونیکی تایید شد. شما اکنون می تونید وارد شوید."
+
+#: templates/general/register-panel.php:23
+msgid "Get Connected!"
+msgstr "به ما بپیوندید!"
+
+#: templates/general/register-panel.php:24
+msgid "Come and join our community. Expand your network and get to know new people!"
+msgstr "به جامعه ما متصل شوید. شبکه دوستان خود را به واسطه آشنایی با مردم جدید گسترش دهید!"
+
+#: templates/general/register-panel.php:30
+msgid "Join us now, it's free!"
+msgstr "به ما بپیوندید. عضویت رایگان است!"
+
+#: templates/general/reset-password-success.php:3
+msgid "Your password has been changed. You can sign in now."
+msgstr "رمز عبور شما تغییر کرده است. اکنون می توانید وارد شوید."
+
+#: templates/general/reset-password.php:13
+msgid "Pick a New Password"
+msgstr "انتخاب یک رمز عبور جدید"
+
+#: templates/general/reset-password.php:32
+msgid "New Password:"
+msgstr "رمز جدید:"
+
+#: templates/general/reset-password.php:36
+msgid "New Password"
+msgstr "رمز عبور جدید"
+
+#: templates/general/reset-password.php:41
+msgid "Repeat new password:"
+msgstr "تکرار رمز عبور جدید:"
+
+#: templates/general/reset-password.php:45
+msgid "Repeat new password"
+msgstr "تکرار رمز عبور جدید"
+
+#: templates/general/safety-warning.php:4
+msgid "Close message"
+msgstr "بستن پیام"
+
+#: templates/general/wsi.php:4
+msgid "Invite your friends!"
+msgstr "دعوت از دوستان تان!"
+
+#: templates/location/interaction.php:10
+#: templates/location/photo_album_extra_fields.php:10
+msgid "Enter your location:"
+msgstr "مکان خود را وارد کنید:"
+
+#: templates/location/interaction.php:16
+#: templates/location/photo_album_extra_fields.php:16
+#: templates/location/postbox.php:10 templates/location/selector.php:14
+msgid "Select"
+msgstr "انتخاب کنید"
+
+#: templates/location/interaction.php:19
+#: templates/location/photo_album_extra_fields.php:19
+#: templates/location/postbox.php:11 templates/location/selector.php:15
+msgid "Remove"
+msgstr "حذف کردن"
+
+#: templates/location/photo_album_show_extra_fields.php:3
+msgid "Album location"
+msgstr "موقعیت مکانی آلبوم"
+
+#: templates/location/photo_album_show_extra_fields.php:17
+msgid "No location"
+msgstr "مکانی موجود نیست"
+
+#: templates/location/photo_album_show_extra_fields.php:38
+msgid "Save location"
+msgstr "ذخیره موقعیت"
+
+#: templates/location/postbox.php:3 templates/location/selector.php:3
+msgid "Enter location name..."
+msgstr "نام محل را وارد کنید..."
+
+#: templates/location/selector.php:10
+msgid "Select location"
+msgstr "انتخاب یک مکان"
+
+#: templates/members/members-tabs.php:9
+msgid "Blocked"
+msgstr "مسدود شده"
+
+#: templates/members/search-popover-input.php:3
+msgid "Start typing to search"
+msgstr "شروع به تایپ کردن برای جستجو"
+
+#: templates/members/search-popover-input.php:7
+msgid "No results found."
+msgstr "نتیجه ای یافت نشد."
+
+#: templates/members/search.php:28
+msgid "Start typing to search..."
+msgstr "شروع به تایپ کردن برای جستجو..."
+
+#: templates/members/search.php:40
+msgid "Any"
+msgstr "هر موردی"
+
+#: templates/members/search.php:56
+msgid "Sort"
+msgstr "مرتب سازی"
+
+#: templates/members/search.php:68
+msgid "All members"
+msgstr "تمام اعضا"
+
+#: templates/members/search.php:69
+msgid "Members I follow"
+msgstr "اعضایی که دنبال می کنم"
+
+#: templates/members/search.php:70
+msgid "Members I don't follow"
+msgstr "اعضایی که دنبال نمی کنم"
+
+#: templates/members/search.php:78
+msgid "Avatars"
+msgstr "آواتار ها"
+
+#: templates/members/search.php:81
+msgid "Only users with avatars"
+msgstr "تنها کاربران با آواتار"
+
+#: templates/profile/already-registered.php:6
+msgid "You are already registered and logged in"
+msgstr "شما قبلا ثبت نام کرده و وارد شده اید"
+
+#: templates/profile/already-registered.php:8
+#, php-format
+msgid "Visit <a href=\"%s\">community</a> or <a href=\"%s\">your profile</a>"
+msgstr "مشاهده <a href=\"%s\">انجمن</a> یا <a href=\"%s\">پروفایل شما</a>"
+
+#: templates/profile/dialog-avatar.php:5
+#: templates/profile/dialog-profile-avatar.php:6
+msgid "Change Avatar"
+msgstr "تغییر آواتار"
+
+#: templates/profile/dialog-avatar.php:13
+#: templates/profile/dialog-profile-avatar.php:18
+#: templates/profile/dialog-profile-cover.php:18
+msgid "Upload Photo"
+msgstr "بارگذاری عکس"
+
+#: templates/profile/dialog-avatar.php:17
+#: templates/profile/dialog-profile-avatar.php:26
+msgid "Remove Photo"
+msgstr "حذف عکس"
+
+#: templates/profile/dialog-avatar.php:22
+#: templates/profile/dialog-profile-avatar.php:32
+msgid "Use Gravatar"
+msgstr "استفاده از گراواتار"
+
+#: templates/profile/dialog-avatar.php:28
+#: templates/profile/dialog-profile-avatar.php:38
+msgid "Uploaded Photo"
+msgstr "عکس بارگذاری شده"
+
+#: templates/profile/dialog-avatar.php:30
+#: templates/profile/dialog-profile-avatar.php:40
+msgid "Automatically Generated. (Maximum width: 160px)"
+msgstr "به طور خودکار تولید شد. (حداکثر عرض: 160px)"
+
+#: templates/profile/dialog-avatar.php:34
+#: templates/profile/dialog-profile-avatar.php:44
+msgid "Crop Image"
+msgstr "برش تصویر"
+
+#: templates/profile/dialog-avatar.php:35
+msgid "Cancel Cropping"
+msgstr "لغو برش تصویر"
+
+#: templates/profile/dialog-avatar.php:37
+#: templates/profile/dialog-profile-avatar.php:45
+msgid "Save Thumbnail"
+msgstr "ذخیره تصویر بندانگشتی"
+
+#: templates/profile/dialog-avatar.php:43
+#: templates/profile/dialog-profile-avatar.php:50
+msgid "No avatar uploaded. Use the button above to select and upload one."
+msgstr "آواتاری بارگذاری نشده. از دکمه بالا جهت انتخاب و بارگذاری آن استفاده کنید."
+
+#: templates/profile/dialog-avatar.php:48
+#: templates/profile/dialog-avatar.php:50
+#: templates/profile/dialog-profile-avatar.php:56
+msgid "Avatar Preview"
+msgstr "پیش نمایش آواتار"
+
+#: templates/profile/dialog-avatar.php:54
+#, php-format
+msgid "This is how <strong>%s</strong> Avatar will appear throughout the entire community."
+msgstr "شکل نمایش آواتار <strong>%s</strong> در کل سایت."
+
+#: templates/profile/dialog-avatar.php:56
+#: templates/profile/dialog-profile-avatar.php:62
+msgid "This is how your Avatar will appear throughout the entire community."
+msgstr "آواتار شما این گونه برای کل انجمن نمایش داده می شود."
+
+#: templates/profile/dialog-avatar.php:77
+#: templates/profile/dialog-profile-avatar.php:68
+msgid "Done"
+msgstr "انجام شد"
+
+#: templates/profile/dialog-ban.php:6
+msgid "Ban this user until"
+msgstr "ممنوع کردن این کاربر تا"
+
+#: templates/profile/dialog-ban.php:11
+msgid "Please fill in the date"
+msgstr "لطفا تاریخ را تکمیل نمایید"
+
+#: templates/profile/dialog-ban.php:18
+msgid "Ban this user forever"
+msgstr "این کاربر برای همیشه ممنوع شود"
+
+#: templates/profile/dialog-profile-cover.php:6
+msgid "Change Cover Photo"
+msgstr "تغییر عکس جلد"
+
+#: templates/profile/dialog-profile-cover.php:25
+msgid "Remove Cover Photo"
+msgstr "حذف عکس جلد"
+
+#: templates/profile/dialog-profile-deletion.php:5
+msgid "Profile deletion"
+msgstr "حذف پروفایل"
+
+#: templates/profile/focus.php:44
+msgid "Reposition"
+msgstr "جای گذاری"
+
+#: templates/profile/focus.php:48
+msgid "Modify"
+msgstr "اصلاح کردن"
+
+#: templates/profile/no-access.php:48
+msgid "This user has decided to keep their profile private."
+msgstr "این کاربر تصمیم گرفته تا پروفایل خود را خصوصی نگه دارد."
+
+#: templates/profile/no-access.php:52 templates/widgets/me.tpl.php:206
+msgid "Register"
+msgstr "ثبت نام"
+
+#: templates/profile/online.php:1
+#, php-format
+msgid "%s is currently online"
+msgstr "%s در حال حاضر آنلاین است"
+
+#: templates/profile/profile-about-account.php:51
+msgid "Deleting your account will disable your profile and remove your name and photo from most things you've shared. Some information may still be visible to others, such as your name in their friends list and messages you sent."
+msgstr "حذف حساب شما پروفایل تان را غیرفعال کرده و نام و عکس شما را از اکثر چیزهایی که به اشتراک گذاشتید پاک می کند. برخی از اطلاعات ممکن است قابل مشاهده باشند مانند نام شما در فهرست دوستان آنها و یا پیغام هایی که ارسال کرده اید."
+
+#: templates/profile/profile-about-notifications.php:27
+msgid "Shortcuts"
+msgstr "میانبرها"
+
+#: templates/profile/profile-about-notifications.php:28
+msgid "Quickly manage all your preferences at once"
+msgstr "تمام تنظیمات خود را یکجا مدیریت کنید"
+
+#: templates/profile/profile-about-notifications.php:32
+msgid "Disable all e-mail notifications"
+msgstr "غیرفعال کردن تمام اعلان ها"
+
+#: templates/profile/profile-about-notifications.php:35
+msgid "Enable all e-mail notifications"
+msgstr "فعالسازی تمام اعلان ها"
+
+#: templates/profile/profile-about-notifications.php:38
+msgid "Disable all on-site notifications"
+msgstr "غیرفعال کردن اعلان های داخل سایت"
+
+#: templates/profile/profile-about-notifications.php:41
+msgid "Enable all on-site notifications"
+msgstr "فعالسازی اعلان های داخل سایت"
+
+#: templates/profile/profile-about.php:123
+msgid "Edit "
+msgstr "ویرایش "
+
+#: templates/profile/profile-about.php:171
+msgid "Sorry, no data to show"
+msgstr "با عرض پوزش، هیچ داده ای برای نمایش وجود ندارد"
+
+#: templates/profile/profile-menu.php:16
+msgid "More"
+msgstr "بیشتر"
+
+#: templates/profile/profile.php:12
+msgid "Finished Editing Apps Layout"
+msgstr "ویرایش طرح اپلیکیشن ها به پایان رسیده"
+
+#: templates/register/register-activate.php:5
+msgid "Account Activation"
+msgstr "فعال سازی حساب کاربری"
+
+#: templates/register/register-activate.php:9
+msgid "Please enter your activation code below to enable your account."
+msgstr "لطفا کد فعال سازی خود را جهت فعال کردن حساب تان وارد کنید."
+
+#: templates/register/register-activate.php:19
+msgid "Activation Code:"
+msgstr "کد فعال‌سازی:"
+
+#: templates/register/register-activate.php:27
+msgid "Activation code"
+msgstr "کد فعال‌سازی"
+
+#: templates/register/register-complete.php:5
+msgid "User Registered"
+msgstr "کاربر ثبت نام شده"
+
+#: templates/register/register-complete.php:11
+msgid "Please check your email account and confirm your registration. Once that's done, Administrator will be notified that your account has been created and is awaiting approval. Until the site administrator approves your account, you will not be able to login. Once your account has been approved, you will receive a notification email."
+msgstr "لطفا حساب ایمیل خود را بررسی کرده و ثبت نام خود را تایید کنید. پس از این کار، به مدیران ایمیلی مبنی بر ایجاد حساب شما و انتظار جهت تایید ارسال خواهد شد. تا زمانی که مدیر سایت شما را تایید نکند قادر به ورود نخواهید بود. پس از تایید حساب تان، ایمیلی جه اطلاع رسانی دریافت خواهید کرد."
+
+#: templates/register/register-complete.php:13
+msgid "Your account has been created. An activation link has been sent to the email address you provided, click on the link to logon to your account."
+msgstr "حساب شما ایجاد شده است. لینک فعال سازی به آدرس ایمیل شما ارسال شده، با کلیک بر روی لینک موجود به حساب خود وارد شوید."
+
+#: templates/register/register-resend.php:5
+#: templates/register/register-resent.php:5
+msgid "Resend Activation Code"
+msgstr "ارسال دوباره کد فعال سازی"
+
+#: templates/register/register-resend.php:9
+msgid "Please enter your registered e-mail address here so that we can resend you the activation link."
+msgstr "لطفا ایمیل حساب خود را اینجا وارد کنید تا کد فعال سازی دوباره برایتان ارسال گردد."
+
+#: templates/register/register-resend.php:23
+msgid "Email Address"
+msgstr "آدرس ایمیل"
+
+#: templates/register/register-resent.php:9
+msgid "Your activation code has been sent to your email."
+msgstr "کد فعال سازی به ایمیل شما ارسال شده است."
+
+#: templates/register/register-resent.php:14
+#, php-format
+msgid "Follow the link in the email you received, or you can enter the activation code on the <a href=\"%1$s\"><u>activation</u></a> page.</a>"
+msgstr "لینک موجود در ایمیل دریافتی تان را دنبال کنید یا اینکه به شکل دستی کد فعال سازی را در <a href=\"%1$s\"><u>این صفحه</u></a> وارد کنید.</a>"
+
+#: templates/register/register-verified.php:5
+msgid "Email Verified"
+msgstr "ایمیل تایید شد"
+
+#: templates/register/register-verified.php:9
+msgid "Your email has been verified. Until the site administrator approves your account, you will not be able to login. Once your account has been approved, you will receive a notification email."
+msgstr "ایمیل شما تایید شد. تا زمانی که مدیر سایت حساب شما را تایید نکند قادر به ورود نخواهید بود. به محض تایید حساب یک ایمیل اطلاع رسانی دریافت خواهید کرد."
+
+#: templates/register/register.php:10
+msgid "Register New User"
+msgstr "ثبت نام کاربر جدید"
+
+#: templates/register/register.php:16
+msgid "Error: "
+msgstr "خطا: "
+
+#: templates/widgets/admin_form.php:16
+msgid "General settings"
+msgstr "تنظیمات عمومی"
+
+#: templates/widgets/admin_form.php:25
+msgid "Title:"
+msgstr "عنوان:"
+
+#: templates/widgets/admin_form.php:41
+msgid "Limit:"
+msgstr "محدوده:"
+
+#: templates/widgets/admin_form.php:73
+msgid "Hide when empty"
+msgstr "پنهان کردن زمان خالی بودن"
+
+#: templates/widgets/admin_form.php:89
+msgid "Show total members count"
+msgstr "نمایش تعداد کل اعضا"
+
+#: templates/widgets/admin_form.php:99
+msgid "PeepSo Integrated Widget"
+msgstr "ابزارک یکپارچه سازی PeepSo"
+
+#: templates/widgets/admin_form.php:102
+msgid "Options below only  take effect if the widget is published in \"PeepSo\" widget area."
+msgstr "گزینه های زیر تنها زمانی اثر خواهد کرد که ابزارک در ناحیه ابزارکی PeepSo منتشر شده باشد."
+
+#: templates/widgets/admin_form.php:115
+msgid "Position"
+msgstr "موقعيت"
+
+#: templates/widgets/me.tpl.php:117
+msgid "My Profile"
+msgstr "پروفایل من"
+
+#. Plugin Name of the plugin/theme
+msgid "PeepSo Core"
+msgstr "هسته PeepSo"
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://peepso.com"
+msgstr "https://peepso.com"
+
+#. Description of the plugin/theme
+msgid "The Next Generation Social Networking"
+msgstr "نسل جدید شبکه های اجتماعی"
+

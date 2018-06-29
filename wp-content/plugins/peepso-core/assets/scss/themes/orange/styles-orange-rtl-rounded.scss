@@ -1,0 +1,17 @@
+/*
+ *  PeepSo
+ *  Orange Theme for PeepSo
+ *  @author PeepSo, Inc
+ *  Copyright 2018 PeepSo, Inc. GPL 2.0 licensed.
+ */
+
+@import '../../variables';
+@import 'variables';
+
+// Override rounded corners setting
+$scss-rounded: true;
+
+// Override direction setting
+$scss-direction: rtl;
+
+@import '../../theme';

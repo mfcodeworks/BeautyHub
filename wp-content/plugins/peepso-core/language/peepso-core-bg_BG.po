@@ -1,0 +1,4580 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: peepso\n"
+"POT-Creation-Date: 2018-04-12 10:06+0700\n"
+"PO-Revision-Date: 2018-04-18 05:30-0400\n"
+"Last-Translator: peepso <company@peep.so>\n"
+"Language-Team: Bulgarian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: crowdin.com\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: peepso.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Crowdin-Project: peepso\n"
+"X-Crowdin-Language: bg\n"
+"X-Crowdin-File: peepso-core.pot\n"
+"Language: bg_BG\n"
+
+#: activity/activitystream.php:104
+msgctxt "PeepSo Posts"
+msgid "PeepSo Posts"
+msgstr "PeepSo постове"
+
+#: activity/activitystream.php:105
+msgctxt "PeepSo Post"
+msgid "PeepSo Post"
+msgstr "PeepSo пост"
+
+#: activity/activitystream.php:106 activity/activitystream.php:127
+#: activity/activitystream.php:128
+msgid "PeepSo Posts"
+msgstr "PeepSo постове"
+
+#: activity/activitystream.php:107
+msgid "PeepSo Posts:"
+msgstr "PeepSo постове:"
+
+#: activity/activitystream.php:108
+msgid "All PeepSo Posts"
+msgstr "Всички PeepSo постове"
+
+#: activity/activitystream.php:109
+msgid "View PeepSo Post"
+msgstr "Виж пост от PeepSo"
+
+#: activity/activitystream.php:110 activity/activitystream.php:111
+msgid "Add New PeepSo Post"
+msgstr "Добави нов PeepSo пост"
+
+#: activity/activitystream.php:112
+msgid "Edit PeepSo Post"
+msgstr "Редактиране на PeepSo пост"
+
+#: activity/activitystream.php:113
+msgid "Update PeepSo Post"
+msgstr "Редактиране на PeepSo пост"
+
+#: activity/activitystream.php:114
+msgid "Search PeepSo Posts"
+msgstr "Търсене на PeepSo постове"
+
+#: activity/activitystream.php:115 activity/activitystream.php:162
+msgid "Not found"
+msgstr "Не е намерен"
+
+#: activity/activitystream.php:116 activity/activitystream.php:163
+msgid "Not found in Trash"
+msgstr "Не е намерен в кошчето"
+
+#: activity/activitystream.php:117
+msgid "posted"
+msgstr "пост"
+
+#: activity/activitystream.php:118 activity/classes/activity.php:265
+#: activity/classes/activity.php:398 activity/classes/activity.php:3753
+#: activity/classes/activitylisttable.php:252 classes/profile.php:729
+msgid "post"
+msgid_plural "posts"
+msgstr[0] "пост"
+msgstr[1] "постове"
+
+#: activity/activitystream.php:151 activity/activitystream.php:153
+#: activity/activitystream.php:174 activity/activitystream.php:175
+msgid "PeepSo Comments"
+msgstr "PeepSo коментари"
+
+#: activity/activitystream.php:152
+msgid "PeepSo Comment"
+msgstr "PeepSo коментар"
+
+#: activity/activitystream.php:154
+msgid "PeepSo Comments:"
+msgstr "PeepSo коментари:"
+
+#: activity/activitystream.php:155
+msgid "All PeepSo Comments"
+msgstr "Всички PeepSo коментари"
+
+#: activity/activitystream.php:156
+msgid "View PeepSo Comment"
+msgstr "Виж PeepSo коментар"
+
+#: activity/activitystream.php:157 activity/activitystream.php:158
+msgid "Add New PeepSo Comment"
+msgstr "Добавяне на нов PeepSo коментар"
+
+#: activity/activitystream.php:159
+msgid "Edit PeepSo Comment"
+msgstr "Редактиране на PeepSo коментар"
+
+#: activity/activitystream.php:160
+msgid "Update PeepSo Comment"
+msgstr "Редактиране на PeepSo коментар"
+
+#: activity/activitystream.php:161
+msgid "Search PeepSo Comments"
+msgstr "Търсене на PeepSo коментари"
+
+#: activity/activitystream.php:164 activity/classes/activity.php:402
+#: activity/classes/activity.php:430
+msgid "commented"
+msgstr "ви коментира"
+
+#: activity/activitystream.php:165 activity/classes/activity.php:1122
+msgid "comment"
+msgstr "коментар"
+
+#: activity/activitystream.php:221 activity/classes/activityadmin.php:33
+msgid "Activities"
+msgstr "Активност"
+
+#: activity/classes/activity.php:244
+msgid "Someone Posted on your profile"
+msgstr "Някой публикува във вашия профил"
+
+#: activity/classes/activity.php:246
+msgid "wrote on your profile"
+msgstr "коментира във вашия профил"
+
+#: activity/classes/activity.php:268
+#, php-format
+msgid "Someone shared your %s"
+msgstr "Някой ви е споделил %s"
+
+#: activity/classes/activity.php:270
+msgid "shared"
+msgstr "сподели"
+
+#: activity/classes/activity.php:401
+#, php-format
+msgid "Someone Commented on your %s"
+msgstr "Някой ви е коментирал %s"
+
+#: activity/classes/activity.php:409
+msgid "Someone Replied to your Comment!"
+msgstr "Някой е отговорил на ваш коментар!"
+
+#: activity/classes/activity.php:410 classes/profile.php:758
+msgid "replied to"
+msgstr "отговори на"
+
+#: activity/classes/activity.php:455 activity/classes/activity.php:2113
+msgid "Comment is empty"
+msgstr "Коментарът е празен"
+
+#: activity/classes/activity.php:525 activity/classes/activity.php:1546
+#: activity/classes/activity.php:1593 activity/classes/activity.php:1687
+msgid "You do not have permission to edit this post."
+msgstr "Нямате права да редактирате този пост."
+
+#: activity/classes/activity.php:1063 activity/classes/activity.php:1106
+#, php-format
+msgid "Show %d more %s"
+msgstr "Преглед на още %d %s"
+
+#: activity/classes/activity.php:1110
+#, php-format
+msgid "All %d %s displayed."
+msgstr "Всички %d %s са показани."
+
+#: activity/classes/activity.php:1123 classes/admin.php:1585
+msgid "comments"
+msgstr "коментара"
+
+#: activity/classes/activity.php:1125
+msgid "reply"
+msgstr "отговор"
+
+#: activity/classes/activity.php:1126
+msgid "replies"
+msgstr "отговори"
+
+#: activity/classes/activity.php:1405
+msgid "Invalid User id"
+msgstr "Невалидно потребителско id"
+
+#: activity/classes/activity.php:1504
+#, php-format
+msgid "Someone liked your %s"
+msgstr "Някой ви е харесал %s"
+
+#: activity/classes/activity.php:1507
+#, php-format
+msgid "liked your %s"
+msgstr "ви хареса %s"
+
+#: activity/classes/activity.php:1512
+msgid "Unable to process"
+msgstr "Не може да се обработи"
+
+#: activity/classes/activity.php:1563 activity/classes/activity.php:1613
+msgid "Post not found."
+msgstr "Постът не е намерен."
+
+#: activity/classes/activity.php:1646 activity/classes/activity.php:1682
+msgid "Could not update the description."
+msgstr "Не може да се актуализира описанието."
+
+#: activity/classes/activity.php:1710
+msgid "Post is empty"
+msgstr "Постът е празен"
+
+#: activity/classes/activity.php:1738
+msgid "updated a post"
+msgstr "актуализира пост"
+
+#: activity/classes/activity.php:1827 activity/classes/activity.php:1957
+#: activity/classes/activity.php:2004 activity/classes/activity.php:2060
+#: activity/classes/activity.php:2098 classes/admin.php:681
+msgid "You do not have permission to do that."
+msgstr "Нямате права да направите това."
+
+#: activity/classes/activity.php:1836
+msgid "You cannot ban yourself"
+msgstr "Не можете да блокирате себе си"
+
+#: activity/classes/activity.php:1844
+msgid "Invalid user"
+msgstr "Невалиден потребител"
+
+#: activity/classes/activity.php:1848 peepso.php:1787
+msgid "Notice"
+msgstr "Известие"
+
+#: activity/classes/activity.php:1852
+#, php-format
+msgid "%s has been unbanned"
+msgstr "%s е отблокиран"
+
+#: activity/classes/activity.php:1884
+#, php-format
+msgid "%s has been banned until %s"
+msgstr "%s е блокиран до %s"
+
+#: activity/classes/activity.php:1893
+msgid "Missing ban period date"
+msgstr "Липсва дата за периода на блокиране"
+
+#: activity/classes/activity.php:1899
+#, php-format
+msgid "%s has been banned"
+msgstr "%s е блокиран"
+
+#: activity/classes/activity.php:2046 classes/adminreport.php:108
+#: classes/adminreport.php:136 classes/adminreport.php:165
+msgid "Could not verify nonce."
+msgstr "Не може да се провери този случай."
+
+#: activity/classes/activity.php:2095
+msgid "This item has been reported"
+msgstr "Докладът е изпратен"
+
+#: activity/classes/activity.php:2122
+msgid "Activity not found"
+msgstr "Не е намерена активност"
+
+#: activity/classes/activity.php:2173
+msgid "The comment limit for this post has been reached."
+msgstr "Достигнат е лимитът от коментари за този пост."
+
+#: activity/classes/activity.php:2175
+msgid "Error in writing Activity Stream comment."
+msgstr "Грешка при писане на коментар в потока."
+
+#: activity/classes/activity.php:2179
+msgid "You don't have permissions for that "
+msgstr "Нямате права за това "
+
+#: activity/classes/activity.php:2209 activity/classes/activity.php:2744
+msgid "Report"
+msgstr "Докладване"
+
+#: activity/classes/activity.php:2233
+#: activity/classes/activityshortcode.php:137
+msgid "Reply"
+msgstr "Отговор"
+
+#: activity/classes/activity.php:2256 templates/profile/profile-about.php:124
+msgid "Edit"
+msgstr "Редактиране"
+
+#: activity/classes/activity.php:2279 activity/classes/activity.php:2757
+msgid "Remove Link Preview"
+msgstr "Премахни връзката за преглед"
+
+#: activity/classes/activity.php:2311 activity/classes/activity.php:2809
+#: activity/classes/activity.php:3934
+msgid "Please register or log in to perform this action"
+msgstr "Моля регистрирайте се или влезте, за да изпълните това действие"
+
+#: activity/classes/activity.php:2483 classes/configsections.php:491
+msgid "Read more"
+msgstr "Вижте повече"
+
+#: activity/classes/activity.php:2545
+msgid "and"
+msgstr "и"
+
+#: activity/classes/activity.php:2737
+msgid "RePost"
+msgstr "Споделяне"
+
+#: activity/classes/activity.php:2837
+msgid "Edit Post"
+msgstr "Редактиране"
+
+#: activity/classes/activity.php:2846
+msgid "Delete Post"
+msgstr "Изтриване"
+
+#: activity/classes/activity.php:2854
+msgid "Pin to top"
+msgstr "Закачане най-горе"
+
+#: activity/classes/activity.php:2861
+msgid "Unpin"
+msgstr "Откачване"
+
+#: activity/classes/activity.php:2879
+#, php-format
+msgid "Pinned by %s"
+msgstr "Закачено от %s"
+
+#: activity/classes/activity.php:2880
+#, php-format
+msgid "Pinned %s at %s"
+msgstr "Закачено на %s в %s"
+
+#: activity/classes/activity.php:3416
+msgid "Spam"
+msgstr "Спам"
+
+#: activity/classes/activity.php:3422
+msgid "- select reason -"
+msgstr "-изберете-"
+
+#: activity/classes/activity.php:3428 classes/profile.php:1638
+#: templates/admin/deactivation_feedback_modal.php:24
+msgid "Other"
+msgstr "Други"
+
+#: activity/classes/activity.php:3432
+msgid "Report description..."
+msgstr "Описание на доклада..."
+
+#: activity/classes/activity.php:3473 activity/classes/activity.php:3586
+#: peepso.php:1796 peepso.php:1797
+msgid " person likes this"
+msgid_plural " people like this."
+msgstr[0] " харесва това"
+msgstr[1] " харесват това"
+
+#: activity/classes/activity.php:3514
+msgid " likes this"
+msgid_plural " like this"
+msgstr[0] " харесва това"
+msgstr[1] " харесват това"
+
+#: activity/classes/activity.php:3536
+msgid "Invalid Action"
+msgstr "Невалидно действие"
+
+#: activity/classes/activity.php:3543
+msgid "Invalid Post ID"
+msgstr "Невалидно ID на пост"
+
+#: activity/classes/activity.php:3550
+msgid "You do not have permission to do that"
+msgstr "Нямате права да направите това"
+
+#: activity/classes/activity.php:3583 classes/profile.php:984
+#: classes/profile.php:989
+msgid "Like"
+msgstr "Харесване"
+
+#: activity/classes/activity.php:3733
+msgid "Changes saved."
+msgstr "Промените са записани."
+
+#: activity/classes/activity.php:3736
+msgid "You do not have permission to change post privacy settings."
+msgstr "Нямате права да променяте настройките за поверителност на поста."
+
+#: activity/classes/activity.php:3752
+#, php-format
+msgid "shared a %s"
+msgstr "споделен/а %s пъти"
+
+#: activity/classes/activityadmin.php:15
+msgid "Search User"
+msgstr "Търсене на потребител"
+
+#: activity/classes/activitylisttable.php:74
+msgid "Details"
+msgstr "Активности"
+
+#: activity/classes/activitylisttable.php:75
+msgid "ID (link)"
+msgstr "ID (линк)"
+
+#: activity/classes/activitylisttable.php:76
+msgid "Created"
+msgstr "Дата"
+
+#: activity/classes/activitylisttable.php:77 classes/general.php:305
+#: classes/mailqueuelisttable.php:53
+msgid "Status"
+msgstr "Статус"
+
+#: activity/classes/activitylisttable.php:121
+msgid "Published"
+msgstr "Публикуван"
+
+#: activity/classes/activitylisttable.php:125
+msgid "Archived"
+msgstr "Архивиран"
+
+#: activity/classes/activitylisttable.php:129
+msgid "Trash"
+msgstr "Кошче"
+
+#: activity/classes/activitylisttable.php:133
+msgid "Private"
+msgstr "Частни"
+
+#: activity/classes/activitylisttable.php:210
+msgid "Archive"
+msgstr "Архивирай"
+
+#: activity/classes/activitylisttable.php:211
+msgid "Publish"
+msgstr "Публикувай"
+
+#: activity/classes/activitylisttable.php:212
+#: activity/classes/activityshortcode.php:128 classes/admin.php:354
+#: classes/modalcomments.php:143 classes/profile.php:1482 peepso.php:1627
+#: templates/activity/dialogs.php:58
+msgid "Delete"
+msgstr "Изтриване"
+
+#: activity/classes/activitylisttable.php:235
+msgid "Updated"
+msgstr "Актуализиран"
+
+#: activity/classes/activitylisttable.php:244
+msgid "Deleted"
+msgstr "изтрит/и"
+
+#: activity/classes/activitylisttable.php:250
+#: classes/adminreportlisttable.php:276 classes/mailqueuelisttable.php:275
+#, php-format
+msgid "%1$d %2$s %3$s"
+msgstr "%1$d %2$s %3$s"
+
+#: activity/classes/activityshortcode.php:123 classes/admin.php:349
+#: peepso.php:1622 templates/activity/dialogs.php:63
+#: templates/profile/dialog-profile-deletion.php:30
+msgid "Confirm"
+msgstr "Потвърди"
+
+#: activity/classes/activityshortcode.php:124 classes/admin.php:350
+#: peepso.php:1623 templates/activity/dialogs.php:52
+#: templates/activity/dialogs.php:73
+msgid "Confirm Delete"
+msgstr "Потвърждаване на изтриването"
+
+#: activity/classes/activityshortcode.php:125 classes/admin.php:351
+#: peepso.php:1624 templates/activity/dialogs.php:54
+msgid "Are you sure you want to delete this?"
+msgstr "Сигурни ли сте, че искате да изтриете това?"
+
+#: activity/classes/activityshortcode.php:126 classes/admin.php:352
+#: peepso.php:1625
+msgid "Yes"
+msgstr "Да"
+
+#: activity/classes/activityshortcode.php:127 classes/admin.php:353
+#: classes/configsectionadvanced.php:151 peepso.php:1626
+msgid "No"
+msgstr "Не"
+
+#: activity/classes/activityshortcode.php:129 classes/admin.php:355
+#: peepso.php:1615 peepso.php:1628
+#: templates/activity/activity-stream-filters.php:34
+#: templates/activity/activity-stream-filters.php:75
+#: templates/activity/activity-stream-filters.php:122
+#: templates/activity/comment-edit.php:8
+#: templates/activity/description-edit.php:16
+#: templates/activity/dialog-repost.php:32 templates/activity/dialogs.php:16
+#: templates/activity/dialogs.php:34 templates/activity/dialogs.php:57
+#: templates/activity/dialogs.php:82 templates/activity/post-edit.php:19
+#: templates/admin/profiles_field.php:90
+#: templates/admin/profiles_field_config_field_text.php:15
+#: templates/admin/profiles_no_plugin.php:8
+#: templates/general/postbox-legacy.php:27 templates/general/postbox.php:29
+#: templates/location/photo_album_show_extra_fields.php:35
+#: templates/profile/dialog-profile-deletion.php:25
+#: templates/profile/focus.php:55 templates/profile/profile-about.php:153
+msgid "Cancel"
+msgstr "Отказ"
+
+#: activity/classes/activityshortcode.php:130 classes/admin.php:356
+#: peepso.php:1629 templates/activity/dialogs.php:68
+msgid "Okay"
+msgstr "Добре"
+
+#: activity/classes/activityshortcode.php:138
+msgid "View Replies"
+msgstr "Виж отговорите"
+
+#: admin/config/options.php:41
+msgid "Save Settings"
+msgstr "Запиши настройките"
+
+#: admin/config/options.php:47
+msgid "Reset"
+msgstr "Начално състояние"
+
+#: admin/config/options.php:57
+msgid "YES---------NO"
+msgstr "ДА---------НЕ"
+
+#: admin/config/welcome-screen.php:1
+msgid "Getting Started"
+msgstr "Първи стъпки"
+
+#: classes/admin.php:102
+msgid "You have Registered or Verified users that need to be approved. To approve, change the user's role to PeepSo Member or other appropriate role."
+msgstr "Има регистрирани или верифицирани потребители, които трябва да бъдат потвърдени. За да ги потвърдите, задайте им PeepSo роля като потребител или друга подходяща."
+
+#: classes/admin.php:103
+#, php-format
+msgid " %1$sClick here%2$s for more information on assigning roles."
+msgstr " %1$sВижте тук%2$s повече информация за определяне на ролите."
+
+#: classes/admin.php:110
+msgid "PeepSo User Roles:"
+msgstr "PeepSo потребителски роли:"
+
+#: classes/admin.php:111
+#, php-format
+msgid "You can change Roles for PeepSo users by selecting the checkboxes for individual users and then selecting the desired Role from the %s dropdown."
+msgstr "Можете да променяте ролите на потребителите за PeepSo като поставите отметка в квадратчетата за всеки потребител и след това изберете желаната роля от падащото меню %s."
+
+#: classes/admin.php:112
+msgid "- Select Role -"
+msgstr "-Изберете роля-"
+
+#: classes/admin.php:113
+#, php-format
+msgid "Once the new Role is selected, click on the %s button and those users will be updated."
+msgstr "След като новата роля е избранa, щракнете върху бутона %s и ролите на тези потребители ще бъдат актуализирани."
+
+#: classes/admin.php:114 classes/admin.php:737
+msgid "Change Role"
+msgstr "Промени ролята"
+
+#: classes/admin.php:115
+msgid "Meaning of user roles:"
+msgstr "Значение на потребителските роли:"
+
+#. Author of the plugin/theme
+#: classes/admin.php:146
+msgid "PeepSo"
+msgstr "PeepSo"
+
+#: classes/admin.php:191 classes/admin.php:192 classes/admin.php:922
+msgid "Reported Items"
+msgstr "Доклади"
+
+#: classes/admin.php:218
+msgid "Dashboard"
+msgstr "Табло"
+
+#: classes/admin.php:327 peepso.php:1788
+msgid "View All"
+msgstr "Виж всички"
+
+#: classes/admin.php:328 peepso.php:1789
+msgid "Mark All as Read"
+msgstr "Отбележи като прочетени"
+
+#: classes/admin.php:329 peepso.php:1790
+msgid "Are you sure you want to mark all notifications as read?"
+msgstr "Сигурни ли сте, че искате да отбележите всички известия като прочетени?"
+
+#: classes/admin.php:330 peepso.php:1791
+msgid "Show unread only"
+msgstr "Само непрочетените"
+
+#: classes/admin.php:331 peepso.php:1792
+msgid "Show all"
+msgstr "Показване на всички"
+
+#: classes/admin.php:380 classes/template.php:131 peepso.php:1704
+msgid "just now"
+msgstr "току-що"
+
+#: classes/admin.php:381 classes/admin.php:382 classes/admin.php:383
+#: classes/admin.php:384 classes/admin.php:385 classes/admin.php:386
+#: classes/admin.php:387 classes/admin.php:388 classes/admin.php:389
+#: classes/admin.php:390 classes/admin.php:391 classes/admin.php:392
+#: classes/template.php:133 peepso.php:1705 peepso.php:1706 peepso.php:1707
+#: peepso.php:1708 peepso.php:1709 peepso.php:1710 peepso.php:1711
+#: peepso.php:1712 peepso.php:1713 peepso.php:1714 peepso.php:1715
+#: peepso.php:1716
+#, php-format
+msgid "%s ago"
+msgstr "преди %s"
+
+#: classes/admin.php:381 classes/admin.php:382 lib/helpers.php:19
+#: peepso.php:1705 peepso.php:1706
+#, php-format
+msgid "%s min"
+msgid_plural "%s mins"
+msgstr[0] "%s мин"
+msgstr[1] "%s мин"
+
+#: classes/admin.php:383 classes/admin.php:384 lib/helpers.php:24
+#: peepso.php:1707 peepso.php:1708
+#, php-format
+msgid "%s hour"
+msgid_plural "%s hours"
+msgstr[0] "%s час"
+msgstr[1] "%s часа"
+
+#: classes/admin.php:385 classes/admin.php:386 lib/helpers.php:29
+#: peepso.php:1709 peepso.php:1710
+#, php-format
+msgid "%s day"
+msgid_plural "%s days"
+msgstr[0] "%s ден"
+msgstr[1] "%s дни"
+
+#: classes/admin.php:387 classes/admin.php:388 lib/helpers.php:34
+#: peepso.php:1711 peepso.php:1712
+#, php-format
+msgid "%s week"
+msgid_plural "%s weeks"
+msgstr[0] "%s седмица"
+msgstr[1] "%s седмици"
+
+#: classes/admin.php:389 classes/admin.php:390 lib/helpers.php:39
+#: peepso.php:1713 peepso.php:1714
+#, php-format
+msgid "%s month"
+msgid_plural "%s months"
+msgstr[0] "%s месец"
+msgstr[1] "%s месеца"
+
+#: classes/admin.php:391 classes/admin.php:392 lib/helpers.php:44
+#: peepso.php:1715 peepso.php:1716
+#, php-format
+msgid "%s year"
+msgid_plural "%s years"
+msgstr[0] "%s година"
+msgstr[1] "%s години"
+
+#: classes/admin.php:413 classes/admin.php:1239 classes/general.php:53
+#: install/activate.php:362 peepso.php:2815
+#: templates/members/members-blocked.php:9 templates/members/members-tabs.php:6
+#: templates/members/search.php:7
+msgid "Members"
+msgstr "Потребители"
+
+#: classes/admin.php:419 classes/configsectionadvanced.php:62
+msgid "Profiles"
+msgstr "Профили"
+
+#: classes/admin.php:426 classes/adminmailqueue.php:39
+msgid "Mail Queue"
+msgstr "Опашка"
+
+#: classes/admin.php:433 classes/admin.php:1938
+msgid "Addons"
+msgstr "Добавки"
+
+#: classes/admin.php:436
+msgid "NEW!"
+msgstr "НОВО!"
+
+#: classes/admin.php:448 classes/config.php:25
+msgid "Configuration"
+msgstr "Настройки"
+
+#: classes/admin.php:551
+msgid "PeepSo Role"
+msgstr "PeepSo роля"
+
+#: classes/admin.php:656
+msgid " approved"
+msgstr " одобрен"
+
+#: classes/admin.php:661
+msgid " banned"
+msgstr " блокиран"
+
+#: classes/admin.php:666 classes/admin.php:1760
+msgid "Invalid action"
+msgstr "Невалидно действие"
+
+#: classes/admin.php:685
+msgid "Form is invalid."
+msgstr "Формата е невалидна."
+
+#: classes/admin.php:710
+msgid "Please select a PeepSo Role before clicking on \"Change Role\"."
+msgstr "Моля изберете PeepSo роля преди да щракнете върху \"Промени ролята\"."
+
+#: classes/admin.php:727
+msgid "Set PeepSo Role:"
+msgstr "Задайте PeepSo роля:"
+
+#: classes/admin.php:729
+msgid " - Select Role -"
+msgstr " -Изберете роля-"
+
+#: classes/admin.php:756
+msgid "Full member, can write posts and participate"
+msgstr "потребителят може да пише постове и да участва в мрежата"
+
+#: classes/admin.php:758
+msgid "PeepSo Administrator, can Moderate, edit users, etc."
+msgstr "PeepSo администраторът може да модерира, да редактира потребители и т. н."
+
+#: classes/admin.php:759
+msgid "Banned, cannot login or participate"
+msgstr "блокираните потребители не могат да се логват или да са активни"
+
+#: classes/admin.php:760
+msgid "Registered, awaiting email verification"
+msgstr "регистриран, очаква потвърждение на имейла"
+
+#: classes/admin.php:761
+msgid "Verified email, awaiting Adminstrator approval"
+msgstr "потвърден имейл, очаква одобрение от Администратор"
+
+#: classes/admin.php:772
+msgid "Community Member"
+msgstr "Community потребител"
+
+#: classes/admin.php:773
+msgid "Community Moderator"
+msgstr "Community модератор"
+
+#: classes/admin.php:774
+msgid "Community Administrator"
+msgstr "Community администратор"
+
+#: classes/admin.php:775
+msgid "Banned"
+msgstr "Блокирани"
+
+#: classes/admin.php:776
+msgid "Pending user email verification"
+msgstr "Очакват потвърждение на имейла"
+
+#: classes/admin.php:777
+msgid "Pending admin approval"
+msgstr "Очакват одобрение от администратор"
+
+#: classes/admin.php:812
+msgid "Profile Link"
+msgstr "Профил"
+
+#: classes/admin.php:892
+msgid "System Requirements"
+msgstr "Системни изисквания"
+
+#: classes/admin.php:901
+msgid "Get Free eBook Now! ($9.99 Value)"
+msgstr "Вземете Вашата безплатна книга сега!"
+
+#: classes/admin.php:909
+msgid "User Engagement"
+msgstr "Ангажираност на потребителите"
+
+#: classes/admin.php:916
+msgid "Users"
+msgstr "Потребители"
+
+#: classes/admin.php:928
+msgid "Most Recent Content"
+msgstr "Последна активност"
+
+#: classes/admin.php:934
+msgid "User Demographics"
+msgstr "Демография на потребителите"
+
+#: classes/admin.php:980
+#, php-format
+msgid "The minimum required PHP version is %s - your server has %s"
+msgstr "Минимална възможна PHP версия е %s - Вашият сървър е с %s"
+
+#: classes/admin.php:984
+#, php-format
+msgid "The recommended PHP version is %s or higher - your server has %s. Please visit %s for more information."
+msgstr "Препоръчителна версия на PHP е %s или по-висока. Вашият сървър е с версия %s. Моля, посетете %s за повече информация."
+
+#: classes/admin.php:989
+msgid "The PHP EXIF extension is required"
+msgstr "Необходимо е PHP EXIF разширение."
+
+#: classes/admin.php:994
+msgid "The PHP Imagick extension is recommended"
+msgstr "Препоръчително е разширението PHP Imagick"
+
+#: classes/admin.php:999
+#, php-format
+msgid "The required memory limit is %s - your server has %s"
+msgstr "Изисква се %s памет  - Вашият сървър е с %s"
+
+#: classes/admin.php:1004
+msgid "PHP session suppport is required"
+msgstr "Изисква поддържа на PHP сесия"
+
+#: classes/admin.php:1009
+#, php-format
+msgid "The minimum required MySQL version is %s - your server has %s"
+msgstr "Минималната MySQL версия е %s - Вашият сървър е с %s"
+
+#: classes/admin.php:1014
+msgid "Can't connect to PeepSo.com. Please contact PeepSo support."
+msgstr "Не може да се свърже с PeepSo.com. Свържете се с поддръжката на PeepSo."
+
+#: classes/admin.php:1157
+msgid "Male"
+msgstr "Мъж"
+
+#: classes/admin.php:1164
+msgid "Female"
+msgstr "Женa"
+
+#: classes/admin.php:1171 classes/mailqueuelisttable.php:174
+msgid "Unknown"
+msgstr "Неопределен"
+
+#: classes/admin.php:1229
+msgid "Posts"
+msgstr "Постове"
+
+#: classes/admin.php:1234 classes/configsections.php:464 peepso.php:1664
+msgid "Comments"
+msgstr "Коментари"
+
+#: classes/admin.php:1291 classes/admin.php:1353
+msgid "No recent posts."
+msgstr "Няма нови."
+
+#: classes/admin.php:1311 classes/admin.php:1388 classes/admin.php:1440
+#: classes/admin.php:1446 classes/admin.php:1624 classes/admin.php:1630
+msgid "View profile"
+msgstr "Виж профила"
+
+#: classes/admin.php:1316
+msgid "View post"
+msgstr "Виж поста"
+
+#: classes/admin.php:1328
+msgid "See all Activities"
+msgstr "Вижте всички активности"
+
+#: classes/admin.php:1395
+msgid "View comment"
+msgstr "Виж коментара"
+
+#: classes/admin.php:1426
+msgid "No users found"
+msgstr "Няма намерени потребители"
+
+#: classes/admin.php:1454
+msgid "Edit this user"
+msgstr "Редактирай този потребител"
+
+#: classes/admin.php:1465
+msgid "See all Members"
+msgstr "Виж всички потребители"
+
+#: classes/admin.php:1492 peepso.php:2830
+msgid "Stream"
+msgstr "Дневник"
+
+#: classes/admin.php:1535
+msgid "This week"
+msgstr "Тази седмица"
+
+#: classes/admin.php:1536
+msgid "Last week"
+msgstr "Предишната седмица"
+
+#: classes/admin.php:1537
+msgid "This month"
+msgstr "Този месец"
+
+#: classes/admin.php:1538
+msgid "Last month"
+msgstr "Предишният месец"
+
+#: classes/admin.php:1581
+msgid "posts"
+msgstr "постове"
+
+#: classes/admin.php:1589
+msgid "likes"
+msgstr "харесвания"
+
+#: classes/admin.php:1614 classes/admin.php:1711
+msgid "The list is empty"
+msgstr "Няма"
+
+#: classes/admin.php:1636
+msgid "Approve"
+msgstr "Потвърди"
+
+#: classes/admin.php:1637
+msgid "Dismiss and Ban"
+msgstr "Блокирай и забрани"
+
+#: classes/admin.php:1648
+msgid "See all Pending Members"
+msgstr "Виж всички очакващи одобрение"
+
+#: classes/admin.php:1675
+msgid "Amount of reports"
+msgstr "Брой доклади"
+
+#: classes/admin.php:1683 classes/profile.php:1122 classes/profile.php:1634
+msgid "Profile"
+msgstr "Профил"
+
+#: classes/admin.php:1686
+msgid "Content"
+msgstr "Пост"
+
+#: classes/admin.php:1716
+msgid "See all Reported Items"
+msgstr "Виж всички доклади"
+
+#: classes/admin.php:1745
+msgid "Report dismissed."
+msgstr "Докладът е отхвърлен."
+
+#: classes/admin.php:1749
+msgid "User banned."
+msgstr "Потребителят е блокиран."
+
+#: classes/admin.php:1753
+msgid "Post unpublished."
+msgstr "Постът е непубликуван."
+
+#: classes/admin.php:1853
+msgid "Once registered, you will receive updates and special offers from PeepSo. We will only send once, your administrator's e-mail and site URL to PeepSo server."
+msgstr "След регистрация, вие ще получавате актуализации и специални оферти от PeepSo. Ние ще изпратим само веднъж, вашия администраторски имейл и URL на сайта на PeepSo сървъра."
+
+#: classes/admin.php:1854
+msgid "No additional information will be ever collected or sent."
+msgstr "Допълнителна информация няма да бъде събрана или изпратена."
+
+#: classes/admin.php:1866
+msgid "I don't want to register"
+msgstr "Не искам да регистрирам"
+
+#: classes/admin.php:1944 templates/admin/extensions.php:82
+msgid "Hide Installed Plugins"
+msgstr "Скрий инсталираните плъгини"
+
+#: classes/admin.php:1945
+msgid "Show Installed Plugins"
+msgstr "Покажи инсталираните плъгини"
+
+#: classes/admin.php:1993
+#, php-format
+msgid "The <a href=\"%s\">file system directory</a> seems to be unwritable. Please adjust it. If you don't feel comfortable doing it yourself, please contact PeepSo support "
+msgstr "В <a href=\"%s\">системна директория</a>, необходима функционирането на PeepSo, не може да се записва. Коригирайте правата за запис. Ако не можете да го направите сами, моля свържете се с поддръжката на PeepSo."
+
+#: classes/admin.php:1995 classes/configsectionlocation.php:24
+msgid "here"
+msgstr "тук"
+
+#: classes/admin.php:2049
+#, php-format
+msgid "New Plugin for PeepSo is available! See it in the <a href=\"%s\">Addons</a> page."
+msgstr "Има нов плъгин за PeepSo! Вижте го в страницата на <a href=\"%s\">Add-Ons</a>."
+
+#: classes/adminconfigfields.php:9 classes/adminconfigfields.php:35
+#: classes/adminconfigfields.php:70 classes/adminconfigfields.php:89
+#: classes/adminconfiglicense.php:13 classes/adminengagementdashboard.php:18
+#: classes/adminreport.php:38 classes/adminreport.php:103
+#: classes/adminreport.php:131 classes/adminreport.php:160
+#: classes/adminsendy.php:9
+msgid "Insufficient permissions."
+msgstr "Недостатъчни права."
+
+#: classes/adminconfiglicense.php:37
+#, php-format
+msgid "%s remaining"
+msgstr "оставащо време %s"
+
+#: classes/adminconfiglicense.php:40
+#, php-format
+msgid "Expired on %s"
+msgstr "Изтекъл на %s"
+
+#: classes/adminmailqueue.php:23
+#, php-format
+msgid "%1$d %2$s processed in %3$d seconds"
+msgstr "%1$d %2$s са обработени за %3$d секунди"
+
+#: classes/adminmailqueue.php:25 classes/mailqueuelisttable.php:277
+msgid "email"
+msgid_plural "emails"
+msgstr[0] "имейл"
+msgstr[1] "имейли"
+
+#: classes/adminmailqueue.php:29
+msgid "The Mail Queue is empty."
+msgstr "Опашката със съобщения е празна."
+
+#: classes/adminprofiles.php:12
+msgid "To be able to add new Profile Fields. Please install PeepSo Extended Profile Fields plugin. You can find it <a href=\"https://peepso.com/pricing\" target=\"_blank\">here</a>."
+msgstr "За да можете да добавяте нови полета в профилите, моля инсталирайте плъгина PeepSo:Разширени профили. Можете да го намерите <a href=\"https://peepso.com/pricing\" target=\"_blank\"> тук</a>."
+
+#: classes/adminprofiles.php:18
+msgid "Value should be greater than or equal to 0."
+msgstr "Стойността трябва да бъде по-голяма или равна на 0."
+
+#: classes/adminprofiles.php:19
+#, php-format
+msgid "Maximum value should be greater than or equal to %d (minimum value)."
+msgstr "Максималната стойност трябва да бъде по-голяма или равна на %d."
+
+#: classes/adminprofiles.php:20
+#, php-format
+msgid "Minimum value should be less than or equal to %d (maximum value)."
+msgstr "Минималната стойност трябва да бъде по-малка или равна на %d."
+
+#: classes/adminreport.php:17
+msgid "User Reported Items"
+msgstr "Доклади от потребители"
+
+#: classes/adminreport.php:76 classes/listtable.php:36
+#, php-format
+msgid "1 item"
+msgid_plural "%s items"
+msgstr[0] "1 елемент"
+msgstr[1] "%s елемента"
+
+#: classes/adminreport.php:114
+msgid "The reported item has been successfully unpublished."
+msgstr "Докладваният елемент вече е непубликуван."
+
+#: classes/adminreport.php:142
+msgid "The reported item has been successfully dismissed."
+msgstr "Докладваният елемент е отхвърлен."
+
+#: classes/adminreport.php:171
+msgid "The reported item has been successfully banned."
+msgstr "Докладваният елемент е блокиран."
+
+#: classes/adminreportlisttable.php:79
+msgid "Content Summary"
+msgstr "Съдържание"
+
+#: classes/adminreportlisttable.php:80
+msgid "Report Summary"
+msgstr "Доклад"
+
+#: classes/adminreportlisttable.php:81
+msgid "Link"
+msgstr "Връзка"
+
+#: classes/adminreportlisttable.php:82
+msgid "Date Submitted"
+msgstr "Дата"
+
+#: classes/adminreportlisttable.php:83
+msgid "Actions"
+msgstr "Действие"
+
+#: classes/adminreportlisttable.php:184
+msgid "Reports"
+msgstr "Доклади"
+
+#: classes/adminreportlisttable.php:185
+msgid "Reason"
+msgstr "Причина"
+
+#: classes/adminreportlisttable.php:209 classes/adminreportlisttable.php:248
+msgid "Dismiss"
+msgstr "Отхвърли"
+
+#: classes/adminreportlisttable.php:210
+msgid "Delete this item, leave the post alone."
+msgstr "Изтриване на този елемент, но поста да остане."
+
+#: classes/adminreportlisttable.php:216
+msgid "Ban Profile"
+msgstr "Блокирай профила"
+
+#: classes/adminreportlisttable.php:217
+msgid "Ban this profile, but not deleted"
+msgstr "Блокирай този профил, но не го изтривай"
+
+#: classes/adminreportlisttable.php:221 classes/adminreportlisttable.php:247
+msgid "Unpublish"
+msgstr "Непубликуван"
+
+#: classes/adminreportlisttable.php:222
+msgid "Make this item no longer published, but not deleted"
+msgstr "Направи го непубликуван, без да се изтрива"
+
+#: classes/adminreportlisttable.php:267
+msgid "unpublished"
+msgstr "непубликуван"
+
+#: classes/adminreportlisttable.php:272
+msgid "dismissed"
+msgstr "отхвърлен"
+
+#: classes/adminreportlisttable.php:278
+msgid "report"
+msgid_plural "reports"
+msgstr[0] "доклад"
+msgstr[1] "доклади"
+
+#: classes/ajaxhandler.php:58
+msgid "Login required"
+msgstr "Изисква се вход"
+
+#: classes/auth.php:26 classes/auth.php:59
+msgid "Login Error"
+msgstr "Грешка при влизане"
+
+#: classes/auth.php:27
+msgid "Sorry, your login attempt failed. Please refresh the page and try again.<br><br>Contact the webmaster if the problem persists."
+msgstr "За съжаление Вашият опит за вход е неуспешен. Обновете страницата и опитайте отново. <br><br>Свържете се с администратора, ако проблемът продължава."
+
+#: classes/auth.php:62
+msgid "Username and password required."
+msgstr "Потребителското име и парола са задължителни."
+
+#: classes/config.php:60
+msgid "Class must be instance of PeepSoConfigSectionAbstract"
+msgstr "Класът трябва да бъде инстанция на PeepSoConfigSectionAbstract"
+
+#: classes/config.php:166
+msgid "Tab titles"
+msgstr "Заглавия на табовете"
+
+#: classes/config.php:173
+msgid "Field descriptions"
+msgstr "Описания на полетата"
+
+#: classes/config.php:184
+msgid "Some settings have been changed. Be sure to save your changes."
+msgstr "Някои настройки са променени. Трябва да запишете промените."
+
+#: classes/config.php:279 classes/configsectionappearance.php:290
+#: classes/configsectionlocation.php:37 classes/configsections.php:366
+#: templates/admin/profiles_field.php:36
+msgid "General"
+msgstr "Основни настройки"
+
+#: classes/config.php:282
+msgid "General configuration settings for PeepSo"
+msgstr "Основни настройки за конфигуране на PeepSo"
+
+#: classes/config.php:288 templates/admin/profiles_field.php:37
+msgid "Appearance"
+msgstr "Външен вид"
+
+#: classes/config.php:290
+msgid "Look and feel settings"
+msgstr "Настройки на изгледа"
+
+#: classes/config.php:296
+msgid "Edit Emails"
+msgstr "Имейли"
+
+#: classes/config.php:299
+msgid "Edit content of emails sent by PeepSo to users and Admins"
+msgstr "Редактиране на съдържанието на имейлите, изпратщани от PeepSo до потребители и администратори"
+
+#: classes/config.php:303
+msgid "Advanced"
+msgstr "Допълнителни настройки"
+
+#: classes/config.php:306
+msgid "Avanced System options"
+msgstr "Разширени системни настройки"
+
+#: classes/config.php:311 classes/location.php:83 classes/location.php:125
+#: classes/profilefields.php:211
+msgid "Location"
+msgstr "Местоположение"
+
+#: classes/config.php:407
+msgid "Options updated"
+msgstr "Настройките са актуализирани"
+
+#: classes/config.php:410
+msgid "Please correct the errors below"
+msgstr "Моля коригирайте грешките"
+
+#: classes/config.php:502
+#, php-format
+msgid "Toggle panel: %s"
+msgstr "Превключване на панела: %s"
+
+#: classes/configemails.php:17
+msgid "New User Email"
+msgstr "Имейл на нов потребител"
+
+#: classes/configemails.php:18
+msgid "This will be sent to new users upon completion of the registration process"
+msgstr "Това ще бъде изпратено на новите потребители след завършване на процеса на регистрация."
+
+#: classes/configemails.php:20
+msgid "New User Email (No Account Verification)"
+msgstr "Имейл на нов потребител (без потвърждение на акаунта)"
+
+#: classes/configemails.php:21
+msgid "This will be sent to new users upon completion of the registration process when Account Verification is disabled"
+msgstr "Това ще бъде изпратено на новите потребители след завършване на процеса на регистрация, когато не е избрано потвърждение на акаунта."
+
+#: classes/configemails.php:23
+msgid "Account Approved"
+msgstr "Акаунтът е одобрен"
+
+#: classes/configemails.php:24
+msgid "This will be sent when an Admin approves a user registration."
+msgstr "Това ще бъде изпратено, когато администратор потвърди регистрацията на нов потребител."
+
+#: classes/configemails.php:26
+msgid "Activity Notice"
+msgstr "Известие за активност"
+
+#: classes/configemails.php:27
+msgid "This will be sent when someone interacts with a user's Activity Stream"
+msgstr "Това ще бъде изпратено, когато някой взаимодейства с даден потребител в дневника с активностите му."
+
+#: classes/configemails.php:29
+msgid "Like Post"
+msgstr "Харесване на пост"
+
+#: classes/configemails.php:30
+msgid "This will be sent when a user \"likes\" another user's post"
+msgstr "Това ще бъде изпратенo, когато потребител \"Хареса\" пост на друг потребител."
+
+#: classes/configemails.php:32
+msgid "User Comment"
+msgstr "Коментиране на пост"
+
+#: classes/configemails.php:33
+msgid "This will be sent to a post owner when another user comments on the post"
+msgstr "Това ще бъде изпратено до автора на поста, когато друг потребител го коментира."
+
+#: classes/configemails.php:35
+msgid "User Reply Comment"
+msgstr "Отговор на коментар"
+
+#: classes/configemails.php:36
+msgid "This will be sent to a comment owner when another user comments on the comment"
+msgstr "Това ще бъде изпратено до собственик на коментар, когато друг потребител коментира коментара му."
+
+#: classes/configemails.php:38
+msgid "Like User Comment"
+msgstr "Харесване на коментар"
+
+#: classes/configemails.php:39
+msgid "This will be sent when a user \"likes\" another user's comments on the post"
+msgstr "Това ще бъде изпратенo, когато потребител \"Хареса\" коментари от пост на друг потребител."
+
+#: classes/configemails.php:41
+msgid "Wall Post"
+msgstr "Публикация в дневник"
+
+#: classes/configemails.php:42
+msgid "This will be sent when a user writes on another user's wall"
+msgstr "Това ще бъде изпратено, когато потребител пише в профила на друг потребител."
+
+#: classes/configemails.php:44
+msgid "Share Post"
+msgstr "Споделяне на пост"
+
+#: classes/configemails.php:45
+msgid "This will be sent when a user \"shared\" another user's post"
+msgstr "Това ще бъде изпратенo, когато потребител \"сподели\" пост на друг потребител."
+
+#: classes/configemails.php:47 install/activate.php:352
+#: templates/general/login.php:28 templates/general/recover-password.php:10
+#: templates/widgets/me.tpl.php:207
+msgid "Recover Password"
+msgstr "Забравена парола"
+
+#: classes/configemails.php:48
+msgid "This will be sent when a user requests a password recovery"
+msgstr "Това ще бъде изпратено, когато потребител заяви възстановяване на парола."
+
+#: classes/configemails.php:50
+msgid "Password Changed"
+msgstr "Промяна на парола"
+
+#: classes/configemails.php:51
+msgid "This will be sent when a user changes their password after recovery"
+msgstr "Това ще бъде изпратено, когато даден потребител промени своята парола след възстановяване."
+
+#: classes/configemails.php:53
+msgid "Like Profile"
+msgstr "Харесване на профил"
+
+#: classes/configemails.php:54
+msgid "This will be sent when a user \"likes\" another user's profile"
+msgstr "Това ще бъде изпратенo, когато потребител \"Хареса\" профил на друг потребител."
+
+#: classes/configemails.php:56 lib/pluggable.php:46
+msgid "New User Registration"
+msgstr "Регистрация на нов потребител"
+
+#: classes/configemails.php:58
+msgid "This will be sent to admin user when new user needs approval"
+msgstr "Това ще бъде изпратено до Администратор, когато трябва да се потвърди нов потребител."
+
+#: classes/configemails.php:60
+msgid "These emails will be sent to the email account setup in WordPress settings. <a href=\"options-general.php\" target=\"_blank\">You can change it here</a>."
+msgstr "Тези имейли ще бъдат изпращани до административния имейл, който е въведен във WordPress настройки. <a href=\"options-general.php\" target=\"_blank\"> Можете да го промените от тук</a>."
+
+#: classes/configemails.php:99
+msgid "Reset all emails"
+msgstr "Начално състояние на имейлите"
+
+#: classes/configemails.php:102
+msgid "This will  reset all email templates to default values"
+msgstr "Възстановяват се всички текстове на имейл шаблоните до стойностите по подразбиране."
+
+#: classes/configemails.php:109
+msgid "Yes, I'm sure!"
+msgstr "Да, сигурен съм!"
+
+#: classes/configemails.php:117
+msgid "Allowed Tokens"
+msgstr "Позволени променливи"
+
+#: classes/configemails.php:119
+msgid "The following tokens can be used within the content of emails:"
+msgstr "Следните променливи могат да бъдат използвани в съдържанието на имейли:"
+
+#: classes/configemails.php:121
+msgid "Current date in the format that WordPress displays dates."
+msgstr "текущата дата във формат настроен във WordPress"
+
+#: classes/configemails.php:122
+msgid "Current date and time in the format that WordPress displays dates with time."
+msgstr "текущата дата и час във формат настроен във WordPress"
+
+#: classes/configemails.php:123
+msgid "Name of your site from the WordPress title configuration."
+msgstr "името на вашия сайт от настройката за заглавие на WordPress"
+
+#: classes/configemails.php:124
+msgid "URL of your site."
+msgstr "URL на вашия сайт"
+
+#: classes/configemails.php:125
+msgid "URL to receiving user's Alert Configuration page."
+msgstr "URL адрес на страницата за промяна на настройки на потребителя"
+
+#: classes/configemails.php:126
+msgid "The current four digit year."
+msgstr "текущата година с четири цифри"
+
+#: classes/configemails.php:127
+msgid "Link to the post, comment or other item referenced; context specific."
+msgstr "връзка към пост, коментар или друг елемент, според специфичния контекст"
+
+#: classes/configemails.php:130
+msgid "These are referring to the user causing the alert, such as \"{fromlogin} liked your post...\":"
+msgstr "Променливи за случаите, когато потребител получава известия. (Например \"{fromlogin} хареса вашия пост...\"):"
+
+#: classes/configemails.php:132
+msgid "Message sender's email address."
+msgstr "имейл адрес на подателя на съобщението"
+
+#: classes/configemails.php:133
+msgid "Message sender's full name."
+msgstr "име и фамилия на получателя на съобщението"
+
+#: classes/configemails.php:134
+msgid "Message sender's first name."
+msgstr "име на получателя на съобщението"
+
+#: classes/configemails.php:135
+msgid "Message sender's username."
+msgstr "потребителско име на получателя на съобщението"
+
+#: classes/configemails.php:138
+msgid "These are referring to the receiving user on all messages, such as \"Welcome {userfirstname}...\":"
+msgstr "Променливи в случаите, когато се изпращат съобщения до всички потребители. (Например \"Добре дошли {userfirstname}...\"):"
+
+#: classes/configemails.php:140
+msgid "Message recipient's email address."
+msgstr "имейл адрес на получателя на съобщението"
+
+#: classes/configemails.php:141
+msgid "Message recipient's full name"
+msgstr "име и фамилия на получателя на съобщението"
+
+#: classes/configemails.php:142
+msgid "Message recipient's first name"
+msgstr "име на получателя на съобщението"
+
+#: classes/configemails.php:143
+msgid "Message recipient's username"
+msgstr "потребителско име на получателя на съобщението"
+
+#: classes/configemails.php:221
+msgid "Email contents updated."
+msgstr "Съдържанието на имейла е актуализирано."
+
+#: classes/configemails.php:244
+msgid "Email contents reset."
+msgstr "Възстановяване на началното съдържание на имейлите."
+
+#: classes/configsectionadvanced.php:51
+#, php-format
+msgid "One tab name per line. \"Stream\" and \"About\" will always be first. Current order: %s"
+msgstr "Един таб на ред. \"Дневник\" и \"Информация\" винаги ще са първи. Текуща подредба: %s"
+
+#: classes/configsectionadvanced.php:55
+msgid "Profile tabs order (beta)"
+msgstr "Подредба на табовете на профила (beta)"
+
+#: classes/configsectionadvanced.php:72
+msgid "This setting is to be changed upon very first PeepSo activation or in case of site migration. If changed in any other case it will result in missing content including user avatars, covers, photos etc. (error 404)."
+msgstr "Тази настройка може да бъде променяна само при първоначалното активиране на PeepSo или в случай на миграция на сайта. Ако се променя в друг случай, това ще доведе до не намерено съдържание, включително снимки на профилите, снимки на кориците и т.н. (грешка 404)."
+
+#: classes/configsectionadvanced.php:79
+msgid "PeepSo allows users to upload images that are stored on your server. Enter a location where these files are to be stored.<br/>This must be a directory that is writable by your web server and and is accessible via the web. If the directory specified does not exist, it will be created."
+msgstr "PeepSo позволява на потребителите да качват изображения, които ще се съхраняват на вашия сървър. Посочете директория, където тези файлове ще се записват. Това трябва да бъде директория, която има права за запис и да е достъпна през Интернет. Ако не сте посочили ваша директория, то тя ще бъде създадена автоматично."
+
+#: classes/configsectionadvanced.php:91
+msgid "Can not write to directory"
+msgstr "Не може да записва в тази директория"
+
+#: classes/configsectionadvanced.php:98
+msgid "Uploads Directory"
+msgstr "Директория за снимки"
+
+#: classes/configsectionadvanced.php:104
+msgid "File System"
+msgstr "Файлова система"
+
+#: classes/configsectionadvanced.php:111
+msgid "Enabled: various debug information is written to a log file."
+msgstr "Разрешен: различна debug информация ще се записва в log-файл."
+
+#: classes/configsectionadvanced.php:111
+msgid "This can impact website speed and should ONLY be enabled when someone is debugging PeepSo."
+msgstr "Това може да повлияе на скоростта на зареждане на сайта и трябва да се разрешава само когато се търсят проблеми в PeepSo."
+
+#: classes/configsectionadvanced.php:114
+msgid "Enable Logging"
+msgstr "Разреши проследяването"
+
+#: classes/configsectionadvanced.php:119
+msgid "Strict Version Lock makes sure that it's impossible to upgrade PeepSo Core before all of the child plugins have been updated."
+msgstr "Strict Version Lock предпазва да актуализирате PeepSo Core, преди всички негови плъгини да са актуализирани."
+
+#: classes/configsectionadvanced.php:119
+msgid "Please DO NOT enable this unless you are having issues with updating PeepSo Core."
+msgstr "Моля НЕ разрешавайте това, освен ако имате проблеми с актуализиране на PeepSo Core."
+
+#: classes/configsectionadvanced.php:122
+msgid "Override Strict Version Lock"
+msgstr "Заключване на версията"
+
+#: classes/configsectionadvanced.php:128
+msgid "Maintenance & debugging"
+msgstr "Поддръжка и проследяване на грешки"
+
+#: classes/configsectionadvanced.php:137
+msgid "Disables infinite loading of activities, members lists etc until the users clicks the \"load more\" button."
+msgstr "Забранява безкрайното зареждане на активности, списъци с потребители и т.н., докато потребителите не щракнат върху бутона \"Вижте повече\"."
+
+#: classes/configsectionadvanced.php:140
+msgid "Enable \"load more:\" button"
+msgstr "Разреши бутона \"Вижте повече\""
+
+#: classes/configsectionadvanced.php:149
+#, php-format
+msgid "Every %d posts"
+msgstr "Всеки %d постове"
+
+#: classes/configsectionadvanced.php:157
+msgid "By default all posts load in an \"infinite scroll\"."
+msgstr "По подразбиране всички постове се зареждат в \"безкраен списък\"."
+
+#: classes/configsectionadvanced.php:157
+msgid "You can choose to have a specified batch of posts to loade before showing the \"load button\" again."
+msgstr "Можете да изберете определен брои постове да се заредят преди отново да се покаже бутона \"Покажи още\"."
+
+#: classes/configsectionadvanced.php:160
+msgid "Repeat \"load more\" button?"
+msgstr "Да се повтори бутона \"Вижте повече\"?"
+
+#: classes/configsectionadvanced.php:168
+#, php-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d секунда"
+msgstr[1] "%d секунди"
+
+#: classes/configsectionadvanced.php:170 classes/configsectionadvanced.php:199
+#: classes/configsectionadvanced.php:219
+msgid "default"
+msgstr "по подразбиране"
+
+#: classes/configsectionadvanced.php:176
+msgid "How often to run  new notification check for each user that is logged in"
+msgstr "Колко често да се прави проверка за нови известия на всеки потребител, който е влязъл в сайта"
+
+#: classes/configsectionadvanced.php:176
+msgid "Lower number means more robust notifications, but also higher server load"
+msgstr "По-малкото число означава по-чести известия, но също така и по-голямо натоварване на сървъра"
+
+#: classes/configsectionadvanced.php:179
+msgid "AJAX call intensity"
+msgstr "Интензитет на AJAX проверки"
+
+#: classes/configsectionadvanced.php:186
+msgid "Performance"
+msgstr "Производителност"
+
+#: classes/configsectionadvanced.php:197
+#, php-format
+msgid "%d pixels"
+msgstr "%d пиксела"
+
+#: classes/configsectionadvanced.php:205
+msgid "Bigger images use more storage, but will look better - especially on high resolution screens."
+msgstr "По-големите изображения използват повече място за съхранение, но ще изглеждат по-добре - особено на екрани с висока разделителна способност."
+
+#: classes/configsectionadvanced.php:208
+msgid "Avatar size"
+msgstr "Размер на аватара"
+
+#: classes/configsectionadvanced.php:217
+#, php-format
+msgid "%d%%"
+msgstr "%d%%"
+
+#: classes/configsectionadvanced.php:225
+msgid "Higher quality will use more storage, but the images will look better"
+msgstr "По-високото качество използва повече място за съхранение, но изображенията ще изглежда по-добре"
+
+#: classes/configsectionadvanced.php:228
+msgid "Avatar quality"
+msgstr "Качество на снимките на профилите"
+
+#: classes/configsectionadvanced.php:235
+msgid "Storage"
+msgstr "Съхранение"
+
+#: classes/configsectionadvanced.php:236
+msgid "These settings control the dimensions and compression levels, and will only be applied to newly uploaded images."
+msgstr "Тези настройки контролират размерите и нивата на компресия и ще се прилагат само за нови снимки."
+
+#: classes/configsectionadvanced.php:243
+msgid "Enables non-SSL (http://) link fetching. This can lead to \"insecure content\" warnings if your site is using SSL"
+msgstr "Позволява извличане на не-SSL (http://) връзка. Това може да доведе за предупреждения за \"несигурно съдържание\", ако сайтът ви използва SSL"
+
+#: classes/configsectionadvanced.php:246
+msgid "Allow non-SSL embeds"
+msgstr "Позволи non-SSL вграждане"
+
+#: classes/configsectionadvanced.php:251
+msgid "When enabled, users will be shown a warning page when clicking an external link inside any PeepSo page. The warning page is the one containing peepso_external_link_warning shortcode."
+msgstr "Когато разрешено, на потребителите ще бъде показана страница с предупреждение, когато щракнат върху външна връзка на PeepSo страница. Страницата с предупреждението съдържа peepso_external_link_warning код."
+
+#: classes/configsectionadvanced.php:254
+msgid "Enable \"external link warning\" page"
+msgstr "Разреши страница с \"предупреждение за външна връзка\""
+
+#: classes/configsectionadvanced.php:260
+msgid "Domains that do not require a warning page, without \"www\" or \"http(s). One domain name per line. Your website is whitelisted by default. "
+msgstr "Домейни, които не изискват страница с предупреждение, без \"www\" или \"http(s). Един домейн на ред. Вашият сайт е в списъка с позволени домейни по подразбиране. "
+
+#: classes/configsectionadvanced.php:260
+msgid "Example domains:"
+msgstr "Примерни домейни:"
+
+#: classes/configsectionadvanced.php:264
+msgid "Domain whitelist"
+msgstr "Позволени домейни"
+
+#: classes/configsectionadvanced.php:271
+msgid "Security"
+msgstr "Сигурност"
+
+#: classes/configsectionadvanced.php:282
+msgid "Should be between 1 and 64 characters long."
+msgstr "Трябва да бъде между 1 и 64 символа."
+
+#: classes/configsectionadvanced.php:288
+msgid "Email sender"
+msgstr "Подател"
+
+#: classes/configsectionadvanced.php:296
+msgid "Email format is invalid."
+msgstr "Невалиден имейл."
+
+#: classes/configsectionadvanced.php:300
+msgid "Admin Email"
+msgstr "Имейл на администратор"
+
+#: classes/configsectionadvanced.php:306
+msgid "This should be only enabled if you are planning to use an external cron job to process the PeepSo mail queue.<br/>External cron job is recommended for bigger communities.<br/>Please refer to <a href=\"http://peep.so/mailqueue/\" target=\"_blank\">the documentation</a>."
+msgstr "Активирайте, само ако планирате да използвате външeн cron job за обработка на PeepSo опашката с имейли.<br/>Външeн cron job се препоръчва за по-големи общности.<br/>Прегледайте <a href=\"http://peep.so/mailqueue/\" target=\"_blank\">документацията</a>."
+
+#: classes/configsectionadvanced.php:309
+msgid "Disable PeepSo Default Mailqueue"
+msgstr "Забраняване на стандартната опашка с имейли на PeepSo"
+
+#: classes/configsectionadvanced.php:314
+msgid "All new members will have their e-mail notifications disabled by default"
+msgstr "На всички нови потребители известията по имейл, ще са забранени по подразбиране"
+
+#: classes/configsectionadvanced.php:317
+msgid "Don't subscribe new members to any e-mail notifications"
+msgstr "Без абониране на нови потребители за всички имейл известия"
+
+#: classes/configsectionadvanced.php:323
+msgid "Customize entire e-mail layout"
+msgstr "Персонализиране изгледа на целия имейл"
+
+#: classes/configsectionadvanced.php:329
+msgid "Text, HTML and inline CSS only (no PHP or shortcodes). Leave empty for the default layout."
+msgstr "Само текст, HTML и вграден CSS (без PHP или шорткодове). Оставете празно за хедър и футър по подразбиране."
+
+#: classes/configsectionadvanced.php:331
+#, php-format
+msgid "<a href=\"%s\" target=\"_blank\">Click here</a> after saving to test your changes."
+msgstr "Щракнете <a href=\"%s\" target=\"_blank\">тук</a> след запис, за да тествате промените."
+
+#: classes/configsectionadvanced.php:333
+msgid "Available variables: <br/>{email_contents} - e-mail contents <font color=\"red\">*</font><br/>{unsubscribeurl} - URL of the user notification preferences <font color=\"red\">*</font><br/>{currentuserfullname} - full name of the recicpient<br>{useremail} - e-mail of the recipient<br/>{sitename} - the name of your site<br/>{siteurl} - the URL of your site<br/><br/><font color=\"red\">*</font>) is required"
+msgstr "Променливите: <br/>{email_contents} - съдържание на имейл<font color=\"red\">*</font><br/>{unsubscribeurl} - URL за настройка известията на потреител <font color=\"red\">*</font><br/>{currentuserfullname} - пълно име на получателя<br>{useremail} - имейл на получателя<br/>{sitename} - името на вашия сайт<br/>{siteurl} - URL на вашия сайт<br/><br/><font color=\"red\">*</font>) са задължителни"
+
+#: classes/configsectionadvanced.php:342
+msgid "Missing variable {emails_contents} or {unsubscribeurl}"
+msgstr "Липсват променливите {emails_contents} или {unsubscribeurl}"
+
+#: classes/configsectionadvanced.php:349
+msgid "Override entire HTML"
+msgstr "Замени HTML на целия имейл"
+
+#: classes/configsectionadvanced.php:356
+msgid "Emails"
+msgstr "Имейли"
+
+#: classes/configsectionadvanced.php:367
+msgid "Delete Post and Comment data"
+msgstr "Изтриване на постовете и коментарите"
+
+#: classes/configsectionadvanced.php:376
+msgid "Delete all data and settings"
+msgstr "Изтриване на всички данни и настройки"
+
+#: classes/configsectionadvanced.php:381
+msgid "When set to \"YES\", all <em>PeepSo</em> data will be deleted upon plugin Uninstall (but not Deactivation).<br/>Once deleted, <u>all data is lost</u> and cannot be recovered."
+msgstr "Когато изберете \"ДА\", всички данни от <em>PeepSo</em> ще бъдат изтрити при деинсталация на плъгина (ако се деактивира само, не се изтриват). <br/> Веднъж изтрити, <u>всички данни се губят</u> и не могат да бъдат възстановени."
+
+#: classes/configsectionadvanced.php:386
+msgid "PeepSo Uninstall"
+msgstr "Деинсталиране на PeepSo"
+
+#: classes/configsectionadvanced.php:387
+msgid "Control behavior of PeepSo when uninstalling / deactivating"
+msgstr "Контрол на поведението на PeepSo при деинсталирате / деактивиране"
+
+#: classes/configsectionadvanced.php:395
+msgid "Enable Open Graph"
+msgstr "Разреши Open Graph"
+
+#: classes/configsectionadvanced.php:402
+msgid "Title (og:title)"
+msgstr "Заглавие (og:title)"
+
+#: classes/configsectionadvanced.php:409
+msgid "Description (og:description)"
+msgstr "Описание (og:description)"
+
+#: classes/configsectionadvanced.php:416
+msgid "Image (og:image)"
+msgstr "Изображение (og:image)"
+
+#: classes/configsectionadvanced.php:421
+msgid "This feature is currently in BETA and should be considered experimental. It will remove \"?\" from certain PeepSo URLs, such as \"profile/?username/about\"."
+msgstr "Тази функция в момента е в БЕТА версия и трябва да се разглежда експериментално. Тя ще премахне \"?\" от някои  URL адреси на PeepSo, като например \"profile/?username/about\"."
+
+#: classes/configsectionadvanced.php:424
+msgid "Enable SEO Friendly links"
+msgstr "Разреши SEO приятелски връзки"
+
+#: classes/configsectionadvanced.php:433
+msgid "You are currently using [peepso_activity] as your home page. Because of that, single activity URLs will have to contain \"?\" no matter what the above setting is."
+msgstr "В момента използвате [peepso_activity] като ваша начална страница. Поради това URL адресите на еденичните активности трябва да съдържат \"?\" независимо от настройката  по-горе."
+
+#: classes/configsectionadvanced.php:440
+msgid "This advanced feature causes PeepSo pages to override the global WP_Query for better SEO."
+msgstr "Тази допълнителна функционалност позволява PeepSo страниците да игнорират глобалното WP_Query за по-добро SEO."
+
+#: classes/configsectionadvanced.php:440
+msgid "This can interfere with SEO plugins, so use with caution."
+msgstr "Това може да засегне работата на SEO плъгините, така че използвайте с повишено внимание."
+
+#: classes/configsectionadvanced.php:443
+msgid "PeepSo can reset WP_Query"
+msgstr "PeepSo може да ресетне WP_Query"
+
+#: classes/configsectionadvanced.php:450
+msgid "SEO & Open Graph"
+msgstr "SEO & Open Graph"
+
+#: classes/configsectionadvanced.php:451
+msgid "The Open Graph protocol enables sites shared for example to Facebook carry information that render shared URLs in a great way. Having a photo, title and description. You can learn more about it in our documentation. Just search for 'Open Graph'."
+msgstr "Open Graph протоколът позволява на сайтовете да споделят (например с Facebook) данни за снимки, заглавие, описание, за да се показват споделените URL адреси по-добре. Можете да научите повече за това в нашата документация като направете търсене за \"Open Graph\"."
+
+#: classes/configsectionappearance.php:26
+msgid "Real Names"
+msgstr "Истинско име"
+
+#: classes/configsectionappearance.php:27
+msgid "Usernames"
+msgstr "Потребителско име"
+
+#: classes/configsectionappearance.php:34
+msgid "Display Name Style"
+msgstr "Стил на показване на името"
+
+#: classes/configsectionappearance.php:41
+msgid "Users Can Override Display Name Style"
+msgstr "Потребителите да могат да променят стила на показване на името"
+
+#: classes/configsectionappearance.php:46
+msgid "Users can permanently delete their profiles"
+msgstr "Потребителите да могат да изтриват профилите си"
+
+#: classes/configsectionappearance.php:49 classes/profile.php:1452
+#: templates/profile/profile-about-account.php:48
+msgid "Profile Deletion"
+msgstr "ИЗТРИВАНЕ НА ПРОФИЛ"
+
+#: classes/configsectionappearance.php:54
+msgid "User profiles are shareable to social networks"
+msgstr "Профилите на потребителите да могат да се споделят социалните мрежи"
+
+#: classes/configsectionappearance.php:57
+msgid "Profile Sharing"
+msgstr "Споделяне на профили"
+
+#: classes/configsectionappearance.php:62
+msgid "Users can \"like\" each other's  profiles"
+msgstr "Потребителите да могат да \"Харесват\" профили на другите"
+
+#: classes/configsectionappearance.php:65
+msgid "Profile Likes"
+msgstr "Харесване на профили"
+
+#: classes/configsectionappearance.php:72
+msgid "Always link to PeepSo Profile"
+msgstr "Винаги връзка към PeepSo профил"
+
+#: classes/configsectionappearance.php:83
+msgid "Avatars and Covers"
+msgstr "Снимки на профили и корици"
+
+#: classes/configsectionappearance.php:90
+msgid "Use square avatars"
+msgstr "Квадратни снимки"
+
+#: classes/configsectionappearance.php:97
+msgid "Use WordPress Avatars"
+msgstr "Снимки на профилите от WordPress"
+
+#: classes/configsectionappearance.php:104
+msgid "The users will be unable to change their avatars in their PeepSo profiles. PeepSo will inherit the avatars from your WordPress site"
+msgstr "Потребителите няма да могат да променят снимките на профилите в PeepSo. PeepSo ще използва снимки от профилите на вашия WordPress сайт"
+
+#: classes/configsectionappearance.php:111
+msgid "Use PeepSo avatars everywhere"
+msgstr "Навсякъде PeepSo снимки на профилите"
+
+#: classes/configsectionappearance.php:118
+msgid "Allow Gravatar avatars"
+msgstr "Позволи Gravatar снимки на профилите"
+
+#: classes/configsectionappearance.php:122
+msgid "By default the full cover displays only in the header of the \"Stream\" section"
+msgstr "По подразбиране цялата корицата се показва само в заглавката на секцията \"Поток\""
+
+#: classes/configsectionappearance.php:125
+msgid "Always use full covers"
+msgstr "Винаги използване на цели корици"
+
+#: classes/configsectionappearance.php:132
+msgid "User Profiles"
+msgstr "Профили"
+
+#: classes/configsectionappearance.php:144
+msgid "Customize text"
+msgstr "Текст на началната страница"
+
+#: classes/configsectionappearance.php:151
+msgid "Callout Header"
+msgstr "Заглавие"
+
+#: classes/configsectionappearance.php:158
+msgid "Callout Text"
+msgstr "Текст"
+
+#: classes/configsectionappearance.php:165
+msgid "Button Text"
+msgstr "Текст на бутона"
+
+#: classes/configsectionappearance.php:173
+msgid "Landing Page Image"
+msgstr "Снимка на корицата на началната страница"
+
+#: classes/configsectionappearance.php:181
+msgid "Suggested Landing Page image size is: 1140px x 469px."
+msgstr "Препоръчителен размер за снимката на началната страница: 1140x469 px."
+
+#: classes/configsectionappearance.php:191
+msgid "Selected Image"
+msgstr "Избрано изображение"
+
+#: classes/configsectionappearance.php:205 classes/configsections.php:278
+msgid "Registration"
+msgstr "Регистрация"
+
+#: classes/configsectionappearance.php:212
+msgid "Light"
+msgstr "Светла"
+
+#: classes/configsectionappearance.php:237
+msgid "Color scheme"
+msgstr "Цветова схема"
+
+#: classes/configsectionappearance.php:245
+msgid "Rounded corners"
+msgstr "Заоблени ъгли"
+
+#: classes/configsectionappearance.php:252
+msgid "PeepSo Style"
+msgstr "PeepSo стил"
+
+#: classes/configsectionappearance.php:260
+msgid "Show notification icons on WP Toolbar"
+msgstr "Покажи иконите за известия в админ лентата на WP"
+
+#: classes/configsectionappearance.php:266
+msgid "never"
+msgstr "никога"
+
+#: classes/configsectionappearance.php:267
+msgid "always"
+msgstr "винаги"
+
+#: classes/configsectionappearance.php:268
+msgid "if older than 24 hours"
+msgstr "ако са по-стари от 24 часа"
+
+#: classes/configsectionappearance.php:273
+msgid "\"Relative\" date is a human readable date, for example \"3 days ago\""
+msgstr "\"Относителна\" дата е например \"преди 3 дни\""
+
+#: classes/configsectionappearance.php:273
+#, php-format
+msgid "\"Absolute\" date is a simple datestamp such as %s"
+msgstr "\"Абсолютна\" дата като %s"
+
+#: classes/configsectionappearance.php:276
+msgid "Use absolute dates"
+msgstr "Използване на абсолютни дати"
+
+#: classes/configsectionappearance.php:283
+msgid "Show \"Powered by PeepSo\" link"
+msgstr "Показване на връзката \"Powered by PeepSo\""
+
+#: classes/configsectionappearance.php:298 templates/members/search.php:58
+msgid "Alphabetical"
+msgstr "По азбучен ред"
+
+#: classes/configsectionappearance.php:299 templates/members/search.php:59
+msgid "Recently online"
+msgstr "Наскоро онлайн"
+
+#: classes/configsectionappearance.php:300 templates/members/search.php:60
+msgid "Latest members"
+msgstr "Най-нови"
+
+#: classes/configsectionappearance.php:307
+msgid "Default Sorting"
+msgstr "Сортиране по подразбиране"
+
+#: classes/configsectionappearance.php:312
+msgid "Users can hide from Members Page, Widgets etc"
+msgstr "Потребителите да могат да се скрият от страницата с потребители, джаджи и т.н."
+
+#: classes/configsectionappearance.php:315
+msgid "Users can hide from user listings"
+msgstr "Потребителите да могат да се скрият от списъци с потребители"
+
+#: classes/configsectionappearance.php:323
+msgid "Allow guest access to members listing"
+msgstr "Позволи достъп на нерегисрирани до списъка с потребители"
+
+#: classes/configsectionappearance.php:330
+msgid "Member listings"
+msgstr "Списъци с потребители"
+
+#: classes/configsectionlocation.php:18
+msgid "A Google maps API key is required for the Location suggestions to work properly"
+msgstr "Google maps API ключът е необходим, за да работи правилно разпознаването на местоположението"
+
+#: classes/configsectionlocation.php:22
+msgid "You can get the API key"
+msgstr "Можете да получите API ключ"
+
+#: classes/configsectionlocation.php:31
+msgid "Google Maps API Key (v3)"
+msgstr "Google Maps API ключ (v3)"
+
+#: classes/configsections.php:32
+msgid "Enable Reporting"
+msgstr "Разреши докладване"
+
+#: classes/configsections.php:42
+msgid "Predefined Text (Separated by a New Line)"
+msgstr "Предварително зададен текст (разделя се с нов ред)"
+
+#: classes/configsections.php:49
+msgid "Reporting"
+msgstr "Докладване"
+
+#: classes/configsections.php:50
+msgid "These settings are used to control users' ability to report inappropriate content."
+msgstr "Тези настройки се използват за настройване на възможността на потребителите да докладват неподходящо съдържание."
+
+#: classes/configsections.php:61
+msgid "Admin Account Verification"
+msgstr "Потвърждение на акаунта от администратор"
+
+#: classes/configsections.php:66
+msgid "Users always must confirm their email address."
+msgstr "Потребителите винаги трябва да потвърждават имейл адреса си."
+
+#: classes/configsections.php:67
+msgid "With the \"Admin Account Verification\" set to: NO, users register, confirm their email address and can immediately participate in your community."
+msgstr "Ако за \"Потвърждение на акаунта от администратор\" е избрано НЕ, потребителите се регистрират и след като потвърдят имейл адреса си и могат веднага да участват във вашата мрежа."
+
+#: classes/configsections.php:68
+msgid "With the \"Admin Account Verification\" set to: YES, users register, confirm their email address and must be accepted by an Admin to be able to participate in your community. Users are notified by email when they're approved."
+msgstr "Ако за \"Потвърждение на акаунта от администратор\" е избрано ДА, след като потребителите се регистрират и потвърдят своя имейл адрес, трябва да бъдат одобрени и от администратор, за да могат да участват във вашата мрежа. Потребителите се уведомяват чрез имейл, когато бъдат одобрени."
+
+#: classes/configsections.php:79
+msgid "Force Profile Completion"
+msgstr "Принудително попълване на профила"
+
+#: classes/configsections.php:83
+msgid "Switching this setting on will force user profile completion. This means, that user will have to fill in all required fields before being able to participate in the community."
+msgstr "Включването на тази настройка ще задължи потребителите да завършат попълването на профила. Това означава, че потребителите ще трябва да попълнят всички задължителни полета, преди да могат да участват в Мрежата."
+
+#: classes/configsections.php:111 classes/configsections.php:166
+msgid "Home page"
+msgstr "Начална страница"
+
+#: classes/configsections.php:112 classes/configsections.php:167
+msgid "No redirect"
+msgstr "Без пренасочване"
+
+#: classes/configsections.php:125 classes/configsections.php:180
+msgid "Page:"
+msgstr "Страница:"
+
+#: classes/configsections.php:132
+msgid "Log-in redirect"
+msgstr "Пренасочване след вход"
+
+#: classes/configsections.php:141
+msgid "Always check remember me by default"
+msgstr "\"Запомни ме\" винаги избрано по подразбиране"
+
+#: classes/configsections.php:187
+msgid "Log-out redirect"
+msgstr "Пренасочване след изход"
+
+#: classes/configsections.php:196
+msgid "Force SSL on Registration Page"
+msgstr "Страница за регистрация със SSL"
+
+#: classes/configsections.php:202
+msgid "Requires a valid SSL certificate. Enabling this option without a valid certificate might break your site."
+msgstr "Изисква валиден SSL сертификат. Разрешаването на тази опция без валиден сертификат може да наруши работата на вашия сайт."
+
+#: classes/configsections.php:211
+msgid "ReCaptcha"
+msgstr "ReCaptcha"
+
+#: classes/configsections.php:218
+msgid "Enable ReCaptcha"
+msgstr "Разреши ReCaptcha"
+
+#: classes/configsections.php:225
+msgid "Site Key"
+msgstr "Ключ за сайта"
+
+#: classes/configsections.php:232
+msgid "Secret Key"
+msgstr "Секретен ключ"
+
+#: classes/configsections.php:239
+msgid "Since version 1.8.6 PeepSo is using the new Google INVISIBLE ReCaptcha. If you used ReCaptcha prior to this release you need to generate NEW API keys for ReCaptcha to work on your site."
+msgstr "От версия 1.8.6 PeepSo използва новата Google INVISIBLE ReCaptcha. Ако сте използвали ReCaptcha преди тази версия трябва да генерирате нови API ключове, за да може ReCaptcha да работи на вашия сайт."
+
+#: classes/configsections.php:241
+msgid "Get ReCaptcha keys <a href=\"https://www.google.com/recaptcha/\" target=\"_blank\">here</a></strong>."
+msgstr "Вземете ключове за ReCaptcha от <a href=\"https://www.google.com/recaptcha/\" target=\"_blank\">тук</a></strong>."
+
+#: classes/configsections.php:243 peepso.php:174
+msgid "Having issues or questions? Please refer to the <a href=\"http://peep.so/recaptcha\" target=\"_blank\">documentation</a> or contact PeepSo Support."
+msgstr "Имате ли проблеми или въпроси? Моля обърнете се към <a href=\"http://peep.so/recaptcha\" target=\"_blank\"> документацията</a> или се свържете с поддръжката на PeepSo."
+
+#: classes/configsections.php:252
+msgid "Terms & Conditions"
+msgstr "Условия за ползване"
+
+#: classes/configsections.php:259
+msgid "Enable Terms &amp; Conditions"
+msgstr "Разреши \"Условия за ползване\""
+
+#: classes/configsections.php:268
+msgid "Terms &amp; Conditions"
+msgstr "Условия за ползване"
+
+#: classes/configsections.php:279
+msgid "These settings allow you to customize the Registration process."
+msgstr "Тези настройки ви позволяват да персонализирате процеса на регистрация."
+
+#: classes/configsections.php:290
+msgid "WordPress Social Invites"
+msgstr "WordPress Social Invites"
+
+#: classes/configsections.php:299 classes/configsections.php:333
+#, php-format
+msgid "Requires %s to be installed and properly configured."
+msgstr "Изисква %s да бъде инсталиран и конфигуриран правилно."
+
+#: classes/configsections.php:307
+msgid "Show WSI on Members Page"
+msgstr "Покажи WSI на страницата с потребителите"
+
+#: classes/configsections.php:313 classes/configsections.php:348
+#, php-format
+msgid "%s not found! Please install the plugin to see the configuration setting."
+msgstr "%s не е намерен! Моля инсталирайте плъгина, за да прегледате настройките."
+
+#: classes/configsections.php:324
+msgid "WooCommerce Social Login"
+msgstr "WooCommerce Social Login"
+
+#: classes/configsections.php:339
+msgid "WooCommerce Social Login configuration"
+msgstr "Конфигурация на WooCommerce Social Login"
+
+#: classes/configsections.php:342
+#, php-format
+msgid "You may go to %s."
+msgstr "Можете да отидете да %s."
+
+#: classes/configsections.php:356
+msgid "Core Integrations"
+msgstr "Основни интеграции"
+
+#: classes/configsections.php:357
+msgid "Settings for built-in integrations between PeepSo Core and third party plugins."
+msgstr "Настройки за основните интеграции между PeepSo и плъгини на други разработчици."
+
+#: classes/configsections.php:387
+msgid "Default stream filter"
+msgstr "Филтър на потока по подразбиране"
+
+#: classes/configsections.php:403
+msgid "Defines the default starting privacy level for new posts. Users can change it, and the postbox will always remember their last choice."
+msgstr "Дефиниране ниво на поверителност за нови постове по подразбиране. Потребителите могат да го променят и да използват след това последния си избор."
+
+#: classes/configsections.php:407
+msgid "Default post privacy"
+msgstr "Поверителност по подразбиране"
+
+#: classes/configsections.php:417
+msgid "Maximum size of Post"
+msgstr "Максимален размер на пост"
+
+#: classes/configsections.php:424
+msgid "Open links in new tab"
+msgstr "Отваряне на линковете в нов раздел"
+
+#: classes/configsections.php:431
+msgid "Hide Activity Stream from Non-logged in Users"
+msgstr "Скрий потока с активности от нерегистрирани потребители"
+
+#: classes/configsections.php:438
+msgid "Enable Repost"
+msgstr "Разреши препубликуване"
+
+#: classes/configsections.php:473
+msgid "Number of Comments to display"
+msgstr "Брой показвани коментари"
+
+#: classes/configsections.php:482
+msgid "Show X more comments"
+msgstr "Показване на още X коментара"
+
+#: classes/configsections.php:501
+msgid "Show 'read more' after: [n] characters"
+msgstr "Покажи \"Вижте повече\" след [n] символа"
+
+#: classes/configsections.php:512
+msgid "Redirect to single post view when post is longer than: [n] characters"
+msgstr "Пренасочване към самостоятелен изглед на пост, когато постът е по-дълъг от [n] символа"
+
+#: classes/configsections.php:519
+msgid "Profile Posts"
+msgstr "Постове"
+
+#: classes/configsections.php:535
+msgid " (profile owner)"
+msgstr " (собственик на профила)"
+
+#: classes/configsections.php:541
+msgid "Who can post on \"my profile\" page"
+msgstr "Кой може да публикува в моя профил?"
+
+#: classes/configsections.php:548
+msgid "Let users override this setting"
+msgstr "Позволи на потребителите да припокриват тази настройка"
+
+#: classes/configsections.php:556 classes/general.php:40 peepso.php:2809
+msgid "Activity"
+msgstr "Начало"
+
+#: classes/configsections.php:557
+msgid "These settings control how many posts and comments will be displayed in the Activity Stream, as well as \"read more\" settings and permissions to post on another user's profiles."
+msgstr "Тези настройки определят, колко постове и коментари ще бъдат показани в потока с активността, както и настройките за \"Вижте повече\" и разрешения за публикуване в профили на други потребители."
+
+#: classes/configsections.php:565
+msgid "I have an Ultimate Bundle license"
+msgstr "Имам лиценз за Ultimate Bundle"
+
+#: classes/configsections.php:571
+msgid "Ultimate Bundle License Key"
+msgstr "Лицензен ключ за Ultimate Bundle"
+
+#: classes/configsections.php:657
+msgid "License Key Configuration"
+msgstr "Лицензни ключове"
+
+#: classes/configsections.php:658
+msgid "This is where you configure the license keys for each PeepSo add-on. You can find your license numbers on <a target=\"_blank\" href=\"http://peepso.com/my-account/\">My Orders</a> page. Please copy them here and click SAVE at the bottom of this page."
+msgstr "Това е мястото, където се въвеждат лицензните ключове за всяка PeepSo добавка. Можете да намерите вашите номера на лицензи на страницата <a target=\"_blank\" href=\"http://peepso.com/my-account/\"> Поръчки</a>. Моля копирайте ги в съответното поле и щракнете върху ЗАПИШИ най-долу на тази страница."
+
+#: classes/configsections.php:658
+msgid "If some licenses are not validating, please make sure to click the SAVE button."
+msgstr "Ако някои лицензи не са валидирани, моля щракнете върху бутона ЗАПИШИ."
+
+#: classes/configsections.php:658
+msgid "If that does not help, please contact Support."
+msgstr "Ако това не помогне, моля свържете се с поддръжката."
+
+#: classes/exif.php:33
+msgid "no file given"
+msgstr "няма избран файл"
+
+#: classes/exif.php:37
+msgid "unable to open file"
+msgstr "не може да отвори файла"
+
+#: classes/exif.php:48
+msgid "JPG header not found"
+msgstr "JPG header не е намерен"
+
+#: classes/exif.php:68
+msgid "Exif data not found "
+msgstr "Не са намерени Exif данни "
+
+#: classes/exif.php:75
+msgid "bad IFD entry length"
+msgstr "невалидна дължина на IFD запис"
+
+#: classes/exif.php:83
+msgid "unable to determine byte order"
+msgstr "не може да определи подредбата на байтовете"
+
+#: classes/exif.php:88 classes/exif.php:93
+msgid "invalid tag mark"
+msgstr "невалидно отбелязване на етикет"
+
+#: classes/exif.php:90 classes/exif.php:95
+msgid "unrecognized Tag mark: 0x"
+msgstr "неразпознато отбелязване на етикет: 0x"
+
+#: classes/exif.php:102 classes/exif.php:104 classes/exif.php:111
+#: classes/exif.php:113
+msgid "invalid IFD offset"
+msgstr "невалидно IFD отместване"
+
+#: classes/exif.php:120
+msgid "invalid offset"
+msgstr "невалидно отместване"
+
+#: classes/exif.php:134
+msgid "invalid number of tags: "
+msgstr "невалиден брой етикети: "
+
+#: classes/exif.php:142
+msgid "exceeded end of data segment"
+msgstr "превишава края на сегмента от данни"
+
+#: classes/exif.php:157
+msgid "number of bytes is zero"
+msgstr "броят на байтовете е нула"
+
+#: classes/exif.php:164
+msgid "orientation value is 0"
+msgstr "ориентировачната стойност е 0"
+
+#: classes/exif.php:168
+msgid "orientagion value is 0"
+msgstr "ориентировачната стойност е 0"
+
+#: classes/exif.php:173
+msgid "invalid orientation tag:"
+msgstr "невалиден етикет за ориентация:"
+
+#: classes/exif.php:186
+msgid "premature EOF"
+msgstr "ненавременен EOF"
+
+#: classes/exif.php:199
+msgid "premature eof"
+msgstr "ненавременен eof"
+
+#: classes/fields/field.php:147
+msgid "Enter data"
+msgstr "Въведете данни"
+
+#: classes/fields/field.php:196
+msgid "Stay safe! Be careful about disclosing personal information."
+msgstr "ВАЖНО! Внимавайте каква лична информация разкриване."
+
+#: classes/fields/field.php:704 classes/fields/field.php:712
+msgid "Some fields privacy is defined by the administrators"
+msgstr "Поверителността на някои полета се определя от администратор"
+
+#: classes/fields/field.php:726
+msgid "Edit privacy of "
+msgstr "Редактиране поверителността на "
+
+#: classes/fields/fieldlocation.php:11 classes/fields/fieldtexturl.php:21
+msgid "clickable link"
+msgstr "активна връзка"
+
+#: classes/fields/fieldlocation.php:12
+msgid "Map selector"
+msgstr "Избери на картата"
+
+#: classes/fields/fieldlocation.php:14 classes/profilefields.php:212
+msgid "Share your location"
+msgstr "Сподели местоположението си"
+
+#: classes/fields/fieldlocation.php:51
+msgid "Enter location name"
+msgstr "Въведете име на местоположението"
+
+#: classes/fields/fieldselectsingle.php:18
+msgid "dropdown"
+msgstr "падащ списък"
+
+#: classes/fields/fieldselectsingle.php:19
+msgid "checklist"
+msgstr "списък с отметки"
+
+#: classes/fields/fieldselectsingle.php:22
+msgid "Pick only one."
+msgstr "Изберете само едно."
+
+#: classes/fields/fieldselectsingle.php:73
+#: classes/fields/fieldselectsingle.php:106
+msgid "Select an option..."
+msgstr "Изберете..."
+
+#: classes/fields/fieldtext.php:12
+msgid "input (single line)"
+msgstr "текстово поле (един ред)"
+
+#: classes/fields/fieldtext.php:13
+msgid "textarea (multiple lines)"
+msgstr "текстово поле (няколко реда)"
+
+#: classes/fields/fieldtext.php:25
+msgid "Tell us about it."
+msgstr "Разкажете ни за това"
+
+#: classes/fields/fieldtextdate.php:15
+msgid "date picker"
+msgstr "избор на дата"
+
+#: classes/fields/fieldtextdate.php:21
+msgid "date (WordPress format)"
+msgstr "дата (WordPress формат)"
+
+#: classes/fields/fieldtextdate.php:22
+msgid "relative - time passed (ie 1 month, 5 years)"
+msgstr "относително - преди (напр. 1 месец, 5 години)"
+
+#: classes/fields/fieldtextdate.php:23
+msgid "relative - age (ie 25 years old)"
+msgstr "относително - възраст (напр. 25 години)"
+
+#: classes/fields/fieldtextdate.php:28
+msgid "When did it happen?"
+msgstr "Кога се случи това?"
+
+#: classes/fields/fieldtextdate.php:59
+msgid "ago"
+msgstr "преди"
+
+#: classes/fields/fieldtextdate.php:62
+msgid "from now"
+msgstr "от сега"
+
+#: classes/fields/fieldtextdate.php:78
+msgid "old"
+msgstr " "
+
+#: classes/fields/fieldtextdate.php:97 classes/fields/fieldtextdate.php:126
+msgid "Set date"
+msgstr "Задаване на дата"
+
+#: classes/fields/fieldtextdate.php:103 classes/fields/fieldtextdate.php:131
+msgid "Toggle datepicker"
+msgstr "Превключване избор на дата"
+
+#: classes/fields/fieldtexturl.php:16 classes/fields/fieldtexturl.php:27
+msgid "What's the site's address?"
+msgstr "Какъв е адреса на сайта?"
+
+#: classes/fields/tests/fieldtestdateagemax.php:20
+#, php-format
+msgid "Maximum age: %s"
+msgstr "Минимална възраст: %s"
+
+#: classes/fields/tests/fieldtestdateagemin.php:20
+#, php-format
+msgid "Minimum age: %s"
+msgstr "Минимална възраст: %s"
+
+#: classes/fields/tests/fieldtestlengthmax.php:9
+msgid "Maximum length"
+msgstr "Максимална дължина"
+
+#: classes/fields/tests/fieldtestlengthmax.php:12
+#: classes/fields/tests/fieldtestlengthmin.php:12
+msgid "character(s)"
+msgstr "символа"
+
+#: classes/fields/tests/fieldtestlengthmax.php:14
+#, php-format
+msgid "Maximum length: %s"
+msgstr "Максимална дължина: %s"
+
+#: classes/fields/tests/fieldtestlengthmin.php:9
+msgid "Minimum length"
+msgstr "Минимална дължина"
+
+#: classes/fields/tests/fieldtestlengthmin.php:14
+#, php-format
+msgid "Minimum length: %s"
+msgstr "Минимална дължина: %s"
+
+#: classes/fields/tests/fieldtestpatternurl.php:10
+msgid "Force valid http(s):// links"
+msgstr "Задължително само връзки http(s)://"
+
+#: classes/fields/tests/fieldtestpatternurl.php:13
+msgid "Must be a valid URL with http(s)://"
+msgstr "Трябва да е валиден URL адрес с http(s) ://"
+
+#: classes/fields/tests/fieldtestrequired.php:10
+msgid "Required"
+msgstr "Задължително"
+
+#: classes/fields/tests/fieldtestrequired.php:27
+msgid "This field is required"
+msgstr "Това поле е задължително"
+
+#: classes/form.php:800
+msgid "ReCaptcha security check failed"
+msgstr "Неуспешна проверка на защитата на ReCaptcha"
+
+#: classes/formvalidate.php:26
+msgid "This field is required."
+msgstr "Това поле е задължително."
+
+#: classes/formvalidate.php:27
+msgid "This field must be a number."
+msgstr "Това поле трябва да бъде число."
+
+#: classes/formvalidate.php:28
+msgid "This field must be an email."
+msgstr "В това поле трябва да се въведе имейл."
+
+#: classes/formvalidate.php:29
+msgid "This field only accepts alphanumeric characters."
+msgstr "Това поле може да съдържа само букви и цифри."
+
+#: classes/formvalidate.php:30
+msgid "This field only accepts alpha letters."
+msgstr "Това поле може да съдържа само букви."
+
+#: classes/formvalidate.php:31
+msgid "This field only accepts alpha letters, spaces, dashes(-), and apostrophes(')."
+msgstr "Това поле може да съдържа само букви, интервали, тирета (-) и апострофи (')."
+
+#: classes/formvalidate.php:32
+msgid "This field accepts all letters and numbers except for HTML code."
+msgstr "Това поле може да съдържа само букви и цифри с изключение на HTML код."
+
+#: classes/formvalidate.php:33
+msgid "This field only accepts alpha letters, numbers, dashes(-), and underscores(_), or email addresses."
+msgstr "Това поле може да съдържа само букви, цифри, тирета (-) , подчертавка (_) или имейл адреси."
+
+#: classes/formvalidate.php:34
+msgid "Please enter a date in the past."
+msgstr "Моля, въведете по-стара дата."
+
+#: classes/formvalidate.php:35
+#, php-format
+msgid "This field is too long, maximum length: %d."
+msgstr "Това поле е прекалено дълго. Максимална дължина: %d."
+
+#: classes/formvalidate.php:36
+#, php-format
+msgid "This field is too short, minimum length: %d."
+msgstr "Това поле е твърде късо. Минимална дължина: %d символа."
+
+#: classes/formvalidate.php:37
+msgid "This field must be a valid website."
+msgstr "Това поле трябва да съдържа валиден сайт."
+
+#: classes/formvalidate.php:38
+msgid "This field must be a valid date."
+msgstr "Това поле трябва да съдържа валидна дата."
+
+#: classes/formvalidate.php:39
+msgid "This field must be positive."
+msgstr "Това поле трябва да бъде положително."
+
+#: classes/formvalidate.php:40
+msgid "This field must an integer."
+msgstr "Това поле трябва да бъде цяло число."
+
+#: classes/formvalidate.php:41
+#, php-format
+msgid "This field value should be no more than %d."
+msgstr "Тази стойност трябва да не е по-голяма от %d."
+
+#: classes/formvalidate.php:42
+#, php-format
+msgid "This field value should be at least %d."
+msgstr "Стойността трябва да бъде най-малко %d."
+
+#: classes/formvalidate.php:43
+#, php-format
+msgid "The password should be at least %d characters."
+msgstr "Паролата трябва да бъде най-малко %d символа."
+
+#: classes/formvalidate.php:119
+msgid "Error message must be set for custom validation"
+msgstr "При ръчно потвърждаване, трябва да бъде въведено съобщение за грешка"
+
+#: classes/general.php:107 classes/widgets/widgetme.php:78
+msgid "Pending Notifications"
+msgstr "Известия"
+
+#: classes/general.php:171 classes/profileshortcode.php:551
+#: templates/widgets/me.tpl.php:125
+msgid "Preferences"
+msgstr "Настройки"
+
+#: classes/general.php:186 templates/widgets/me.tpl.php:140
+msgid "Log Out"
+msgstr "Изход"
+
+#: classes/general.php:218 classes/privacy.php:25
+msgid "Public"
+msgstr "Публично"
+
+#: classes/general.php:219
+msgid "Can be seen by everyone, even if they're not members"
+msgstr "Може да се вижда от всеки, дори от посетители, които не са регистрирани"
+
+#: classes/general.php:223 classes/privacy.php:26
+msgid "Site Members"
+msgstr "Потребители"
+
+#: classes/general.php:224
+msgid "Can be seen by registered members"
+msgstr "Може да се вижда от регистрирани потребители"
+
+#: classes/general.php:228
+msgid "Friends"
+msgstr "Приятели"
+
+#: classes/general.php:229
+msgid "Can be seen by your friends"
+msgstr "Може да се вижда от вашите приятели"
+
+#: classes/general.php:233 classes/privacy.php:27
+msgid "Only Me"
+msgstr "Само аз"
+
+#: classes/general.php:234
+msgid "Can only be seen by you"
+msgstr "Може да се вижда само от вас"
+
+#: classes/license_edd_helper.php:147
+#, php-format
+msgid "There is a new version of %1$s available. %2$sView version %3$s details%4$s."
+msgstr "Има нова версия на %1$s. %2$s Виж %3$s информация %4$s за версията."
+
+#: classes/license_edd_helper.php:155
+#, php-format
+msgid "There is a new version of %1$s available. %2$sView version %3$s details%4$s or %5$supdate now%6$s."
+msgstr "Има нова версия на %1$s. %2$s Виж %3$s информация%4$s за версията или %5$актуализирай сега6$s."
+
+#: classes/license_edd_helper.php:301
+msgid "You do not have permission to install plugin updates"
+msgstr "Нямате права да инсталирате актуализации на плъгини"
+
+#: classes/license_edd_helper.php:301 peepso.php:1786
+msgid "Error"
+msgstr "Грешка"
+
+#: classes/listtable.php:54
+msgid "Go to the first page"
+msgstr "Отиди на първата страница"
+
+#: classes/listtable.php:61
+msgid "Go to the previous page"
+msgstr "Отиди на предишната страница"
+
+#: classes/listtable.php:70
+msgid "Current page"
+msgstr "Текуща страница"
+
+#: classes/listtable.php:76
+#, php-format
+msgctxt "paging"
+msgid "%1$s of %2$s"
+msgstr "%1$s от %2$s"
+
+#: classes/listtable.php:80
+msgid "Go to the next page"
+msgstr "Следваща страница"
+
+#: classes/listtable.php:87
+msgid "Go to the last page"
+msgstr "Последна страница"
+
+#: classes/location.php:88
+msgid "Set a Location for your post"
+msgstr "Добавяне на местоположение към вашия пост"
+
+#: classes/location.php:170
+msgid "Request could not be verified."
+msgstr "Заявката не може да бъде потвърдена."
+
+#: classes/location.php:179
+msgid "Photo album location saved."
+msgstr "Местоположението на фотоалбума е записано."
+
+#: classes/location.php:182
+msgid "Missing field location."
+msgstr "Липсва полето местоположение."
+
+#: classes/location.php:186
+msgid "You are not authorized to change this album location."
+msgstr "Не сте упълномощени да променяте местоположението на този албум."
+
+#: classes/location.php:295
+msgid "PeepSo Location requires a Google Maps API key."
+msgstr "PeepSo Location изисква Google Maps API ключ."
+
+#: classes/location.php:296
+msgid "Click here to configure it"
+msgstr "Щракнете тук, за да го конфигурирате"
+
+#: classes/mailqueuelisttable.php:49
+msgid "Recipient & Subject"
+msgstr "Получател и тема"
+
+#: classes/mailqueuelisttable.php:50
+msgid "Message"
+msgstr "Съобщение"
+
+#: classes/mailqueuelisttable.php:52
+msgid "Date Created"
+msgstr "Дата"
+
+#: classes/mailqueuelisttable.php:154
+msgid "Waiting"
+msgstr "Изчакване"
+
+#: classes/mailqueuelisttable.php:157
+msgid "Processing"
+msgstr "Обработва се"
+
+#: classes/mailqueuelisttable.php:160
+msgid "Delay"
+msgstr "Забавяне"
+
+#: classes/mailqueuelisttable.php:163
+msgid "Failed"
+msgstr "Неуспешно"
+
+#: classes/mailqueuelisttable.php:167
+msgid "Retry"
+msgstr "Опитайте отново"
+
+#: classes/mailqueuelisttable.php:231
+msgid "Delay items"
+msgstr "Забавени елементи"
+
+#: classes/mailqueuelisttable.php:232
+msgid "Set items to waiting"
+msgstr "Настрой за изчакване"
+
+#: classes/mailqueuelisttable.php:233
+msgid "Delete items"
+msgstr "Изтриване"
+
+#: classes/mailqueuelisttable.php:254
+msgid "deleted"
+msgstr "изтрит"
+
+#: classes/mailqueuelisttable.php:270
+msgid "updated"
+msgstr "актуализиран"
+
+#: classes/mailqueuelisttable.php:298
+msgid "Process Emails"
+msgstr "Изпращане на имейли"
+
+#: classes/mailqueuelisttable.php:309
+#, php-format
+msgid "Estimated time until Mail Queue is empty: %1$d %2$s."
+msgstr "Приблизително време за обработка на опашката: %1$d %2$s"
+
+#: classes/mailqueuelisttable.php:310
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "минута"
+msgstr[1] "минути"
+
+#: classes/mailqueuelisttable.php:315
+msgid "The default Mailqueue is disabled"
+msgstr "Опашката по подразбиране е забранена"
+
+#: classes/membersearch.php:133 classes/membersearch.php:140
+msgid "No users found."
+msgstr "Няма намерени потребители."
+
+#: classes/membersearch.php:262
+msgid "Unblock User"
+msgstr "Отблокирай"
+
+#: classes/membersearch.php:264
+msgid "Allow this user to see all of your activities"
+msgstr "Позволи този потребител да виджда всичките ви активности"
+
+#: classes/membersearch.php:271
+msgid "Block User"
+msgstr "Блокиране"
+
+#: classes/membersearch.php:273
+msgid "This user will be blocked from all of your activities"
+msgstr "Този потребител ще бъдат блокиран за всички ваши действия"
+
+#: classes/membersearch.php:281
+msgid "Ban"
+msgstr "Забрани"
+
+#: classes/membersearch.php:289
+msgid "Unban"
+msgstr "Отблокиране"
+
+#: classes/modalcomments.php:28 classes/modalcomments.php:49
+msgid "Could not find the post."
+msgstr "Постът не може да бъде намерен."
+
+#: classes/modalcomments.php:154
+msgid "Edit Caption"
+msgstr "Редактиране"
+
+#: classes/moods.php:61
+msgid "joyful"
+msgstr "радостно"
+
+#: classes/moods.php:62
+msgid "meh"
+msgstr "разплакано"
+
+#: classes/moods.php:63
+msgid "love"
+msgstr "влюбено"
+
+#: classes/moods.php:64
+msgid "flattered"
+msgstr "поласкано"
+
+#: classes/moods.php:65
+msgid "crazy"
+msgstr "лудо"
+
+#: classes/moods.php:66
+msgid "cool"
+msgstr "готино"
+
+#: classes/moods.php:67
+msgid "tired"
+msgstr "уморено"
+
+#: classes/moods.php:68
+msgid "confused"
+msgstr "объркано"
+
+#: classes/moods.php:69
+msgid "speechless"
+msgstr "безмълвно"
+
+#: classes/moods.php:70
+msgid "confident"
+msgstr "уверено"
+
+#: classes/moods.php:71
+msgid "relaxed"
+msgstr "спокойно"
+
+#: classes/moods.php:72
+msgid "strong"
+msgstr "яко"
+
+#: classes/moods.php:73
+msgid "happy"
+msgstr "много щастливо"
+
+#: classes/moods.php:74
+msgid "angry"
+msgstr "ядосано"
+
+#: classes/moods.php:75
+msgid "scared"
+msgstr "уплашено"
+
+#: classes/moods.php:76
+msgid "sick"
+msgstr "болно"
+
+#: classes/moods.php:77
+msgid "sad"
+msgstr "тъжно"
+
+#: classes/moods.php:78
+msgid "blessed"
+msgstr "благословено"
+
+#: classes/moods.php:111
+msgid "Remove Mood"
+msgstr "Премахване на настроението"
+
+#: classes/moods.php:114 classes/moods.php:167
+msgid " feeling "
+msgstr " се чувства "
+
+#: classes/moods.php:118
+msgid "Mood"
+msgstr "Настроение"
+
+#: classes/moods.php:123
+msgid "Mood settings for your post"
+msgstr "Настройка на настроения за вашия пост"
+
+#: classes/notificationsajax.php:28 classes/notificationsajax.php:36
+msgid "You currently have no unread notifications"
+msgstr "Нямате непрочетени известия"
+
+#: classes/notificationsajax.php:38
+msgid "You currently have no notifications"
+msgstr "Нямате нови съобщения"
+
+#: classes/notificationsajax.php:73
+msgid "Something went wrong"
+msgstr "Възникна грешка"
+
+#: classes/notificationsajax.php:98
+msgid "You don't have permission to do that"
+msgstr "Нямате права да направите това."
+
+#: classes/notificationsajax.php:104
+msgid "Missing notification ID"
+msgstr "Липсващо ID на известие"
+
+#: classes/postbox.php:32
+#, php-format
+msgid "You can only enter up to %d characters"
+msgstr "Можете да въведете неповече от %d символа"
+
+#: classes/postbox.php:143
+msgid "Privacy settings for your post"
+msgstr "Настройка на поверителност на вашия пост"
+
+#: classes/postbox.php:162
+msgid "Post a Status"
+msgstr "Публикувай статус"
+
+#: classes/postbox.php:267
+msgid "This post was successfully shared."
+msgstr "Постът е споделен успешно."
+
+#: classes/postbox.php:269
+msgid "Post added."
+msgstr "Постът е добавен."
+
+#: classes/profile.php:169
+msgid "Please enter the same password in the verify password field."
+msgstr "Моля, въведете отново същата парола в полето потвърждаване на паролата."
+
+#: classes/profile.php:243
+#, php-format
+msgid "Minimum avatar resolution is %d x %d pixels."
+msgstr "Минималната резолюция на снимка на профила е %d x %d px."
+
+#: classes/profile.php:477
+msgid "Please select at least one notification to delete."
+msgstr "Моля изберете поне едно известие за изтриване."
+
+#: classes/profile.php:516
+msgid "Your account has been completely removed from our system."
+msgstr "Вашият профил е напълно премахнат от нашата система."
+
+#: classes/profile.php:519
+msgid "You don't have permissions to do this."
+msgstr "Нямате права да направите това."
+
+#: classes/profile.php:523
+msgid "Invalid password."
+msgstr "Невалидна парола."
+
+#: classes/profile.php:550
+msgid "Someone liked your profile"
+msgstr "Някой е харесал вашия профил"
+
+#: classes/profile.php:553
+msgid "liked your profile"
+msgstr "харесва вашия профил"
+
+#: classes/profile.php:586
+msgid "This profile has been reported"
+msgstr "Профилът е докладван"
+
+#: classes/profile.php:755 classes/tags.php:352
+msgid "a comment"
+msgstr "коментар"
+
+#: classes/profile.php:758
+msgid "on "
+msgstr "на "
+
+#: classes/profile.php:759
+msgid "your comment"
+msgstr "вашият коментар"
+
+#: classes/profile.php:813 classes/profile.php:819 classes/profile.php:825
+msgid "on"
+msgstr " "
+
+#: classes/profile.php:814 classes/profile.php:829
+#, php-format
+msgid "a %s"
+msgstr "%s"
+
+#: classes/profile.php:820 classes/profile.php:857
+#, php-format
+msgid "your %s"
+msgstr "%s"
+
+#: classes/profile.php:827
+#, php-format
+msgid "an %s"
+msgstr "%s"
+
+#: classes/profile.php:921
+msgid "Update Info"
+msgstr "Актуализирай информацията"
+
+#: classes/profile.php:923
+msgid "Redirect to about page"
+msgstr "Към страницата с информация"
+
+#: classes/profile.php:968 templates/activity/dialog-repost.php:33
+msgid "Share"
+msgstr "Споделяне"
+
+#: classes/profile.php:969
+msgid "Share this Profile"
+msgstr "Сподели този профил"
+
+#: classes/profile.php:985
+msgid "Like this Profile"
+msgstr "Харесай профила"
+
+#: classes/profile.php:990
+msgid "Unlike this Profile"
+msgstr "Отмени харесването"
+
+#: classes/profile.php:1007
+msgid "Report User"
+msgstr "Докладване на потребител"
+
+#: classes/profile.php:1008
+msgid "Report this Profile"
+msgstr "Докладване на профил"
+
+#: classes/profile.php:1017
+msgid "Views"
+msgstr "Прегледи"
+
+#: classes/profile.php:1018
+msgid "Profile Views"
+msgstr "Прегледи на профила"
+
+#: classes/profile.php:1076 peepso.php:3233
+msgid "Activity Stream"
+msgstr "Дневник"
+
+#: classes/profile.php:1091
+msgid "Someone wrote a post on my Profile"
+msgstr "Някой е написал пост в моя профил"
+
+#: classes/profile.php:1096
+msgid "Someone commented on my Post"
+msgstr "Някой е коментирал мой пост"
+
+#: classes/profile.php:1101
+msgid "Someone liked my Post"
+msgstr "Някой е харесал мой пост"
+
+#: classes/profile.php:1106
+msgid "Someone liked my Comment"
+msgstr "Някой е харесал мой коментар"
+
+#: classes/profile.php:1111
+msgid "Someone shared my Post"
+msgstr "Някой е споделил мой пост"
+
+#: classes/profile.php:1125
+msgid "Someone liked my Profile"
+msgstr "Някой е харесал моя профил"
+
+#: classes/profile.php:1189 classes/profile.php:1321 classes/profile.php:1332
+#: classes/register.php:73
+msgid "Email"
+msgstr "Имейл"
+
+#: classes/profile.php:1194
+msgid "On-Site"
+msgstr "В сайта"
+
+#: classes/profile.php:1293 classes/profile.php:1301 classes/profile.php:1320
+#: classes/profile.php:1331 templates/profile/profile-about-account.php:36
+msgid "Basic Information"
+msgstr "ИФОРМАЦИЯ ЗА ПРОФИЛА"
+
+#: classes/profile.php:1294 classes/profile.php:1302 classes/profile.php:1453
+msgid "User Name"
+msgstr "Потребителско име"
+
+#: classes/profile.php:1303
+msgid "Enter your user name"
+msgstr "Въведете вашето потребителско име"
+
+#: classes/profile.php:1315
+msgid "That name is already in use by someone else."
+msgstr "Това име вече се използва от някой друг."
+
+#: classes/profile.php:1333 classes/register.php:74
+msgid "Enter your email address"
+msgstr "Въведете вашия имейл адрес"
+
+#: classes/profile.php:1344
+msgid "This email is already in use by someone else."
+msgstr "Този имейл вече се използва от някой друг."
+
+#: classes/profile.php:1349
+msgid "Change Password"
+msgstr "Смяна на парола"
+
+#: classes/profile.php:1350
+msgid "Enter password to change"
+msgstr "Въведете нова парола"
+
+#: classes/profile.php:1360 classes/register.php:93
+msgid "Verify Password"
+msgstr "Потвърдете"
+
+#: classes/profile.php:1361
+msgid "Enter password to verify"
+msgstr "Потвърдете паролата"
+
+#: classes/profile.php:1390 templates/activity/comment-edit.php:9
+#: templates/activity/description-edit.php:17
+#: templates/admin/profiles_field.php:91
+#: templates/admin/profiles_field_config_field_text.php:16
+#: templates/profile/focus.php:56 templates/profile/profile-about.php:159
+msgid "Save"
+msgstr "Запиши"
+
+#: classes/profile.php:1566
+msgid "Display My Name as"
+msgstr "Покажи моето име като"
+
+#: classes/profile.php:1570
+msgid "My Real Name"
+msgstr "Моето истинско име"
+
+#: classes/profile.php:1571
+msgid "My Username"
+msgstr "Потребителско име"
+
+#: classes/profile.php:1579
+msgid "Allow others to \"like\" my profile"
+msgstr "Позволявам на потребителите да харесват моя профил"
+
+#: classes/profile.php:1585
+msgid "Who can see my profile"
+msgstr "Кой може да разглежда моя профил?"
+
+#: classes/profile.php:1592
+msgid "Who can post on my profile"
+msgstr "Кой може да публикува в моя профил?"
+
+#: classes/profile.php:1603
+msgid "Hide my profile from all user listings"
+msgstr "Скрий моя профил от всички списъци с потребители"
+
+#: classes/profile.php:1612
+msgid "Don't show my online status"
+msgstr "Не показвай моят онлайн статус"
+
+#: classes/profile.php:1619
+msgid "My timezone"
+msgstr "Моята часова зона"
+
+#: classes/profile.php:1620
+msgid "Display all activity date and time in your own timezone"
+msgstr "Показване на активността с дата и час според вашия часови пояс"
+
+#: classes/profilefields.php:86
+msgid "First Name"
+msgstr "Име"
+
+#: classes/profilefields.php:87
+msgid "What's your name?"
+msgstr "Как се казваш?"
+
+#: classes/profilefields.php:114
+msgid "Last Name"
+msgstr "Фамилия"
+
+#: classes/profilefields.php:115
+msgid "What's your last name?"
+msgstr "Каква е вашата фамилия?"
+
+#: classes/profilefields.php:143
+msgid "Gender"
+msgstr "Пол"
+
+#: classes/profilefields.php:144
+msgid "What's your gender?"
+msgstr "Какъв е вашия пол?"
+
+#: classes/profilefields.php:162
+msgid "Birthdate"
+msgstr "Дата на раждане"
+
+#: classes/profilefields.php:163
+msgid "When were you born?"
+msgstr "Кога си роден?"
+
+#: classes/profilefields.php:180
+msgid "About Me"
+msgstr "Информация за мен"
+
+#: classes/profilefields.php:181
+msgid "Tell us something about yourself."
+msgstr "Разкажете нещо за себе си."
+
+#: classes/profilefields.php:196
+msgid "Website"
+msgstr "Уебсайт"
+
+#: classes/profilefields.php:197
+msgid "What's your website's address?"
+msgstr "Какъв е адресът на вашия уебсайт?"
+
+#: classes/profilefields.php:368
+#, php-format
+msgid "Your profile is %d%% complete"
+msgstr "Вашият профил е попълнен %d%%"
+
+#: classes/profilefields.php:371
+msgid "fill in missing required fields to be able to participate in the community."
+msgstr "попълнете задължителните полета, за да продължите."
+
+#: classes/profilefields.php:380
+#, php-format
+msgid "%d required field(s) missing"
+msgstr "Има %d задължително/и поле/та за полълване"
+
+#: classes/profilefieldsajax.php:138
+msgid "Couldn't save privacy"
+msgstr "Не може да запази поверителността"
+
+#: classes/profilefieldsajax.php:169 classes/registershortcode.php:157
+msgid "That user name is already in use."
+msgstr "Това потребителско име вече се използва."
+
+#: classes/profilefieldsajax.php:177 classes/registershortcode.php:151
+msgid "That email address is already in use."
+msgstr "Този имейл адрес вече се използва."
+
+#: classes/profilefieldsajax.php:188 classes/registershortcode.php:162
+msgid "The passwords you submitted do not match."
+msgstr "Паролите не съвпадат."
+
+#: classes/profilepreferencesajax.php:46
+msgid "Preferences saved."
+msgstr "Настройките са записани."
+
+#: classes/profilepreferencesajax.php:51
+msgid "Failed to save changes."
+msgstr "Неуспешно записване на промените."
+
+#: classes/profilepreferencesajax.php:97
+msgid "Preferences saved"
+msgstr "Настройките са запазени"
+
+#: classes/profilepreferencesajax.php:102
+msgid "Failed to save"
+msgstr "Неуспешно записване"
+
+#: classes/profileshortcode.php:225 classes/profileshortcode.php:272
+msgid "You do not have enough permissions."
+msgstr "Нямате достатъчно права."
+
+#: classes/profileshortcode.php:245 classes/profileshortcode.php:299
+#: peepso.php:1793
+msgid "The file type you uploaded is not allowed."
+msgstr "Типът на файла, който качвате, не е позволен."
+
+#: classes/profileshortcode.php:250 classes/profileshortcode.php:294
+msgid "The file you uploaded is either missing or too large."
+msgstr "Файлът, който качвате липсва или е твърде голям."
+
+#: classes/profileshortcode.php:258 classes/profileshortcode.php:308
+msgid "No file uploaded."
+msgstr "Не е качено изображение."
+
+#: classes/profileshortcode.php:280
+msgid "No user defined."
+msgstr "Не е дефинирано от потребителя."
+
+#: classes/profileshortcode.php:401
+msgid "Changes successfully saved."
+msgstr "Промените са записани успешно."
+
+#: classes/profileshortcode.php:547 peepso.php:2835
+msgid "About"
+msgstr "Информация"
+
+#: classes/profileshortcode.php:555
+msgid "Notifications"
+msgstr "Известия"
+
+#: classes/profileshortcode.php:559
+msgid "Account"
+msgstr "Профил"
+
+#: classes/recoverpasswordshortcode.php:36
+msgid "Invalid form contents, please resubmit"
+msgstr "Невалидно съдържание във формата, моля изпратете отново"
+
+#: classes/recoverpasswordshortcode.php:65
+#: classes/resetpasswordshortcode.php:85
+msgid "Invalid captcha, please try again"
+msgstr "Невалидна captcha, моля опитайте отново"
+
+#: classes/recoverpasswordshortcode.php:119
+msgid "<strong>ERROR</strong>: Please enter your email address."
+msgstr "<strong>ГРЕШКА</strong>: Моля, въведете вашия имейл адрес."
+
+#: classes/recoverpasswordshortcode.php:124
+msgid "<strong>ERROR</strong>: There is no user registered with that email address."
+msgstr "<strong>ГРЕШКА</strong>: Няма потребител регистриран с този имейл адрес."
+
+#: classes/recoverpasswordshortcode.php:138
+msgid "<strong>ERROR</strong>: Invalid email address provided."
+msgstr "<strong>ГРЕШКА</strong>: Невалиден имейл адрес."
+
+#: classes/recoverpasswordshortcode.php:169
+msgid "Password reset is not allowed for this user"
+msgstr "На този потребител не е позволено нулиране на паролата"
+
+#: classes/recoverpasswordshortcode.php:206 lib/pluggable.php:63
+#, php-format
+msgid "%s Password Reset"
+msgstr "%s за възстановяване на парола"
+
+#: classes/register.php:51
+msgid "Enter Your User Information"
+msgstr "Въведете вашите данни"
+
+#: classes/register.php:55 templates/general/login.php:7
+#: templates/widgets/me.tpl.php:192
+msgid "Username"
+msgstr "Потребителско име"
+
+#: classes/register.php:56
+msgid "Enter your desired username"
+msgstr "Въведете предпочитано потребителско име"
+
+#: classes/register.php:67
+msgid "Username must not be the same as your password."
+msgstr "Потребителското име не трябва да съвпада с паролата."
+
+#: classes/register.php:85 templates/general/login.php:12
+#: templates/profile/dialog-profile-deletion.php:12
+#: templates/widgets/me.tpl.php:197
+msgid "Password"
+msgstr "Парола"
+
+#: classes/register.php:86
+msgid "Enter your desired password"
+msgstr "Въведете вашата парола"
+
+#: classes/register.php:94
+msgid "Please re-enter your password"
+msgstr "Въведете отново вашата парола"
+
+#: classes/register.php:134
+#, php-format
+msgid "I agree to the %s."
+msgstr "Съгласен съм с %s."
+
+#: classes/register.php:135 templates/register/register.php:32
+msgid "Terms and Conditions"
+msgstr "Условия за ползване"
+
+#: classes/register.php:142 templates/profile/profile-about-account.php:41
+msgid "Fields marked with an asterisk (<span class=\"required-sign\">*</span>) are required."
+msgstr "Полетата, отбелязани със звездичка (<span class=\"required-sign\">*</span>) са задължителни."
+
+#: classes/register.php:158
+msgid "Next"
+msgstr "Регистрация"
+
+#: classes/registershortcode.php:129 classes/registershortcode.php:135
+msgid "Form contents are invalid."
+msgstr "Въведеното съдържание е невалидно."
+
+#: classes/registershortcode.php:140
+msgid "Required form fields are missing."
+msgstr "Не са попълнени задължителните полета."
+
+#: classes/registershortcode.php:145
+msgid "Please enter a valid email address."
+msgstr "Моля, въведете валиден имейл адрес."
+
+#: classes/registershortcode.php:170
+msgid "Additional fields are invalid."
+msgstr "Допълнителни полета са невалидни."
+
+#: classes/registershortcode.php:178
+msgid "Incomplete form contents."
+msgstr "Непопълнена форма."
+
+#: classes/registershortcode.php:206 classes/registershortcode.php:219
+msgid "Invalid form contents."
+msgstr "Невалидно съдържание."
+
+#: classes/registershortcode.php:212
+msgid "Please enter a valid email address"
+msgstr "Моля, въведете валиден имейл адрес"
+
+#: classes/registershortcode.php:280
+msgid "Please enter an activation code"
+msgstr "Моля, въведете код за активиране"
+
+#: classes/registershortcode.php:327 classes/registershortcode.php:334
+msgid "{sitename} - New User Registration"
+msgstr "{sitename} - регистрация на нов потребител"
+
+#: classes/registershortcode.php:355
+msgid "We are unable to find an account for this activation code"
+msgstr "Няма намерен акаунт за този код за активиране"
+
+#: classes/resetpasswordshortcode.php:42 classes/resetpasswordshortcode.php:44
+#: classes/resetpasswordshortcode.php:132
+#: classes/resetpasswordshortcode.php:134
+msgid "<strong>ERROR</strong>: The password reset link you used is not valid anymore."
+msgstr "<strong>Грешка</strong>:Връзката за нулиране на паролата, която сте използвали вече не е валидна."
+
+#: classes/resetpasswordshortcode.php:49
+msgid "<strong>ERROR</strong>: Invalid password reset link."
+msgstr "<strong>Грешка</strong>: Невалидна връзка за нулиране на парола."
+
+#: classes/resetpasswordshortcode.php:56
+msgid "<strong>ERROR</strong>: Invalid form contents, please resubmit"
+msgstr "<strong>Грешка</strong>: Невалидно съдържание, моля веведете го отново"
+
+#: classes/resetpasswordshortcode.php:141
+msgid "<strong>ERROR</strong>: Invalid request."
+msgstr "<strong>Грешка</strong>: Невалидна заявка."
+
+#: classes/resetpasswordshortcode.php:146
+msgid "<strong>ERROR</strong>: The two passwords you entered don't match."
+msgstr "<strong>Грешка</strong>: Двете пароли, които въведохте не съвпадат."
+
+#: classes/tags.php:134 classes/tags.php:220 classes/tags.php:286
+msgid "mentioned you"
+msgstr "ви отбеляза"
+
+#: classes/tags.php:152
+msgid "Someone tagged you in a post"
+msgstr "Някой ви отбеляза в свой пост"
+
+#: classes/tags.php:252
+msgid "Someone tagged you in a comment"
+msgstr "Някой ви отбеляза в коментар"
+
+#: classes/tags.php:284
+msgid "wrote and mentioned you on your wall"
+msgstr "писа във вашия дневник и ви отбеляза"
+
+#: classes/tags.php:347 classes/tags.php:352
+msgid "in"
+msgstr "в"
+
+#: classes/tags.php:347
+msgid "a post"
+msgstr "пост"
+
+#: classes/tags.php:374
+msgid "User Tagged In Post"
+msgstr "Потребителят е отбелязан в пост"
+
+#: classes/tags.php:375
+msgid "This will be sent to a user when tagged in post."
+msgstr "Това ще бъде изпратено на потребителя, когато го отбележат в пост."
+
+#: classes/tags.php:379
+msgid "User Tagged In Comment"
+msgstr "Потребителят е отбелязан в коментар"
+
+#: classes/tags.php:380
+msgid "This will be sent to a user when tagged in comment."
+msgstr "Това ще бъде изпратено на потребителя, когато го отбележат в коментар."
+
+#: classes/tags.php:393
+msgid "Tags"
+msgstr "Отбелязване"
+
+#: classes/tags.php:396
+msgid "Someone tagged me in a Post"
+msgstr "Някой ме е отбелязал в свой пост"
+
+#: classes/tags.php:401
+msgid "Someone tagged me in a Comment"
+msgstr "Някой ме е отбелязал в коментар"
+
+#: classes/template.php:104
+#, php-format
+msgid "Powered by %1$sPeepSo%2$s!"
+msgstr "Задвижвано от %1$sPeepSo%2$s!"
+
+#: classes/template.php:105
+msgid "Social Networking for WordPress!"
+msgstr "Социална мрежа за WordPress!"
+
+#: classes/user.php:600
+msgid "Never"
+msgstr "Никога"
+
+#: classes/user.php:888
+#, php-format
+msgid "Welcome to %s"
+msgstr "Добре дошли в %s"
+
+#: classes/user.php:1396
+msgid "Account activated"
+msgstr "Акаунтът е активиран"
+
+#: classes/widgetajax.php:84 classes/widgetajax.php:185
+msgid "Members count"
+msgstr "Потребители: "
+
+#: classes/widgetajax.php:88
+msgid "No latest members"
+msgstr "Няма нови потребители"
+
+#: classes/widgetajax.php:189
+msgid "No online members"
+msgstr "Няма онлайн потребители"
+
+#: classes/widgets/widgetlatestmembers.php:12
+msgid "PeepSo Latest Members"
+msgstr "PeepSo Потребители"
+
+#: classes/widgets/widgetlatestmembers.php:13
+msgid "PeepSo Latest Members Widget"
+msgstr "PeepSo Най-нови потребители"
+
+#: classes/widgets/widgetlatestmembers.php:78
+msgid "Latest Members"
+msgstr "Най-нови потребители"
+
+#: classes/widgets/widgetme.php:12
+msgid "PeepSo Profile"
+msgstr "PeepSo Профил"
+
+#: classes/widgets/widgetme.php:13
+msgid "PeepSo Profile Widget"
+msgstr "PeepSo Профил"
+
+#: classes/widgets/widgetme.php:145
+msgid "Guest view"
+msgstr "Изглед за гости"
+
+#: classes/widgets/widgetme.php:148
+msgid "Log-in form"
+msgstr "Форма за вход"
+
+#: classes/widgets/widgetme.php:149
+msgid "Hide"
+msgstr "Скрий"
+
+#: classes/widgets/widgetme.php:159
+msgid "Show notifications"
+msgstr "Показвай известия"
+
+#: classes/widgets/widgetme.php:167
+msgid "Show community links"
+msgstr "Показване на линкове"
+
+#: classes/widgets/widgetme.php:176
+msgid "Show cover"
+msgstr "Покажи снимка на корицата"
+
+#: classes/widgets/widgetonlinemembers.php:12
+msgid "PeepSo Online Members"
+msgstr "PeepSo Онлайн потребители"
+
+#: classes/widgets/widgetonlinemembers.php:13
+msgid "PeepSo Online Members Widget"
+msgstr "PeepSo Онлайн потребители"
+
+#: classes/widgets/widgetonlinemembers.php:74
+msgid "Online Members"
+msgstr "Онлайн потребители"
+
+#: install/activate.php:331
+msgid "Home"
+msgstr "Начало"
+
+#: install/activate.php:336
+msgid "Recent Activity"
+msgstr "Активност"
+
+#: install/activate.php:342
+msgid "User Profile"
+msgstr "Потребителски профил"
+
+#: install/activate.php:347
+msgid "Site Registration"
+msgstr "Регистрация"
+
+#: install/activate.php:357
+msgid "Reset Password"
+msgstr "Забравена парола"
+
+#: install/activate.php:367
+msgid "You are about to be redirected"
+msgstr "Предстои да бъдете пренасочени"
+
+#: lib/helpers.php:403
+msgid "Today"
+msgstr "Днес"
+
+#: lib/helpers.php:404 templates/activity/comment-modal-attachment.php:102
+#: templates/activity/comment-reply.php:40 templates/activity/post.php:125
+msgid "Clear"
+msgstr "Изчисти"
+
+#: peepso.php:170
+msgid "Since version 1.8.6 PeepSo is using the new INVISIBLE ReCaptcha."
+msgstr "От версия 1.8.6 PeepSo използва новата НЕВИДИМА ReCaptcha."
+
+#: peepso.php:171
+msgid "You can get the new ReCaptcha keys <a href=\"https://www.google.com/recaptcha/\" target=\"_blank\">here</a></strong>."
+msgstr "Вземете ключове за новата ReCaptcha от <a href=\"https://www.google.com/recaptcha/\" target=\"_blank\">тук</a></strong>."
+
+#: peepso.php:270
+#, php-format
+msgid "There is a new version of PeepSo Core available (%s), but it cannot be installed yet."
+msgstr "Има нова версия (%s) на PeepSo Core, но тя все още не може да бъде инсталирана."
+
+#: peepso.php:277
+#, php-format
+msgid "To avoid conflicts and issues, please make sure the following plugins are %s:"
+msgstr "За да избегнете конфликти и проблеми, моля уверете се, че тези плъгини са версия %s:"
+
+#: peepso.php:288
+msgid "After updating these plugins please refresh this page, update PeepSo Core and reactivate all plugins."
+msgstr "След като актуализирате тези плъгини моля да обновете тази страница, актуализирайте PeepSo Core и активирайте всички плъгини."
+
+#: peepso.php:292
+#, php-format
+msgid "If you are experiencing issues updating any plugins, try using the <a href=\"%s\">Updates Dashboard</a>."
+msgstr "Ако изпитвате проблеми с актуализирането на някои плъгини, опитайте да използвате страницата <a href=\"%s\">Обновяване на разширенията</a>."
+
+#: peepso.php:308
+msgid "Visit Community"
+msgstr "Към мрежата"
+
+#: peepso.php:507
+#, php-format
+msgid "Disabled %d e-mail notifications"
+msgstr "Забранени %d имейл известия"
+
+#: peepso.php:512
+#, php-format
+msgid "Disabled %d group e-mail subscriptions"
+msgstr "Забранени %d имейл абонаменти от група"
+
+#: peepso.php:519
+msgid "Disabled Email Digest subscription"
+msgstr "Забранен абонамент за Имейл бюлетин"
+
+#: peepso.php:521
+msgid "Email Digest was already disabled"
+msgstr "Имейл бюлетинът вече е забранен"
+
+#: peepso.php:899
+msgid "stream"
+msgstr "дневник"
+
+#: peepso.php:965
+#, php-format
+msgid "via %s"
+msgstr "чрез %s"
+
+#: peepso.php:1118 templates/widgets/me.tpl.php:169
+msgid "Community"
+msgstr "Всички"
+
+#: peepso.php:1119
+msgid "Posts from the entire Community"
+msgstr "Постове от цялата мрежа"
+
+#: peepso.php:1125
+msgid "members"
+msgstr "потребители"
+
+#: peepso.php:1126
+msgid "groups"
+msgstr "групи"
+
+#: peepso.php:1127
+msgid "pages"
+msgstr "страници"
+
+#: peepso.php:1131
+msgid "&amp;"
+msgstr "&amp;"
+
+#: peepso.php:1134 templates/members/search.php:66
+msgid "Following"
+msgstr "Последвано"
+
+#: peepso.php:1135
+#, php-format
+msgid "Posts only from %s you follow"
+msgstr "Следвате постове само от %s"
+
+#: peepso.php:1346 peepso.php:2693
+msgid "Your account has been suspended."
+msgstr "Вашият достъп е спрян."
+
+#: peepso.php:1359 peepso.php:2683
+#, php-format
+msgid "Your account has been suspended until %s."
+msgstr "Вашият достъп е спрян до %s."
+
+#: peepso.php:1515
+#, php-format
+msgid "Cannot activate PeepSo; it requires <b>Permalinks</b> to be enabled. Go to <a href=\"%1$s\">Settings -&gt; Permalinks</a> and select anything but the <i>Default</i> option."
+msgstr "Не можете да активирате PeepSo; Необходимо е <b>Постоянни връзки (Permalinks)</b> да бъдат активирани. Отидете в <a href=\"%1$s\">Настройки -&gt; Постоянни връзки</a> и изберете само някоя от стандартните опции <i>по подразбиране</i>."
+
+#: peepso.php:1612 peepso.php:1614
+msgid "Ban this user"
+msgstr "Блокирай"
+
+#: peepso.php:1647 templates/profile/dialog-profile-avatar.php:72
+#: templates/profile/dialog-profile-cover.php:34
+msgid "The file type you uploaded is not allowed. Only JPEG/PNG allowed."
+msgstr "Типът на файла, който сте качили не е позволен. Позволени са само JPEG/PNG."
+
+#: peepso.php:1648 templates/profile/dialog-profile-avatar.php:73
+#: templates/profile/dialog-profile-cover.php:35
+#, php-format
+msgid "The file size you uploaded is too big. The maximum file size is %s."
+msgstr "Размерът на файла, който сте качили е твърде голям. Максималният размер на файла е %s."
+
+#: peepso.php:1665
+msgid "View full image"
+msgstr "Виж на цял екран"
+
+#: peepso.php:1794
+msgid "Please login to continue"
+msgstr "Моля влезте, за да продължите"
+
+#: peepso.php:1798
+msgid "There are unsaved changes on this page."
+msgstr "Има незаписани промени на тази страница."
+
+#: peepso.php:1799
+msgid "The system is currently saving your changes."
+msgstr "В момента системата записва промените."
+
+#: peepso.php:2698
+msgid "Your account is awaiting admin approval."
+msgstr "Вашият профил изчаква одобрение от администратор."
+
+#: peepso.php:2702
+msgid "Please verify the email address you have provided using the link in the email that was sent to you."
+msgstr "Моля, проверете имейл адреса, който сте предоставили. Използвате връзката в имейла, който е изпратен до вас."
+
+#: peepso.php:2738
+msgid "This user may not login at the moment."
+msgstr "Този потребител не може да влезне в момента."
+
+#: peepso.php:3023
+msgid "This domain is not registered for PLUGIN_NAME. You can register your domain <a target=\"_blank\" href=\"PEEPSOCOM_LICENSES\">here</a>."
+msgstr "Този домейн не е регистриран за PLUGIN_NAME. Можете да регистрирате вашия домейн <a target=\"_blank\" href=\"PEEPSOCOM_LICENSES\"> оттук</a>."
+
+#: peepso.php:3026
+msgid "License for PLUGIN_NAME has expired. The plugin will work, but it will not receive updates. You can renew your license <a target=\"_blank\" href=\"PEEPSOCOM_LICENSES\">here</a>."
+msgstr "Лицензът за PLUGIN_NAME е изтекъл. Плъгинът ще работи, но тя няма да получава актуализации. Можете да подновите лиценза си <a target=\"_blank\" href=\"PEEPSOCOM_LICENSES\">оттук</a>."
+
+#: peepso.php:3032
+msgid "License for PLUGIN_NAME is missing or invalid. Please <a href=\"ENTER_LICENSE\">enter a valid license</a> and click \"SAVE\" to activate it. You can get your license key <a target=\"_blank\" href=\"PEEPSOCOM_LICENSES\">here</a>."
+msgstr "Лицензът за PLUGIN_NAME липсва или е невалиден. Моля, <a href=\"ENTER_LICENSE\"> въведете валиден лиценз</a> и изберете \"ЗАПИС\", за да го активирате. Можете да получите вашия лицензен ключ от <a target=\"_blank\" href=\"PEEPSOCOM_LICENSES\">тук</a>."
+
+#: peepso.php:3060
+msgid "It looks like PeepSo emails were not processing properly. We just tried to fix it automatically.<br> If you see this message repeatedly, consider deactivating and re-activating PeepSo or contacting Support"
+msgstr "Изглежда, че имейлите от PeepSo не са били обработени правилно. Опитахме се да оправим проблема автоматично.<br> Ако продължавате да виждате това съобщение, може да опитате да дезактивирате и повторно да активирате PeepSo или да се свържете с поддръжката."
+
+#: peepso.php:3101
+#, php-format
+msgid "is not fully compatible with <strong>PeepSo %s</strong>. "
+msgstr "не е напълно съвместим с <strong>PeepSo %s</strong>. "
+
+#: peepso.php:3104
+#, php-format
+msgid "is not compatible with <strong>PeepSo %s</strong> and has been deactivated. "
+msgstr "не е съвместим с <strong>PeepSo %s</strong> и беше деактивиран. "
+
+#: peepso.php:3110
+#, php-format
+msgid "was only tested up to <strong>PeepSo %s</strong>. "
+msgstr "бил е тестван само до <strong>PeepSo %s</strong>. "
+
+#: peepso.php:3113
+#, php-format
+msgid "has been disabled because it requires <strong>PeepSo %s</strong>. "
+msgstr "е бил забранен, защото изисква <strong>PeepSo %s</strong>. "
+
+#: peepso.php:3116
+#, php-format
+msgid "You are running PeepSo %s."
+msgstr "Вие използвате PeepSo %s."
+
+#: peepso.php:3123
+#, php-format
+msgid "Please upgrade %s and PeepSo Core to avoid conflicts and issues. "
+msgstr "Моля, актуализирайте %s и PeepSo Core, за да се избегнат конфликти и проблеми. "
+
+#: peepso.php:3126
+msgid "Upgrade now!"
+msgstr "Актуализирайте сега!"
+
+#: peepso.php:3136
+msgid "PeepSo E-mail Notifications"
+msgstr "Имейл известия"
+
+#: peepso.php:3140
+msgid "E-mail preferences"
+msgstr "Предпочитания за имейли"
+
+#: peepso.php:3142
+msgid "Unsubscribe this user from all e-mail notifications"
+msgstr "Отписване на този потребител от всички имейл известия"
+
+#: peepso.php:3201
+msgid "Every One Minute"
+msgstr "На всяка минута"
+
+#: peepso.php:3207
+msgid "Every Five Minutes"
+msgstr "На всеки пет минути"
+
+#: peepso.php:3213
+msgid "Once Weekly"
+msgstr "Веднъж седмично"
+
+#: peepso.php:3238 templates/activity/activity-stream-filters.php:94
+#: templates/activity/activity-stream-filters.php:123
+msgid "Search"
+msgstr "Търсене"
+
+#: peepso.php:3243
+msgid "Profile Pages"
+msgstr "Страници на профили"
+
+#: templates/activity/activity-load-more.php:2
+msgid "Load more"
+msgstr "Вижте повече"
+
+#: templates/activity/activity-no-more.php:1 templates/activity/activity.php:54
+#: templates/profile/profile.php:60
+msgid "Nothing more to show."
+msgstr "Всички са показани."
+
+#: templates/activity/activity-stream-filters.php:35
+#: templates/activity/activity-stream-filters.php:76
+msgid "Apply"
+msgstr "Приложи"
+
+#: templates/activity/activity-stream-filters.php:48
+#: templates/activity/activity-stream-filters.php:60
+msgid "Show my posts"
+msgstr "Mоите постове"
+
+#: templates/activity/activity-stream-filters.php:49
+#: templates/activity/activity-stream-filters.php:60
+msgid "Hide my posts"
+msgstr "Скриване на моите постове"
+
+#: templates/activity/activity-stream-filters.php:97
+msgid "Search: "
+msgstr "Търсене: "
+
+#: templates/activity/activity-stream-filters.php:102
+msgid "Type to search"
+msgstr "Пиши, за да търсиш"
+
+#: templates/activity/activity-stream-filters.php:109
+msgid "Exact phrase"
+msgstr "Точна фраза"
+
+#: templates/activity/activity-stream-filters.php:117
+msgid "Any of the words"
+msgstr "По някоя от думите"
+
+#: templates/activity/activity.php:52 templates/profile/profile.php:58
+msgid "No posts found. Be the first one to share something amazing!"
+msgstr "Все още няма публикации. Бъдете първият, който ще сподели нещо интересно!"
+
+#: templates/activity/activity.php:53 templates/profile/profile.php:59
+msgid "No posts found."
+msgstr "Няма намерени постове."
+
+#: templates/activity/comment-edit.php:4
+#: templates/activity/comment-modal-attachment.php:88
+#: templates/activity/post.php:113
+msgid "Write a comment..."
+msgstr "Напишете коментар..."
+
+#: templates/activity/comment-modal-attachment.php:103
+#: templates/activity/comment-reply.php:41 templates/activity/post-edit.php:20
+#: templates/activity/post.php:126 templates/general/postbox-legacy.php:28
+#: templates/general/postbox.php:30
+msgid "Post"
+msgstr "Пост"
+
+#: templates/activity/comment-reply.php:28
+msgid "Write a reply..."
+msgstr "Напишете отговор..."
+
+#: templates/activity/dialog-repost.php:6
+msgid "Share This Post"
+msgstr "Споделете този пост"
+
+#: templates/activity/dialog-repost.php:10
+msgid "Say what is on your mind..."
+msgstr "За какво си мислите?"
+
+#: templates/activity/dialogs.php:17
+msgid "Post Comment"
+msgstr "Коментар"
+
+#: templates/activity/dialogs.php:24
+msgid "Report Content to Admin"
+msgstr "Докладвайте на администратор"
+
+#: templates/activity/dialogs.php:27
+msgid "Reason for Report:"
+msgstr "Причина за доклада:"
+
+#: templates/activity/dialogs.php:35
+msgid "Submit Report"
+msgstr "Изпрати"
+
+#: templates/activity/dialogs.php:39
+msgid "ERROR: Please select Reason for Report."
+msgstr "ГРЕШКА: Моля изберете причина за доклад."
+
+#: templates/activity/dialogs.php:40
+msgid "ERROR: Please fill Reason for Report."
+msgstr "ГРЕШКА: Моля изберете причина за доклад."
+
+#: templates/activity/dialogs.php:43
+msgid "Share This"
+msgstr "Споделяне"
+
+#: templates/activity/dialogs.php:45
+msgid "Share this via Link:"
+msgstr "Сподели чрез:"
+
+#: templates/activity/dialogs.php:76
+msgid "Are you sure you want to delete your Profile?"
+msgstr "Сигурни ли сте, че искате да изтриете вашия профил?"
+
+#: templates/activity/dialogs.php:78
+msgid "This will remove all of your posts, saved information and delete your account."
+msgstr "Ще бъде изтрит профила заедно с постовете и записаната информация."
+
+#: templates/activity/dialogs.php:80
+msgid "The delete cannot be undone."
+msgstr "Изтриването не може да бъде отменено."
+
+#: templates/activity/dialogs.php:84
+msgid "Delete My Profile"
+msgstr "Изтрий моя профил"
+
+#: templates/activity/post.php:20
+msgid "This pinned post will not display to all users because of its privacy settings."
+msgstr "Този закачен пост няма да се показва на всички потребители, поради настройките си за поверителност."
+
+#: templates/activity/post.php:25
+msgid "Pinned"
+msgstr "Закачено"
+
+#: templates/activity/repost-private.php:3
+msgid "The user has decided to keep this post private."
+msgstr "Потребителят е решил да направи този пост видим само за себе си."
+
+#: templates/admin/deactivation_feedback_modal.php:14
+msgid "Plugin Usage Feedback"
+msgstr "Обратна връзка за ползването на плъгина"
+
+#: templates/admin/deactivation_feedback_modal.php:18
+msgid "Please tell us how can we make this plugin better for you?"
+msgstr "Моля, кажете ни как можем да направим този плъгин по-добър за вас?"
+
+#: templates/admin/deactivation_feedback_modal.php:21
+msgid "It\\'s not what I\\'m looking for"
+msgstr "Не е това, което търся"
+
+#: templates/admin/deactivation_feedback_modal.php:22
+msgid "I Found a better alternative"
+msgstr "Намерих по-добра алтернатива"
+
+#: templates/admin/deactivation_feedback_modal.php:23
+msgid "It didn\\'t work for me, technical problems"
+msgstr "Той не работи при мен, поради технически проблеми"
+
+#: templates/admin/deactivation_feedback_modal.php:29
+msgid "If you\\'re experiencing technical problems please consider contacting our support. You can open a support ticket here: "
+msgstr "Ако имате технически проблеми, моля свържете се с нашата поддръжка. Можете да отворите билет за поддръжка от тук: "
+
+#: templates/admin/deactivation_feedback_modal.php:31
+msgid "Your feedback will only be used to improve this plugin"
+msgstr "Вашият отзив ще се използва само за подобряване на този плъгин"
+
+#: templates/admin/deactivation_feedback_modal.php:35
+msgctxt "the text of the cancel button of the plugin deactivation dialog box."
+msgid "Cancel"
+msgstr "Отказ"
+
+#: templates/admin/deactivation_feedback_modal.php:182
+msgid "Yes - Deactivate"
+msgstr "Да - деактивирай"
+
+#: templates/admin/deactivation_feedback_modal.php:184
+msgid "Deactivate"
+msgstr "Деактивиране"
+
+#: templates/admin/extensions.php:19
+msgid "Get this addon"
+msgstr "Вземи тази добавка"
+
+#: templates/admin/extensions.php:27
+msgid "Get this bundle"
+msgstr "Вземи този пакет"
+
+#: templates/admin/extensions.php:66
+msgid "Enter a keyword..."
+msgstr "Въведете ключова дума..."
+
+#: templates/admin/extensions.php:121
+msgid "Installed and Activated"
+msgstr "Инсталиран и активиран"
+
+#: templates/admin/extensions.php:130
+msgid "Please try again later"
+msgstr "Моля, опитайте отново по-късно"
+
+#: templates/admin/extensions.php:140
+msgid "All plugins in this category are already installed and activated on your site. To view other plugins, not yet installed or activated on your site, click the button below."
+msgstr "Всички плъгини от тази категория вече са инсталирани и активирани на вашия сайт. За да видите други плъгини, които все още не е инсталиран или активирани на вашия сайт, щракнете върху бутона по-долу."
+
+#: templates/admin/extensions.php:144
+msgid "Browse All Addons"
+msgstr "Преглед на всички добавки"
+
+#: templates/admin/profiles_buttons.php:4
+msgid "Expand All"
+msgstr "Разгъни всички"
+
+#: templates/admin/profiles_buttons.php:7
+msgid "Collapse All"
+msgstr "Свиване на всички"
+
+#: templates/admin/profiles_buttons.php:13
+msgid "Add New"
+msgstr "Добавяне на новo"
+
+#: templates/admin/profiles_field.php:23
+msgid "no title"
+msgstr "без заглавие"
+
+#: templates/admin/profiles_field.php:26
+#, php-format
+msgid "Core %s: "
+msgstr "Core %s: "
+
+#: templates/admin/profiles_field.php:38
+msgid "Privacy"
+msgstr "Поверителност"
+
+#: templates/admin/profiles_field.php:39
+msgid "Validation"
+msgstr "Валидиране"
+
+#: templates/admin/profiles_field.php:135
+msgid "Enabled"
+msgstr "Разрешенo"
+
+#: templates/admin/profiles_field.php:194
+msgid "Display"
+msgstr "Показва се като"
+
+#: templates/admin/profiles_field.php:212
+msgid "Edit method"
+msgstr "Метод за редактиране"
+
+#: templates/admin/profiles_field.php:228
+msgid "Placeholder"
+msgstr "Поясняващ текст"
+
+#: templates/admin/profiles_field.php:265
+msgid "Default Privacy"
+msgstr "Поверителност по подразбиране"
+
+#: templates/admin/profiles_field.php:288
+msgid "Disable user privacy setting"
+msgstr "Забрани настройките за поверителност на потребителите"
+
+#: templates/admin/profiles_field.php:389
+msgid "Minimum year allowed"
+msgstr "Минимална позволена възраст"
+
+#: templates/admin/profiles_field.php:390
+msgid "years ago"
+msgstr "преди години"
+
+#: templates/admin/profiles_field.php:405
+msgid "Maximum year allowed"
+msgstr "Максимална позволена възраст"
+
+#: templates/admin/profiles_field.php:406
+msgid "years in the future"
+msgstr "годината е в бъдещето"
+
+#: templates/admin/profiles_field_list.php:2
+msgid "Profile Fields"
+msgstr "Полета в профилите"
+
+#: templates/admin/profiles_no_plugin.php:9
+msgid "Get Extended Profiles"
+msgstr "Използвай разширени профили"
+
+#: templates/general/404-ajax.php:1 templates/general/404.php:7
+msgid "This content is not available at this time."
+msgstr "В момента това съдържание е недостъпно."
+
+#: templates/general/404.php:9
+msgid "Possible causes for the content of the page not to show:"
+msgstr "Възможни причини съдържанието на страницата да не се показва:"
+
+#: templates/general/404.php:12
+msgid "It has been removed."
+msgstr "Може де е изтрито."
+
+#: templates/general/404.php:13
+msgid "You may not have the necessary permissions to view it."
+msgstr "Може да нямате необходимите права да го преглеждате."
+
+#: templates/general/email-footer.php:1
+msgid "This email was sent to {currentuserfullname} ({useremail})."
+msgstr "Този имейл беше изпратен до {currentuserfullname} ({useremail})."
+
+#: templates/general/email-footer.php:3
+msgid "If you do not wish to receive these emails from {sitename}, you can <a href=\"{unsubscribeurl}\">manage your preferences</a> here."
+msgstr "Ако не желаете да получавате такива имейли от {sitename} в бъдеще, моля, <a href=\"{unsubscribeurl}\">отпишете се</a>."
+
+#: templates/general/email-footer.php:5
+msgid "Copyright (c) {year} {sitename}"
+msgstr "Copyright (c) {year} {sitename}"
+
+#: templates/general/external-link-warning.php:58
+#, php-format
+msgid "The link you just clicked redirects to: <span class=\"ps-redirect__link\">%s</span>"
+msgstr "Избраната връзка ще ви пренасочи към: <span class=\"ps-redirect__link\">%s</span>"
+
+#: templates/general/external-link-warning.php:60
+msgid "Do you want to continue?"
+msgstr "Искате ли да продължите?"
+
+#: templates/general/external-link-warning.php:63
+msgid "No, take me back"
+msgstr "Не, връщам се назад"
+
+#: templates/general/external-link-warning.php:65
+msgid "Yes, take me there"
+msgstr "Да, продължавам"
+
+#: templates/general/login-profile-tab.php:1
+msgid "Please login"
+msgstr "Моля влезте"
+
+#: templates/general/login.php:17 templates/profile/no-access.php:50
+#: templates/widgets/me.tpl.php:212
+msgid "Login"
+msgstr "Вход"
+
+#: templates/general/login.php:25 templates/general/login.php:26
+#: templates/widgets/me.tpl.php:201 templates/widgets/me.tpl.php:202
+msgid "Remember Me"
+msgstr "Запомни ме"
+
+#: templates/general/login.php:29 templates/widgets/me.tpl.php:208
+msgid "Resend activation code"
+msgstr "Нов код за активиране"
+
+#: templates/general/notification-popover-item.php:48
+#: templates/general/notification-popover-item.php:51
+msgid "Mark as read"
+msgstr "Отбележи като прочетено"
+
+#: templates/general/recover-password-sent.php:3
+msgid "We have sent you an email with password recovery instructions. Follow the link in the email to finish the process of resetting your password."
+msgstr "Изпратихме ви имейл с инструкции за възстановяване на паролата. Моля, следвайте връзката в имейла, за да завършите процеса за възстановяване на паролата ви."
+
+#: templates/general/recover-password.php:14
+msgid "Please enter the email address for your account. A verification code will be sent to you. Once you have received the verification code, you will be able to choose a new password for your account."
+msgstr "Моля, въведете имейл адреса на вашия профил. Ще ви бъде изпратен код за смяна на паролата. След като го получите, ще можете да изберете нова парола за вашия профил."
+
+#: templates/general/recover-password.php:27
+msgid "Email Address:"
+msgstr "Имейл адрес:"
+
+#: templates/general/recover-password.php:31
+#: templates/register/register-resend.php:27
+msgid "Email address"
+msgstr "Имейл адрес"
+
+#: templates/general/recover-password.php:37
+#: templates/general/reset-password.php:53
+#: templates/register/register-activate.php:32
+#: templates/register/register-resend.php:32
+msgid "Submit"
+msgstr "Изпрати"
+
+#: templates/general/recover-password.php:42
+#: templates/general/reset-password.php:64
+#: templates/register/register-activate.php:38
+#: templates/register/register-complete.php:16
+#: templates/register/register-resend.php:38
+#: templates/register/register-resent.php:18
+#: templates/register/register-verified.php:12
+msgid "Back to Home"
+msgstr "Обратно към Начало"
+
+#: templates/general/register-panel.php:20
+msgid "Thank you"
+msgstr "Благодарим ви"
+
+#: templates/general/register-panel.php:21
+msgid "Your e-mail address was confirmed. You can now log in."
+msgstr "Вашият имейл адрес е потвърден и сега можете да влезете."
+
+#: templates/general/register-panel.php:23
+msgid "Get Connected!"
+msgstr "Присъединете се!"
+
+#: templates/general/register-panel.php:24
+msgid "Come and join our community. Expand your network and get to know new people!"
+msgstr "Присъединете се към нашата общност. Разширете мрежата си от контакти и се запознайте с нови хора!"
+
+#: templates/general/register-panel.php:30
+msgid "Join us now, it's free!"
+msgstr "Присъединете се към нас сега!"
+
+#: templates/general/reset-password-success.php:3
+msgid "Your password has been changed. You can sign in now."
+msgstr "Вашата парола е променена. Можете да се впишете."
+
+#: templates/general/reset-password.php:13
+msgid "Pick a New Password"
+msgstr "Изберете нова парола"
+
+#: templates/general/reset-password.php:32
+msgid "New Password:"
+msgstr "Нова парола:"
+
+#: templates/general/reset-password.php:36
+msgid "New Password"
+msgstr "Нова парола"
+
+#: templates/general/reset-password.php:41
+msgid "Repeat new password:"
+msgstr "Нова парола отново:"
+
+#: templates/general/reset-password.php:45
+msgid "Repeat new password"
+msgstr "Въведете новата парола отново"
+
+#: templates/general/safety-warning.php:4
+msgid "Close message"
+msgstr "Затвори съобщението"
+
+#: templates/general/wsi.php:4
+msgid "Invite your friends!"
+msgstr "Поканете вашите приятелите!"
+
+#: templates/location/interaction.php:10
+#: templates/location/photo_album_extra_fields.php:10
+msgid "Enter your location:"
+msgstr "Въведете вашето местоположение:"
+
+#: templates/location/interaction.php:16
+#: templates/location/photo_album_extra_fields.php:16
+#: templates/location/postbox.php:10 templates/location/selector.php:14
+msgid "Select"
+msgstr "Избери"
+
+#: templates/location/interaction.php:19
+#: templates/location/photo_album_extra_fields.php:19
+#: templates/location/postbox.php:11 templates/location/selector.php:15
+msgid "Remove"
+msgstr "Премахни"
+
+#: templates/location/photo_album_show_extra_fields.php:3
+msgid "Album location"
+msgstr "Местоположение на албум"
+
+#: templates/location/photo_album_show_extra_fields.php:17
+msgid "No location"
+msgstr "Няма местоположение"
+
+#: templates/location/photo_album_show_extra_fields.php:38
+msgid "Save location"
+msgstr "Запис на местоположението"
+
+#: templates/location/postbox.php:3 templates/location/selector.php:3
+msgid "Enter location name..."
+msgstr "Въведете име на местоположението..."
+
+#: templates/location/selector.php:10
+msgid "Select location"
+msgstr "Изберете местоположение"
+
+#: templates/members/members-tabs.php:9
+msgid "Blocked"
+msgstr "Блокирани"
+
+#: templates/members/search-popover-input.php:3
+msgid "Start typing to search"
+msgstr "Започнете да пишете, за да търсите..."
+
+#: templates/members/search-popover-input.php:7
+msgid "No results found."
+msgstr "Няма намерени резултати."
+
+#: templates/members/search.php:28
+msgid "Start typing to search..."
+msgstr "Започнете да пишете за да търсите..."
+
+#: templates/members/search.php:40
+msgid "Any"
+msgstr "Всички"
+
+#: templates/members/search.php:56
+msgid "Sort"
+msgstr "Подредба"
+
+#: templates/members/search.php:68
+msgid "All members"
+msgstr "Всички потребители"
+
+#: templates/members/search.php:69
+msgid "Members I follow"
+msgstr "Потребители, които следвам"
+
+#: templates/members/search.php:70
+msgid "Members I don't follow"
+msgstr "Потребители, които не следвам"
+
+#: templates/members/search.php:78
+msgid "Avatars"
+msgstr "Снимки на профили"
+
+#: templates/members/search.php:81
+msgid "Only users with avatars"
+msgstr "Само потребители със снимки"
+
+#: templates/profile/already-registered.php:6
+msgid "You are already registered and logged in"
+msgstr "Вие вече сте регистрирани и влезли"
+
+#: templates/profile/already-registered.php:8
+#, php-format
+msgid "Visit <a href=\"%s\">community</a> or <a href=\"%s\">your profile</a>"
+msgstr "Посетете <a href=\"%s\">Мрежата</a> или <a href=\"%s\">вашия профил</a>"
+
+#: templates/profile/dialog-avatar.php:5
+#: templates/profile/dialog-profile-avatar.php:6
+msgid "Change Avatar"
+msgstr "Промяна на снимката на профила"
+
+#: templates/profile/dialog-avatar.php:13
+#: templates/profile/dialog-profile-avatar.php:18
+#: templates/profile/dialog-profile-cover.php:18
+msgid "Upload Photo"
+msgstr "Качване на снимка"
+
+#: templates/profile/dialog-avatar.php:17
+#: templates/profile/dialog-profile-avatar.php:26
+msgid "Remove Photo"
+msgstr "Изтриване"
+
+#: templates/profile/dialog-avatar.php:22
+#: templates/profile/dialog-profile-avatar.php:32
+msgid "Use Gravatar"
+msgstr "Използване на Gravatar"
+
+#: templates/profile/dialog-avatar.php:28
+#: templates/profile/dialog-profile-avatar.php:38
+msgid "Uploaded Photo"
+msgstr "Качване на снимка"
+
+#: templates/profile/dialog-avatar.php:30
+#: templates/profile/dialog-profile-avatar.php:40
+msgid "Automatically Generated. (Maximum width: 160px)"
+msgstr "Генерира се автоматично. (Максимална широчина: 160 px)"
+
+#: templates/profile/dialog-avatar.php:34
+#: templates/profile/dialog-profile-avatar.php:44
+msgid "Crop Image"
+msgstr "Изрежи изображението"
+
+#: templates/profile/dialog-avatar.php:35
+msgid "Cancel Cropping"
+msgstr "Отмени изрязването"
+
+#: templates/profile/dialog-avatar.php:37
+#: templates/profile/dialog-profile-avatar.php:45
+msgid "Save Thumbnail"
+msgstr "Запиши изображението"
+
+#: templates/profile/dialog-avatar.php:43
+#: templates/profile/dialog-profile-avatar.php:50
+msgid "No avatar uploaded. Use the button above to select and upload one."
+msgstr "Няма качена снимка на профила. Използвайте бутона по-горе, за да изберете и качите снимка."
+
+#: templates/profile/dialog-avatar.php:48
+#: templates/profile/dialog-avatar.php:50
+#: templates/profile/dialog-profile-avatar.php:56
+msgid "Avatar Preview"
+msgstr "Снимка на профила"
+
+#: templates/profile/dialog-avatar.php:54
+#, php-format
+msgid "This is how <strong>%s</strong> Avatar will appear throughout the entire community."
+msgstr "Това е изглед на снимката на профила на <strong>%s</strong> във вида, в който ще я виждат всички потребители."
+
+#: templates/profile/dialog-avatar.php:56
+#: templates/profile/dialog-profile-avatar.php:62
+msgid "This is how your Avatar will appear throughout the entire community."
+msgstr "Това е изглед на вашата снимка на профила във вида, в който ще я виждат другите потребители."
+
+#: templates/profile/dialog-avatar.php:77
+#: templates/profile/dialog-profile-avatar.php:68
+msgid "Done"
+msgstr "Готово"
+
+#: templates/profile/dialog-ban.php:6
+msgid "Ban this user until"
+msgstr "Блокирай този потребител до"
+
+#: templates/profile/dialog-ban.php:11
+msgid "Please fill in the date"
+msgstr "Моля попълнете датата"
+
+#: templates/profile/dialog-ban.php:18
+msgid "Ban this user forever"
+msgstr "Блокирай този потребител завинаги"
+
+#: templates/profile/dialog-profile-cover.php:6
+msgid "Change Cover Photo"
+msgstr "Промяна на снимката на корицата"
+
+#: templates/profile/dialog-profile-cover.php:25
+msgid "Remove Cover Photo"
+msgstr "Премахване..."
+
+#: templates/profile/dialog-profile-deletion.php:5
+msgid "Profile deletion"
+msgstr "Изтриване на профил"
+
+#: templates/profile/focus.php:44
+msgid "Reposition"
+msgstr "Наместване"
+
+#: templates/profile/focus.php:48
+msgid "Modify"
+msgstr "Промяна"
+
+#: templates/profile/no-access.php:48
+msgid "This user has decided to keep their profile private."
+msgstr "Потребителят е решил да направи своя профил видим само за себе си."
+
+#: templates/profile/no-access.php:52 templates/widgets/me.tpl.php:206
+msgid "Register"
+msgstr "Регистрация"
+
+#: templates/profile/online.php:1
+#, php-format
+msgid "%s is currently online"
+msgstr "%s е онлайн"
+
+#: templates/profile/profile-about-account.php:51
+msgid "Deleting your account will disable your profile and remove your name and photo from most things you've shared. Some information may still be visible to others, such as your name in their friends list and messages you sent."
+msgstr "Деактивирайки достъпа си, ще забраните вашия профил. Вашето име и снимка ще се премахнат от повечето неща, които сте споделили в Мрежата. Някои информации все още могат да бъдат видими за другите, като вашето име в списъците с приятели и съобщенията, които сте изпратили."
+
+#: templates/profile/profile-about-notifications.php:27
+msgid "Shortcuts"
+msgstr "Бързи бутони"
+
+#: templates/profile/profile-about-notifications.php:28
+msgid "Quickly manage all your preferences at once"
+msgstr "Бързо управлявате предпочитанията на известия за"
+
+#: templates/profile/profile-about-notifications.php:32
+msgid "Disable all e-mail notifications"
+msgstr "Забрана на всички имейли"
+
+#: templates/profile/profile-about-notifications.php:35
+msgid "Enable all e-mail notifications"
+msgstr "Разрешаване на всички имейли"
+
+#: templates/profile/profile-about-notifications.php:38
+msgid "Disable all on-site notifications"
+msgstr "Забрана на всички известия"
+
+#: templates/profile/profile-about-notifications.php:41
+msgid "Enable all on-site notifications"
+msgstr "Разрешаване на всички известия"
+
+#: templates/profile/profile-about.php:123
+msgid "Edit "
+msgstr "Редактиране "
+
+#: templates/profile/profile-about.php:171
+msgid "Sorry, no data to show"
+msgstr "За съжаление, няма данни за показване"
+
+#: templates/profile/profile-menu.php:16
+msgid "More"
+msgstr "Още"
+
+#: templates/profile/profile.php:12
+msgid "Finished Editing Apps Layout"
+msgstr "Промяната на оформлението на приложенията е завършена"
+
+#: templates/register/register-activate.php:5
+msgid "Account Activation"
+msgstr "Активиране на профил"
+
+#: templates/register/register-activate.php:9
+msgid "Please enter your activation code below to enable your account."
+msgstr "Моля, въведете вашия код за активиране, за да активирате вашия профил."
+
+#: templates/register/register-activate.php:19
+msgid "Activation Code:"
+msgstr "Код за активиране:"
+
+#: templates/register/register-activate.php:27
+msgid "Activation code"
+msgstr "Код за активиране"
+
+#: templates/register/register-complete.php:5
+msgid "User Registered"
+msgstr "Потребителят е регистриран!"
+
+#: templates/register/register-complete.php:11
+msgid "Please check your email account and confirm your registration. Once that's done, Administrator will be notified that your account has been created and is awaiting approval. Until the site administrator approves your account, you will not be able to login. Once your account has been approved, you will receive a notification email."
+msgstr "Моля проверете вашия имейл и потвърдете регистрацията си. След като направите това, администраторите на сайта ще бъдат уведомени, че вашият профил е създаден и очаква одобрение. Докато администраторите на сайта не одобрят вашия профил, вие няма да можете да влезете. След като бъде е одобрен, ще получите известие на имейл."
+
+#: templates/register/register-complete.php:13
+msgid "Your account has been created. An activation link has been sent to the email address you provided, click on the link to logon to your account."
+msgstr "Вашият профил е създаден. Линк за активиране е изпратен на посочения имейл адрес. Щракнете върху линка в имейла, за да влезнете във вашия профил."
+
+#: templates/register/register-resend.php:5
+#: templates/register/register-resent.php:5
+msgid "Resend Activation Code"
+msgstr "Нов код за активиране"
+
+#: templates/register/register-resend.php:9
+msgid "Please enter your registered e-mail address here so that we can resend you the activation link."
+msgstr "Моля, въведете имейл адреса, с който сте се регистрирали, и ние отново ще ви изпратим линк за активиране."
+
+#: templates/register/register-resend.php:23
+msgid "Email Address"
+msgstr "Имейл адрес"
+
+#: templates/register/register-resent.php:9
+msgid "Your activation code has been sent to your email."
+msgstr "Кодът за активиране е изпратен на вашия имейл."
+
+#: templates/register/register-resent.php:14
+#, php-format
+msgid "Follow the link in the email you received, or you can enter the activation code on the <a href=\"%1$s\"><u>activation</u></a> page.</a>"
+msgstr "Следвайте линка в имейла, който сте получили, или въведете кода за активиране на страницата за <a href=\"%1$s\"> <u>активиране</u></a>."
+
+#: templates/register/register-verified.php:5
+msgid "Email Verified"
+msgstr "Потвърди имейла"
+
+#: templates/register/register-verified.php:9
+msgid "Your email has been verified. Until the site administrator approves your account, you will not be able to login. Once your account has been approved, you will receive a notification email."
+msgstr "Вашият имейл е проверен. Докато администратора на сайта не потвърди вашия профил, вие няма да можете да влезете. След като вашият профил бъде потвърден, ще получите известие по имейл."
+
+#: templates/register/register.php:10
+msgid "Register New User"
+msgstr "Регистриране на нов потребител"
+
+#: templates/register/register.php:16
+msgid "Error: "
+msgstr "Грешка: "
+
+#: templates/widgets/admin_form.php:16
+msgid "General settings"
+msgstr "Основни настройки"
+
+#: templates/widgets/admin_form.php:25
+msgid "Title:"
+msgstr "Заглавие:"
+
+#: templates/widgets/admin_form.php:41
+msgid "Limit:"
+msgstr "Лимит:"
+
+#: templates/widgets/admin_form.php:73
+msgid "Hide when empty"
+msgstr "Скрий, когато е празно"
+
+#: templates/widgets/admin_form.php:89
+msgid "Show total members count"
+msgstr "Покажи броя на потребителите"
+
+#: templates/widgets/admin_form.php:99
+msgid "PeepSo Integrated Widget"
+msgstr "PeepSo Джаджа"
+
+#: templates/widgets/admin_form.php:102
+msgid "Options below only  take effect if the widget is published in \"PeepSo\" widget area."
+msgstr "Опциите се отнасят само, ако джаджата е публикувана в \"PeepSo\" джаджи."
+
+#: templates/widgets/admin_form.php:115
+msgid "Position"
+msgstr "Позиция"
+
+#: templates/widgets/me.tpl.php:117
+msgid "My Profile"
+msgstr "Моят профил"
+
+#. Plugin Name of the plugin/theme
+msgid "PeepSo Core"
+msgstr "PeepSo Core"
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://peepso.com"
+msgstr "https://peepso.com"
+
+#. Description of the plugin/theme
+msgid "The Next Generation Social Networking"
+msgstr "Социална мрежа от ново поколение"
+

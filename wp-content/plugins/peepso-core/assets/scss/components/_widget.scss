@@ -1,0 +1,106 @@
+//
+//  MODULE COMPONENT
+//
+
+
+
+//
+//  A default widget class, wrapping title,
+//  content and footer
+//
+.ps-widget {
+  background-color: $scss-widget-bg;
+
+  // ROUNDED CORNERS
+  @if $scss-rounded == true {
+    border-radius: 6px;
+    overflow: hidden;
+  }
+}
+
+
+//
+//  A default widget wrapper
+//
+.ps-widget__wrapper {
+  margin-bottom: $padding-base;
+  border: $scss-widget-border;
+
+  .ps-tab-bar {
+    margin-bottom: 0;
+  }
+
+  &:empty {
+    display: none;
+  }
+}
+
+
+.ps-widget__header {
+  padding: $padd $padd--med;
+  font-size: 14px;
+  font-weight: normal;
+  color: $scss-widget-header-color;
+  background-color: $scss-widget-header-bg;
+
+  > a {
+    color: $scss-widget-header-color;
+
+    &:hover,
+    &:focus {
+      color: $scss-widget-header-color;
+    }
+  }
+
+  h2 {
+    padding: 0 !important;
+    margin: 0 !important;
+    font: inherit !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+    color: inherit !important;
+    border: none !important;
+  }
+}
+
+
+.ps-widget__body {
+  padding: $padd--med;
+}
+
+
+//
+//  Widget footer, mostly wrapping links
+//  above the content
+//
+.ps-widget__footer {
+  padding: $padd $padd--med;
+  font-size: $font-size-sm;
+  border-top: $scss-widget-border;
+}
+
+
+//
+//  A modifier used for external modules which
+//  are rendered out of the PeepSo wrapper
+//
+.ps-widget--external {
+  box-sizing: border-box;
+  font-size: $font-size;
+  line-height: $font-size-base;
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+}
+
+
+//
+//  A wrapper modifier for external widgets
+//
+.ps-widget__wrapper--external {}
+
+
+.ps-widget__footer--external {
+  margin-top: $padd--med;
+}

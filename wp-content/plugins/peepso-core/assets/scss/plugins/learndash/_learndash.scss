@@ -1,0 +1,143 @@
+//
+//  INSTRUCTOR WIDGET
+//
+.ps-ld__instructor {
+  padding: 10px;
+  border: 2px solid rgba(0,0,0, .05);
+
+  // ROUNDED CORNERS
+  @if $scss-rounded == true {
+    border-radius: 6px;
+  }
+
+  .ps-avatar {
+    @if $scss-direction == rtl {
+      margin-left: 10px;
+    } @else {
+      margin-right: 10px;
+    }
+
+    vertical-align: middle;
+
+    > a {
+      display: block;
+      width: 64px;
+    }
+  }
+
+  .ps-img-vipicons {
+    max-width: 14px !important;
+    height: auto !important;
+    font-size: 16px;
+    vertical-align: middle !important;
+  }
+}
+
+
+.ps-ld__instructor-header {
+  display: flex;
+  align-items: center;
+}
+
+
+.ps-ld__instructor-name {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+
+.ps-ld__instructor-desc {
+  margin-top: 5px;
+  padding-top: 10px;
+  line-height: 1.4;
+  text-align: justify;
+  border-top: 2px solid rgba(0,0,0, .025);
+}
+
+
+.ps-ld__instructor-chat {
+  display: block;
+  width:100%;
+  clear: both;
+  margin-top: 10px !important;
+}
+
+
+//
+//  COURSES WIDGET
+//
+.ps-ld__group {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+.ps-ld__group-inner {
+  display: flex;
+  align-items: center;
+}
+
+
+.ps-ld__group-avatar {
+  display: block;
+
+  > img {
+    width: 64px;
+  }
+}
+
+
+.ps-ld__group-thumbnail {
+  display: block;
+  width: 64px;
+  height: 64px;
+  background-color: rgba(0,0,0, .02);
+
+  // ROUNDED CORNERS
+  @if $scss-rounded == true {
+    border-radius: 6px;
+  }
+
+  > img {
+    width: 64px;
+    height: 64px;
+    max-width: 64px;
+    vertical-align: middle;
+    
+    // ROUNDED CORNERS
+    @if $scss-rounded == true {
+      border-radius: 6px;
+    }
+  }
+}
+
+
+.ps-ld__group-name {
+  @if $scss-direction == rtl {
+    padding-right: 10px;
+  } @else {
+    padding-left: 10px;
+  }
+
+  line-height: 1.2;
+}
+
+
+.ps-ld__group-privacy {
+  margin-top: 5px;
+  font-size: $font-size-sm;
+  color: $color-text-light;
+
+  i {
+    &:before {
+      @if $scss-direction == rtl {
+        margin-right: 0;
+      } @else {
+        margin-left: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,4983 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: peepso\n"
+"POT-Creation-Date: 2018-06-21 09:09+0700\n"
+"PO-Revision-Date: 2018-06-25 10:52\n"
+"Last-Translator: peepso <company@peep.so>\n"
+"Language-Team: Hungarian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: crowdin.com\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: peepso.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Crowdin-Project: peepso\n"
+"X-Crowdin-Language: hu\n"
+"X-Crowdin-File: peepso-core.pot\n"
+"Language: hu_HU\n"
+
+#: activity/activitystream.php:103
+msgctxt "PeepSo Posts"
+msgid "PeepSo Posts"
+msgstr "PeepSo Posztok"
+
+#: activity/activitystream.php:104
+msgctxt "PeepSo Post"
+msgid "PeepSo Post"
+msgstr "PeepSo Poszt"
+
+#: activity/activitystream.php:105 activity/activitystream.php:126
+#: activity/activitystream.php:127
+msgid "PeepSo Posts"
+msgstr "PeepSo Posztok"
+
+#: activity/activitystream.php:106
+msgid "PeepSo Posts:"
+msgstr "PeepSo Posztok:"
+
+#: activity/activitystream.php:107
+msgid "All PeepSo Posts"
+msgstr "Összes PeepSo Poszt"
+
+#: activity/activitystream.php:108
+msgid "View PeepSo Post"
+msgstr "PeepSo poszt megtekintése"
+
+#: activity/activitystream.php:109 activity/activitystream.php:110
+msgid "Add New PeepSo Post"
+msgstr "Új PeepSo poszt hozzáadása"
+
+#: activity/activitystream.php:111
+msgid "Edit PeepSo Post"
+msgstr "PeepSo poszt szerkesztése"
+
+#: activity/activitystream.php:112
+msgid "Update PeepSo Post"
+msgstr "PeepSo poszt frissítése"
+
+#: activity/activitystream.php:113
+msgid "Search PeepSo Posts"
+msgstr "PeepSo posztok keresése"
+
+#: activity/activitystream.php:114 activity/activitystream.php:161
+msgid "Not found"
+msgstr "Nem található"
+
+#: activity/activitystream.php:115 activity/activitystream.php:162
+msgid "Not found in Trash"
+msgstr "A Kukában nem található"
+
+#: activity/activitystream.php:116
+msgid "posted"
+msgstr "megosztva"
+
+#: activity/activitystream.php:117 activity/classes/activity.php:265
+#: activity/classes/activity.php:398 activity/classes/activity.php:3753
+#: activity/classes/activitylisttable.php:252 classes/profile.php:806
+msgid "post"
+msgid_plural "posts"
+msgstr[0] "poszt"
+msgstr[1] "poszt"
+
+#: activity/activitystream.php:150 activity/activitystream.php:152
+#: activity/activitystream.php:173 activity/activitystream.php:174
+msgid "PeepSo Comments"
+msgstr "PeepSo hozzászólások"
+
+#: activity/activitystream.php:151
+msgid "PeepSo Comment"
+msgstr "PeepSo hozzászólás"
+
+#: activity/activitystream.php:153
+msgid "PeepSo Comments:"
+msgstr "PeepSo hozzászólások:"
+
+#: activity/activitystream.php:154
+msgid "All PeepSo Comments"
+msgstr "Minden PeepSo hozzászólás"
+
+#: activity/activitystream.php:155
+msgid "View PeepSo Comment"
+msgstr "PeepSo hozzászólás megtekintése"
+
+#: activity/activitystream.php:156 activity/activitystream.php:157
+msgid "Add New PeepSo Comment"
+msgstr "Új PeepSo hozzászólás"
+
+#: activity/activitystream.php:158
+msgid "Edit PeepSo Comment"
+msgstr "PeepSo Hozzászólás Szerkesztése"
+
+#: activity/activitystream.php:159
+msgid "Update PeepSo Comment"
+msgstr "PeepSo hozzászólás frissítése"
+
+#: activity/activitystream.php:160
+msgid "Search PeepSo Comments"
+msgstr "PeepSo hozzászólások keresése"
+
+#: activity/activitystream.php:163 activity/classes/activity.php:402
+#: activity/classes/activity.php:430
+msgid "commented"
+msgstr "kommentálva"
+
+#: activity/activitystream.php:164 activity/classes/activity.php:1122
+msgid "comment"
+msgstr "megjegyzés"
+
+#: activity/activitystream.php:203 activity/classes/activityadmin.php:33
+msgid "Activities"
+msgstr "Tevékenységek"
+
+#: activity/classes/activity.php:244
+msgid "Someone Posted on your profile"
+msgstr "Valaki posztolt a profilodban"
+
+#: activity/classes/activity.php:246
+msgid "wrote on your profile"
+msgstr "írt a profilodban"
+
+#: activity/classes/activity.php:268
+#, php-format
+msgid "Someone shared your %s"
+msgstr "Valaki megosztotta a te % s"
+
+#: activity/classes/activity.php:270
+msgid "shared"
+msgstr "megosztva"
+
+#: activity/classes/activity.php:401
+#, php-format
+msgid "Someone Commented on your %s"
+msgstr "Valaki kommentálta a te %s"
+
+#: activity/classes/activity.php:409
+msgid "Someone Replied to your Comment!"
+msgstr "Valaki válaszolt a megjegyzésedre!"
+
+#: activity/classes/activity.php:410 classes/profile.php:835
+msgid "replied to"
+msgstr "válaszolt"
+
+#: activity/classes/activity.php:455 activity/classes/activity.php:2113
+msgid "Comment is empty"
+msgstr "Megjegyzés üres"
+
+#: activity/classes/activity.php:525 activity/classes/activity.php:1546
+#: activity/classes/activity.php:1593 activity/classes/activity.php:1687
+msgid "You do not have permission to edit this post."
+msgstr "Nincs jogosultságod szerkeszteni ezt a posztot."
+
+#: activity/classes/activity.php:1063 activity/classes/activity.php:1106
+#, php-format
+msgid "Show %d more %s"
+msgstr "Mutass %d többet %s"
+
+#: activity/classes/activity.php:1110
+#, php-format
+msgid "All %d %s displayed."
+msgstr "Az összes %d %s megjelenik."
+
+#: activity/classes/activity.php:1123 classes/admin.php:1591
+msgid "comments"
+msgstr "kommentek"
+
+#: activity/classes/activity.php:1125
+msgid "reply"
+msgstr "válasz"
+
+#: activity/classes/activity.php:1126
+msgid "replies"
+msgstr "válaszok"
+
+#: activity/classes/activity.php:1405
+msgid "Invalid User id"
+msgstr "Érvénytelen felhasználó azonosító"
+
+#: activity/classes/activity.php:1504
+#, php-format
+msgid "Someone liked your %s"
+msgstr "Valaki lájkolta a te %s"
+
+#: activity/classes/activity.php:1507
+#, php-format
+msgid "liked your %s"
+msgstr "lájkolta a te %s"
+
+#: activity/classes/activity.php:1512
+msgid "Unable to process"
+msgstr "Nem lehet feldolgozni"
+
+#: activity/classes/activity.php:1563 activity/classes/activity.php:1613
+msgid "Post not found."
+msgstr "Poszt nem található."
+
+#: activity/classes/activity.php:1646 activity/classes/activity.php:1682
+msgid "Could not update the description."
+msgstr "Nem sikerült frissíteni a leírást."
+
+#: activity/classes/activity.php:1710
+msgid "Post is empty"
+msgstr "Üres poszt"
+
+#: activity/classes/activity.php:1738
+msgid "updated a post"
+msgstr "a poszt frissítve"
+
+#: activity/classes/activity.php:1827 activity/classes/activity.php:1957
+#: activity/classes/activity.php:2004 activity/classes/activity.php:2060
+#: activity/classes/activity.php:2098 classes/admin.php:687
+msgid "You do not have permission to do that."
+msgstr "Nincs jogosultságod erre."
+
+#: activity/classes/activity.php:1836
+msgid "You cannot ban yourself"
+msgstr "Magadat nem tilthatod le"
+
+#: activity/classes/activity.php:1844
+msgid "Invalid user"
+msgstr "Érvénytelen felhasználó"
+
+#: activity/classes/activity.php:1848 peepso.php:1852
+msgid "Notice"
+msgstr "Értesítés"
+
+#: activity/classes/activity.php:1852
+#, php-format
+msgid "%s has been unbanned"
+msgstr "%s kitiltás már visszavonva"
+
+#: activity/classes/activity.php:1884
+#, php-format
+msgid "%s has been banned until %s"
+msgstr "%s már kitiltva, %s-ig"
+
+#: activity/classes/activity.php:1893
+msgid "Missing ban period date"
+msgstr "Hiányzó tilalmi időszak dátum"
+
+#: activity/classes/activity.php:1899
+#, php-format
+msgid "%s has been banned"
+msgstr "%s kitiltva"
+
+#: activity/classes/activity.php:2046 classes/adminreport.php:108
+#: classes/adminreport.php:136 classes/adminreport.php:165
+#: classes/adminrequestdataajax.php:85 classes/adminrequestdataajax.php:115
+msgid "Could not verify nonce."
+msgstr "Nem sikerült ellenőrizni."
+
+#: activity/classes/activity.php:2095
+msgid "This item has been reported"
+msgstr "Ez az elem már be lett jelentve"
+
+#: activity/classes/activity.php:2122
+msgid "Activity not found"
+msgstr "Tevékenység nem található"
+
+#: activity/classes/activity.php:2173
+msgid "The comment limit for this post has been reached."
+msgstr "Ennél a posztnál a megjegyzések száma elérte a meghatározott korlátot."
+
+#: activity/classes/activity.php:2175
+msgid "Error in writing Activity Stream comment."
+msgstr "Hiba van a beírt megjegyzésben."
+
+#: activity/classes/activity.php:2179
+msgid "You don't have permissions for that "
+msgstr "Nincs jogosultságod erre "
+
+#: activity/classes/activity.php:2209 activity/classes/activity.php:2744
+msgid "Report"
+msgstr "Bejelentés"
+
+#: activity/classes/activity.php:2233
+#: activity/classes/activityshortcode.php:122
+msgid "Reply"
+msgstr "Válasz"
+
+#: activity/classes/activity.php:2256 templates/profile/profile-about.php:124
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: activity/classes/activity.php:2279 activity/classes/activity.php:2757
+msgid "Remove Link Preview"
+msgstr "Hivatkozás Előnézet Eltávolítása"
+
+#: activity/classes/activity.php:2311 activity/classes/activity.php:2809
+#: activity/classes/activity.php:3934
+msgid "Please register or log in to perform this action"
+msgstr "Kérjük regisztrálj, vagy jelentkezz be ehhez a művelethez"
+
+#: activity/classes/activity.php:2483 classes/configsections.php:564
+msgid "Read more"
+msgstr "Bővebben"
+
+#: activity/classes/activity.php:2545
+msgid "and"
+msgstr "és"
+
+#: activity/classes/activity.php:2737
+msgid "RePost"
+msgstr "RePost"
+
+#: activity/classes/activity.php:2837
+msgid "Edit Post"
+msgstr "Poszt szerkesztése"
+
+#: activity/classes/activity.php:2846
+msgid "Delete Post"
+msgstr "Poszt törlése"
+
+#: activity/classes/activity.php:2854
+msgid "Pin to top"
+msgstr "Mindig legfelül legyen"
+
+#: activity/classes/activity.php:2861
+msgid "Unpin"
+msgstr "Rögzítés feloldása"
+
+#: activity/classes/activity.php:2879
+#, php-format
+msgid "Pinned by %s"
+msgstr "Rögzítette %s"
+
+#: activity/classes/activity.php:2880
+#, php-format
+msgid "Pinned %s at %s"
+msgstr "Rögzítve %s %s"
+
+#: activity/classes/activity.php:3416
+msgid "Spam"
+msgstr "Spam"
+
+#: activity/classes/activity.php:3422
+msgid "- select reason -"
+msgstr "- válassz egy okot - "
+
+#: activity/classes/activity.php:3428 classes/profile.php:1894
+#: templates/admin/deactivation_feedback_modal.php:24
+msgid "Other"
+msgstr "Egyéb"
+
+#: activity/classes/activity.php:3432
+msgid "Report description..."
+msgstr "Jelentés leírás..."
+
+#: activity/classes/activity.php:3473 activity/classes/activity.php:3586
+#: peepso.php:1861 peepso.php:1862
+msgid " person likes this"
+msgid_plural " people like this."
+msgstr[0] " személy kedveli ezt"
+msgstr[1] " személy kedveli ezt."
+
+#: activity/classes/activity.php:3514
+msgid " likes this"
+msgid_plural " like this"
+msgstr[0] " lájkolom"
+msgstr[1] " lájkolom"
+
+#: activity/classes/activity.php:3536
+msgid "Invalid Action"
+msgstr "Érvénytelen művelet"
+
+#: activity/classes/activity.php:3543
+msgid "Invalid Post ID"
+msgstr "Érvénytelen poszt ID"
+
+#: activity/classes/activity.php:3550
+msgid "You do not have permission to do that"
+msgstr "Nincs jogosultságod erre"
+
+#: activity/classes/activity.php:3583 classes/profile.php:1061
+#: classes/profile.php:1066
+msgid "Like"
+msgstr "Tetszik"
+
+#: activity/classes/activity.php:3733
+msgid "Changes saved."
+msgstr "Változás elmentve."
+
+#: activity/classes/activity.php:3736
+msgid "You do not have permission to change post privacy settings."
+msgstr "Nincs jogosultságod a megosztások adatvédelmi beállításainak módosítására."
+
+#: activity/classes/activity.php:3752
+#, php-format
+msgid "shared a %s"
+msgstr "megosztva a %s"
+
+#: activity/classes/activityadmin.php:15
+msgid "Search User"
+msgstr "Felhasználó keresése"
+
+#: activity/classes/activitylisttable.php:74
+msgid "Details"
+msgstr "Részletek"
+
+#: activity/classes/activitylisttable.php:75
+msgid "ID (link)"
+msgstr "Azonosító (link)"
+
+#: activity/classes/activitylisttable.php:76
+msgid "Created"
+msgstr "Létrehozva"
+
+#: activity/classes/activitylisttable.php:77 classes/gdprlisttable.php:50
+#: classes/general.php:305 classes/mailqueuelisttable.php:53
+msgid "Status"
+msgstr "Üzenet"
+
+#: activity/classes/activitylisttable.php:121
+msgid "Published"
+msgstr "Közzétett"
+
+#: activity/classes/activitylisttable.php:125
+msgid "Archived"
+msgstr "Arhivált"
+
+#: activity/classes/activitylisttable.php:129
+msgid "Trash"
+msgstr "Kuka"
+
+#: activity/classes/activitylisttable.php:133
+msgid "Private"
+msgstr "Privát"
+
+#: activity/classes/activitylisttable.php:210
+msgid "Archive"
+msgstr "Archív"
+
+#: activity/classes/activitylisttable.php:211
+msgid "Publish"
+msgstr "Közzététel"
+
+#: activity/classes/activitylisttable.php:212 classes/admin.php:322
+#: classes/modalcomments.php:143 classes/profile.php:1559 peepso.php:1675
+#: templates/activity/dialogs.php:58
+msgid "Delete"
+msgstr "Törlés"
+
+#: activity/classes/activitylisttable.php:235
+msgid "Updated"
+msgstr "Frissített"
+
+#: activity/classes/activitylisttable.php:244
+msgid "Deleted"
+msgstr "Törölve"
+
+#: activity/classes/activitylisttable.php:250
+#: classes/adminreportlisttable.php:276 classes/gdprlisttable.php:275
+#: classes/mailqueuelisttable.php:275
+#, php-format
+msgid "%1$d %2$s %3$s"
+msgstr "%1$d %2$s %3$s"
+
+#: activity/classes/activityshortcode.php:123
+msgid "View Replies"
+msgstr "Válaszok megtekintése"
+
+#: admin/config/options.php:41
+msgid "Save Settings"
+msgstr "Beállítások mentése"
+
+#: admin/config/options.php:47
+msgid "Reset"
+msgstr "Visszaállítás"
+
+#: admin/config/options.php:57
+msgid "YES---------NO"
+msgstr "IGEN---NEM"
+
+#: admin/config/welcome-screen.php:1
+msgid "Getting Started"
+msgstr "Kezdés"
+
+#: classes/admin.php:102
+msgid "You have Registered or Verified users that need to be approved. To approve, change the user's role to PeepSo Member or other appropriate role."
+msgstr "Vannak regisztrált vagy hitelesített felhasználók, akiket jóvá kell hagyni. Jóváhagyhatod, módosíthatod a PeepSo vagy az egyéb megfelelő felhasználói szerepkört."
+
+#: classes/admin.php:103
+#, php-format
+msgid " %1$sClick here%2$s for more information on assigning roles."
+msgstr " %1$skattints ide%2$s a szerepkörök kiosztásával kapcsolatos további tudnivalókért."
+
+#: classes/admin.php:110
+msgid "PeepSo User Roles:"
+msgstr "PeepSo Felhasználói Szabályok:"
+
+#: classes/admin.php:111
+#, php-format
+msgid "You can change Roles for PeepSo users by selecting the checkboxes for individual users and then selecting the desired Role from the %s dropdown."
+msgstr "Meg lehtet változtatni a PeepSo felhasználók szerepköreit az egyes felhasználók neve előtti négyzet kijelölésével, és a %s legördülő menüből kiválaszható a kívánt szerep."
+
+#: classes/admin.php:112
+msgid "- Select Role -"
+msgstr "-Szerep kiválasztása-"
+
+#: classes/admin.php:113
+#, php-format
+msgid "Once the new Role is selected, click on the %s button and those users will be updated."
+msgstr "Az új szerepkör kiválasztása után kattints a %s gombra, és a felhasználók beállításai fissítve lesznek."
+
+#: classes/admin.php:114 classes/admin.php:743
+msgid "Change Role"
+msgstr "Jogosultság megváltoztatása"
+
+#: classes/admin.php:115
+msgid "Meaning of user roles:"
+msgstr "Felhasználói szerepkörök jelentése:"
+
+#. Plugin Name of the plugin/theme
+#. Author of the plugin/theme
+#: classes/admin.php:146
+msgid "PeepSo"
+msgstr "PeepSo"
+
+#: classes/admin.php:191 classes/admin.php:192 classes/admin.php:928
+msgid "Reported Items"
+msgstr "Bejelentett elemek"
+
+#: classes/admin.php:218
+msgid "Dashboard"
+msgstr "Vezérlőpult"
+
+#: classes/admin.php:317 peepso.php:1670 templates/activity/dialogs.php:63
+#: templates/profile/dialog-profile-deletion.php:30
+msgid "Confirm"
+msgstr "Megerősítés"
+
+#: classes/admin.php:318 peepso.php:1671 templates/activity/dialogs.php:52
+#: templates/activity/dialogs.php:73
+msgid "Confirm Delete"
+msgstr "Törlés megerősítése"
+
+#: classes/admin.php:319 peepso.php:1672 templates/activity/dialogs.php:54
+msgid "Are you sure you want to delete this?"
+msgstr "Biztos, hogy törölni akarod ezt?"
+
+#: classes/admin.php:320 peepso.php:1673
+msgid "Yes"
+msgstr "Igen"
+
+#: classes/admin.php:321 classes/configsectionadvanced.php:207 peepso.php:1674
+msgid "No"
+msgstr "Nem "
+
+#: classes/admin.php:323 peepso.php:1676 peepso.php:1702
+#: templates/activity/activity-stream-filters.php:34
+#: templates/activity/activity-stream-filters.php:75
+#: templates/activity/activity-stream-filters.php:122
+#: templates/activity/comment-edit.php:8
+#: templates/activity/description-edit.php:16
+#: templates/activity/dialog-repost.php:32 templates/activity/dialogs.php:16
+#: templates/activity/dialogs.php:34 templates/activity/dialogs.php:57
+#: templates/activity/dialogs.php:82 templates/activity/post-edit.php:19
+#: templates/admin/profiles_field.php:90
+#: templates/admin/profiles_field_config_field_text.php:15
+#: templates/admin/profiles_no_plugin.php:8
+#: templates/general/postbox-legacy.php:27 templates/general/postbox.php:29
+#: templates/location/photo_album_show_extra_fields.php:35
+#: templates/profile/dialog-profile-delete-account-data-archive.php:25
+#: templates/profile/dialog-profile-deletion.php:25
+#: templates/profile/dialog-profile-download-account-data.php:25
+#: templates/profile/dialog-profile-request-account-data.php:26
+#: templates/profile/focus.php:55 templates/profile/profile-about.php:153
+msgid "Cancel"
+msgstr "Mégse"
+
+#: classes/admin.php:324 peepso.php:1677 templates/activity/dialogs.php:68
+msgid "Okay"
+msgstr "Oké"
+
+#: classes/admin.php:341 peepso.php:1853
+msgid "View All"
+msgstr "Összes megtekintése"
+
+#: classes/admin.php:342 peepso.php:1854
+msgid "Mark All as Read"
+msgstr "Összes megjelölése olvasottként"
+
+#: classes/admin.php:343 peepso.php:1855
+msgid "Are you sure you want to mark all notifications as read?"
+msgstr "Biztosan meg akarsz jelölni olvasottként minden értesítést?"
+
+#: classes/admin.php:344 peepso.php:1856
+msgid "Show unread only"
+msgstr "Csak olvasatlanul jelenjen meg"
+
+#: classes/admin.php:345 peepso.php:1857
+msgid "Show all"
+msgstr "Összes megjelenítése"
+
+#: classes/admin.php:389 classes/template.php:131 peepso.php:1769
+msgid "just now"
+msgstr "éppen most"
+
+#: classes/admin.php:390 classes/admin.php:391 classes/admin.php:392
+#: classes/admin.php:393 classes/admin.php:394 classes/admin.php:395
+#: classes/admin.php:396 classes/admin.php:397 classes/admin.php:398
+#: classes/admin.php:399 classes/admin.php:400 classes/admin.php:401
+#: classes/template.php:133 peepso.php:1770 peepso.php:1771 peepso.php:1772
+#: peepso.php:1773 peepso.php:1774 peepso.php:1775 peepso.php:1776
+#: peepso.php:1777 peepso.php:1778 peepso.php:1779 peepso.php:1780
+#: peepso.php:1781
+#, php-format
+msgid "%s ago"
+msgstr "%s elteltével"
+
+#: classes/admin.php:390 classes/admin.php:391 lib/helpers.php:19
+#: peepso.php:1770 peepso.php:1771
+#, php-format
+msgid "%s min"
+msgid_plural "%s mins"
+msgstr[0] "%s min"
+msgstr[1] "%s perc"
+
+#: classes/admin.php:392 classes/admin.php:393 lib/helpers.php:24
+#: peepso.php:1772 peepso.php:1773
+#, php-format
+msgid "%s hour"
+msgid_plural "%s hours"
+msgstr[0] "%s óra"
+msgstr[1] "%s óra"
+
+#: classes/admin.php:394 classes/admin.php:395 lib/helpers.php:29
+#: peepso.php:1774 peepso.php:1775
+#, php-format
+msgid "%s day"
+msgid_plural "%s days"
+msgstr[0] "%s nap"
+msgstr[1] "%s nap"
+
+#: classes/admin.php:396 classes/admin.php:397 lib/helpers.php:34
+#: peepso.php:1776 peepso.php:1777
+#, php-format
+msgid "%s week"
+msgid_plural "%s weeks"
+msgstr[0] "%s hét"
+msgstr[1] "%s hét"
+
+#: classes/admin.php:398 classes/admin.php:399 lib/helpers.php:39
+#: peepso.php:1778 peepso.php:1779
+#, php-format
+msgid "%s month"
+msgid_plural "%s months"
+msgstr[0] "%s hónap"
+msgstr[1] "%s hónap"
+
+#: classes/admin.php:400 classes/admin.php:401 lib/helpers.php:44
+#: peepso.php:1780 peepso.php:1781
+#, php-format
+msgid "%s year"
+msgid_plural "%s years"
+msgstr[0] "%s év"
+msgstr[1] "%s év"
+
+#: classes/admin.php:423 classes/admin.php:1245 classes/general.php:53
+#: install/activate.php:508 peepso.php:2905
+#: templates/members/members-blocked.php:9 templates/members/members-tabs.php:6
+#: templates/members/search.php:7
+msgid "Members"
+msgstr "Felhasználók"
+
+#: classes/admin.php:429 classes/configsectionadvanced.php:118
+msgid "Profiles"
+msgstr "Profilok"
+
+#: classes/admin.php:436 classes/adminmailqueue.php:39
+msgid "Mail Queue"
+msgstr "Mail Queue"
+
+#: classes/admin.php:443
+msgid "Request Data (BETA)"
+msgstr "Adatok lekérése (BETA)"
+
+#: classes/admin.php:450 classes/admin.php:1944
+msgid "Addons"
+msgstr "Bővítmények"
+
+#: classes/admin.php:453
+msgid "NEW!"
+msgstr "Új!"
+
+#: classes/admin.php:465 classes/config.php:25
+msgid "Configuration"
+msgstr "Beállítás"
+
+#: classes/admin.php:557
+msgid "PeepSo Role"
+msgstr "PeepSo szerepkör"
+
+#: classes/admin.php:662
+msgid " approved"
+msgstr " jóváhagyott"
+
+#: classes/admin.php:667
+msgid " banned"
+msgstr " kitiltva"
+
+#: classes/admin.php:672 classes/admin.php:1766
+msgid "Invalid action"
+msgstr "Érvénytelen művelet"
+
+#: classes/admin.php:691
+msgid "Form is invalid."
+msgstr "Érvénytelen űrlap."
+
+#: classes/admin.php:716
+msgid "Please select a PeepSo Role before clicking on \"Change Role\"."
+msgstr "Kérjük, válasszon egy PeepSo szerepkört, mielőtt rákattint a \"Szerepkör megváltoztatására\"."
+
+#: classes/admin.php:733
+msgid "Set PeepSo Role:"
+msgstr "PeepSo szerepek beállítása:"
+
+#: classes/admin.php:735
+msgid " - Select Role -"
+msgstr " -Szerep kiválasztása -"
+
+#: classes/admin.php:762
+msgid "Full member, can write posts and participate"
+msgstr "Teljes jogú tag, közreműködő és hozzászólásokat írhat"
+
+#: classes/admin.php:764
+msgid "PeepSo Administrator, can Moderate, edit users, etc."
+msgstr "PeepSo Adminisztrátor, moderálhat, szerkeszthet, stb."
+
+#: classes/admin.php:765
+msgid "Banned, cannot login or participate"
+msgstr "Kitiltva, nem tud bejelentkezni vagy közreműködni"
+
+#: classes/admin.php:766
+msgid "Registered, awaiting email verification"
+msgstr "Regisztrált, email megerősítésre vár"
+
+#: classes/admin.php:767
+msgid "Verified email, awaiting Adminstrator approval"
+msgstr "Ellenőrzött e-mail, a rendszergazda jóváhagyására vár"
+
+#: classes/admin.php:778
+msgid "Community Member"
+msgstr "Közösségi tag"
+
+#: classes/admin.php:779
+msgid "Community Moderator"
+msgstr "Közösségi moderátor"
+
+#: classes/admin.php:780
+msgid "Community Administrator"
+msgstr "Közösségi Adminisztrátor"
+
+#: classes/admin.php:781
+msgid "Banned"
+msgstr "Kitiltva"
+
+#: classes/admin.php:782
+msgid "Pending user email verification"
+msgstr "Függőben lévő felhasználói email ellenőrzés"
+
+#: classes/admin.php:783
+msgid "Pending admin approval"
+msgstr "Rendszergazda jóváhagyására vár"
+
+#: classes/admin.php:818
+msgid "Profile Link"
+msgstr "Profil Link"
+
+#: classes/admin.php:898
+msgid "System Requirements"
+msgstr "Rendszerkövetelmények"
+
+#: classes/admin.php:907
+msgid "Get Free eBook Now! ($9.99 Value)"
+msgstr "Ingyenes eBook beszerzése most! (9,99 $)"
+
+#: classes/admin.php:915
+msgid "User Engagement"
+msgstr "Felhasználói beleegyezés"
+
+#: classes/admin.php:922
+msgid "Users"
+msgstr "Felhasználók"
+
+#: classes/admin.php:934
+msgid "Most Recent Content"
+msgstr "Legfrissebb tartalom"
+
+#: classes/admin.php:940
+msgid "User Demographics"
+msgstr "Felhasználói Statisztika"
+
+#: classes/admin.php:986
+#, php-format
+msgid "The minimum required PHP version is %s - your server has %s"
+msgstr "A minimálisan szükséges PHP verzió: %s - a szerverednek van: %s"
+
+#: classes/admin.php:990
+#, php-format
+msgid "The recommended PHP version is %s or higher - your server has %s. Please visit %s for more information."
+msgstr "A javasolt PHP verzió %s vagy magasabb - a szervered %s. Kérjük látogass el ide %s további információért."
+
+#: classes/admin.php:995
+msgid "The PHP EXIF extension is required"
+msgstr "PHP EXIF kiterjesztés szükséges"
+
+#: classes/admin.php:1000
+msgid "The PHP Imagick extension is recommended"
+msgstr "A PHP Imagick kiterjesztés ajánlott"
+
+#: classes/admin.php:1005
+#, php-format
+msgid "The required memory limit is %s - your server has %s"
+msgstr "A szükséges memória korlát : %s - a szerverednek van: %s\n"
+""
+
+#: classes/admin.php:1010
+msgid "PHP session suppport is required"
+msgstr "PHP munkamenet támogatás szükséges"
+
+#: classes/admin.php:1015
+#, php-format
+msgid "The minimum required MySQL version is %s - your server has %s"
+msgstr "A minimálisan szükséges MySQL verzió: %s - a szerverednek van: %s"
+
+#: classes/admin.php:1020
+msgid "Can't connect to PeepSo.com. Please contact PeepSo support."
+msgstr "Nem lehet kapcsolódni a PeepSo.com-hoz. Kérjük, fordulj a PeepSo támogatói csoporthoz."
+
+#: classes/admin.php:1163
+msgid "Male"
+msgstr "Férfi"
+
+#: classes/admin.php:1170
+msgid "Female"
+msgstr "Nő"
+
+#: classes/admin.php:1177 classes/gdprlisttable.php:144
+#: classes/mailqueuelisttable.php:174
+msgid "Unknown"
+msgstr "Ismeretlen"
+
+#: classes/admin.php:1235
+msgid "Posts"
+msgstr "Posztok"
+
+#: classes/admin.php:1240 classes/configsections.php:537
+#: templates/general/lightbox.php:17
+msgid "Comments"
+msgstr "Kommentek"
+
+#: classes/admin.php:1297 classes/admin.php:1359
+msgid "No recent posts."
+msgstr "Nincsenek újabb posztok."
+
+#: classes/admin.php:1317 classes/admin.php:1394 classes/admin.php:1446
+#: classes/admin.php:1452 classes/admin.php:1630 classes/admin.php:1636
+msgid "View profile"
+msgstr "Profil megtekintése"
+
+#: classes/admin.php:1322
+msgid "View post"
+msgstr "Poszt megtekintése"
+
+#: classes/admin.php:1334
+msgid "See all Activities"
+msgstr "Összes tevékenység megtekintése"
+
+#: classes/admin.php:1401
+msgid "View comment"
+msgstr "Komment megtekintése"
+
+#: classes/admin.php:1432
+msgid "No users found"
+msgstr "Felhasználó nem található"
+
+#: classes/admin.php:1460
+msgid "Edit this user"
+msgstr "Felhasználó szerkesztése"
+
+#: classes/admin.php:1471
+msgid "See all Members"
+msgstr "Összes felhasználó megtekintése"
+
+#: classes/admin.php:1498 peepso.php:2920
+msgid "Stream"
+msgstr "Stream"
+
+#: classes/admin.php:1541
+msgid "This week"
+msgstr "Ez a hét"
+
+#: classes/admin.php:1542
+msgid "Last week"
+msgstr "Múlt hét"
+
+#: classes/admin.php:1543
+msgid "This month"
+msgstr "Ez a hónap"
+
+#: classes/admin.php:1544
+msgid "Last month"
+msgstr "Múlt hónap"
+
+#: classes/admin.php:1587
+msgid "posts"
+msgstr "posztok"
+
+#: classes/admin.php:1595
+msgid "likes"
+msgstr "kedvencek"
+
+#: classes/admin.php:1620 classes/admin.php:1717
+msgid "The list is empty"
+msgstr "A lista üres"
+
+#: classes/admin.php:1642
+msgid "Approve"
+msgstr "Jóváhagyás"
+
+#: classes/admin.php:1643
+msgid "Dismiss and Ban"
+msgstr "Elutasítás és kitiltás"
+
+#: classes/admin.php:1654
+msgid "See all Pending Members"
+msgstr "Függőben Lévő Tagok Megtekintése"
+
+#: classes/admin.php:1681
+msgid "Amount of reports"
+msgstr "Jelentések mennyisége"
+
+#: classes/admin.php:1689 classes/profile.php:1199 classes/profile.php:1890
+#: templates/account/personal-data.php:3
+msgid "Profile"
+msgstr "Profil"
+
+#: classes/admin.php:1692
+msgid "Content"
+msgstr "Tartalom"
+
+#: classes/admin.php:1722
+msgid "See all Reported Items"
+msgstr "Minden Bejelentett Elem Megtekintése"
+
+#: classes/admin.php:1751
+msgid "Report dismissed."
+msgstr "Bejelentés elutasítva."
+
+#: classes/admin.php:1755
+msgid "User banned."
+msgstr "Felhasználó kitiltva."
+
+#: classes/admin.php:1759
+msgid "Post unpublished."
+msgstr "Poszt nem publikált."
+
+#: classes/admin.php:1859
+msgid "Once registered, you will receive updates and special offers from PeepSo. We will only send once, your administrator's e-mail and site URL to PeepSo server."
+msgstr "Ha már regisztráltál, akkor PeepSo frissítéseket és különleges ajánlatokat fogsz kapni. Csak egyszer fogjuk küldeni, az admin e-mailed és a webhely URL a PeepSo szervernek."
+
+#: classes/admin.php:1860
+msgid "No additional information will be ever collected or sent."
+msgstr "Nincs további információ, ami összegyűjtve vagy küldve lesz."
+
+#: classes/admin.php:1872
+msgid "I don't want to register"
+msgstr "Nem akarok regisztrálni"
+
+#: classes/admin.php:1950 templates/admin/extensions.php:82
+msgid "Hide Installed Plugins"
+msgstr "Telepített bővítmények elrejtése"
+
+#: classes/admin.php:1951
+msgid "Show Installed Plugins"
+msgstr "Telepített bővítmények megjelenítése"
+
+#: classes/admin.php:1999
+#, php-format
+msgid "The <a href=\"%s\">file system directory</a> seems to be unwritable. Please adjust it. If you don't feel comfortable doing it yourself, please contact PeepSo support "
+msgstr "A(z) <a href=\"%s\">fájlrendszer könyvtár</a> felülírhatatlannak tűnik. Kérjük állítsd be. Ha egyedül ezt bizonytalannak érzed, kérjük vedd fel a kapcsolatot a PeepSo supporttal "
+
+#: classes/admin.php:2001 classes/configsectionadvanced.php:45
+#: classes/configsectionlocation.php:24
+msgid "here"
+msgstr "itt"
+
+#: classes/admin.php:2055
+#, php-format
+msgid "New Plugin for PeepSo is available! See it in the <a href=\"%s\">Addons</a> page."
+msgstr "Új PeepSo plugin érhető el! Megnézheted a <a href=\"%s\"> bővítmények</a> oldalon."
+
+#: classes/adminconfigfields.php:9 classes/adminconfigfields.php:35
+#: classes/adminconfigfields.php:70 classes/adminconfigfields.php:89
+#: classes/adminconfiglicense.php:13 classes/adminengagementdashboard.php:18
+#: classes/adminreport.php:38 classes/adminreport.php:103
+#: classes/adminreport.php:131 classes/adminreport.php:160
+#: classes/adminrequestdataajax.php:15 classes/adminrequestdataajax.php:80
+#: classes/adminrequestdataajax.php:110 classes/adminsendy.php:9
+msgid "Insufficient permissions."
+msgstr "Elégtelen jogosultságok."
+
+#: classes/adminconfiglicense.php:37
+#, php-format
+msgid "%s remaining"
+msgstr "%s van hátra"
+
+#: classes/adminconfiglicense.php:40
+#, php-format
+msgid "Expired on %s"
+msgstr "Lejárt ekkor: %s"
+
+#: classes/adminmailqueue.php:23
+#, php-format
+msgid "%1$d %2$s processed in %3$d seconds"
+msgstr "%1$d %2$s %3$d másodperc alatt feldolgozva"
+
+#: classes/adminmailqueue.php:25 classes/mailqueuelisttable.php:277
+msgid "email"
+msgid_plural "emails"
+msgstr[0] "email"
+msgstr[1] "email"
+
+#: classes/adminmailqueue.php:29
+msgid "The Mail Queue is empty."
+msgstr "A Mail Queue üres."
+
+#: classes/adminprofiles.php:12
+msgid "To be able to add new Profile Fields. Please install PeepSo Extended Profile Fields plugin. You can find it <a href=\"https://peepso.com/pricing\" target=\"_blank\">here</a>."
+msgstr "Új profil mezők hozzáadásának képessége. Kérjük telepítsd a PeepSo Extended Profil Fields plugint. Megtalálható itt<a href=\"https://peepso.com/pricing\" target=\"_blank\">here</a>."
+
+#: classes/adminprofiles.php:18
+msgid "Value should be greater than or equal to 0."
+msgstr "Érték legyen nagyobb vagy egyenlő 0-val."
+
+#: classes/adminprofiles.php:19
+#, php-format
+msgid "Maximum value should be greater than or equal to %d (minimum value)."
+msgstr "A maximum értéknek többnek, vagy egyenlőnek kell lennie, mint %d (minimum érték)."
+
+#: classes/adminprofiles.php:20
+#, php-format
+msgid "Minimum value should be less than or equal to %d (maximum value)."
+msgstr "A minimum értéknek kevesebbnek, vagy egyenlőnek kell lennie, mint %d (maximum érték)."
+
+#: classes/adminreport.php:17
+msgid "User Reported Items"
+msgstr "Felhasználó által bejelentett elemek"
+
+#: classes/adminreport.php:76 classes/adminrequestdataajax.php:53
+#: classes/listtable.php:36
+#, php-format
+msgid "1 item"
+msgid_plural "%s items"
+msgstr[0] "%s elem"
+msgstr[1] "1 elem"
+
+#: classes/adminreport.php:114
+msgid "The reported item has been successfully unpublished."
+msgstr "A jelentett elem közzétételének megszüntetése sikeres volt."
+
+#: classes/adminreport.php:142
+msgid "The reported item has been successfully dismissed."
+msgstr "A bejelentett elem sikeresen elutasítva."
+
+#: classes/adminreport.php:171
+msgid "The reported item has been successfully banned."
+msgstr "A bejelentett elem sikeresen betiltva."
+
+#: classes/adminreportlisttable.php:79
+msgid "Content Summary"
+msgstr "Tartalmi Összefoglaló"
+
+#: classes/adminreportlisttable.php:80
+msgid "Report Summary"
+msgstr "Összefoglaló jelentés"
+
+#: classes/adminreportlisttable.php:81
+msgid "Link"
+msgstr "Link"
+
+#: classes/adminreportlisttable.php:82
+msgid "Date Submitted"
+msgstr "Dátum elküldve"
+
+#: classes/adminreportlisttable.php:83
+msgid "Actions"
+msgstr "Akciók"
+
+#: classes/adminreportlisttable.php:184
+msgid "Reports"
+msgstr "Bejelentések"
+
+#: classes/adminreportlisttable.php:185
+msgid "Reason"
+msgstr "Indok"
+
+#: classes/adminreportlisttable.php:209 classes/adminreportlisttable.php:248
+msgid "Dismiss"
+msgstr "Elutasítás"
+
+#: classes/adminreportlisttable.php:210
+msgid "Delete this item, leave the post alone."
+msgstr "Elem törlése, a poszt elhagyása."
+
+#: classes/adminreportlisttable.php:216
+msgid "Ban Profile"
+msgstr "Profil tiltása"
+
+#: classes/adminreportlisttable.php:217
+msgid "Ban this profile, but not deleted"
+msgstr "Profil letiltása, de nincs törlés"
+
+#: classes/adminreportlisttable.php:221 classes/adminreportlisttable.php:247
+msgid "Unpublish"
+msgstr "Közzététel visszavonása"
+
+#: classes/adminreportlisttable.php:222
+msgid "Make this item no longer published, but not deleted"
+msgstr "Legyen ez a tétel már nem publikált, de nem törölt"
+
+#: classes/adminreportlisttable.php:267
+msgid "unpublished"
+msgstr "nem publikált"
+
+#: classes/adminreportlisttable.php:272
+msgid "dismissed"
+msgstr "elutasítva"
+
+#: classes/adminreportlisttable.php:278
+msgid "report"
+msgid_plural "reports"
+msgstr[0] "bejelentés"
+msgstr[1] "jelentés"
+
+#: classes/adminrequestdata.php:21
+msgid "Request Data Queue (BETA)"
+msgstr "Adatlekérés várólistája (BETA)"
+
+#: classes/adminrequestdata.php:28
+msgid "Ready : Request data process is ready to execute by cron."
+msgstr "Kész: Az adatfolyam lekérése készen áll a végrehajtásra."
+
+#: classes/adminrequestdata.php:30
+msgid "Processing: Process generating user data is inprogress."
+msgstr "Feldolgozás: A felhasználói adatok generálása folyamatban van."
+
+#: classes/adminrequestdata.php:32
+msgid "Success : Process generating user data is complete and ready to download by user."
+msgstr "Sikeres művelet: A felhasználói adatok előállítási folyamata teljes és az adatok készen állnak a letöltésre."
+
+#: classes/adminrequestdata.php:34
+msgid "Retry : Generate user data is failed and system retry the process."
+msgstr "Próbálja meg újra: A felhasználói adatok generálása sikertelen, a rendszer újra elindítja a folyamatot."
+
+#: classes/adminrequestdata.php:36
+msgid "Failed: Process generating user data is failed."
+msgstr "Hiba: a felhasználói adatok generálásának folyamata sikertelen."
+
+#: classes/adminrequestdataajax.php:93
+msgid "The request is now ready for processing export data."
+msgstr "A kérelem készen áll az export adatok feldolgozására."
+
+#: classes/adminrequestdataajax.php:122
+msgid "The request has been rejected."
+msgstr "A kérést elutasították."
+
+#: classes/ajaxhandler.php:58
+msgid "Login required"
+msgstr "Bejelentkezés szükséges"
+
+#: classes/auth.php:26 classes/auth.php:59
+msgid "Login Error"
+msgstr "Bejelentkezési hiba"
+
+#: classes/auth.php:27
+msgid "Sorry, your login attempt failed. Please refresh the page and try again.<br><br>Contact the webmaster if the problem persists."
+msgstr "Sajnáljuk, de a bejelentkezés nem sikerült. Kérjük, frissítsd az oldalt, és próbáld újra. <br><br>Lépj kapcsolatba a webmesterrel, ha a probléma továbbra is fennáll."
+
+#: classes/auth.php:62
+msgid "Username and password required."
+msgstr "Felhasználónév és jelszó szükséges."
+
+#: classes/config.php:60
+msgid "Class must be instance of PeepSoConfigSectionAbstract"
+msgstr "Kell lennie PeepSoConfigSectionAbstract osztálynak"
+
+#: classes/config.php:166
+msgid "Tab titles"
+msgstr "Lapok címei"
+
+#: classes/config.php:173
+msgid "Field descriptions"
+msgstr "Mezők leírása"
+
+#: classes/config.php:184
+msgid "Some settings have been changed. Be sure to save your changes."
+msgstr "Egyes beállítások megváltoztak. Fontos figyelni arra, hogy a módosítások mentése megtörténjen."
+
+#: classes/config.php:279 classes/configsectionappearance.php:297
+#: classes/configsectionlocation.php:37 classes/configsections.php:418
+#: templates/admin/profiles_field.php:36
+msgid "General"
+msgstr "Általános"
+
+#: classes/config.php:282
+msgid "General configuration settings for PeepSo"
+msgstr "PeepSo általános konfigurációs beállítások"
+
+#: classes/config.php:288 templates/admin/profiles_field.php:37
+msgid "Appearance"
+msgstr "Megjelenés"
+
+#: classes/config.php:290
+msgid "Look and feel settings"
+msgstr "Megjelenés beállításai"
+
+#: classes/config.php:296
+msgid "Edit Emails"
+msgstr "Emailek szerkesztése"
+
+#: classes/config.php:299
+msgid "Edit content of emails sent by PeepSo to users and Admins"
+msgstr "A felhasználóknak és a rendszergazdáknak küldött PeepSo emailek tartalmának szerkesztése"
+
+#: classes/config.php:303
+msgid "Advanced"
+msgstr "Haladó"
+
+#: classes/config.php:306
+msgid "Avanced System options"
+msgstr "Haladó Rendszerbeállítások"
+
+#: classes/config.php:321 classes/location.php:89 classes/location.php:131
+#: classes/profilefields.php:211
+msgid "Location"
+msgstr "Hely"
+
+#: classes/config.php:410
+msgid "Options updated"
+msgstr "Beállítások frissítése"
+
+#: classes/config.php:413
+msgid "Please correct the errors below"
+msgstr "Kérjük javítsd ki az alábbi hibákat"
+
+#: classes/config.php:505
+#, php-format
+msgid "Toggle panel: %s"
+msgstr "Toggle panel: %s"
+
+#: classes/configemails.php:17
+msgid "New User Email"
+msgstr "Új felhasználó email"
+
+#: classes/configemails.php:18
+msgid "This will be sent to new users upon completion of the registration process"
+msgstr "Ez lesz elküldve az új felhasználóknak a regisztrációs folyamat befejezését követően"
+
+#: classes/configemails.php:20
+msgid "New User Email (No Account Verification)"
+msgstr "Új felhasználó Email (Nem Fiókellenőrzés)"
+
+#: classes/configemails.php:21
+msgid "This will be sent to new users upon completion of the registration process when Account Verification is disabled"
+msgstr "Ez lesz elküldve az új felhasználónak a regisztrációs folyamat befejezésekor, amikor Fiókellenőrzés tiltva van"
+
+#: classes/configemails.php:23
+msgid "Account Approved"
+msgstr "Fiók jóváhagyva"
+
+#: classes/configemails.php:24
+msgid "This will be sent when an Admin approves a user registration."
+msgstr "Ez lesz elküldve, amikor egy Admin jóváhagy egy felhasználói regisztrációt."
+
+#: classes/configemails.php:26
+msgid "Activity Notice"
+msgstr "Activity Értesítés"
+
+#: classes/configemails.php:27
+msgid "This will be sent when someone interacts with a user's Activity Stream"
+msgstr "Ez lesz elküldve, ha valaki kapcsolatba lép egy felhasználó Activity stream-jével"
+
+#: classes/configemails.php:29
+msgid "Like Post"
+msgstr "Poszt lájkolása"
+
+#: classes/configemails.php:30
+msgid "This will be sent when a user \"likes\" another user's post"
+msgstr "Ez lesz elküldve, amikor egy felhasználó lájkolja egy másik felhasználó posztját"
+
+#: classes/configemails.php:32
+msgid "User Comment"
+msgstr "Felhasználói komment"
+
+#: classes/configemails.php:33
+msgid "This will be sent to a post owner when another user comments on the post"
+msgstr "Ez lesz elküldve a poszt tulajdonosának, amikor egy másik felhasználó hozzászól a poszthoz"
+
+#: classes/configemails.php:35
+msgid "User Reply Comment"
+msgstr "Felhasználói válasz hozzászólás"
+
+#: classes/configemails.php:36
+msgid "This will be sent to a comment owner when another user comments on the comment"
+msgstr "Ez lesz elküldve a komment tulajdonosának, amikor egy másik felhasználó hozzászól a kommenthez"
+
+#: classes/configemails.php:38
+msgid "Like User Comment"
+msgstr "Felhasználói hozzászólás lájkolása"
+
+#: classes/configemails.php:39
+msgid "This will be sent when a user \"likes\" another user's comments on the post"
+msgstr "Ez lesz elküldve, amikor egy felhasználó kedveli egy másik felhasználó bejegyzéshez fűződő hozzászólását"
+
+#: classes/configemails.php:41
+msgid "Wall Post"
+msgstr "Poszt fal"
+
+#: classes/configemails.php:42
+msgid "This will be sent when a user writes on another user's wall"
+msgstr "Ez lesz elküldve, ha egy felhasználó ír egy másik felhasználó falára"
+
+#: classes/configemails.php:44
+msgid "Share Post"
+msgstr "Poszt megosztása"
+
+#: classes/configemails.php:45
+msgid "This will be sent when a user \"shared\" another user's post"
+msgstr "Ez lesz elküldve, amikor egy felhasználó megosztja egy másik felhasználó posztját"
+
+#: classes/configemails.php:47 install/activate.php:498
+#: templates/general/login.php:28 templates/general/recover-password.php:10
+#: templates/widgets/me.tpl.php:215
+msgid "Recover Password"
+msgstr "Jelszó visszaállítása"
+
+#: classes/configemails.php:48
+msgid "This will be sent when a user requests a password recovery"
+msgstr "Ez lesz elküldve, ha egy felhasználó kéri a jelszó visszaállítást"
+
+#: classes/configemails.php:50
+msgid "Password Changed"
+msgstr "Jelszó megváltoztatva"
+
+#: classes/configemails.php:51
+msgid "This will be sent when a user changes their password after recovery"
+msgstr "Ez lesz elküldve, ha egy felhasználó módosítja a jelszót a visszaállítás után"
+
+#: classes/configemails.php:53
+msgid "Like Profile"
+msgstr "Tetszik ez a profil"
+
+#: classes/configemails.php:54
+msgid "This will be sent when a user \"likes\" another user's profile"
+msgstr "Ez lesz elküldve, amikor egy felhasználó lájkolja egy másik felhasználó profilját"
+
+#: classes/configemails.php:56 lib/pluggable.php:46
+msgid "New User Registration"
+msgstr "Új felhasználó regisztráció"
+
+#: classes/configemails.php:58
+msgid "This will be sent to admin user when new user needs approval"
+msgstr "Ez lesz elküldve az adminnak, amikor egy új felhasználó jóváhagyásra vár"
+
+#: classes/configemails.php:60
+msgid "These emails will be sent to the email account setup in WordPress settings. <a href=\"options-general.php\" target=\"_blank\">You can change it here</a>."
+msgstr "Ezek az emailek lesznek elküldve az email fiók beállításához a WordPress beállításokban. <a href=\"options-general.php\" target=\"_blank\">Ez itt módosíthító</a>."
+
+#: classes/configemails.php:62 classes/tags.php:380
+msgid "User Tagged In Post"
+msgstr "Felhasználó megjelölt egy posztban"
+
+#: classes/configemails.php:63 classes/tags.php:381
+msgid "This will be sent to a user when tagged in post."
+msgstr "Ez lesz elküldve egy felhasználónak, miután meg lett jelölve egy poszban."
+
+#: classes/configemails.php:65 classes/tags.php:385
+msgid "User Tagged In Comment"
+msgstr "Felhasználó megjelölt egy kommentben"
+
+#: classes/configemails.php:66 classes/tags.php:386
+msgid "This will be sent to a user when tagged in comment."
+msgstr "Ez lesz elküldve egy felhasználónak, miután meg lett jelölve egy kommentben."
+
+#: classes/configemails.php:69
+msgid "Export Data Complete"
+msgstr "Az adatok exportálása befejeződött"
+
+#: classes/configemails.php:70
+msgid "This will be sent to a user when export data is completed."
+msgstr "Ez lesz elküldve egy felhasználónak, amikor az exportálási adatok elkészültek."
+
+#: classes/configemails.php:109
+msgid "Reset all emails"
+msgstr "Az összes email visszaállítása"
+
+#: classes/configemails.php:112
+msgid "This will  reset all email templates to default values"
+msgstr "Az alapértelmezett értékek visszaállítása minden email sablonnál"
+
+#: classes/configemails.php:119
+msgid "Yes, I'm sure!"
+msgstr "Igen, biztos vagyok benne!"
+
+#: classes/configemails.php:127
+msgid "Allowed Tokens"
+msgstr "Engedélyezett tokenek"
+
+#: classes/configemails.php:129
+msgid "The following tokens can be used within the content of emails:"
+msgstr "A következő tokenek használhatók az emailek tartalmán belül:"
+
+#: classes/configemails.php:131
+msgid "Current date in the format that WordPress displays dates."
+msgstr "Aktuális dátum a következő formátumban, ahogy a WordPress megjeleníti a dátumokat."
+
+#: classes/configemails.php:132
+msgid "Current date and time in the format that WordPress displays dates with time."
+msgstr "Aktuális dátum és idő a következő formátumban, ahogy a WordPress megjeleníti a dátumokat az idővel."
+
+#: classes/configemails.php:133
+msgid "Name of your site from the WordPress title configuration."
+msgstr "Az oldalad neve a WordPress cím konfigurációjából."
+
+#: classes/configemails.php:134
+msgid "URL of your site."
+msgstr "A weblapod URL címe."
+
+#: classes/configemails.php:135
+msgid "URL to receiving user's Alert Configuration page."
+msgstr "URL cím a fogadó felhasználó Alert konfigurációs oldalához."
+
+#: classes/configemails.php:136
+msgid "The current four digit year."
+msgstr "A jelenlegi év négy számjeggyel."
+
+#: classes/configemails.php:137
+msgid "Link to the post, comment or other item referenced; context specific."
+msgstr "Poszt link, komment vagy más elem; konkrét összefüggésben."
+
+#: classes/configemails.php:140
+msgid "These are referring to the user causing the alert, such as \"{fromlogin} liked your post...\":"
+msgstr "Egyes felhasználói tevékenységek okozhatnak figyelmeztetést, pl. \"{fromlogin} lájkolta a posztodat...\":"
+
+#: classes/configemails.php:142
+msgid "Message sender's email address."
+msgstr "Üzenet küldőjének email címe."
+
+#: classes/configemails.php:143
+msgid "Message sender's full name."
+msgstr "Üzenet küldőjének teljes neve."
+
+#: classes/configemails.php:144
+msgid "Message sender's first name."
+msgstr "Üzenet küldőjének keresztneve."
+
+#: classes/configemails.php:145
+msgid "Message sender's username."
+msgstr "Az üzenetet küldő felhasználóneve."
+
+#: classes/configemails.php:148
+msgid "These are referring to the receiving user on all messages, such as \"Welcome {userfirstname}...\":"
+msgstr "A fogadó felhasználó megjelenítése minden üzenetben, pl. Üdvözlünk {userfirstname}...\":"
+
+#: classes/configemails.php:150
+msgid "Message recipient's email address."
+msgstr "Üzenet címzettjének email címe."
+
+#: classes/configemails.php:151
+msgid "Message recipient's full name"
+msgstr "Üzenet címzettjének teljes neve"
+
+#: classes/configemails.php:152
+msgid "Message recipient's first name"
+msgstr "Üzenet címzettjének keresztneve"
+
+#: classes/configemails.php:153
+msgid "Message recipient's username"
+msgstr "Üzenet címzettjének felhasználóneve"
+
+#: classes/configemails.php:231
+msgid "Email contents updated."
+msgstr "Email tartalom frissítve."
+
+#: classes/configemails.php:254
+msgid "Email contents reset."
+msgstr "Email tartalom visszaállítása."
+
+#: classes/configsectionadvanced.php:43
+msgid "The EU General Data Protection Regulation (GDPR, or EUGDPR for short) is a regulation in European Union law on data protection and privacy for all individuals within the European Union. All businesses and websites processing personal information of EU citizens must abide by this law, including the right to be forgotten (data deletion), the right to full data download (export) etc. You can read more about it "
+msgstr "Az EU általános adatvédelmi szabályzata (GDPR, vagy röviden EUGDPR) az Európai Unió valamennyi személyének adatvédelmi és magánjellegű adatvédelmi szabályozása az Európai Unióban. Az uniós polgárok személyes adatait feldolgozó vállalkozásoknak és weboldalaknak meg kell felelniük e törvénynek, beleértve az adatok törlését, illetve a teljes adatletöltésre (exportra) vonatkozó jogot stb. Bővebben olvashatsz róla "
+
+#: classes/configsectionadvanced.php:54
+msgid "Enable GDPR Compliance"
+msgstr "GDPR megfelelőség engedélyezése"
+
+#: classes/configsectionadvanced.php:59
+#, php-format
+msgid "It's advised to switch this setting on and setup a server-side cron job. You can use this command: wget %s It can easily run every five minutes."
+msgstr "Ajánlott ezt a beállítást bekapcsolni és telepíteni egy szerver-oldali cron job-ot. Használhatod ezt a parancsot: wget %s Könnyedén tud futni minden öt percben."
+
+#: classes/configsectionadvanced.php:67
+msgid "External Export Cron Job"
+msgstr "Külső Export Cron Job"
+
+#: classes/configsectionadvanced.php:89
+msgid "GDPR Compliance (BETA)"
+msgstr "GDPR megfelelés (béta)"
+
+#: classes/configsectionadvanced.php:107
+#, php-format
+msgid "One tab name per line. \"Stream\" and \"About\" will always be first. Current order: %s"
+msgstr "Soronként egy fülnév. A \"Stream\" és az \"About\" mindig az első. A jelenlegi sorrend: %s"
+
+#: classes/configsectionadvanced.php:111
+msgid "Profile tabs order (beta)"
+msgstr "Profil lapok sorrendje (béta)"
+
+#: classes/configsectionadvanced.php:128
+msgid "This setting is to be changed upon very first PeepSo activation or in case of site migration. If changed in any other case it will result in missing content including user avatars, covers, photos etc. (error 404)."
+msgstr "Ez a beállítás a legelső PeepSo aktiválás vagy site migráció esetén módosítható. Bármely más esetben történő változtatás eredménye lehet hiányzó tartalom, beleértve a felhasználói avatarokat, borítókat, képeket stb. (404-es hiba)."
+
+#: classes/configsectionadvanced.php:135
+msgid "PeepSo allows users to upload images that are stored on your server. Enter a location where these files are to be stored.<br/>This must be a directory that is writable by your web server and and is accessible via the web. If the directory specified does not exist, it will be created."
+msgstr "PeepSo lehetővé teszi a felhasználóknak, hogy képeket töltsenek fel a szerverre. Adj meg egy helyet, ahol ezek a fájlok tárolva lesznek.<br/>Ennek egy könyvtárnak kell lennie, amely írható a webszerver által és elérhető az interneten keresztül. Ha ez a könyvtár nem létezik, akkor létre lesz hozva."
+
+#: classes/configsectionadvanced.php:147
+msgid "Can not write to directory"
+msgstr "Nem sikerült a könyvtárba írni"
+
+#: classes/configsectionadvanced.php:154
+msgid "Uploads Directory"
+msgstr "Feltöltések Könyvtára"
+
+#: classes/configsectionadvanced.php:160
+msgid "File System"
+msgstr "Fájlrendszer"
+
+#: classes/configsectionadvanced.php:167
+msgid "Enabled: various debug information is written to a log file."
+msgstr "Engedélyezve: különböző hibakeresési információt ír egy naplófájlba."
+
+#: classes/configsectionadvanced.php:167
+msgid "This can impact website speed and should ONLY be enabled when someone is debugging PeepSo."
+msgstr "Ez befolyásolhatja a weboldal sebességét, és csak akkor kell engedélyezni, ha valaki hibakeresést végez a PeepSo-val kapcsolatban."
+
+#: classes/configsectionadvanced.php:170
+msgid "Enable Logging"
+msgstr "Naplózás engedélyezése"
+
+#: classes/configsectionadvanced.php:175
+msgid "Strict Version Lock makes sure that it's impossible to upgrade PeepSo before all of the child plugins have been updated."
+msgstr "A Strict Version Lock gondoskodik róla, hogy a PeepSo frissítése ne legyen lehetséges a gyermek pluginek frissítése előtt."
+
+#: classes/configsectionadvanced.php:175
+msgid "Please DO NOT enable this unless you are having issues with updating PeepSo."
+msgstr "Kérjük NE engedélyezd ezt, kivéve ha problémák merülnek fel a PeepSo frissítésével kapcsolatban."
+
+#: classes/configsectionadvanced.php:178
+msgid "Override Strict Version Lock"
+msgstr "Strict Version Lock felülírása"
+
+#: classes/configsectionadvanced.php:184
+msgid "Maintenance & debugging"
+msgstr "Karbantartás és hibakeresés"
+
+#: classes/configsectionadvanced.php:193
+msgid "Disables infinite loading of activities, members lists etc until the users clicks the \"load more\" button."
+msgstr "Letiltja a tevékenységek korlátlan betöltését, a taglistákat, stb., amíg a felhasználók a \"több betöltés\" gombra kattintanak."
+
+#: classes/configsectionadvanced.php:196
+msgid "Enable \"load more:\" button"
+msgstr "A \"több betöltése\" gomb engedélyezése"
+
+#: classes/configsectionadvanced.php:205
+#, php-format
+msgid "Every %d posts"
+msgstr "Minden %d poszt"
+
+#: classes/configsectionadvanced.php:213
+msgid "By default all posts load in an \"infinite scroll\"."
+msgstr "Alapértelmezés szerint minden hozzászólás betöltődik egy \"végtelen görgetés\"-ben."
+
+#: classes/configsectionadvanced.php:213
+msgid "You can choose to have a specified batch of posts to loade before showing the \"load button\" again."
+msgstr "Kiválaszthatod, hogy a posztok egy meghatározott csoportja jelenjen meg mielőtt megjelenik a \"betöltési gomb\"."
+
+#: classes/configsectionadvanced.php:216
+msgid "Repeat \"load more\" button?"
+msgstr "Ismételje meg a \"Több betöltése\" gombot?"
+
+#: classes/configsectionadvanced.php:222
+msgid "This should be only enabled if you are planning to use an external cron job to process the PeepSo Maintenance scripts.<br/>External cron job is recommended for bigger communities.<br/>Please refer to <a href=\"http://peep.so/maintenance/\" target=\"_blank\">the documentation</a>."
+msgstr "Ezt csak akkor szabad engedélyezni, ha Ön külső cron feladatot kíván használni a PeepSo karbantartási szkriptek feldolgozásához.<br/>Külső cron feladat nagyobb közösségek számára ajánlott.<br/>Kérjük olvassa el a<a href=\"http://peep.so/maintenance/\" target=\"_blank\">dokumentációt</a>."
+
+#: classes/configsectionadvanced.php:225
+msgid "External Maintenance Cron Job"
+msgstr "Külső Karbantartás Cron Job"
+
+#: classes/configsectionadvanced.php:232
+msgid "Performance"
+msgstr "Teljesítmény"
+
+#: classes/configsectionadvanced.php:239
+msgid "minutes:seconds - how often the calls are allowed to run if there is a related site activity"
+msgstr "perc: másodperc - ilyen gyakran szabad hívásokat futtatni, ha van kapcsolódó webhely tevékenység"
+
+#: classes/configsectionadvanced.php:264 classes/configsectionadvanced.php:278
+#: classes/configsectionadvanced.php:299 classes/configsectionadvanced.php:335
+#: classes/configsectionadvanced.php:355
+msgid "default"
+msgstr "alapértelmezett"
+
+#: classes/configsectionadvanced.php:270
+msgid "Active"
+msgstr "Aktív"
+
+#: classes/configsectionadvanced.php:275
+msgid "minutes:seconds - how often the calls should be made, if the related site activity is idle"
+msgstr "perc: másodperc - ilyen gyakran kell hívásokat végezni, ha a kapcsolódó webhely tevékenység inaktív"
+
+#: classes/configsectionadvanced.php:290
+msgid "Idle"
+msgstr "Tétlen"
+
+#: classes/configsectionadvanced.php:295
+msgid "If there is no related site activity, how quickly should the intensity shift from minimum/active to maximum/idle"
+msgstr "Ha nincs kapcsolódó webhely tevékenység, milyen gyorsan váltson az intenzitás minimum/aktívról maximális/üresjáratira"
+
+#: classes/configsectionadvanced.php:312
+msgid "Multiplier"
+msgstr "Szorzó"
+
+#: classes/configsectionadvanced.php:318
+msgid "AJAX Call Intensity"
+msgstr "AJAX hívás intenzitás"
+
+#: classes/configsectionadvanced.php:319
+msgid "PeepSo and all its plugins  run various background (AJAX) calls for each user that is logged in."
+msgstr "PeepSo és az összes plugin modulja  különböző háttérhívásokat futtat (AJAX)  minden bejelentkezett felhasználóhoz."
+
+#: classes/configsectionadvanced.php:320
+msgid "By adjusting the settings below you control how \"instant\" experience your users are having."
+msgstr "Az alábbi beállítások módosításával szabályozhatja a felhasználók \"azonnali\" élményét."
+
+#: classes/configsectionadvanced.php:321
+msgid "<strong>Lower values mean more robust notifications, but also <u>higher server load.</u></strong>"
+msgstr "<strong>Az alacsonyabb értékek erőteljesebb értesítéseket jelentenek,, de egyúttal <u>nagyobb szerver terhelést is.</u>-</strong>"
+
+#: classes/configsectionadvanced.php:322
+msgid "<strong><u>Values lower than defaults are not recommended.</u></strong>"
+msgstr "<strong><u>Az alapértelmezetteknél alacsonyabb értékek használata nem ajánlott.</u>-</strong>"
+
+#: classes/configsectionadvanced.php:333
+#, php-format
+msgid "%d pixels"
+msgstr "%d pixel"
+
+#: classes/configsectionadvanced.php:341
+msgid "Bigger images use more storage, but will look better - especially on high resolution screens."
+msgstr "A nagyobb képek több tárhelyet használnak, de jobban néznek ki - különösen a nagy felbontású képernyőkön."
+
+#: classes/configsectionadvanced.php:344
+msgid "Avatar size"
+msgstr "Avatar méret"
+
+#: classes/configsectionadvanced.php:353
+#, php-format
+msgid "%d%%"
+msgstr "%d%%"
+
+#: classes/configsectionadvanced.php:361
+msgid "Higher quality will use more storage, but the images will look better"
+msgstr "A magasabb minőség több tárhelyet fog használni, de a képek jobban néznek majd ki"
+
+#: classes/configsectionadvanced.php:364
+msgid "Avatar quality"
+msgstr "Avatar minősége"
+
+#: classes/configsectionadvanced.php:371
+msgid "Storage"
+msgstr "Tárolás"
+
+#: classes/configsectionadvanced.php:372
+msgid "These settings control the dimensions and compression levels, and will only be applied to newly uploaded images."
+msgstr "Ezek a beállítások szabályozzák a méreteket és a tömörítési szinteket, és csak az újonnan feltöltött képekre alkalmazhatóak."
+
+#: classes/configsectionadvanced.php:379
+msgid "Enables non-SSL (http://) link fetching. This can lead to \"insecure content\" warnings if your site is using SSL"
+msgstr "Engedélyezi a nem SSL (http://) link letöltését. Ez \"bizonytalan tartalom\" figyelmeztetésekhez vezethet, ha az oldalad SSL-t használ"
+
+#: classes/configsectionadvanced.php:382
+msgid "Allow non-SSL embeds"
+msgstr "Nem SSL beágyazások engedélyezése"
+
+#: classes/configsectionadvanced.php:387
+msgid "When enabled, users will be shown a warning page when clicking an external link inside any PeepSo page. The warning page is the one containing peepso_external_link_warning shortcode."
+msgstr "Ha engedélyezve van, a felhasználók egy figyelmeztető oldalt látnak, amikor egy külső hivatkozásra kattintanak valamelyik PeepSo oldalon. A figyelmeztető oldal a peepso külső hivazkozás figyelmeztetés rövid kódot tartalmazza."
+
+#: classes/configsectionadvanced.php:390
+msgid "Enable \"external link warning\" page"
+msgstr "Engedélyezze a \"külső link figyelmeztetés\" oldalt"
+
+#: classes/configsectionadvanced.php:396
+msgid "Domains that do not require a warning page, without \"www\" or \"http(s). One domain name per line. Your website is whitelisted by default. "
+msgstr "Domainek, amelyek nem igényelnek figyelmeztető oldalt, \"www\" vagy \"http(s)\" nélküliek. Soronként egy domainnév. A webhelyed alapértelmezés szerint engedélyezett. "
+
+#: classes/configsectionadvanced.php:396
+msgid "Example domains:"
+msgstr "Példa domainek:"
+
+#: classes/configsectionadvanced.php:400
+msgid "Domain whitelist"
+msgstr "Domain whitelist"
+
+#: classes/configsectionadvanced.php:407
+msgid "Security"
+msgstr "Biztonság"
+
+#: classes/configsectionadvanced.php:418
+msgid "Should be between 1 and 64 characters long."
+msgstr "Hossza 1 és 64 karakter között kell, hogy legyen."
+
+#: classes/configsectionadvanced.php:424
+msgid "Email sender"
+msgstr "Email feladója"
+
+#: classes/configsectionadvanced.php:432
+msgid "Email format is invalid."
+msgstr "Érvénytelen email formátum."
+
+#: classes/configsectionadvanced.php:436
+msgid "Admin Email"
+msgstr "Rendszergazdai email"
+
+#: classes/configsectionadvanced.php:442
+msgid "This should be only enabled if you are planning to use an external cron job to process the PeepSo mail queue.<br/>External cron job is recommended for bigger communities.<br/>Please refer to <a href=\"http://peep.so/mailqueue/\" target=\"_blank\">the documentation</a>."
+msgstr "Csak akkor engedélyezett, ha tervezetten használni akarsz egy külső cron munkát a PeepSo postafiók feldolgozásához.<br/>Külső cron feladat ajánlott nagyobb közösségek számára.<br/>Itt van az ezzel kapcsolatos<a href=\"http://peep.so/mailqueue/\" target=\"_blank\">dokumentáció</a>."
+
+#: classes/configsectionadvanced.php:445
+msgid "External Mail Queue Cron Job"
+msgstr "Külső Mail Queue Cron Job"
+
+#: classes/configsectionadvanced.php:450
+msgid "All new members will have their e-mail notifications disabled by default"
+msgstr "Minden új tagnál alapértelmezés szerint le vannak tiltava az e-mail értesítések"
+
+#: classes/configsectionadvanced.php:453
+msgid "Don't subscribe new members to any e-mail notifications"
+msgstr "Új tagok ne iratkozzanak fel semmilyen e-mail értesítésre"
+
+#: classes/configsectionadvanced.php:459
+msgid "Customize entire e-mail layout"
+msgstr "A teljes e-mail elrendezés testreszabása"
+
+#: classes/configsectionadvanced.php:465
+msgid "Text, HTML and inline CSS only (no PHP or shortcodes). Leave empty for the default layout."
+msgstr "Csak szöveg, HTML és inline CSS (nincs PHP vagy rövid kód). Hagyd üresen az alapértelmezett elrendezés számára."
+
+#: classes/configsectionadvanced.php:467
+#, php-format
+msgid "<a href=\"%s\" target=\"_blank\">Click here</a> after saving to test your changes."
+msgstr "<a href=\"%s\" target=\"_blank\">Kattints ide</a> a változások mentéséhez."
+
+#: classes/configsectionadvanced.php:469
+msgid "Available variables: <br/>{email_contents} - e-mail contents <font color=\"red\">*</font><br/>{unsubscribeurl} - URL of the user notification preferences <font color=\"red\">*</font><br/>{currentuserfullname} - full name of the recicpient<br>{useremail} - e-mail of the recipient<br/>{sitename} - the name of your site<br/>{siteurl} - the URL of your site<br/><br/><font color=\"red\">*</font>) is required"
+msgstr "Elérhető változók: <br/>{email_contents} - e-mailek tartalma <font color=\"red\">*</font><br/>{unsubscribeurl} - A felhasználói értesítési beállítások URL címe <font color=\"red\">*</font><br/>{currentuserfullname} - a címzett teljes neve<br>{useremail} - a címzett e-mailje<br/>{sitename} a weboldalad neve<br/>{siteurl} - a weboldald URL címe<br/><br/><font color=\"red\">*</font> szükséges"
+
+#: classes/configsectionadvanced.php:478
+msgid "Missing variable {emails_contents} or {unsubscribeurl}"
+msgstr "Hiányzó változó {emails_contents} vagy {unsubscribeurl}"
+
+#: classes/configsectionadvanced.php:485
+msgid "Override entire HTML"
+msgstr "A teljes HTML felülírása"
+
+#: classes/configsectionadvanced.php:492
+msgid "Emails"
+msgstr "Emailek"
+
+#: classes/configsectionadvanced.php:503
+msgid "Delete Post and Comment data"
+msgstr "Poszt és komment adatok törlése"
+
+#: classes/configsectionadvanced.php:512
+msgid "Delete all data and settings"
+msgstr "Összes adat és beállítás törlése"
+
+#: classes/configsectionadvanced.php:517
+msgid "When set to \"YES\", all <em>PeepSo</em> data will be deleted upon plugin Uninstall (but not Deactivation).<br/>Once deleted, <u>all data is lost</u> and cannot be recovered."
+msgstr "Ha a beállítás \"IGEN\", minden <em>PeepSo</em> adat törlésre kerül a bővítmény eltávolításakor (de nem deaktiváláskor).<br/>Törléskor <u>minden adat elvész</u>, és nem lehet visszaállítani őket."
+
+#: classes/configsectionadvanced.php:522
+msgid "PeepSo Uninstall"
+msgstr "PeepSo eltávolítása"
+
+#: classes/configsectionadvanced.php:523
+msgid "Control behavior of PeepSo when uninstalling / deactivating"
+msgstr "PeepSo működés ellenőrzése eltávolítás / inaktiválás során"
+
+#: classes/configsectionadvanced.php:531
+msgid "Enable Open Graph"
+msgstr "Open Graph engedélyezése"
+
+#: classes/configsectionadvanced.php:538
+msgid "Title (og:title)"
+msgstr "Cím"
+
+#: classes/configsectionadvanced.php:545
+msgid "Description (og:description)"
+msgstr "Leírás"
+
+#: classes/configsectionadvanced.php:552
+msgid "Image (og:image)"
+msgstr "Kép"
+
+#: classes/configsectionadvanced.php:557
+msgid "This feature is currently in BETA and should be considered experimental. It will remove \"?\" from certain PeepSo URLs, such as \"profile/?username/about\"."
+msgstr "Ez a funkció jelenleg BETA-ban van, és kísérleti jellegűnek kell tekinteni. Eltávolítja a \"?\"-t bizonyos PeepSo URL-ről, mint például a \"profile /? Username / about\" -ról."
+
+#: classes/configsectionadvanced.php:560
+msgid "Enable SEO Friendly links"
+msgstr "SEO barát linkek engedélyezése"
+
+#: classes/configsectionadvanced.php:569
+msgid "You are currently using [peepso_activity] as your home page. Because of that, single activity URLs will have to contain \"?\" no matter what the above setting is."
+msgstr "Jelenleg [peepso_activity]-t használod kezdőlapnak. Emiatt az activity URL-címének tartalmazni kell \"?\"-t függetlenül attól, hogy mi a fenti beállítás."
+
+#: classes/configsectionadvanced.php:576
+msgid "This advanced feature causes PeepSo pages to override the global WP_Query for better SEO."
+msgstr "Ez a fejlett funkció a PeepSo oldalaknál felülírja a globális WP_Query-t a jobb SEO érdekében."
+
+#: classes/configsectionadvanced.php:576
+msgid "This can interfere with SEO plugins, so use with caution."
+msgstr "Ez zavarhatja a SEO-bővítményeket, ezért óvatosan használd."
+
+#: classes/configsectionadvanced.php:579
+msgid "PeepSo can reset WP_Query"
+msgstr "A PeepSo vissza tudja állítani a WP_Query-t"
+
+#: classes/configsectionadvanced.php:586
+msgid "SEO & Open Graph"
+msgstr "SEO & Open Graph"
+
+#: classes/configsectionadvanced.php:587
+msgid "The Open Graph protocol enables sites shared for example to Facebook carry information that render shared URLs in a great way. Having a photo, title and description. You can learn more about it in our documentation. Just search for 'Open Graph'."
+msgstr "Az Open Graph protokoll lehetővé teszi a megosztást például a Facebookon, az URL-ek megosztásának egy nagyszerű módja. Van egy kép, egy cím és egy leírás. Bővebb információ erről a dokumentációnkban található. Csak keresd ezt: \"Open Graph\"."
+
+#: classes/configsectionappearance.php:26
+msgid "Real Names"
+msgstr "Valódi nevek"
+
+#: classes/configsectionappearance.php:27 classes/configsections.php:153
+msgid "Usernames"
+msgstr "Felhasználónevek"
+
+#: classes/configsectionappearance.php:34
+msgid "Display Name Style"
+msgstr "Név megjelenítésének stílusa"
+
+#: classes/configsectionappearance.php:41
+msgid "Users Can Override Display Name Style"
+msgstr "A felhasználók megváltoztathatják a \"Display Name \" stílusát"
+
+#: classes/configsectionappearance.php:46
+msgid "Users can permanently delete their profiles"
+msgstr "A felhasználók véglegesen tudják törölni a profiljukat"
+
+#: classes/configsectionappearance.php:49 classes/profile.php:1529
+#: templates/profile/profile-about-account.php:48
+msgid "Profile Deletion"
+msgstr "Profil törlése"
+
+#: classes/configsectionappearance.php:54
+msgid "User profiles are shareable to social networks"
+msgstr "A felhasználói profilok megoszthatók a közösségi hálózaton"
+
+#: classes/configsectionappearance.php:57
+msgid "Profile Sharing"
+msgstr "Profil megosztása"
+
+#: classes/configsectionappearance.php:62
+msgid "Users can \"like\" each other's  profiles"
+msgstr "A felhasználók lájkolhatják egymás profilját"
+
+#: classes/configsectionappearance.php:65
+msgid "Profile Likes"
+msgstr "Profil kedvelése"
+
+#: classes/configsectionappearance.php:72
+msgid "Always link to PeepSo Profile"
+msgstr "Mindig hivatkozzon a PeepSo Profil-ra"
+
+#: classes/configsectionappearance.php:83
+msgid "Avatars and Covers"
+msgstr "Avatarok és borítók"
+
+#: classes/configsectionappearance.php:90
+msgid "Use square avatars"
+msgstr "Négyzetes avatarok használata"
+
+#: classes/configsectionappearance.php:97
+msgid "Use WordPress Avatars"
+msgstr "WordPress avatarok használata"
+
+#: classes/configsectionappearance.php:104
+msgid "The users will be unable to change their avatars in their PeepSo profiles. PeepSo will inherit the avatars from your WordPress site"
+msgstr "A felhasználók nem lesznek képesek megváltoztatni az avatarjaikat a PeepSo profiljukban. A PeepSo örökli az avatarokat a WordPress oldaladról"
+
+#: classes/configsectionappearance.php:111
+msgid "Use PeepSo avatars everywhere"
+msgstr "PeepSo avatarok használata mindenhol"
+
+#: classes/configsectionappearance.php:118
+msgid "Allow Gravatar avatars"
+msgstr "Gravatar avatarok elérése"
+
+#: classes/configsectionappearance.php:122
+msgid "By default the full cover displays only in the header of the \"Stream\" section"
+msgstr "Alapértelmezés szerint a teljes borító csak a \"Stream\" fejlécében jelenik meg"
+
+#: classes/configsectionappearance.php:125
+msgid "Always use full covers"
+msgstr "Mindig teljes borító használata"
+
+#: classes/configsectionappearance.php:132
+msgid "User Profiles"
+msgstr "Felhasználói profilok"
+
+#: classes/configsectionappearance.php:144
+msgid "Customize text"
+msgstr "Szöveg testreszabása"
+
+#: classes/configsectionappearance.php:151
+msgid "Callout Header"
+msgstr "Fejléc tartalom"
+
+#: classes/configsectionappearance.php:158
+msgid "Callout Text"
+msgstr "Felhívó Szöveg"
+
+#: classes/configsectionappearance.php:165
+msgid "Button Text"
+msgstr "Gombfelirat"
+
+#: classes/configsectionappearance.php:173
+msgid "Landing Page Image"
+msgstr "Kezdőlap képe"
+
+#: classes/configsectionappearance.php:181
+msgid "Suggested Landing Page image size is: 1140px x 469px."
+msgstr "Ajánlott kezdőlapkép mérete: 1140x469."
+
+#: classes/configsectionappearance.php:191
+msgid "Selected Image"
+msgstr "Kiválasztott kép"
+
+#: classes/configsectionappearance.php:205 classes/configsections.php:331
+msgid "Registration"
+msgstr "Regisztráció"
+
+#: classes/configsectionappearance.php:212
+msgid "Light"
+msgstr "Könnyű"
+
+#: classes/configsectionappearance.php:237
+msgid "Color scheme"
+msgstr "Színséma"
+
+#: classes/configsectionappearance.php:245
+msgid "Rounded corners"
+msgstr "Lekerekített sarkok"
+
+#: classes/configsectionappearance.php:252
+msgid "PeepSo Style"
+msgstr "PeepSo stílus"
+
+#: classes/configsectionappearance.php:260
+msgid "Show notification icons on WP Toolbar"
+msgstr "Értesítési ikonok megjelenítése a WP Toolbar-on"
+
+#: classes/configsectionappearance.php:267
+msgid "Disable PeepSo navigation bar"
+msgstr "PeepSo navigációs sáv kikapcsolása"
+
+#: classes/configsectionappearance.php:273
+msgid "never"
+msgstr "soha"
+
+#: classes/configsectionappearance.php:274
+msgid "always"
+msgstr "mindig"
+
+#: classes/configsectionappearance.php:275
+msgid "if older than 24 hours"
+msgstr "ha régebbi, mint 24 óra"
+
+#: classes/configsectionappearance.php:280
+msgid "\"Relative\" date is a human readable date, for example \"3 days ago\""
+msgstr "\"Relatív\" időpont egy olvasható idő, például \"3 nappal ezelőtt\""
+
+#: classes/configsectionappearance.php:280
+#, php-format
+msgid "\"Absolute\" date is a simple datestamp such as %s"
+msgstr "\"Abszolút\" időpont egy egyszerű dátum bélyegző, mint a %s"
+
+#: classes/configsectionappearance.php:283
+msgid "Use absolute dates"
+msgstr "Abszolút időpontok használata"
+
+#: classes/configsectionappearance.php:290
+msgid "Show \"Powered by PeepSo\" link"
+msgstr "\"Powered by PeepSo\" hivatkozás megjelenítése"
+
+#: classes/configsectionappearance.php:305 templates/members/search.php:58
+msgid "Alphabetical"
+msgstr "ABC rend"
+
+#: classes/configsectionappearance.php:306 templates/members/search.php:59
+msgid "Recently online"
+msgstr "Legutóbb belépett felhasználók"
+
+#: classes/configsectionappearance.php:307 templates/members/search.php:60
+msgid "Latest members"
+msgstr "Legújabb felhasználók"
+
+#: classes/configsectionappearance.php:314
+msgid "Default Sorting"
+msgstr "Alapértelmezett rendezés"
+
+#: classes/configsectionappearance.php:319
+msgid "Users can hide from Members Page, Widgets etc"
+msgstr "A felhasználok \"elrejtőzhetnek\" a Tagok Oldalról, Widgetekről, stb."
+
+#: classes/configsectionappearance.php:322
+msgid "Users can hide from user listings"
+msgstr "Felhasználok \"elrejtőzhetnek\" a felhasználói listából"
+
+#: classes/configsectionappearance.php:330
+msgid "Allow guest access to members listing"
+msgstr "Engedélyezze, hogy a vendég felhasználó láthassa a tagok listáját"
+
+#: classes/configsectionappearance.php:337
+msgid "Member listings"
+msgstr "Tag listázás"
+
+#: classes/configsectionlocation.php:18
+msgid "A Google maps API key is required for the Location suggestions to work properly"
+msgstr "Egy Google maps API kulcs szükséges, hogy a Hely (Location) javaslatok megfelelően működjenek"
+
+#: classes/configsectionlocation.php:22
+msgid "You can get the API key"
+msgstr "Kaphatsz API kulcsot"
+
+#: classes/configsectionlocation.php:31
+msgid "Google Maps API Key (v3)"
+msgstr "Google Maps API kulcs (v3)"
+
+#: classes/configsections.php:33
+msgid "Always check \"remember me\" by default"
+msgstr "Alapértelmezésben mindig jelölje be az \"emlékezz rám\"opciót"
+
+#: classes/configsections.php:57 classes/configsections.php:104
+#: classes/configsections.php:208
+msgid "Home page"
+msgstr "Főoldal"
+
+#: classes/configsections.php:58 classes/configsections.php:105
+msgid "No redirect"
+msgstr "Nincs átirányítás"
+
+#: classes/configsections.php:71 classes/configsections.php:118
+#: classes/configsections.php:221
+msgid "Page:"
+msgstr "Oldal:"
+
+#: classes/configsections.php:78
+msgid "Log-in redirect"
+msgstr "Bejelentkezés átirányítása"
+
+#: classes/configsections.php:125
+msgid "Log-out redirect"
+msgstr "Kijelentkezés átirányítása"
+
+#: classes/configsections.php:131
+msgid "Login & Logout"
+msgstr "Bejelentkezés & Kijelentkezés"
+
+#: classes/configsections.php:139
+msgid "Allow username changes"
+msgstr "Módosítások engedélyezése a felhasználó nevében"
+
+#: classes/configsections.php:144
+msgid "Some plugins (like WooCommerce, EDD and Learndash) create user accounts where the usename is an e-mail address. PeepSo uses the usernames to build profile URLs, which can lead to accidental e-mail exposure through site URLs. Enabling this feature will cause PeepSo to step in during third party user registration and automatically generate a safe username for the new user."
+msgstr "Egyes plugin modulok (mint a WooCommerce, EDD és Learndash) felhasználói fiókokat hoznak létre, ahol a felhasználó neve (usename) egy e-mail cím. A PeepSo profil URL-ek felépítéséhez használja a felhasználóneveket, ami véletlen e-mail sérülékenységhez vezethet a weboldal URL-eken keresztül. A szolgáltatás engedélyezésének hatására a PeepSo közbelép harmadik fél a felhasználójának regisztrációja során, és automatikusan létrehoz egy biztonságos felhasználónevet az új felhasználó számára."
+
+#: classes/configsections.php:147
+msgid "Clean up third party registrations"
+msgstr "Törli a harmadik fél regisztrációkat"
+
+#: classes/configsections.php:162
+msgid "Enabled: registration through PeepSo becomes impossible and is not shown anywhere in the front-end. Use only if your site is a closed community or registrations are coming in through another plugin."
+msgstr "Engedélyezve: a regisztráció a PeepSo-n keresztül lehetetlenné válik, és nem jelenik meg sehol sem a felhasználói felületen. Csak akkor használja, ha az Ön webhelye egy zárt közösséget alkot, vagy a regisztrációkat egy másik plugin modulon keresztül fogadja."
+
+#: classes/configsections.php:166
+msgid "Disable registration"
+msgstr "Regisztráció tiltása"
+
+#: classes/configsections.php:171
+msgid "Enabled: users register, confirm their e-mail and must be accepted by an Admin. Users are notified by email when they're approved.<br/>Disabled: users register, confirm their email address and can immediately participate in your community."
+msgstr "Engedélyezve: a felhasználóknak regisztrálniuk kell, vissza kell igazolni az e-mail címüket, és az Admin-nak kell őket jóváhagyni. A felhasználókat e-mail üzenetben értesítik jóváhagyásukról.<br/>Letiltva: a felhasználók regisztrálnak, visszaigazolják e-mail címüket, és azonnal részt vehetnek az Ön közösségének forgalmában."
+
+#: classes/configsections.php:174
+msgid "Admin Account Verification"
+msgstr "Admin Felhasználó Jóváhagyása"
+
+#: classes/configsections.php:179
+msgid "Enabled: users have to fill in all required fields before being able to participate in the community."
+msgstr "Engedélyezve: a felhasználóknak ki kell tölteni minden kötelező mezőt, hogy részt vehessenek a közösség forgalmában."
+
+#: classes/configsections.php:182
+msgid "Force Profile Completion"
+msgstr "Profil kitöltésének kényszerítése"
+
+#: classes/configsections.php:228
+msgid "Activation redirect"
+msgstr "Átirányítás aktiváláshoz"
+
+#: classes/configsections.php:234
+msgid "Requires a valid SSL certificate.<br/>Enabling this option without a valid certificate might break your site."
+msgstr "Érvényes SSL tanúsítványt igényel. <br/>Ha ezt az opciót érvényes tanúsítvány nélkül engedélyezte, akkor tönkreteheti az Ön webhelyét."
+
+#: classes/configsections.php:237
+msgid "Force SSL on Registration Page"
+msgstr "SSL kényszerítése a Regisztrációs oldalon"
+
+#: classes/configsections.php:247
+msgid "ReCaptcha"
+msgstr "ReCaptcha"
+
+#: classes/configsections.php:254
+msgid "Enable ReCaptcha"
+msgstr "ReCaptcha engedélyezése"
+
+#: classes/configsections.php:261
+msgid "Site Key"
+msgstr "Site kulcs"
+
+#: classes/configsections.php:267
+msgid "Get INVISIBLE ReCaptcha keys <a href=\"https://www.google.com/recaptcha/\" target=\"_blank\">here</a></strong>.<br/>Having issues or questions? Please refer to the <a href=\"http://peep.so/recaptcha\" target=\"_blank\">documentation</a> or contact PeepSo Support."
+msgstr "Szerezzen LÁTHATATLAN ReCaptcha kulcsokat <a href=\"https://www.google.com/recaptcha/\" target=\"_blank\">innen</a>-</strong>.<br/>Problémái vagy kérdései vannak? Kérjük, olvassa el a <a href=\"http://peep.so/recaptcha\" target=\"_blank\">dokumentációt</a>, vagy lépjen kapcsolatba a PeepSo Támogatással."
+
+#: classes/configsections.php:270
+msgid "Secret Key"
+msgstr "Titkos kulcs"
+
+#: classes/configsections.php:280
+msgid "Terms & Conditions"
+msgstr "Általános felhasználási feltételek"
+
+#: classes/configsections.php:287
+msgid "Enable Terms &amp; Conditions"
+msgstr "Általános felhasználási feltételek engedélyezése"
+
+#: classes/configsections.php:296
+msgid "Terms &amp; Conditions"
+msgstr "Felhasználási feltételek"
+
+#: classes/configsections.php:305 classes/configsections.php:321
+#: classes/register.php:140 templates/register/register.php:40
+msgid "Privacy Policy"
+msgstr "Adatvédelmi szabályzat"
+
+#: classes/configsections.php:312
+msgid "Enable Privacy Policy"
+msgstr "Adatvédelmi irányelvek engedélyezése"
+
+#: classes/configsections.php:342
+msgid "WordPress Social Invites"
+msgstr "WordPress Social Meghívások"
+
+#: classes/configsections.php:351 classes/configsections.php:385
+#, php-format
+msgid "Requires %s to be installed and properly configured."
+msgstr "%s telepítése és megfelelő konfigurálása szükséges."
+
+#: classes/configsections.php:359
+msgid "Show WSI on Members Page"
+msgstr "A WSI mutatása a tagok oldalán"
+
+#: classes/configsections.php:365 classes/configsections.php:400
+#, php-format
+msgid "%s not found! Please install the plugin to see the configuration setting."
+msgstr "%s nem található! Kérjük telepítsd a plugint a konfigurációs beállítások megtekintéséhez."
+
+#: classes/configsections.php:376
+msgid "WooCommerce Social Login"
+msgstr "WooCommerce Social bejelentkezés"
+
+#: classes/configsections.php:391
+msgid "WooCommerce Social Login configuration"
+msgstr "WooCommerce Social bejelentkezés konfiguráció"
+
+#: classes/configsections.php:394
+#, php-format
+msgid "You may go to %s."
+msgstr "Lehet, hogy ide kell menned: %s."
+
+#: classes/configsections.php:408
+msgid "Core Integrations"
+msgstr "Core integrációk"
+
+#: classes/configsections.php:409
+msgid "Settings for built-in integrations between PeepSo and third party plugins."
+msgstr "Beépített integrációk beállításai a PeepSo és egy harmadik féltől származó beépülő modul között."
+
+#: classes/configsections.php:439
+msgid "Default stream filter"
+msgstr "Alapértelmezett stream szűrő"
+
+#: classes/configsections.php:455
+msgid "Defines the default starting privacy level for new posts. Users can change it, and the postbox will always remember their last choice."
+msgstr "Az új bejegyzések alapértelmezett adatvédelmét határozza meg. A felhasználók megváltoztathatják, és a postafiók mindig emlékezni fog az utolsó változtatásokra."
+
+#: classes/configsections.php:459
+msgid "Default post privacy"
+msgstr "Alapértelmezett poszt adatvédelem"
+
+#: classes/configsections.php:469
+msgid "Maximum size of Post"
+msgstr "Az üzenet maximális mérete"
+
+#: classes/configsections.php:476
+msgid "Open links in new tab"
+msgstr "Link megnyitása új lapon"
+
+#: classes/configsections.php:483
+msgid "Hide Activity Stream from Non-logged in Users"
+msgstr "Tevékenységek (megosztások) elrejtése a nem bejelentkezett felhasználók elöl"
+
+#: classes/configsections.php:490
+msgid "Enable Repost"
+msgstr "Közzététel engedélyezése"
+
+#: classes/configsections.php:497
+msgid "Enable Moods"
+msgstr "Moods engedélyezése"
+
+#: classes/configsections.php:504
+msgid "Enable Tags"
+msgstr "Címkék engedélyezése"
+
+#: classes/configsections.php:511
+msgid "Enable Location"
+msgstr "Helymeghatározás engedélyezése"
+
+#: classes/configsections.php:546
+msgid "Number of Comments to display"
+msgstr "Megjelenítendő hozzászólások száma"
+
+#: classes/configsections.php:555
+msgid "Show X more comments"
+msgstr "További X hozzászólás megjelenítése"
+
+#: classes/configsections.php:574
+msgid "Show 'read more' after: [n] characters"
+msgstr "'olvasd tovább' megjelenítése ennyi karakter után: [n] "
+
+#: classes/configsections.php:585
+msgid "Redirect to single post view when post is longer than: [n] characters"
+msgstr "Átirányítás teljes üzenet nézetre, ha az üzenet több karakterből áll, mint [n]"
+
+#: classes/configsections.php:592
+msgid "Profile Posts"
+msgstr "Profil hozzászólások"
+
+#: classes/configsections.php:608
+msgid " (profile owner)"
+msgstr " (profil tulajdonosa)"
+
+#: classes/configsections.php:614
+msgid "Who can post on \"my profile\" page"
+msgstr "Ki posztolhat a profiloldalamon"
+
+#: classes/configsections.php:621
+msgid "Let users override this setting"
+msgstr "Lehetővé teszi, hogy a felhasználók felülírják ezt a beállítást"
+
+#: classes/configsections.php:628
+msgid "Reporting"
+msgstr "Bejelentés"
+
+#: classes/configsections.php:635
+msgid "Enable Reporting"
+msgstr "Bejelentés engedélyezése"
+
+#: classes/configsections.php:645
+msgid "Predefined Text (Separated by a New Line)"
+msgstr "Előre definiált szöveg (elválasztva egy új vonallal)"
+
+#: classes/configsections.php:652 classes/gdpr.php:521 classes/gdpr.php:1099
+#: classes/general.php:40 peepso.php:2899
+msgid "Activity"
+msgstr "Tevékenység"
+
+#: classes/configsections.php:660
+msgid "I have an Ultimate Bundle license"
+msgstr "Van egy Ultimate Bundle licenszem"
+
+#: classes/configsections.php:666
+msgid "Ultimate Bundle License Key"
+msgstr "Ultimate Bundle Licensz Kulcs"
+
+#: classes/configsections.php:752
+msgid "License Key Configuration"
+msgstr "Licensz kulcs beállítása"
+
+#: classes/configsections.php:753
+msgid "This is where you configure the license keys for each PeepSo add-on. You can find your license numbers on <a target=\"_blank\" href=\"http://peepso.com/my-account/\">My Orders</a> page. Please copy them here and click SAVE at the bottom of this page."
+msgstr "Itt beállíthatod a licenc kulcsokat a PeepSo bővitményekhez. A licenc számaidat a <a target=\"_blank\" href=\"http://peepso.com/my-account/\"> My Orders </a> oldalon találhatod meg. Kérjük, másold ide őket, és az oldal alján kattints a MENTÉS-re."
+
+#: classes/configsections.php:754
+#, php-format
+msgid "We are detecting %s as your  install URL. Please make sure your \"supported domain\" is configured properly."
+msgstr "A(z) %s telepítési URL-jét észleljük. Kérjük győződj meg róla, hogy a \"támogatott domain\" megfelelően van beállítva."
+
+#: classes/configsections.php:756
+msgid "If some licenses are not validating, please make sure to click the SAVE button."
+msgstr "Ha egyes licenszek nincsenek érvényesítve, kérjük győződj meg arról, hogy a MENTÉS (SAVE) gombra kattintottál-e."
+
+#: classes/configsections.php:758
+msgid "If that does not help, please contact Support."
+msgstr "Ha ez nem segít, kérjük fordulj a Support-hoz."
+
+#: classes/exif.php:33
+msgid "no file given"
+msgstr "nincsen fájl megadva"
+
+#: classes/exif.php:37
+msgid "unable to open file"
+msgstr "nem lehet megnyitni a fájlt"
+
+#: classes/exif.php:48
+msgid "JPG header not found"
+msgstr "JPG fejléc nem található"
+
+#: classes/exif.php:68
+msgid "Exif data not found "
+msgstr "Exif adat nem található "
+
+#: classes/exif.php:75
+msgid "bad IFD entry length"
+msgstr "IFD bejegyzés hossza rossz"
+
+#: classes/exif.php:83
+msgid "unable to determine byte order"
+msgstr "nem lehet meghatározni a bájtsorrendet"
+
+#: classes/exif.php:88 classes/exif.php:93
+msgid "invalid tag mark"
+msgstr "érvénytelen címke jelölés"
+
+#: classes/exif.php:90 classes/exif.php:95
+msgid "unrecognized Tag mark: 0x"
+msgstr "ismeretlen Címke jelölés: 0 x"
+
+#: classes/exif.php:102 classes/exif.php:104 classes/exif.php:111
+#: classes/exif.php:113
+msgid "invalid IFD offset"
+msgstr "érvénytelen IFD offset"
+
+#: classes/exif.php:120
+msgid "invalid offset"
+msgstr "érvénytelen offset"
+
+#: classes/exif.php:134
+msgid "invalid number of tags: "
+msgstr "érvénytelen címkeszám: "
+
+#: classes/exif.php:142
+msgid "exceeded end of data segment"
+msgstr "meghaladta az adatszegmens végét"
+
+#: classes/exif.php:157
+msgid "number of bytes is zero"
+msgstr "bájtok száma nulla"
+
+#: classes/exif.php:164
+msgid "orientation value is 0"
+msgstr "orientációs érték 0"
+
+#: classes/exif.php:168
+msgid "orientagion value is 0"
+msgstr "orientációs érték 0"
+
+#: classes/exif.php:173
+msgid "invalid orientation tag:"
+msgstr "érvénytelen orientációs tag:"
+
+#: classes/exif.php:186
+msgid "premature EOF"
+msgstr "korai EOF"
+
+#: classes/exif.php:199
+msgid "premature eof"
+msgstr "korai eof"
+
+#: classes/fields/field.php:147
+msgid "Enter data"
+msgstr "Add meg az adatokat"
+
+#: classes/fields/field.php:196
+msgid "Stay safe! Be careful about disclosing personal information."
+msgstr "Maradj biztonságban! Legyél óvatos a személyes adatok felfedésével kapcsolatban."
+
+#: classes/fields/field.php:704 classes/fields/field.php:712
+msgid "Some fields privacy is defined by the administrators"
+msgstr "Egyes mezők adatvédelmét a rendszergazdák határozzák meg"
+
+#: classes/fields/field.php:726
+msgid "Edit privacy of "
+msgstr "Adatvédelmi beállítások szerkesztése "
+
+#: classes/fields/fieldlocation.php:11 classes/fields/fieldtexturl.php:21
+msgid "clickable link"
+msgstr "kattintható link"
+
+#: classes/fields/fieldlocation.php:12
+msgid "Map selector"
+msgstr "Térképválasztó"
+
+#: classes/fields/fieldlocation.php:14 classes/profilefields.php:212
+msgid "Share your location"
+msgstr "Tartózkodási helyed megosztása"
+
+#: classes/fields/fieldlocation.php:51
+msgid "Enter location name"
+msgstr "Hely megadása"
+
+#: classes/fields/fieldselectsingle.php:18
+msgid "dropdown"
+msgstr "legördülő lista"
+
+#: classes/fields/fieldselectsingle.php:19
+msgid "checklist"
+msgstr "ellenőrző lista"
+
+#: classes/fields/fieldselectsingle.php:22
+msgid "Pick only one."
+msgstr "Csak egy választható."
+
+#: classes/fields/fieldselectsingle.php:73
+#: classes/fields/fieldselectsingle.php:106
+msgid "Select an option..."
+msgstr "Válassz egy lehetőséget ..."
+
+#: classes/fields/fieldtext.php:12
+msgid "input (single line)"
+msgstr "bemenet (egy sor)"
+
+#: classes/fields/fieldtext.php:13
+msgid "textarea (multiple lines)"
+msgstr "szöveg (több soros)	"
+
+#: classes/fields/fieldtext.php:25
+msgid "Tell us about it."
+msgstr "Írj erről valamit..."
+
+#: classes/fields/fieldtextdate.php:15
+msgid "date picker"
+msgstr "dátumválasztó"
+
+#: classes/fields/fieldtextdate.php:21
+msgid "date (WordPress format)"
+msgstr "dátum (WordPress formátum)"
+
+#: classes/fields/fieldtextdate.php:22
+msgid "relative - time passed (ie 1 month, 5 years)"
+msgstr "relatív – eltelt idő (vagyis 1 hónap, 5 év)"
+
+#: classes/fields/fieldtextdate.php:23
+msgid "relative - age (ie 25 years old)"
+msgstr "relatív - kor (azaz 25 éves)"
+
+#: classes/fields/fieldtextdate.php:28
+msgid "When did it happen?"
+msgstr "Mikor történt?"
+
+#: classes/fields/fieldtextdate.php:59
+msgid "ago"
+msgstr "óta"
+
+#: classes/fields/fieldtextdate.php:62
+msgid "from now"
+msgstr "mostantól"
+
+#: classes/fields/fieldtextdate.php:78
+msgid "old"
+msgstr "régi"
+
+#: classes/fields/fieldtextdate.php:97 classes/fields/fieldtextdate.php:126
+msgid "Set date"
+msgstr "Dátum beállítása"
+
+#: classes/fields/fieldtextdate.php:103 classes/fields/fieldtextdate.php:131
+msgid "Toggle datepicker"
+msgstr "Dátum választó"
+
+#: classes/fields/fieldtexturl.php:16 classes/fields/fieldtexturl.php:27
+msgid "What's the site's address?"
+msgstr "Mi a webhely címe?"
+
+#: classes/fields/tests/fieldtestdateagemax.php:20
+#, php-format
+msgid "Maximum age: %s"
+msgstr "Maximális életkor: %s"
+
+#: classes/fields/tests/fieldtestdateagemin.php:20
+#, php-format
+msgid "Minimum age: %s"
+msgstr "Minimális életkor: %s"
+
+#: classes/fields/tests/fieldtestlengthmax.php:9
+msgid "Maximum length"
+msgstr "Maximális hossz"
+
+#: classes/fields/tests/fieldtestlengthmax.php:12
+#: classes/fields/tests/fieldtestlengthmin.php:12
+msgid "character(s)"
+msgstr "karakter(ek)"
+
+#: classes/fields/tests/fieldtestlengthmax.php:14
+#, php-format
+msgid "Maximum length: %s"
+msgstr "Maximális hossz: %s"
+
+#: classes/fields/tests/fieldtestlengthmin.php:9
+msgid "Minimum length"
+msgstr "Minimális hossz"
+
+#: classes/fields/tests/fieldtestlengthmin.php:14
+#, php-format
+msgid "Minimum length: %s"
+msgstr "Minimális hossz: %s"
+
+#: classes/fields/tests/fieldtestpatternurl.php:10
+msgid "Force valid http(s):// links"
+msgstr "Kényszerítés: érvényes http(s):// linkek"
+
+#: classes/fields/tests/fieldtestpatternurl.php:13
+msgid "Must be a valid URL with http(s)://"
+msgstr "Kell egy érvényes URL: http (s)://"
+
+#: classes/fields/tests/fieldtestrequired.php:10
+msgid "Required"
+msgstr "Szükséges"
+
+#: classes/fields/tests/fieldtestrequired.php:27
+msgid "This field is required"
+msgstr "A mező kitöltése kötelező"
+
+#: classes/form.php:805
+msgid "ReCaptcha security check failed"
+msgstr "ReCaptcha biztonsági ellenőrzés sikertelen"
+
+#: classes/formvalidate.php:26
+msgid "This field is required."
+msgstr "A mező kitöltése kötelező."
+
+#: classes/formvalidate.php:27
+msgid "This field must be a number."
+msgstr "Ebben a mezőben kell lennie egy számnak."
+
+#: classes/formvalidate.php:28
+msgid "This field must be an email."
+msgstr "Ebbe a mezőbe kell egy email."
+
+#: classes/formvalidate.php:29
+msgid "This field only accepts alphanumeric characters."
+msgstr "Ez a mező csak alfanumerikus karakterek fogad el."
+
+#: classes/formvalidate.php:30
+msgid "This field only accepts alpha letters."
+msgstr "Ebben a mezőben csak betűket lehet használni."
+
+#: classes/formvalidate.php:31
+msgid "This field only accepts alpha letters, spaces, dashes(-), and apostrophes(')."
+msgstr "Ebbe a mezőbe csak betűket, szóközöket, kötőjeleket(-) és aposztrófokat(') lehet használni."
+
+#: classes/formvalidate.php:32
+msgid "This field accepts all letters and numbers except for HTML code."
+msgstr "Ez a mező elfogad minden betűt és számot, kivéve a HTML-kódokat."
+
+#: classes/formvalidate.php:33
+msgid "This field only accepts alpha letters, numbers, dashes(-), and underscores(_), or email addresses."
+msgstr "Ebbe a mezőbe csak betűket, számokat, kötőjeleket(-) és aláhúzásokat(_), vagy email címeket \n"
+"lehet használni."
+
+#: classes/formvalidate.php:34
+msgid "Please enter a date in the past."
+msgstr "Kérjük, adj meg egy korábbi dátumot."
+
+#: classes/formvalidate.php:35
+#, php-format
+msgid "This field is too long, maximum length: %d."
+msgstr "A mező túl hosszú, maximum hossz: %d."
+
+#: classes/formvalidate.php:36
+#, php-format
+msgid "This field is too short, minimum length: %d."
+msgstr "Ez a mező túl rövid, a minimális hossz: %d."
+
+#: classes/formvalidate.php:37
+msgid "This field must be a valid website."
+msgstr "Ebben a mezőben kell lennie egy érvényes honlapnak."
+
+#: classes/formvalidate.php:38
+msgid "This field must be a valid date."
+msgstr "Ebben a mezőben kell lennie egy érvényes dátumnak."
+
+#: classes/formvalidate.php:39
+msgid "This field must be positive."
+msgstr "Ennek a mezőnek pozitívnak kell lennie."
+
+#: classes/formvalidate.php:40
+msgid "This field must an integer."
+msgstr "Ebben a mezőben kell lennie egy egész számnak."
+
+#: classes/formvalidate.php:41
+#, php-format
+msgid "This field value should be no more than %d."
+msgstr "Ennek a mezőnek az értéke nem lehet több, mint %d."
+
+#: classes/formvalidate.php:42
+#, php-format
+msgid "This field value should be at least %d."
+msgstr "Ennek a mezőnek az értéke legyen legalább %d."
+
+#: classes/formvalidate.php:43
+#, php-format
+msgid "The password should be at least %d characters."
+msgstr "A jelszó legalább %d karakter hosszú legyen."
+
+#: classes/formvalidate.php:119
+msgid "Error message must be set for custom validation"
+msgstr "Hibaüzenet beállítása szükséges az érvényesítéshez"
+
+#: classes/gdpr.php:26
+msgid "Pending"
+msgstr "Függőben"
+
+#: classes/gdpr.php:27 classes/gdprlisttable.php:121
+#: classes/mailqueuelisttable.php:157
+msgid "Processing"
+msgstr "Feldolgozás"
+
+#: classes/gdpr.php:28 classes/gdprlisttable.php:124
+#: classes/mailqueuelisttable.php:160
+msgid "Delay"
+msgstr "Késleltetés"
+
+#: classes/gdpr.php:29 classes/gdprlisttable.php:127
+#: classes/mailqueuelisttable.php:163
+msgid "Failed"
+msgstr "Sikertelen"
+
+#: classes/gdpr.php:30 classes/gdprlisttable.php:141
+msgid "Success"
+msgstr "Sikeres"
+
+#: classes/gdpr.php:31 classes/gdprlisttable.php:135
+msgid "Ready"
+msgstr "Kész"
+
+#: classes/gdpr.php:32 classes/gdprlisttable.php:131
+#: classes/mailqueuelisttable.php:167
+msgid "Retry"
+msgstr "Újra"
+
+#: classes/gdpr.php:33
+msgid "Reject"
+msgstr "Elutasít"
+
+#: classes/gdpr.php:205
+msgid "Your personal data is ready for download"
+msgstr "A személyes adataid készen állnak a letöltésre"
+
+#: classes/gdpr.php:440 classes/gdpr.php:1094
+msgid "Personal Data"
+msgstr "Személyes adat"
+
+#: classes/gdpr.php:634 classes/gdpr.php:1114 classes/general.php:228
+#: templates/account/friends.php:1
+msgid "Friends"
+msgstr "Barátok"
+
+#: classes/gdpr.php:694 classes/gdpr.php:1104
+msgid "Photos"
+msgstr "Fotók"
+
+#: classes/gdpr.php:873 classes/gdpr.php:1119 templates/account/messages.php:5
+msgid "Messages"
+msgstr "Üzenetek"
+
+#: classes/gdpr.php:1109
+msgid "Videos"
+msgstr "Videók"
+
+#: classes/gdprlisttable.php:46
+msgid "User Requester"
+msgstr "Felhasználói igénylő"
+
+#: classes/gdprlisttable.php:47 classes/mailqueuelisttable.php:52
+msgid "Date Created"
+msgstr "Létrehozás dátuma"
+
+#: classes/gdprlisttable.php:48
+msgid "Date Updated"
+msgstr "Dátum frissítve"
+
+#: classes/gdprlisttable.php:49
+msgid "File Size"
+msgstr "Fájlméret"
+
+#: classes/gdprlisttable.php:118 classes/mailqueuelisttable.php:154
+msgid "Waiting"
+msgstr "Várakozás"
+
+#: classes/gdprlisttable.php:138
+msgid "Rejected"
+msgstr "Elutasított"
+
+#: classes/gdprlisttable.php:167
+msgid " GB"
+msgstr " GB"
+
+#: classes/gdprlisttable.php:171
+msgid " MB"
+msgstr " MB"
+
+#: classes/gdprlisttable.php:175
+msgid " KB"
+msgstr " KB"
+
+#: classes/gdprlisttable.php:179
+msgid " bytes"
+msgstr " bájt"
+
+#: classes/gdprlisttable.php:183
+msgid " byte"
+msgstr " byte"
+
+#: classes/gdprlisttable.php:187
+msgid "0 bytes"
+msgstr "0 bájt"
+
+#: classes/gdprlisttable.php:244 classes/mailqueuelisttable.php:233
+msgid "Delete items"
+msgstr "Elemek törlése"
+
+#: classes/gdprlisttable.php:270 classes/mailqueuelisttable.php:254
+msgid "deleted"
+msgstr "törölve"
+
+#: classes/gdprlisttable.php:277
+msgid "request"
+msgid_plural "requests"
+msgstr[0] "kérelem"
+msgstr[1] "kérelmek"
+
+#: classes/general.php:107 classes/widgets/widgetme.php:78
+#: classes/widgets/widgetuserbar.php:74
+msgid "Pending Notifications"
+msgstr "Függőben lévő értesítések"
+
+#: classes/general.php:171 classes/profileshortcode.php:558
+#: templates/widgets/me.tpl.php:125 templates/widgets/userbar.tpl.php:52
+msgid "Preferences"
+msgstr "Preferenciák"
+
+#: classes/general.php:186 templates/widgets/me.tpl.php:140
+#: templates/widgets/userbar.tpl.php:58 templates/widgets/userbar.tpl.php:99
+msgid "Log Out"
+msgstr "Kilépés"
+
+#: classes/general.php:218 classes/privacy.php:25
+msgid "Public"
+msgstr "Publikus, mindenki láthatja"
+
+#: classes/general.php:219
+msgid "Can be seen by everyone, even if they're not members"
+msgstr "Mindenki által láthatóak, még akkor is, ha ők nem tagok"
+
+#: classes/general.php:223 classes/privacy.php:26
+msgid "Site Members"
+msgstr "Bejelentkezett felhasználók"
+
+#: classes/general.php:224
+msgid "Can be seen by registered members"
+msgstr "Csak regisztrált felhasználók láthatják"
+
+#: classes/general.php:229
+msgid "Can be seen by your friends"
+msgstr "A barátaid láthatják"
+
+#: classes/general.php:233 classes/privacy.php:27
+msgid "Only Me"
+msgstr "Csak én"
+
+#: classes/general.php:234
+msgid "Can only be seen by you"
+msgstr "Csak te láthatod"
+
+#: classes/license_edd_helper.php:201
+#, php-format
+msgid "There is a new version of %1$s available. %2$sView version %3$s details%4$s."
+msgstr "A(z) %1$s új verziója elérhető. %2$s verzió megtekintése %3$s részletek %4$s."
+
+#: classes/license_edd_helper.php:209
+#, php-format
+msgid "There is a new version of %1$s available. %2$sView version %3$s details%4$s or %5$supdate now%6$s."
+msgstr "A(z) %1$s új verziója elérhető. %2$s verzió megtekintése %3$s részletek %4$s vagy %5$s frissítése most %6$s."
+
+#: classes/license_edd_helper.php:399
+msgid "You do not have permission to install plugin updates"
+msgstr "Nincs engedélyed a bővítmény frissítésének a telepítéséhez"
+
+#: classes/license_edd_helper.php:399 peepso.php:1851
+msgid "Error"
+msgstr "Hiba"
+
+#: classes/listtable.php:54
+msgid "Go to the first page"
+msgstr "Ugrás az első oldalra"
+
+#: classes/listtable.php:61
+msgid "Go to the previous page"
+msgstr "Ugrás az előző oldalra"
+
+#: classes/listtable.php:70
+msgid "Current page"
+msgstr "Aktuális oldal"
+
+#: classes/listtable.php:76
+#, php-format
+msgctxt "paging"
+msgid "%1$s of %2$s"
+msgstr "%1$s a %2$s"
+
+#: classes/listtable.php:80
+msgid "Go to the next page"
+msgstr "Ugrás a következő oldalra"
+
+#: classes/listtable.php:87
+msgid "Go to the last page"
+msgstr "Ugrás az utolsó oldalra"
+
+#: classes/location.php:94
+msgid "Set a Location for your post"
+msgstr "Adj meg egy helyet a bejegyzésedhez"
+
+#: classes/location.php:176
+msgid "Request could not be verified."
+msgstr "Kérelem nem ellenőrizhető."
+
+#: classes/location.php:185
+msgid "Photo album location saved."
+msgstr "Fotóalbum helye elmentve."
+
+#: classes/location.php:188
+msgid "Missing field location."
+msgstr "Hiányzó mező."
+
+#: classes/location.php:192
+msgid "You are not authorized to change this album location."
+msgstr "Nem vagy jogosult az album helyének módosítására."
+
+#: classes/location.php:301
+msgid "PeepSo Location requires a Google Maps API key."
+msgstr "A PeepSo Location alkalmazáshoz Google Maps API kulcs szükséges."
+
+#: classes/location.php:302
+msgid "Click here to configure it"
+msgstr "Kattints ide a konfiguráláshoz"
+
+#: classes/mailqueuelisttable.php:49
+msgid "Recipient & Subject"
+msgstr "Címzett és Tárgy"
+
+#: classes/mailqueuelisttable.php:50
+msgid "Message"
+msgstr "Üzenet"
+
+#: classes/mailqueuelisttable.php:231
+msgid "Delay items"
+msgstr "Késleltetett tételek"
+
+#: classes/mailqueuelisttable.php:232
+msgid "Set items to waiting"
+msgstr "Tételek beállítása várakozásra"
+
+#: classes/mailqueuelisttable.php:270
+msgid "updated"
+msgstr "frissítve"
+
+#: classes/mailqueuelisttable.php:298
+msgid "Process Emails"
+msgstr "Folyamat emailek"
+
+#: classes/mailqueuelisttable.php:309
+#, php-format
+msgid "Estimated time until Mail Queue is empty: %1$d %2$s."
+msgstr "Becsült idő, amíg a Mail Queue üres lesz: %1$d %2$s."
+
+#: classes/mailqueuelisttable.php:310
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "perc"
+msgstr[1] "perc"
+
+#: classes/mailqueuelisttable.php:315
+msgid "The default Mailqueue is disabled"
+msgstr "Az alapértelmezett Mailqueue le van tiltva"
+
+#: classes/membersearch.php:133 classes/membersearch.php:140
+msgid "No users found."
+msgstr "Felhasználó nem található."
+
+#: classes/membersearch.php:262
+msgid "Unblock User"
+msgstr "Felhasználó tiltásának feloldása"
+
+#: classes/membersearch.php:264
+msgid "Allow this user to see all of your activities"
+msgstr "Engedélyezze ennek a felhasználónak, hogy megtekinthesse az összes tevékenységedet"
+
+#: classes/membersearch.php:271
+msgid "Block User"
+msgstr "Felhasználó tiltása"
+
+#: classes/membersearch.php:273
+msgid "This user will be blocked from all of your activities"
+msgstr "Ez a felhasználó blokkolva lesz minden tevékenységedtől"
+
+#: classes/membersearch.php:281
+msgid "Ban"
+msgstr "Tiltás"
+
+#: classes/membersearch.php:289
+msgid "Unban"
+msgstr "Kitiltás visszavonása"
+
+#: classes/modalcomments.php:28 classes/modalcomments.php:49
+msgid "Could not find the post."
+msgstr "Nem található a poszt."
+
+#: classes/modalcomments.php:154
+msgid "Edit Caption"
+msgstr "Felirat szerkesztése"
+
+#: classes/moods.php:59
+msgid "joyful"
+msgstr "örömteli"
+
+#: classes/moods.php:60
+msgid "meh"
+msgstr "nahát"
+
+#: classes/moods.php:61
+msgid "love"
+msgstr "szeret"
+
+#: classes/moods.php:62
+msgid "flattered"
+msgstr "hízelgő"
+
+#: classes/moods.php:63
+msgid "crazy"
+msgstr "bolond"
+
+#: classes/moods.php:64
+msgid "cool"
+msgstr "király"
+
+#: classes/moods.php:65
+msgid "tired"
+msgstr "fáradt"
+
+#: classes/moods.php:66
+msgid "confused"
+msgstr "zavaros"
+
+#: classes/moods.php:67
+msgid "speechless"
+msgstr "szótlan"
+
+#: classes/moods.php:68
+msgid "confident"
+msgstr "magabiztos"
+
+#: classes/moods.php:69
+msgid "relaxed"
+msgstr "nyugodt"
+
+#: classes/moods.php:70
+msgid "strong"
+msgstr "erős"
+
+#: classes/moods.php:71
+msgid "happy"
+msgstr "boldog"
+
+#: classes/moods.php:72
+msgid "angry"
+msgstr "mérges"
+
+#: classes/moods.php:73
+msgid "scared"
+msgstr "megrémült"
+
+#: classes/moods.php:74
+msgid "sick"
+msgstr "beteg"
+
+#: classes/moods.php:75
+msgid "sad"
+msgstr "szomorú"
+
+#: classes/moods.php:76
+msgid "blessed"
+msgstr "áldott"
+
+#: classes/moods.php:107
+msgid "Remove Mood"
+msgstr "Hangulatjel eltávolítása"
+
+#: classes/moods.php:110 classes/moods.php:163
+msgid " feeling "
+msgstr " érzés "
+
+#: classes/moods.php:114
+msgid "Mood"
+msgstr "Hangulat"
+
+#: classes/moods.php:119
+msgid "Mood settings for your post"
+msgstr "Hangulatjel beállítása a posztodhoz"
+
+#: classes/notificationsajax.php:28 classes/notificationsajax.php:36
+msgid "You currently have no unread notifications"
+msgstr "Jelenleg nincsenek olvasatlan értesítéseid"
+
+#: classes/notificationsajax.php:38
+msgid "You currently have no notifications"
+msgstr "Jelenleg nincsenek értesítések"
+
+#: classes/notificationsajax.php:73
+msgid "Something went wrong"
+msgstr "Valami hiba történt"
+
+#: classes/notificationsajax.php:98
+msgid "You don't have permission to do that"
+msgstr "Nincs jogosultságod erre"
+
+#: classes/notificationsajax.php:104
+msgid "Missing notification ID"
+msgstr "Értesítés azonosítója hiányzik"
+
+#: classes/postbox.php:32
+#, php-format
+msgid "You can only enter up to %d characters"
+msgstr "Maximum %d karaktert adhatsz meg"
+
+#: classes/postbox.php:143
+msgid "Privacy settings for your post"
+msgstr "A poszt adatvédelmi beállításai"
+
+#: classes/postbox.php:162
+msgid "Post a Status"
+msgstr "Állapot küldése"
+
+#: classes/postbox.php:267
+msgid "This post was successfully shared."
+msgstr "A poszt sikeresen megosztva."
+
+#: classes/postbox.php:269
+msgid "Post added."
+msgstr "Hozzáadott poszt."
+
+#: classes/profile.php:169
+msgid "Please enter the same password in the verify password field."
+msgstr "Kérjük, ugyanazt a jelszót add meg a jelszó megerősítése mezőben."
+
+#: classes/profile.php:243
+#, php-format
+msgid "Minimum avatar resolution is %d x %d pixels."
+msgstr "Az avatarkép minimum felbontása %d x %d képpont."
+
+#: classes/profile.php:477
+msgid "Please select at least one notification to delete."
+msgstr "Kérjük, válassz ki legalább egy bejelentést ahhoz, hogy töröld."
+
+#: classes/profile.php:515
+msgid "Your account has been completely removed from our system. Please bear in mind, it might take a while to completely delete all your content."
+msgstr "A fiókodat teljesen eltávolítottuk a rendszerünkből. Kérjük vedd figyelembe, hogy eltarthat egy ideig az összes tartalom teljes törlése."
+
+#: classes/profile.php:518 classes/profile.php:545 classes/profile.php:572
+#: classes/profile.php:599
+msgid "You don't have permissions to do this."
+msgstr "Nincs jogosultságod erre."
+
+#: classes/profile.php:522 classes/profile.php:549 classes/profile.php:576
+#: classes/profile.php:603
+msgid "Invalid password."
+msgstr "Érvénytelen jelszó."
+
+#: classes/profile.php:542
+msgid "Your request has been recorded by our system."
+msgstr "A kérésedet a rendszerünk rögzítette."
+
+#: classes/profile.php:569
+msgid "Your download is starting."
+msgstr "A letöltés elindul."
+
+#: classes/profile.php:596
+msgid "Your achive has been deleted."
+msgstr "Az archívumod törölve lett."
+
+#: classes/profile.php:630
+msgid "Someone liked your profile"
+msgstr "Valaki lájkolta a profilodat"
+
+#: classes/profile.php:633
+msgid "liked your profile"
+msgstr "kedveli a profilodat"
+
+#: classes/profile.php:666
+msgid "This profile has been reported"
+msgstr "Ez a profil be lett jelentve"
+
+#: classes/profile.php:832 classes/tags.php:358
+msgid "a comment"
+msgstr "egy megjegyzés"
+
+#: classes/profile.php:835
+msgid "on "
+msgstr "on "
+
+#: classes/profile.php:836
+msgid "your comment"
+msgstr "a megjegyzésed"
+
+#: classes/profile.php:890 classes/profile.php:896 classes/profile.php:902
+msgid "on"
+msgstr "be"
+
+#: classes/profile.php:891 classes/profile.php:906
+#, php-format
+msgid "a %s"
+msgstr "egy %s"
+
+#: classes/profile.php:897 classes/profile.php:934
+#, php-format
+msgid "your %s"
+msgstr "a te %s"
+
+#: classes/profile.php:904
+#, php-format
+msgid "an %s"
+msgstr "egy %s"
+
+#: classes/profile.php:998
+msgid "Update Info"
+msgstr "Profiladatok frissítése"
+
+#: classes/profile.php:1000
+msgid "Redirect to about page"
+msgstr "Átirányítás a névjegy oldalra"
+
+#: classes/profile.php:1045 templates/activity/dialog-repost.php:33
+msgid "Share"
+msgstr "Megosztás"
+
+#: classes/profile.php:1046
+msgid "Share this Profile"
+msgstr "Profil megosztása"
+
+#: classes/profile.php:1062
+msgid "Like this Profile"
+msgstr "Tetszik ez a profil"
+
+#: classes/profile.php:1067
+msgid "Unlike this Profile"
+msgstr "Mégsem lájkolom"
+
+#: classes/profile.php:1084
+msgid "Report User"
+msgstr "Felhasználó jelentése"
+
+#: classes/profile.php:1085
+msgid "Report this Profile"
+msgstr "Profil bejelentése"
+
+#: classes/profile.php:1094
+msgid "Views"
+msgstr "Megtekintések"
+
+#: classes/profile.php:1095
+msgid "Profile Views"
+msgstr "Profil megtekintések"
+
+#: classes/profile.php:1153 peepso.php:3335
+msgid "Activity Stream"
+msgstr "Tevékenységek"
+
+#: classes/profile.php:1168
+msgid "Someone wrote a post on my Profile"
+msgstr "Valaki írt egy megjegyzést a profiloldalamon"
+
+#: classes/profile.php:1173
+msgid "Someone commented on my Post"
+msgstr "Valaki kommentet írt a posztomhoz"
+
+#: classes/profile.php:1178
+msgid "Someone liked my Post"
+msgstr "Valaki lájkolta a posztomat"
+
+#: classes/profile.php:1183
+msgid "Someone liked my Comment"
+msgstr "Valaki lájkolta a hozzászólásomat"
+
+#: classes/profile.php:1188
+msgid "Someone shared my Post"
+msgstr "Valaki megosztotta a posztomat"
+
+#: classes/profile.php:1202
+msgid "Someone liked my Profile"
+msgstr "Valaki lájkolta a profilomat"
+
+#: classes/profile.php:1266 classes/profile.php:1398 classes/profile.php:1409
+#: classes/register.php:70
+msgid "Email"
+msgstr "Email"
+
+#: classes/profile.php:1271
+msgid "On-Site"
+msgstr "Helyszíni"
+
+#: classes/profile.php:1370 classes/profile.php:1378 classes/profile.php:1397
+#: classes/profile.php:1408 templates/profile/profile-about-account.php:36
+msgid "Basic Information"
+msgstr "Alapinformációk"
+
+#: classes/profile.php:1371 classes/profile.php:1379 classes/profile.php:1530
+#: classes/profile.php:1610 classes/profile.php:1690
+msgid "User Name"
+msgstr "Felhasználónév"
+
+#: classes/profile.php:1380
+msgid "Enter your user name"
+msgstr "Írd be a felhasználóneved"
+
+#: classes/profile.php:1392
+msgid "That username is already in use by someone else."
+msgstr "Ezt a felhasználónevet már használja valaki."
+
+#: classes/profile.php:1410 classes/register.php:71
+msgid "Enter your email address"
+msgstr "Írd be az email címed"
+
+#: classes/profile.php:1421
+msgid "This email is already in use by someone else."
+msgstr "Ezt az email címet már használja valaki."
+
+#: classes/profile.php:1426
+msgid "Change Password"
+msgstr "Jelszó megváltoztatása"
+
+#: classes/profile.php:1427
+msgid "Enter password to change"
+msgstr "Írd be a jelszót a módosításhoz"
+
+#: classes/profile.php:1437 classes/register.php:90
+msgid "Verify Password"
+msgstr "Jelszó megerősítése"
+
+#: classes/profile.php:1438
+msgid "Enter password to verify"
+msgstr "Add meg a jelszót az ellenőrzéshez"
+
+#: classes/profile.php:1467 templates/activity/comment-edit.php:9
+#: templates/activity/description-edit.php:17
+#: templates/admin/profiles_field.php:91
+#: templates/admin/profiles_field_config_field_text.php:16
+#: templates/profile/focus.php:56 templates/profile/profile-about.php:159
+msgid "Save"
+msgstr "Mentés"
+
+#: classes/profile.php:1609
+msgid "Request your data."
+msgstr "Az adataid lekérése."
+
+#: classes/profile.php:1639
+#: templates/profile/dialog-profile-request-account-data.php:5
+msgid "Export my Community information"
+msgstr "A közösségi adataim exportálása"
+
+#: classes/profile.php:1665
+msgid "You can download a complete copy of all the information you have shared in this Community. This includes posts, messages, photos, videos, comments, etc.  The information will be compiled automatically and delivered to you in a machine-readable JSON format. Please bear in mind that depending on the amount of data that needs to be compiled, preparing your download might take a while."
+msgstr "Lehetőség van a közösségi oldalon minden általad megosztott információ, adat letöltésére. Ez magában foglalja a hozzászólásokat, üzeneteket, fotókat, videókat, megjegyzéseket stb. Az információk automatikusan összeállítódnak és kézbesítődnek a részedre gépileg olvasható JSON formátumban. Kérjük vedd figyelembe, hogy az összeállítandó adatok mennyiségétől függően a letöltés előkészítése eltarthat egy ideig."
+
+#: classes/profile.php:1669
+msgid "Your export is being prepared. We'll email you when it's ready."
+msgstr "Az exportod előkészítése folyamatban. Emailt küldünk neked, amikor készen áll."
+
+#: classes/profile.php:1689
+msgid "Download your data."
+msgstr "Adataid letöltése."
+
+#: classes/profile.php:1719
+#: templates/profile/dialog-profile-download-account-data.php:5
+#: templates/profile/dialog-profile-download-account-data.php:30
+msgid "Download Archive"
+msgstr "Archívum letöltése"
+
+#: classes/profile.php:1726
+#: templates/profile/dialog-profile-delete-account-data-archive.php:5
+#: templates/profile/dialog-profile-delete-account-data-archive.php:30
+msgid "Delete Archive"
+msgstr "Archívum törlése"
+
+#: classes/profile.php:1752
+msgid "This is a copy of personal information you've shared on this site. To protect your info, we'll ask you to re-enter your password to confirm that this is your account."
+msgstr "Ez az általad az oldalon megosztott személyes adatok egy példánya. Az adatok védelme miatt kérjük add meg újra a jelszavadat annak megerősítéséhez, hogy ez a Te fiókod."
+
+#: classes/profile.php:1753
+msgid "Please note that your archive will be deleted after one week."
+msgstr "Felhívjuk figyelmedet, hogy az archívum egy hét múlva törlésre kerül."
+
+#: classes/profile.php:1761
+msgid "Caution: Protect your archive"
+msgstr "Vigyázat: Védd az archívumodat"
+
+#: classes/profile.php:1762
+msgid "Your data archive includes sensitive info like your private activity, photos and profile information. Please keep this in mind before storing or sending your archive."
+msgstr "Az adatarchívum olyan érzékeny információkat tartalmaz, mint a privát tevékenység, a fotók és a profiladatok. Kérjük, tartsd ezt szem előtt az archívum tárolása vagy elküldése előtt."
+
+#: classes/profile.php:1822
+msgid "Display My Name as"
+msgstr "A nevem megjelenítése a következőképpen"
+
+#: classes/profile.php:1826
+msgid "My Real Name"
+msgstr "Az igazi nevem"
+
+#: classes/profile.php:1827
+msgid "My Username"
+msgstr "A felhasználónevem"
+
+#: classes/profile.php:1835
+msgid "Allow others to \"like\" my profile"
+msgstr "Engedélyezve másoknak, hogy lájkolhatják a profilomat"
+
+#: classes/profile.php:1841
+msgid "Who can see my profile"
+msgstr "Ki láthatja a profilom"
+
+#: classes/profile.php:1848
+msgid "Who can post on my profile"
+msgstr "Ki posztolhat a profiloldalamon"
+
+#: classes/profile.php:1859
+msgid "Hide my profile from all user listings"
+msgstr "Profilom elrejtése minden felhasználó listán"
+
+#: classes/profile.php:1868
+msgid "Don't show my online status"
+msgstr "Ne jelenjen meg az online státuszom"
+
+#: classes/profile.php:1875
+msgid "My timezone"
+msgstr "Az én időzónám"
+
+#: classes/profile.php:1876
+msgid "Display all activity date and time in your own timezone"
+msgstr "Minden tevékenység dátuma és időpontja a saját időzónád szerint jelenjen meg"
+
+#: classes/profilefields.php:86
+msgid "First Name"
+msgstr "Keresztnév"
+
+#: classes/profilefields.php:87
+msgid "What's your name?"
+msgstr "Mi a neved?"
+
+#: classes/profilefields.php:114
+msgid "Last Name"
+msgstr "Vezetéknév"
+
+#: classes/profilefields.php:115
+msgid "What's your last name?"
+msgstr "Mi a vezetékneved?"
+
+#: classes/profilefields.php:143
+msgid "Gender"
+msgstr "Nem (férfi, nő)"
+
+#: classes/profilefields.php:144
+msgid "What's your gender?"
+msgstr "Milyen nemű vagy?"
+
+#: classes/profilefields.php:162
+msgid "Birthdate"
+msgstr "Születési dátum"
+
+#: classes/profilefields.php:163
+msgid "When were you born?"
+msgstr "Mikor születtél?"
+
+#: classes/profilefields.php:180
+msgid "About Me"
+msgstr "Magamról"
+
+#: classes/profilefields.php:181
+msgid "Tell us something about yourself."
+msgstr "Írj valami érdekeset magadról..."
+
+#: classes/profilefields.php:196
+msgid "Website"
+msgstr "Weboldal"
+
+#: classes/profilefields.php:197
+msgid "What's your website's address?"
+msgstr "Mi a honlapod címe?"
+
+#: classes/profilefields.php:368
+#, php-format
+msgid "Your profile is %d%% complete"
+msgstr "A profilod %d%%-ban kész"
+
+#: classes/profilefields.php:371
+msgid "fill in missing required fields to be able to participate in the community."
+msgstr "töltsd ki a hiányző mezőket ahhoz, hogy részt vehess a közösségben."
+
+#: classes/profilefields.php:380
+#, php-format
+msgid "%d required field(s) missing"
+msgstr "%d kötelező mező hiányzik"
+
+#: classes/profilefieldsajax.php:138
+msgid "Couldn't save privacy"
+msgstr "Adatvédelmet nem sikerült menteni"
+
+#: classes/profilefieldsajax.php:169 classes/registershortcode.php:169
+msgid "That user name is already in use."
+msgstr "Ez a felhasználónév már használatban van."
+
+#: classes/profilefieldsajax.php:177 classes/registershortcode.php:163
+msgid "That email address is already in use."
+msgstr "Ez az email cím már használatban van."
+
+#: classes/profilefieldsajax.php:188 classes/registershortcode.php:174
+msgid "The passwords you submitted do not match."
+msgstr "A beküldött jelszavak nem egyeznek."
+
+#: classes/profilepreferencesajax.php:46
+msgid "Preferences saved."
+msgstr "Beállítások mentve."
+
+#: classes/profilepreferencesajax.php:51
+msgid "Failed to save changes."
+msgstr "Nem sikerült elmenteni a változást."
+
+#: classes/profilepreferencesajax.php:97
+msgid "Preferences saved"
+msgstr "Beállítások mentve"
+
+#: classes/profilepreferencesajax.php:102
+msgid "Failed to save"
+msgstr "Nem sikerült menteni"
+
+#: classes/profileshortcode.php:225 classes/profileshortcode.php:272
+msgid "You do not have enough permissions."
+msgstr "Nem rendelkezel a megfelelő engedélyekkel."
+
+#: classes/profileshortcode.php:245 classes/profileshortcode.php:299
+#: peepso.php:1858
+msgid "The file type you uploaded is not allowed."
+msgstr "A feltöltött fájltípus nem engedélyezett."
+
+#: classes/profileshortcode.php:250 classes/profileshortcode.php:294
+msgid "The file you uploaded is either missing or too large."
+msgstr "A feltöltött fájl hiányzik vagy túl nagy."
+
+#: classes/profileshortcode.php:258 classes/profileshortcode.php:308
+msgid "No file uploaded."
+msgstr "Nincs feltöltve fájl."
+
+#: classes/profileshortcode.php:280
+msgid "No user defined."
+msgstr "Nincs felhasználó definiálva."
+
+#: classes/profileshortcode.php:405
+msgid "Changes successfully saved."
+msgstr "Módosítások mentése sikeres."
+
+#: classes/profileshortcode.php:554 peepso.php:2925
+msgid "About"
+msgstr "Magamról"
+
+#: classes/profileshortcode.php:562
+msgid "Notifications"
+msgstr "Értesítések"
+
+#: classes/profileshortcode.php:566
+msgid "Account"
+msgstr "Fiók"
+
+#: classes/recoverpasswordshortcode.php:36
+msgid "Invalid form contents, please resubmit"
+msgstr "Érvénytelen űrlap tartalmak, kérjük, küld újra"
+
+#: classes/recoverpasswordshortcode.php:65
+#: classes/resetpasswordshortcode.php:85
+msgid "Invalid captcha, please try again"
+msgstr "Érvénytelen bejelentkezés, kérjük próbáld meg újra"
+
+#: classes/recoverpasswordshortcode.php:119
+msgid "<strong>ERROR</strong>: Please enter your email address."
+msgstr "<strong>HIBA</strong>: Kérjük add meg az email címedet."
+
+#: classes/recoverpasswordshortcode.php:124
+msgid "<strong>ERROR</strong>: There is no user registered with that email address."
+msgstr "<strong>HIBA</strong>: Nincs regisztrált felhasználó ezzel az email címmel."
+
+#: classes/recoverpasswordshortcode.php:138
+msgid "<strong>ERROR</strong>: Invalid email address provided."
+msgstr "<strong>HIBA</strong>: Érvénytelen email cím."
+
+#: classes/recoverpasswordshortcode.php:169
+msgid "Password reset is not allowed for this user"
+msgstr "Jelszó visszaállítása nem engedélyezett ennek a felhasználónak"
+
+#: classes/recoverpasswordshortcode.php:206 lib/pluggable.php:63
+#, php-format
+msgid "%s Password Reset"
+msgstr "%s jelszó visszaállítása"
+
+#: classes/register.php:52 templates/general/login.php:7
+#: templates/widgets/me.tpl.php:192
+msgid "Username"
+msgstr "Felhasználónév"
+
+#: classes/register.php:53
+msgid "Enter your desired username"
+msgstr "Add meg a kívánt felhasználónevedet"
+
+#: classes/register.php:64
+msgid "Username must not be the same as your password."
+msgstr "A felhasználónév nem lehet ugyanaz, mint a jelszó."
+
+#: classes/register.php:82 templates/general/login.php:12
+#: templates/profile/dialog-profile-delete-account-data-archive.php:12
+#: templates/profile/dialog-profile-deletion.php:12
+#: templates/profile/dialog-profile-download-account-data.php:12
+#: templates/profile/dialog-profile-request-account-data.php:13
+#: templates/widgets/me.tpl.php:197
+msgid "Password"
+msgstr "Jelszó"
+
+#: classes/register.php:83 templates/general/reset-password.php:37
+msgid "Enter your desired password"
+msgstr "Add meg a választott jelszavadat"
+
+#: classes/register.php:91 templates/general/reset-password.php:48
+msgid "Please re-enter your password"
+msgstr "Írd be újra a jelszavadat"
+
+#: classes/register.php:131 classes/register.php:139
+#, php-format
+msgid "I agree to the %s."
+msgstr "Elolvastam és elfogadom %s."
+
+#: classes/register.php:132 templates/register/register.php:30
+msgid "Terms and Conditions"
+msgstr "Felhasználási feltételek"
+
+#: classes/register.php:147 templates/profile/profile-about-account.php:41
+msgid "Fields marked with an asterisk (<span class=\"required-sign\">*</span>) are required."
+msgstr "A csillaggal (<Span class=\"required-sign\"></span> *) jelölt mezők kitöltése kötelező."
+
+#: classes/register.php:163
+msgid "Next"
+msgstr "Következő"
+
+#: classes/registershortcode.php:141 classes/registershortcode.php:147
+msgid "Form contents are invalid."
+msgstr "Űrlap tartalma érvénytelen."
+
+#: classes/registershortcode.php:152
+msgid "Required form fields are missing."
+msgstr "Szükséges űrlapmezők hiányoznak."
+
+#: classes/registershortcode.php:157
+msgid "Please enter a valid email address."
+msgstr "Kérjük, írj be egy érvényes email címet."
+
+#: classes/registershortcode.php:182
+msgid "Additional fields are invalid."
+msgstr "A mezők érvénytelenek."
+
+#: classes/registershortcode.php:190
+msgid "Incomplete form contents."
+msgstr "Befejezetlen űrlap tartalmak."
+
+#: classes/registershortcode.php:218 classes/registershortcode.php:231
+msgid "Invalid form contents."
+msgstr "Érvénytelen űrlap tartalmak."
+
+#: classes/registershortcode.php:224
+msgid "Please enter a valid email address"
+msgstr "Kérjük valós email címet adj meg"
+
+#: classes/registershortcode.php:242
+msgid "There is no user registered with that email address."
+msgstr "Nincs felhasználó regisztrálva ezzel az email címmel."
+
+#: classes/registershortcode.php:299
+msgid "Please enter an activation code"
+msgstr "Kérjük írj be egy aktiváló kódot"
+
+#: classes/registershortcode.php:317 peepso.php:1409 peepso.php:2783
+msgid "Your account has been suspended."
+msgstr "A fiókod fel lett függesztve."
+
+#: classes/registershortcode.php:352 classes/registershortcode.php:359
+msgid "{sitename} - New User Registration"
+msgstr "{sitename} - új felhasználó regisztráció"
+
+#: classes/registershortcode.php:381
+msgid "We are unable to find an account for this activation code"
+msgstr "Nem találtunk fiókot az aktiválási kódhoz"
+
+#: classes/resetpasswordshortcode.php:42 classes/resetpasswordshortcode.php:44
+#: classes/resetpasswordshortcode.php:138
+#: classes/resetpasswordshortcode.php:140
+msgid "<strong>ERROR</strong>: The password reset link you used is not valid anymore."
+msgstr "<strong>Hiba</strong>: A használt jelszó-visszaállító link többé nem érvényes."
+
+#: classes/resetpasswordshortcode.php:49
+msgid "<strong>ERROR</strong>: Invalid password reset link."
+msgstr "<strong>Hiba</strong>: Érvénytelen jelszó-visszaállító link."
+
+#: classes/resetpasswordshortcode.php:56
+msgid "<strong>ERROR</strong>: Invalid form contents, please resubmit"
+msgstr "<strong>HIBA</strong>: Érvénytelen űrlap tartalom, kérjük, küldd el újra"
+
+#: classes/resetpasswordshortcode.php:147
+msgid "<strong>ERROR</strong>: Invalid request."
+msgstr "<strong>Hiba</strong>: Érvénytelen kérelem."
+
+#: classes/resetpasswordshortcode.php:152
+msgid "<strong>ERROR</strong>: The two passwords you entered don't match."
+msgstr "<strong>Hiba</strong>: A megadott két jelszó nem egyezik."
+
+#: classes/tags.php:140 classes/tags.php:226 classes/tags.php:292
+msgid "mentioned you"
+msgstr "megemlített téged"
+
+#: classes/tags.php:158
+msgid "Someone tagged you in a post"
+msgstr "Valaki megjelölt egy posztban"
+
+#: classes/tags.php:258
+msgid "Someone tagged you in a comment"
+msgstr "Valaki megjelölt egy hozzászólásban"
+
+#: classes/tags.php:290
+msgid "wrote and mentioned you on your wall"
+msgstr "felírtak és megemlítettek téged a falon"
+
+#: classes/tags.php:353 classes/tags.php:358
+msgid "in"
+msgstr "ban"
+
+#: classes/tags.php:353
+msgid "a post"
+msgstr "egy poszt"
+
+#: classes/tags.php:399
+msgid "Tags"
+msgstr "Cimkék"
+
+#: classes/tags.php:402
+msgid "Someone tagged me in a Post"
+msgstr "Valaki megjelölt engem egy posztban"
+
+#: classes/tags.php:407
+msgid "Someone tagged me in a Comment"
+msgstr "Valaki megjelölt engem egy hozzászólásban"
+
+#: classes/template.php:104
+#, php-format
+msgid "Powered by %1$sPeepSo%2$s!"
+msgstr "Powered by %1$sPeepSo%2$s!"
+
+#: classes/template.php:105
+msgid "Social Networking for WordPress!"
+msgstr "Sociál Plugin a WordPress részére!"
+
+#: classes/user.php:600
+msgid "Never"
+msgstr "Soha"
+
+#: classes/user.php:888
+#, php-format
+msgid "Welcome to %s"
+msgstr "Üdvözlünk %s"
+
+#: classes/user.php:1348
+msgid "Account activated"
+msgstr "A fiók aktivált"
+
+#: classes/widgetajax.php:96 classes/widgetajax.php:197
+msgid "Members count"
+msgstr "Tagok száma"
+
+#: classes/widgetajax.php:100
+msgid "No latest members"
+msgstr "Nincs újabb felhasználó"
+
+#: classes/widgetajax.php:201
+msgid "No online members"
+msgstr "Nincs online felhasználó"
+
+#: classes/widgets/widgetlatestmembers.php:12
+msgid "PeepSo Latest Members"
+msgstr "Legújabb PeepSo tagok"
+
+#: classes/widgets/widgetlatestmembers.php:13
+msgid "PeepSo Latest Members Widget"
+msgstr "PeepSo Legújabb Tagok Widget"
+
+#: classes/widgets/widgetlatestmembers.php:78
+msgid "Latest Members"
+msgstr "Legújabb felhasználók"
+
+#: classes/widgets/widgetme.php:12
+msgid "PeepSo Profile"
+msgstr "PeepSo profil"
+
+#: classes/widgets/widgetme.php:13
+msgid "PeepSo Profile Widget"
+msgstr "PeepSo Profil Widget"
+
+#: classes/widgets/widgetme.php:145 classes/widgets/widgetuserbar.php:166
+msgid "Guest view"
+msgstr "Vendég nézet"
+
+#: classes/widgets/widgetme.php:148
+msgid "Log-in form"
+msgstr "Bejelentkezési űrlap"
+
+#: classes/widgets/widgetme.php:149 classes/widgets/widgetuserbar.php:170
+msgid "Hide"
+msgstr "Elrejtés"
+
+#: classes/widgets/widgetme.php:159 classes/widgets/widgetuserbar.php:195
+msgid "Show notifications"
+msgstr "Értesítések megjelenítése"
+
+#: classes/widgets/widgetme.php:167
+msgid "Show community links"
+msgstr "Közösségi hivatkozások megjelenítése"
+
+#: classes/widgets/widgetme.php:176
+msgid "Show cover"
+msgstr "Borító mutatása"
+
+#: classes/widgets/widgetonlinemembers.php:12
+msgid "PeepSo Online Members"
+msgstr "PeepSo Online tagok"
+
+#: classes/widgets/widgetonlinemembers.php:13
+msgid "PeepSo Online Members Widget"
+msgstr "PeepSo Online Tagok Widget"
+
+#: classes/widgets/widgetonlinemembers.php:74
+msgid "Online Members"
+msgstr "Online Tagok"
+
+#: classes/widgets/widgetuserbar.php:12
+msgid "PeepSo UserBar"
+msgstr "PeepSo UserBar"
+
+#: classes/widgets/widgetuserbar.php:13
+msgid "PeepSo User Bar Widget"
+msgstr "PeepSo User Bar Widget"
+
+#: classes/widgets/widgetuserbar.php:154
+msgid "Content Position"
+msgstr "Tartalom pozíció"
+
+#: classes/widgets/widgetuserbar.php:157
+msgid "Left"
+msgstr "Bal"
+
+#: classes/widgets/widgetuserbar.php:158
+msgid "Right"
+msgstr "Jobb"
+
+#: classes/widgets/widgetuserbar.php:159
+msgid "Center"
+msgstr "Közép"
+
+#: classes/widgets/widgetuserbar.php:160
+msgid "Space Between"
+msgstr "Space között"
+
+#: classes/widgets/widgetuserbar.php:169
+msgid "Log-in link"
+msgstr "Bejelentkezési link"
+
+#: classes/widgets/widgetuserbar.php:179
+msgid "Show avatar"
+msgstr "Avatar megjelenítése"
+
+#: classes/widgets/widgetuserbar.php:187
+msgid "Show name"
+msgstr "Név megjelenítése"
+
+#: classes/widgets/widgetuserbar.php:203
+msgid "Show User dropdown menu"
+msgstr "Felhasználói legördülő menü megjelenítése"
+
+#: classes/widgets/widgetuserbar.php:211
+msgid "Show logout icon"
+msgstr "Kijelentkezési ikon megjelenítése"
+
+#: classes/widgets/widgetuserbar.php:219
+msgid "Show VIP icons"
+msgstr "VIP ikonok megjelenítése"
+
+#: classes/widgets/widgetuserbar.php:227
+msgid "Show Badges"
+msgstr "Badges megjelenítése"
+
+#: install/activate.php:477
+msgid "Home"
+msgstr "Home"
+
+#: install/activate.php:482
+msgid "Recent Activity"
+msgstr "Legutóbbi tevékenységek"
+
+#: install/activate.php:488
+msgid "User Profile"
+msgstr "Felhasználói profil"
+
+#: install/activate.php:493
+msgid "Site Registration"
+msgstr "Regisztráció"
+
+#: install/activate.php:503
+msgid "Reset Password"
+msgstr "Jelszó visszaállítása"
+
+#: install/activate.php:513
+msgid "You are about to be redirected"
+msgstr "Átirányításra kerülsz"
+
+#: lib/helpers.php:403
+msgid "Today"
+msgstr "Ma"
+
+#: lib/helpers.php:404 templates/activity/activity-stream-filters.php:35
+#: templates/activity/activity-stream-filters.php:76
+msgid "Apply"
+msgstr "Elfogad"
+
+#: peepso.php:300
+#, php-format
+msgid "There is a new version of PeepSo available (%s), but it cannot be installed yet."
+msgstr "Van egy új PeepSo verzió (%s), de még nem telepíthető."
+
+#: peepso.php:307
+#, php-format
+msgid "To avoid conflicts and issues, please make sure the following plugins are %s:"
+msgstr "A konfliktusok és problémák elkerülése érdekében győződjön meg róla, hogy a következő bővítmények %s:"
+
+#: peepso.php:318
+msgid "After updating these plugins please refresh this page, update PeepSo and reactivate all plugins."
+msgstr "Miután frissítetted ezeket a plugineket, frissítsd ezt az oldalt, majd frissítsd a PeepSo-t is és aktiváld újra az összes plugint."
+
+#: peepso.php:322
+#, php-format
+msgid "If you are experiencing issues updating any plugins, try using the <a href=\"%s\">Updates Dashboard</a>."
+msgstr "Ha problémát tapasztalsz valamelyik bővítmény frissítésekor, próbáld meg használni ezt <a href=\"%s\">Frissítések az irányítópulton </a>."
+
+#: peepso.php:338
+msgid "Visit Community"
+msgstr "Közösségi látogatás"
+
+#: peepso.php:537
+#, php-format
+msgid "Disabled %d e-mail notifications"
+msgstr "%d e-mail értesítések kikapcsolása"
+
+#: peepso.php:542
+#, php-format
+msgid "Disabled %d group e-mail subscriptions"
+msgstr "%d csoport e-mail letiltva"
+
+#: peepso.php:549
+msgid "Disabled Email Digest subscription"
+msgstr "Letiltott E-mail Digest előfizetés"
+
+#: peepso.php:551
+msgid "Email Digest was already disabled"
+msgstr "Az Email Digest már le van tiltva"
+
+#: peepso.php:931
+msgid "stream"
+msgstr "stream"
+
+#: peepso.php:997
+#, php-format
+msgid "via %s"
+msgstr "keresztül %s"
+
+#: peepso.php:1150 templates/widgets/me.tpl.php:169
+msgid "Community"
+msgstr "Közösség"
+
+#: peepso.php:1151
+msgid "Posts from the entire Community"
+msgstr "Posztok az egész Közösségből"
+
+#: peepso.php:1157
+msgid "members"
+msgstr "tagok"
+
+#: peepso.php:1158
+msgid "groups"
+msgstr "csoportok"
+
+#: peepso.php:1159
+msgid "pages"
+msgstr "oldalak"
+
+#: peepso.php:1163
+msgid "&amp;"
+msgstr "&amp;"
+
+#: peepso.php:1166 templates/members/search.php:66
+msgid "Following"
+msgstr "Követés"
+
+#: peepso.php:1167
+#, php-format
+msgid "Posts only from %s you follow"
+msgstr "Poszt csak tőle %s te követed"
+
+#: peepso.php:1422 peepso.php:2773
+#, php-format
+msgid "Your account has been suspended until %s."
+msgstr "A fiókod fel lett függesztve eddig: %s."
+
+#: peepso.php:1578
+#, php-format
+msgid "Cannot activate PeepSo; it requires <b>Permalinks</b> to be enabled. Go to <a href=\"%1$s\">Settings -&gt; Permalinks</a> and select anything but the <i>Default</i> option."
+msgstr "Nem lehet aktiválni a PeepSo-t; szükséges hozzá <b>Permalinks</b> engedélyezése. Menj <a href=\"%1$s\"> Beállítások -&gt; Permalinks</a> és ne válassz ki semmit, csak az <i>Alapértelmezett</i>beállítást."
+
+#: peepso.php:1699 peepso.php:1701
+msgid "Ban this user"
+msgstr "Felhasználó letiltása"
+
+#: peepso.php:1721 templates/profile/dialog-profile-avatar.php:72
+#: templates/profile/dialog-profile-cover.php:34
+msgid "The file type you uploaded is not allowed. Only JPEG/PNG allowed."
+msgstr "A feltöltött fájl típus nem engedélyezett. Csak a JPEG/PNG típus az engedélyezett."
+
+#: peepso.php:1722 templates/profile/dialog-profile-avatar.php:73
+#: templates/profile/dialog-profile-cover.php:35
+#, php-format
+msgid "The file size you uploaded is too big. The maximum file size is %s."
+msgstr "A feltöltött fájl mérete túl nagy. A maximális fájl méret %s."
+
+#: peepso.php:1859
+msgid "Please login to continue"
+msgstr "Kérjük jelentkezz be a folytatáshoz"
+
+#: peepso.php:1863
+msgid "There are unsaved changes on this page."
+msgstr "Nem mentett módosítások vannak az oldalon."
+
+#: peepso.php:1864
+msgid "The system is currently saving your changes."
+msgstr "A rendszer jelenleg menti a módosításokat."
+
+#: peepso.php:2788
+msgid "Your account is awaiting admin approval."
+msgstr "A felhasználói fiókod rendszergazdai jóváhagyásra vár."
+
+#: peepso.php:2792
+msgid "Please verify the email address you have provided using the link in the email that was sent to you."
+msgstr "Kérjük erősítsd meg a megadott email címedet a hivatkozás segítségével, amit emailben elküldtünk neked."
+
+#: peepso.php:2828
+msgid "This user may not login at the moment."
+msgstr "Ez a felhasználó nincs bejelentkezve."
+
+#: peepso.php:3113
+msgid "This domain is not registered for PLUGIN_NAME. You can register your domain <a target=\"_blank\" href=\"PEEPSOCOM_LICENSES\">here</a>."
+msgstr "Ez a domain nincs regisztrálva a következőhöz: PLUGIN_NAME. Regisztrálhatod a domainedet <a target=\"_blank\" href=\"PEEPSOCOM_LICENSES\">itt</a>."
+
+#: peepso.php:3116
+msgid "License for PLUGIN_NAME has expired. The plugin will work, but it will not receive updates. You can renew your license <a target=\"_blank\" href=\"PEEPSOCOM_LICENSES\">here</a>."
+msgstr "A (z) PLUGIN_NAME licence lejárt. A plugin működni fog, de nem kap frissítést. Megújíthatod a licenced <a target=\"_blank\" href=\"PEEPSOCOM_LICENSES\">itt</a>."
+
+#: peepso.php:3122
+msgid "License for PLUGIN_NAME is missing or invalid. Please <a href=\"ENTER_LICENSE\">enter a valid license</a> and click \"SAVE\" to activate it. You can get your license key <a target=\"_blank\" href=\"PEEPSOCOM_LICENSES\">here</a>."
+msgstr "Licensz a PLUGIN_NAME bővítményhez hiányzik vagy érvénytelen. Kérjük <a href=\"ENTER_LICENSE\"> adj meg egy érvényes kulcsot</a> és kattints a \"MENTÉS\"-re az aktiváláshoz. A licensz kulcsodat beszerezheted <a target=\"_blank\" href=\"PEEPSOCOM_LICENSES\"> itt </a>."
+
+#: peepso.php:3150
+msgid "It looks like PeepSo emails were not processing properly. We just tried to fix it automatically.<br> If you see this message repeatedly, consider deactivating and re-activating PeepSo or contacting Support"
+msgstr "Úgy látszik, mintha a PeepSo emailek feldolgozása nem lenne megfelelő. Mi csak automatikusan próbáltuk ezt javítani. <br> Ha ez az üzenet többször megjelenik, úgy próbálkozhatsz a PeepSo kikapcsolásával, majd újra aktiválásával, vagy lépj kapcsolatba a támogatói csapattal"
+
+#: peepso.php:3156
+msgid "It looks like PeepSo Maintenance scripts were not processing properly. We just tried to fix it automatically.<br> If you see this message repeatedly, consider deactivating and re-activating PeepSo or contacting Support"
+msgstr "Úgy tűnik, hogy a PeepSo Maintenance szkriptek nem dolgoztak megfelelően. Megpróbáltuk automatikusan megjavítani.<br> Ha ezt az üzenetet ismételten látod, kérjük gondold meg, hogy a PeepSo-t deaktiválod és újraaktiválod, vagy pedig felveszed a kapcsolatot a Support csapattal"
+
+#: peepso.php:3162
+msgid "It looks like PeepSo GDPR compliance were not processing properly. We just tried to fix it automatically.<br> If you see this message repeatedly, consider deactivating and re-activating PeepSo or contacting Support"
+msgstr "Úgy tűnik, hogy a PeepSo GDPR megfelelőség során a feldolgozás nem volt megfelelő.  A problémát megpróbáljuk automatikusan megoldani.<br> Ha ezt az üzenetet többször is látod, fontold meg a PeepSo deaktiválását és újraaktiválását, vagy lépj kapcsolatba a Support csoporttal."
+
+#: peepso.php:3203
+#, php-format
+msgid "is not fully compatible with <strong>PeepSo %s</strong>. "
+msgstr "nem teljesen kompatibilis a <strong>PeepSo-val %s</strong>. "
+
+#: peepso.php:3206
+#, php-format
+msgid "is not compatible with <strong>PeepSo %s</strong> and has been deactivated. "
+msgstr "nem kompatibilis ezzel <strong> PeepSo %s </ strong> és deaktiválva lett. "
+
+#: peepso.php:3212
+#, php-format
+msgid "was only tested up to <strong>PeepSo %s</strong>. "
+msgstr "csak eddig tesztelték: <strong>PeepSo %s</strong>. "
+
+#: peepso.php:3215
+#, php-format
+msgid "has been disabled because it requires <strong>PeepSo %s</strong>. "
+msgstr "le van tiltva, mert szükséges hozzá<strong>PeepSo %s</strong>. "
+
+#: peepso.php:3218
+#, php-format
+msgid "You are running PeepSo %s."
+msgstr "PeepSo %s használatban van."
+
+#: peepso.php:3225
+#, php-format
+msgid "Please upgrade %s and PeepSo to avoid conflicts and issues. "
+msgstr "Kérjük, frissítsd a(z) %s és a PeepSo-t a konfliktusok és problémák elkerülése érdekében. "
+
+#: peepso.php:3228
+msgid "Upgrade now!"
+msgstr "Frissítés most!"
+
+#: peepso.php:3238
+msgid "PeepSo E-mail Notifications"
+msgstr "PeepSo E-mail értesítések"
+
+#: peepso.php:3242
+msgid "E-mail preferences"
+msgstr "E-mail preferenciák"
+
+#: peepso.php:3244
+msgid "Unsubscribe this user from all e-mail notifications"
+msgstr "A felhasználó leiratkozása az e-mailban küldött értesítésekről"
+
+#: peepso.php:3303
+msgid "Every One Minute"
+msgstr "Minden percben"
+
+#: peepso.php:3309
+msgid "Every Five Minutes"
+msgstr "Minden öt percben"
+
+#: peepso.php:3315
+msgid "Once Weekly"
+msgstr "Egyszer hetente"
+
+#: peepso.php:3340 templates/activity/activity-stream-filters.php:94
+#: templates/activity/activity-stream-filters.php:123
+msgid "Search"
+msgstr "Keresés"
+
+#: peepso.php:3345
+msgid "Profile Pages"
+msgstr "Bemutatkozó oldalak"
+
+#: templates/account/friends.php:17
+msgid "You have no friends yet"
+msgstr "Még nincsenek barátaid"
+
+#: templates/account/friends.php:22
+msgid "Friends Request"
+msgstr "Baráti felkérések"
+
+#: templates/account/friends.php:38
+msgid "You currently have no friend requests"
+msgstr "Jelenleg nincs baráti felkérésed"
+
+#: templates/account/friends.php:43
+msgid "Blocked Members"
+msgstr "Blokkolt felhasználók"
+
+#: templates/account/friends.php:63
+msgid "No blocked members found."
+msgstr "Nincs blokkolt felhasználó."
+
+#: templates/account/message-item.php:121
+#: templates/account/message-item.php:126
+#, php-format
+msgid "Conversation with %s"
+msgstr "Beszélgetés a következővel: %s"
+
+#: templates/account/message-item.php:123
+msgid "Back"
+msgstr "Vissza"
+
+#: templates/account/message-item.php:127
+msgid "Participants:"
+msgstr "Résztvevők:"
+
+#: templates/account/personal-data.php:7
+msgid "Registration Date"
+msgstr "Regisztrálás dátuma"
+
+#: templates/account/photos.php:26
+#, php-format
+msgid "%s photo"
+msgid_plural "%s photos"
+msgstr[0] "%s fotó"
+msgstr[1] "%s fotók"
+
+#: templates/activity/activity-load-more.php:2
+msgid "Load more"
+msgstr "Mégtöbb betöltése"
+
+#: templates/activity/activity-no-more.php:1 templates/activity/activity.php:54
+#: templates/profile/profile.php:60
+msgid "Nothing more to show."
+msgstr "Nincs megjeleníthető tartalom."
+
+#: templates/activity/activity-stream-filters.php:48
+#: templates/activity/activity-stream-filters.php:60
+msgid "Show my posts"
+msgstr "Saját posztok mutatása"
+
+#: templates/activity/activity-stream-filters.php:49
+#: templates/activity/activity-stream-filters.php:60
+msgid "Hide my posts"
+msgstr "Saját posztok elrejtése"
+
+#: templates/activity/activity-stream-filters.php:97
+msgid "Search: "
+msgstr "Keresés: "
+
+#: templates/activity/activity-stream-filters.php:102
+msgid "Type to search"
+msgstr "Írd be amit keresel"
+
+#: templates/activity/activity-stream-filters.php:109
+msgid "Exact phrase"
+msgstr "Pontos kifejezés"
+
+#: templates/activity/activity-stream-filters.php:117
+msgid "Any of the words"
+msgstr "Bármelyik szó"
+
+#: templates/activity/activity.php:52 templates/profile/profile.php:58
+msgid "No posts found. Be the first one to share something amazing!"
+msgstr "Nem található poszt. Legyél az első, aki megoszt valami klassz dolgot!"
+
+#: templates/activity/activity.php:53 templates/profile/profile.php:59
+msgid "No posts found."
+msgstr "Nincsenek posztok."
+
+#: templates/activity/comment-edit.php:4
+#: templates/activity/comment-modal-attachment.php:88
+#: templates/activity/post.php:113
+msgid "Write a comment..."
+msgstr "Szólj hozzá..."
+
+#: templates/activity/comment-modal-attachment.php:102
+#: templates/activity/comment-reply.php:40 templates/activity/post.php:125
+msgid "Clear"
+msgstr "Törlés"
+
+#: templates/activity/comment-modal-attachment.php:103
+#: templates/activity/comment-reply.php:41 templates/activity/post-edit.php:20
+#: templates/activity/post.php:126 templates/general/postbox-legacy.php:28
+#: templates/general/postbox.php:30
+msgid "Post"
+msgstr "Poszt"
+
+#: templates/activity/comment-reply.php:28
+msgid "Write a reply..."
+msgstr "Válasz írása..."
+
+#: templates/activity/dialog-repost.php:6
+msgid "Share This Post"
+msgstr "Bejegyzés megosztása"
+
+#: templates/activity/dialog-repost.php:10
+msgid "Say what is on your mind..."
+msgstr "Írj valamit..."
+
+#: templates/activity/dialogs.php:17
+msgid "Post Comment"
+msgstr "Megjegyzés küldése"
+
+#: templates/activity/dialogs.php:24
+msgid "Report Content to Admin"
+msgstr "Bejelentés küldése Adminnak"
+
+#: templates/activity/dialogs.php:27
+msgid "Reason for Report:"
+msgstr "Bejelentés oka:"
+
+#: templates/activity/dialogs.php:35
+msgid "Submit Report"
+msgstr "Bejelentés küldése"
+
+#: templates/activity/dialogs.php:39
+msgid "ERROR: Please select Reason for Report."
+msgstr "HIBA: Kérjük válaszd ki az okot a jelentéshez."
+
+#: templates/activity/dialogs.php:40
+msgid "ERROR: Please fill Reason for Report."
+msgstr "HIBA: kérjük töltsd ki a jelentés okait."
+
+#: templates/activity/dialogs.php:43
+msgid "Share This"
+msgstr "Megosztás"
+
+#: templates/activity/dialogs.php:45
+msgid "Share this via Link:"
+msgstr "Ennek megosztása a következő linken:"
+
+#: templates/activity/dialogs.php:76
+msgid "Are you sure you want to delete your Profile?"
+msgstr "Biztosan törölni akarod a fiókodat?"
+
+#: templates/activity/dialogs.php:78
+msgid "This will remove all of your posts, saved information and delete your account."
+msgstr "Ez eltávolítja az összes bejegyzésedet, a mentett adatokat és törli a fiókodat."
+
+#: templates/activity/dialogs.php:80
+msgid "The delete cannot be undone."
+msgstr "A törlés nem vonható vissza."
+
+#: templates/activity/dialogs.php:84
+msgid "Delete My Profile"
+msgstr "Profilom törlése"
+
+#: templates/activity/post.php:20
+msgid "This pinned post will not display to all users because of its privacy settings."
+msgstr "Ez a rögzített poszt nem jelenik meg az összes felhasználó számára az adatvédelmi beállítások miatt."
+
+#: templates/activity/post.php:25
+msgid "Pinned"
+msgstr "Rögzítve"
+
+#: templates/activity/repost-private.php:3
+msgid "The user has decided to keep this post private."
+msgstr "A felhasználó úgy döntött, hogy ezt a bejegyzést privát bejegyzésként tartja meg."
+
+#: templates/admin/deactivation_feedback_modal.php:14
+msgid "Plugin Usage Feedback"
+msgstr "Plugin használat visszajelzés"
+
+#: templates/admin/deactivation_feedback_modal.php:18
+msgid "Please tell us how can we make this plugin better for you?"
+msgstr "Kérjük, mondd el nekünk, hogyan tehetnénk ezt a plugint számodra jobbá?"
+
+#: templates/admin/deactivation_feedback_modal.php:21
+msgid "It\\'s not what I\\'m looking for"
+msgstr "Ez \\ nem az, amit \\ kerestem"
+
+#: templates/admin/deactivation_feedback_modal.php:22
+msgid "I Found a better alternative"
+msgstr "Találtam egy jobb alternatívát"
+
+#: templates/admin/deactivation_feedback_modal.php:23
+msgid "It didn\\'t work for me, technical problems"
+msgstr "Nálam nem működik, technikai problémák vannak"
+
+#: templates/admin/deactivation_feedback_modal.php:29
+msgid "If you\\'re experiencing technical problems please consider contacting our support. You can open a support ticket here: "
+msgstr "Ha technikai problémák merültek fel, akkor kapcsolatba léphetsz az ügyfélszolgálatunkkal. Itt meg tudsz nyitni egy támogatói ticket-et: "
+
+#: templates/admin/deactivation_feedback_modal.php:31
+msgid "Your feedback will only be used to improve this plugin"
+msgstr "A visszajelzésed kizárólag ennek a bővítménynek a fejlesztését, javítását szolgálja"
+
+#: templates/admin/deactivation_feedback_modal.php:35
+msgctxt "the text of the cancel button of the plugin deactivation dialog box."
+msgid "Cancel"
+msgstr "Mégse"
+
+#: templates/admin/deactivation_feedback_modal.php:182
+msgid "Yes - Deactivate"
+msgstr "Igen - kikapcsolás"
+
+#: templates/admin/deactivation_feedback_modal.php:184
+msgid "Deactivate"
+msgstr "Kikapcsolás"
+
+#: templates/admin/extensions.php:19
+msgid "Get this addon"
+msgstr "Vásárold meg ezt a kiegészítőt"
+
+#: templates/admin/extensions.php:27
+msgid "Get this bundle"
+msgstr "Vásárold meg ezt a csomagot"
+
+#: templates/admin/extensions.php:66
+msgid "Enter a keyword..."
+msgstr "Írj be egy kulcsszót..."
+
+#: templates/admin/extensions.php:122
+msgid "Installed and Activated"
+msgstr "Telepítve és aktiválva"
+
+#: templates/admin/extensions.php:131
+msgid "Please try again later"
+msgstr "Kérjük, próbáld újra később"
+
+#: templates/admin/extensions.php:141
+msgid "All plugins in this category are already installed and activated on your site. To view other plugins, not yet installed or activated on your site, click the button below."
+msgstr "Minden bővítmény ebben a kategóriában már telepítve és aktiválva van az oldaladon. A többi olyan bővítmény megtekintéséhez, amik még nincsenek telepítve vagy aktiválva az oldaladon, kattints az alábbi gombra."
+
+#: templates/admin/extensions.php:145
+msgid "Browse All Addons"
+msgstr "Összes bővítmény tallózása"
+
+#: templates/admin/profiles_buttons.php:4
+msgid "Expand All"
+msgstr "Összes kibontása"
+
+#: templates/admin/profiles_buttons.php:7
+msgid "Collapse All"
+msgstr "Összes bezárása"
+
+#: templates/admin/profiles_buttons.php:13
+msgid "Add New"
+msgstr "Új hozzáadása"
+
+#: templates/admin/profiles_field.php:23
+msgid "no title"
+msgstr "nincs cím"
+
+#: templates/admin/profiles_field.php:26
+#, php-format
+msgid "Core %s: "
+msgstr "Core %s: "
+
+#: templates/admin/profiles_field.php:38
+msgid "Privacy"
+msgstr "Adatvédelem"
+
+#: templates/admin/profiles_field.php:39
+msgid "Validation"
+msgstr "Érvényesítés"
+
+#: templates/admin/profiles_field.php:135
+msgid "Enabled"
+msgstr "Elérhető"
+
+#: templates/admin/profiles_field.php:194
+msgid "Display"
+msgstr "Mutat"
+
+#: templates/admin/profiles_field.php:212
+msgid "Edit method"
+msgstr "Szerkesztési mód"
+
+#: templates/admin/profiles_field.php:228
+msgid "Placeholder"
+msgstr "Helyőrző"
+
+#: templates/admin/profiles_field.php:265
+msgid "Default Privacy"
+msgstr "Alapértelmezett adatvédelem"
+
+#: templates/admin/profiles_field.php:288
+msgid "Disable user privacy setting"
+msgstr "Felhasználói adatvédelmi beállítás letiltása"
+
+#: templates/admin/profiles_field.php:389
+msgid "Minimum year allowed"
+msgstr "Megengedett minimális év"
+
+#: templates/admin/profiles_field.php:390
+msgid "years ago"
+msgstr "évvel ezelőtt"
+
+#: templates/admin/profiles_field.php:405
+msgid "Maximum year allowed"
+msgstr "Megengedett maximális év"
+
+#: templates/admin/profiles_field.php:406
+msgid "years in the future"
+msgstr "évvel a jövőben"
+
+#: templates/admin/profiles_field_list.php:2
+msgid "Profile Fields"
+msgstr "Profil mezők"
+
+#: templates/admin/profiles_no_plugin.php:9
+msgid "Get Extended Profiles"
+msgstr "Kiterjesztett profilokat kap"
+
+#: templates/general/404-ajax.php:1 templates/general/404.php:7
+msgid "This content is not available at this time."
+msgstr "Ez a tartalom nem érhető el jelenleg."
+
+#: templates/general/404.php:9
+msgid "Possible causes for the content of the page not to show:"
+msgstr "Lehetséges oka annak, hogy az oldal tartalma ne látszódjon:"
+
+#: templates/general/404.php:12
+msgid "It has been removed."
+msgstr "Ez már el lett távolítva."
+
+#: templates/general/404.php:13
+msgid "You may not have the necessary permissions to view it."
+msgstr "Lehet, hogy nincs engedélyed a megtekintéséhez."
+
+#: templates/general/email-footer.php:1
+msgid "This email was sent to {currentuserfullname} ({useremail})."
+msgstr "Ezt az e-mailt elküldtük nekik: {currentuserfullname} ({useremail})."
+
+#: templates/general/email-footer.php:2
+msgid "If you do not wish to receive these emails from {sitename}, you can <a href=\"{unsubscribeurl}\">manage your preferences</a> here."
+msgstr "Ha nem szeretnéd megkapni ezeket az e-maileket innen {sitename}, akkor lehetőséged van <a href=\"{unsubscribeurl}\"> a beállításaidat megváltoztatni</a>itt."
+
+#: templates/general/email-footer.php:3
+msgid "Copyright (c) {year} {sitename}"
+msgstr "Copyright (c) {year} {sitename}"
+
+#: templates/general/external-link-warning.php:58
+#, php-format
+msgid "The link you just clicked redirects to: <span class=\"ps-redirect__link\">%s</span>"
+msgstr "A link amire kattintottál átírányit ide: <span class=\"ps-redirect__link\">%s</span>"
+
+#: templates/general/external-link-warning.php:60
+msgid "Do you want to continue?"
+msgstr "Akarod folytatni?"
+
+#: templates/general/external-link-warning.php:63
+msgid "No, take me back"
+msgstr "Nem, vigyen vissza"
+
+#: templates/general/external-link-warning.php:65
+msgid "Yes, take me there"
+msgstr "Igen, vigyen ide"
+
+#: templates/general/lightbox.php:11
+msgid "View full image"
+msgstr "Teljes kép megtekintése"
+
+#: templates/general/login-profile-tab.php:1
+msgid "Please login"
+msgstr "Kérjük, jelentkezz be"
+
+#: templates/general/login.php:17 templates/profile/no-access.php:50
+#: templates/widgets/me.tpl.php:222
+msgid "Login"
+msgstr "Belépés"
+
+#: templates/general/login.php:25 templates/general/login.php:26
+#: templates/widgets/me.tpl.php:201 templates/widgets/me.tpl.php:202
+msgid "Remember Me"
+msgstr "Emlékezz rám"
+
+#: templates/general/login.php:33 templates/widgets/me.tpl.php:217
+msgid "Resend activation code"
+msgstr "Aktiváló kód újraküldése"
+
+#: templates/general/notification-popover-item.php:48
+#: templates/general/notification-popover-item.php:51
+msgid "Mark as read"
+msgstr "Megjelölés olvasottként"
+
+#: templates/general/recover-password-sent.php:3
+msgid "We have sent you an email with password recovery instructions. Follow the link in the email to finish the process of resetting your password."
+msgstr "Küldtünk neked egy emailt a jelszó visszaállítási utasításokkal. Kövesd az üzenetben található linket, hogy befejezd a jelszó visszaállításának folyamatát."
+
+#: templates/general/recover-password.php:14
+msgid "Please enter the email address for your account. A verification code will be sent to you. Once you have received the verification code, you will be able to choose a new password for your account."
+msgstr "Kérjük, add meg fiókod email címét. Egy ellenőrző kódot fogunk küldeni neked. Miután megkaptad a kódot, lehetőséged lesz új jelszót választani a fiókodhoz."
+
+#: templates/general/recover-password.php:27
+msgid "Email Address:"
+msgstr "E-mail cím:"
+
+#: templates/general/recover-password.php:31
+#: templates/register/register-resend.php:32
+msgid "Email address"
+msgstr "Email cím"
+
+#: templates/general/recover-password.php:37
+#: templates/general/reset-password.php:56
+#: templates/register/register-activate.php:32
+#: templates/register/register-resend.php:39
+msgid "Submit"
+msgstr "Küldés"
+
+#: templates/general/recover-password.php:42
+#: templates/general/reset-password.php:70
+#: templates/register/register-activate.php:38
+#: templates/register/register-complete.php:16
+#: templates/register/register-resend.php:45
+#: templates/register/register-resent.php:18
+#: templates/register/register-verified.php:12
+msgid "Back to Home"
+msgstr "Vissza az elejére"
+
+#: templates/general/register-panel.php:21
+msgid "Thank you"
+msgstr "Köszönöm"
+
+#: templates/general/register-panel.php:22
+msgid "Your e-mail address was confirmed. You can now log in."
+msgstr "Az email címed megerősítve. Most már bejelentkezhetsz."
+
+#: templates/general/register-panel.php:24
+msgid "Get Connected!"
+msgstr "Csatlakozz!"
+
+#: templates/general/register-panel.php:25
+msgid "Come and join our community. Expand your network and get to know new people!"
+msgstr "Gyere és csatlakozz közösségünkhöz. Bővítsd a hálózatodat és ismerj meg új embereket!"
+
+#: templates/general/register-panel.php:31
+msgid "Join us now, it's free!"
+msgstr "Csatlakozz hozzánk!"
+
+#: templates/general/reset-password-success.php:3
+msgid "Your password has been changed. You can sign in now."
+msgstr "A jelszavad módosítva lett. Most be tudsz jelentkezni."
+
+#: templates/general/reset-password.php:13
+msgid "Pick a New Password"
+msgstr "Válassz egy új jelszót"
+
+#: templates/general/reset-password.php:32
+msgid "New Password:"
+msgstr "Új jelszó:"
+
+#: templates/general/reset-password.php:36
+msgid "New Password"
+msgstr "Új jelszó"
+
+#: templates/general/reset-password.php:43
+msgid "Repeat new password:"
+msgstr "Jelszó megerősítése:"
+
+#: templates/general/reset-password.php:47
+msgid "Repeat new password"
+msgstr "Jelszó megerősítése"
+
+#: templates/general/safety-warning.php:4
+msgid "Close message"
+msgstr "Üzenet bezárása"
+
+#: templates/general/wsi.php:4
+msgid "Invite your friends!"
+msgstr "Hívd meg a barátaidat!"
+
+#: templates/location/interaction.php:10
+#: templates/location/photo_album_extra_fields.php:10
+msgid "Enter your location:"
+msgstr "Add meg a helyedet:"
+
+#: templates/location/interaction.php:16
+#: templates/location/photo_album_extra_fields.php:16
+#: templates/location/postbox.php:10 templates/location/selector.php:14
+msgid "Select"
+msgstr "Választ"
+
+#: templates/location/interaction.php:19
+#: templates/location/photo_album_extra_fields.php:19
+#: templates/location/postbox.php:11 templates/location/selector.php:15
+msgid "Remove"
+msgstr "Eltávolítás"
+
+#: templates/location/photo_album_show_extra_fields.php:3
+msgid "Album location"
+msgstr "Album helye"
+
+#: templates/location/photo_album_show_extra_fields.php:17
+msgid "No location"
+msgstr "Nincs helyadat"
+
+#: templates/location/photo_album_show_extra_fields.php:38
+msgid "Save location"
+msgstr "Hely mentése"
+
+#: templates/location/postbox.php:3 templates/location/selector.php:3
+msgid "Enter location name..."
+msgstr "Hely megadása..."
+
+#: templates/location/selector.php:10
+msgid "Select location"
+msgstr "Hely kiválasztása"
+
+#: templates/members/members-tabs.php:9
+msgid "Blocked"
+msgstr "Blokkolva"
+
+#: templates/members/search-popover-input.php:3
+msgid "Start typing to search"
+msgstr "Írj be egy szót a kereséshez"
+
+#: templates/members/search-popover-input.php:7
+msgid "No results found."
+msgstr "Nincs találat."
+
+#: templates/members/search.php:28
+msgid "Start typing to search..."
+msgstr "Írj be egy szót a kereséshez..."
+
+#: templates/members/search.php:40
+msgid "Any"
+msgstr "Valamilyen"
+
+#: templates/members/search.php:56
+msgid "Sort"
+msgstr "Rendezés"
+
+#: templates/members/search.php:68
+msgid "All members"
+msgstr "Minden tag"
+
+#: templates/members/search.php:69
+msgid "Members I follow"
+msgstr "Tagok én követem"
+
+#: templates/members/search.php:70
+msgid "Members I don't follow"
+msgstr "Tagok én nem követem"
+
+#: templates/members/search.php:78
+msgid "Avatars"
+msgstr "Avatarok"
+
+#: templates/members/search.php:81
+msgid "Only users with avatars"
+msgstr "Csak avatart használók"
+
+#: templates/profile/already-registered.php:6
+msgid "You are already registered and logged in"
+msgstr "Te már regisztráltál és bejelentkeztél"
+
+#: templates/profile/already-registered.php:8
+#, php-format
+msgid "Visit <a href=\"%s\">community</a> or <a href=\"%s\">your profile</a>"
+msgstr "Nézd meg a <a href=\"%s\"> közösség</a> vagy <a href=\"%s\"> a profilod</a>"
+
+#: templates/profile/dialog-avatar.php:5
+#: templates/profile/dialog-profile-avatar.php:6
+msgid "Change Avatar"
+msgstr "Avatar módosítása"
+
+#: templates/profile/dialog-avatar.php:13
+#: templates/profile/dialog-profile-avatar.php:18
+#: templates/profile/dialog-profile-cover.php:18
+msgid "Upload Photo"
+msgstr "Kép feltöltése"
+
+#: templates/profile/dialog-avatar.php:17
+#: templates/profile/dialog-profile-avatar.php:26
+msgid "Remove Photo"
+msgstr "Fénykép törlése"
+
+#: templates/profile/dialog-avatar.php:22
+#: templates/profile/dialog-profile-avatar.php:32
+msgid "Use Gravatar"
+msgstr "Gravatar használata"
+
+#: templates/profile/dialog-avatar.php:28
+#: templates/profile/dialog-profile-avatar.php:38
+msgid "Uploaded Photo"
+msgstr "Feltöltött kép"
+
+#: templates/profile/dialog-avatar.php:30
+#: templates/profile/dialog-profile-avatar.php:40
+msgid "Automatically Generated. (Maximum width: 160px)"
+msgstr "Automatikusan generált. (Maximális szélesség: 160px)"
+
+#: templates/profile/dialog-avatar.php:34
+#: templates/profile/dialog-profile-avatar.php:44
+msgid "Crop Image"
+msgstr "Képrész levágása"
+
+#: templates/profile/dialog-avatar.php:35
+msgid "Cancel Cropping"
+msgstr "Mégse"
+
+#: templates/profile/dialog-avatar.php:37
+#: templates/profile/dialog-profile-avatar.php:45
+msgid "Save Thumbnail"
+msgstr "Bélyegkép mentése"
+
+#: templates/profile/dialog-avatar.php:43
+#: templates/profile/dialog-profile-avatar.php:50
+msgid "No avatar uploaded. Use the button above to select and upload one."
+msgstr "Nincs feltöltött avatar. Használd a fenti gombot a kiválasztáshoz és tölts fel egyet."
+
+#: templates/profile/dialog-avatar.php:48
+#: templates/profile/dialog-avatar.php:50
+#: templates/profile/dialog-profile-avatar.php:56
+msgid "Avatar Preview"
+msgstr "Avatar megtekintése"
+
+#: templates/profile/dialog-avatar.php:54
+#, php-format
+msgid "This is how <strong>%s</strong> Avatar will appear throughout the entire community."
+msgstr "Ez az, ahogyan <strong>%s</strong> az Avatar megjelenik az egész közösségben."
+
+#: templates/profile/dialog-avatar.php:56
+#: templates/profile/dialog-profile-avatar.php:62
+msgid "This is how your Avatar will appear throughout the entire community."
+msgstr "Így jelenik meg az Avatarod a közösségben mindenhol."
+
+#: templates/profile/dialog-avatar.php:77
+#: templates/profile/dialog-profile-avatar.php:68
+msgid "Done"
+msgstr "Kész"
+
+#: templates/profile/dialog-ban.php:6
+msgid "Ban this user until"
+msgstr "Ez a felhasználó kitiltva amíg"
+
+#: templates/profile/dialog-ban.php:11
+msgid "Please fill in the date"
+msgstr "Kérjük, töltsd ki a dátumot"
+
+#: templates/profile/dialog-ban.php:18
+msgid "Ban this user forever"
+msgstr "E felhasználó végleges kitiltása"
+
+#: templates/profile/dialog-profile-cover.php:6
+msgid "Change Cover Photo"
+msgstr "Háttérkép megváltoztatása"
+
+#: templates/profile/dialog-profile-cover.php:25
+msgid "Remove Cover Photo"
+msgstr "Háttérkép eltávolítása"
+
+#: templates/profile/dialog-profile-deletion.php:5
+msgid "Profile deletion"
+msgstr "Profil törlése"
+
+#: templates/profile/dialog-profile-request-account-data.php:9
+msgid "Please enter your password to continue."
+msgstr "Kérjük írd be a jelszavadat a folytatáshoz."
+
+#: templates/profile/dialog-profile-request-account-data.php:31
+msgid "Export"
+msgstr "Export"
+
+#: templates/profile/focus.php:44
+msgid "Reposition"
+msgstr "Újrapozícionálás"
+
+#: templates/profile/focus.php:48
+msgid "Modify"
+msgstr "Módosít"
+
+#: templates/profile/no-access.php:48
+msgid "This user has decided to keep their profile private."
+msgstr "Ez a felhasználó privátra állította a profilját."
+
+#: templates/profile/no-access.php:52 templates/widgets/me.tpl.php:213
+msgid "Register"
+msgstr "Regisztráció"
+
+#: templates/profile/online.php:1
+#, php-format
+msgid "%s is currently online"
+msgstr "jelenleg %s online"
+
+#: templates/profile/profile-about-account.php:51
+msgid "Deleting your account will disable your profile and remove your name and photo from most things you've shared. Some information may still be visible to others, such as your name in their friends list and messages you sent."
+msgstr "A fiók kikapcsolása letiltja a profilodat, és eltávolítja a nevedet és fotóidat a PeepSo-ban megosztott dologaidról. Egyes információk továbbra is láthatók másoknak, például a baráti listán szereplő neved és az üzenetek, amiket már elküldtél."
+
+#: templates/profile/profile-about-account.php:59
+msgid "Export and Download A Copy Of Your Community Information (BETA)"
+msgstr "A felhasználói fiókoddal kapcsolatos közösségi információk, adatok másolatának exportálása és letöltése (BETA)"
+
+#: templates/profile/profile-about-notifications.php:27
+msgid "Shortcuts"
+msgstr "Parancsikonok"
+
+#: templates/profile/profile-about-notifications.php:28
+msgid "Quickly manage all your preferences at once"
+msgstr "Gyorsan kezelheted minden beállításodat egyszerre"
+
+#: templates/profile/profile-about-notifications.php:32
+msgid "Disable all e-mail notifications"
+msgstr "Minden email értesítés kikapcsolása"
+
+#: templates/profile/profile-about-notifications.php:35
+msgid "Enable all e-mail notifications"
+msgstr "Minden e-mail értesítés engedélyezése"
+
+#: templates/profile/profile-about-notifications.php:38
+msgid "Disable all on-site notifications"
+msgstr "Minden webhelyes értesítés kikapcsolása"
+
+#: templates/profile/profile-about-notifications.php:41
+msgid "Enable all on-site notifications"
+msgstr "Minden webhelyes értesítés engedélyezése"
+
+#: templates/profile/profile-about.php:123
+msgid "Edit "
+msgstr "Szerkesztés "
+
+#: templates/profile/profile-about.php:171
+msgid "Sorry, no data to show"
+msgstr "Sajnos nincs adat"
+
+#: templates/profile/profile-menu.php:16
+msgid "More"
+msgstr "Több"
+
+#: templates/profile/profile.php:12
+msgid "Finished Editing Apps Layout"
+msgstr "Alkalmazások elrendezésének szerkesztése kész"
+
+#: templates/register/register-activate.php:5
+msgid "Account Activation"
+msgstr "Fiók aktiválása"
+
+#: templates/register/register-activate.php:9
+msgid "Please enter your activation code below to enable your account."
+msgstr "Kérjük, írd be az aktiváló kódot a fiókod eléréséhez."
+
+#: templates/register/register-activate.php:19
+msgid "Activation Code:"
+msgstr "Aktiváló kód:"
+
+#: templates/register/register-activate.php:27
+msgid "Activation code"
+msgstr "Aktiváló kód"
+
+#: templates/register/register-complete.php:5
+msgid "User Registered"
+msgstr "Regisztrált felhasználó"
+
+#: templates/register/register-complete.php:11
+msgid "Please check your email account and confirm your registration. Once that's done, Administrator will be notified that your account has been created and is awaiting approval. Until the site administrator approves your account, you will not be able to login. Once your account has been approved, you will receive a notification email."
+msgstr "Kérjük, ellenőrizd az e-mail fiókodat, és erősítsd meg a regisztrációt. Miután ez megtörtént, a rendszergazda értesítést kap, hogy a fiókod jóváhagyásra vár. Belépés a fiókodba csak a rendszergazdai jóváhagyás után lehetséges. A jóváhagyást követően kapni fogsz egy értesítést e-mailben."
+
+#: templates/register/register-complete.php:13
+msgid "Your account has been created. An activation link has been sent to the email address you provided, click on the link to logon to your account."
+msgstr "A felhasználói fiókod elkészült. Egy aktiváló linket küldtünk az általad megadott email címre, kattints a linkre a fiókodba történő bejelentkezéshez."
+
+#: templates/register/register-resend.php:10
+#: templates/register/register-resent.php:5
+msgid "Resend Activation Code"
+msgstr "Aktiváló kód újraküldése"
+
+#: templates/register/register-resend.php:14
+msgid "Please enter your registered e-mail address here so that we can resend you the activation link."
+msgstr "Kérjük, add meg az e-mail címedet, hogy el tudjuk küldeni neked az aktiváló linket."
+
+#: templates/register/register-resend.php:28
+msgid "Email Address"
+msgstr "E-mail cím"
+
+#: templates/register/register-resent.php:9
+msgid "Your activation code has been sent to your email."
+msgstr "Az aktiváló kódodat elküldtük e-mailban."
+
+#: templates/register/register-resent.php:14
+#, php-format
+msgid "Follow the link in the email you received, or you can enter the activation code on the <a href=\"%1$s\"><u>activation</u></a> page.</a>"
+msgstr "Kövesd a kapott üzenetben található linket, vagy megadhatod az aktiváló kódot az <a href=\"%1$s\"><u>aktiválási</u></a>oldalon.</a>"
+
+#: templates/register/register-verified.php:5
+msgid "Email Verified"
+msgstr "E-mail ellenőrizve"
+
+#: templates/register/register-verified.php:9
+msgid "Your email has been verified. Until the site administrator approves your account, you will not be able to login. Once your account has been approved, you will receive a notification email."
+msgstr "Az e-mail ellenőrzése megtörtént. Belépés a fiókodba csak a rendszergazdai jóváhagyás után lehetséges. A jóváhagyást követően kapni fogsz e-mailben egy értesítést."
+
+#: templates/register/register.php:14
+msgid "Error: "
+msgstr "Hiba: "
+
+#: templates/widgets/admin_form.php:16
+msgid "General settings"
+msgstr "Általános beállítások"
+
+#: templates/widgets/admin_form.php:25
+msgid "Title:"
+msgstr "Cím:"
+
+#: templates/widgets/admin_form.php:41
+msgid "Limit:"
+msgstr "Korlát:"
+
+#: templates/widgets/admin_form.php:73
+msgid "Hide when empty"
+msgstr "Elrejtése, amikor üres"
+
+#: templates/widgets/admin_form.php:89
+msgid "Show total members count"
+msgstr "Az összes tag számának megjelenítése"
+
+#: templates/widgets/admin_form.php:99
+msgid "PeepSo Integrated Widget"
+msgstr "PeepSo integrált Widget"
+
+#: templates/widgets/admin_form.php:102
+msgid "Options below only  take effect if the widget is published in \"PeepSo\" widget area."
+msgstr "Az alábbi lehetőségek csak akkor lépnek érvénybe, ha a widget közzé van téve a \"PeepSo\" widget területen."
+
+#: templates/widgets/admin_form.php:115
+msgid "Position"
+msgstr "Pozíció"
+
+#: templates/widgets/me.tpl.php:117
+msgid "My Profile"
+msgstr "Profilom"
+
+#: templates/widgets/userbar.tpl.php:105
+msgid "Log in"
+msgstr "Belépés"
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://peepso.com"
+msgstr "https://peepso.com"
+
+#. Description of the plugin/theme
+msgid "PeepSo Foundation - The Next Generation Social Networking Plugin for WordPress"
+msgstr "PeepSo Foundation - A következő generációs közösségi hálózati plugin a WordPress-hez"
+

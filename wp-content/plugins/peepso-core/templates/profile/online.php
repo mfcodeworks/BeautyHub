@@ -1,0 +1,1 @@
+<span data-tooltip="<?php echo sprintf(__('%s is currently online','peepso-core'), $PeepSoUser->get_fullname()); ?>" class="ps-tooltip ps-tooltip--online ps-user__status ps-icon-circle<?php echo isset($class) ? " $class" : '';?>"></span>

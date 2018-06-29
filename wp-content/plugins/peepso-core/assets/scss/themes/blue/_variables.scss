@@ -1,0 +1,260 @@
+//
+//  OVERRIDES
+//
+//  All the important colors of the PeepSo layout
+//	overrided & prepared for Theme Designer
+//
+
+
+//  General
+//$color-gray-light:       #529dc2;
+//$color-gray:             #3c7693;
+$color-gray-dark:        #333;
+
+$color-light:            rgba(0,0,0,.1);
+$color-neutral:          $color-gray;
+$color-primary:          #00b0ff;
+$color-success:          #2FBA34;
+$color-warning:          #ffa726;
+$color-danger:           #e53935;
+$color-brand:            #d0423c;
+$color-muted:            #81accf;
+
+$color-text:             $color-gray-dark;
+$color-text-light:       $color-gray-light;
+$color-text-dark:        $color-gray;
+$color-icon:             $color-neutral;
+
+//  Hashtags
+$scss-hashtag-color:          #fff;
+$scss-hashtag-color-hover:    #fff;
+$scss-hashtag-bg:             $color-primary;
+$scss-hashtag-bg-hover:       darken($color-primary, 10%);
+
+//  Temporary override
+$stream-post-meta-color:        $color-text-dark;
+$stream-post-time-color:        $color-text-light;
+$tab-content-color:             $color-gray-dark;
+$postbox-charcount-color:       $color-gray-dark;
+
+
+//  Buttons
+$scss-btn-color:                  #1E88E5;
+$scss-btn-color-hover:            #1976D2;
+$scss-btn-bg:                     #E3F2FD;
+$scss-btn-bg-hover:               #BBDEFB;
+
+$scss-btn-primary-color:          #FFF;
+$scss-btn-primary-color-hover:    #FFF;
+$scss-btn-primary-bg:             #1E88E5;
+$scss-btn-primary-bg-hover:       #1976D2;
+
+$scss-btn-success-color:          #FFF;
+$scss-btn-success-color-hover:    #FFF;
+$scss-btn-success-bg:             $btn-success;
+$scss-btn-success-bg-hover:       darken($btn-success, 10%);
+
+$scss-btn-warning-color:          #FFF;
+$scss-btn-warning-color-hover:    #FFF;
+$scss-btn-warning-bg:             $btn-warning;
+$scss-btn-warning-bg-hover:       darken($btn-warning, 10%);
+
+$scss-btn-danger-color:           #FFF;
+$scss-btn-danger-color-hover:     #FFF;
+$scss-btn-danger-bg:              $btn-danger;
+$scss-btn-danger-bg-hover:        darken($btn-danger, 10%);
+
+
+//  Toolbar
+$scss-toolbar-color:              #BBDEFB;
+$scss-toolbar-color-hover:        #FFF;
+$scss-toolbar-bg:                 #1E88E5;
+$scss-toolbar-bg-hover:           #1976D2;
+$scss-toolbar-separator:          1px solid #1976D2;
+
+
+//  Toolbar Submenu
+$scss-submenu-bg:                 #1E88E5;
+$scss-submenu-shadow:             darken($scss-submenu-bg, 5%);
+$scss-submenu-dropdown-bg:        #f4faff;
+
+
+//  Postbox
+$scss-postbox-bg:                 $postbox-bg;
+$scss-postbox-color:              $postbox-color;
+$scss-postbox-tab-color:          #1E88E5;
+$scss-postbox-tab-color-hover:    #1976D2;
+$scss-postbox-tab-bg:       	  #E3F2FD;
+$scss-postbox-tab-bg-hover:       #BBDEFB;
+
+
+//  Focus
+$scss-focus-color:                #BBDEFB;
+$scss-focus-bg:                   #64B5F6;
+$scss-focus-border:               $focus-border;
+$scss-focus-separator:            1px solid #42A5F5;
+$scss-focus-interactions-bg:      darken($scss-focus-bg, 5%);
+$scss-focus-interactions-border:  none;
+$scss-focus-item-bg-current:      $focus-link-bg--current;
+$scss-focus-link-color:           #E3F2FD;
+$scss-focus-link-color-hover:     #FFF;
+
+
+//  Members
+$scss-member-item-bg:             #f7fafe;
+$scss-member-item-border:         1px solid #E2EBF2;
+
+
+//  Groups
+$scss-group-item-bg:              #f9fbfe;
+$scss-group-item-border:          #E2EBF2;
+$scss-group-item-actions-bg:      #eef5fb;
+
+
+//  Accordion
+$scss-accordion-item-color:                 #7b9cba;
+$scss-accordion-item-bg:                    #E3F2FD;
+$scss-accordion-item-bg-active:             #f7fafe;
+$scss-accordion-item-border:                1px solid #E2EBF2;
+$scss-accordion-item-action-color:          #42A5F5;
+$scss-accordion-item-action-color-hover:    #1976D2;
+
+
+//  Popover
+$scss-popover-bg:                 $popover-bg;
+$scss-popover-btn-color:          $scss-btn-color;
+$scss-popover-btn-bg:             $scss-btn-bg;
+$scss-popover-btn-color-hover:    $scss-btn-color-hover;
+$scss-popover-btn-bg-hover:       $scss-btn-bg-hover;
+
+
+//  Stream
+$scss-stream-post-bg:             $stream-post-bg;
+$scss-stream-post-border:         1px solid #E2EBF2;
+$scss-stream-post-status-bg:      #f9fbfe;
+//  todo
+$stream-placeholder-bg:           #eef5fb;
+$stream-placeholder-bg-2:         #a4dffb;
+
+
+//  Comments
+$scss-comments-bg:                #f7fafe;
+$scss-comments-border:            1px solid #E2EBF2;
+$scss-comments-reply-bg:          #eef5fb;
+
+
+//  Form
+$scss-input-color:                $input-color;
+$scss-input-bg:                   $input-bg;
+$scss-input-border:               1px solid #E2EBF2;
+$scss-input-border-focus:         $input-border-focus;
+$scss-form-sprites-position:      top;
+
+
+//  Tabs
+$scss-tab-item-bg:                #f7fafe;
+$scss-tab-item-bg-active:         $tabs-item-active-bg;
+$scss-tab-item-border:            1px solid #E2EBF2;
+$scss-tab-item-arrows-color:      #E2EBF2;
+
+
+//  Dialog window
+$scss-dialog-bg:                  $dialog-bg;
+$scss-dialog-border:              1px solid #d4e1ec;
+$scss-dialog-header-color:        $dialog-header-color;
+$scss-dialog-header-bg:           #2b4e84;
+$scss-dialog-close-color:         #2196F3;
+$scss-dialog-close-color-hover:   $dialog-close-hover;
+$scss-dialog-footer-bg:           #E3F2FD;
+
+
+//  Chat
+$scss-chat-window-bg:                    $chat-window-bg;
+$scss-chat-window-border:                $chat-window-border;
+$scss-chat-window-header-color:          $chat-window-header-color;
+$scss-chat-window-header-bg:             #64B5F6;
+$scss-chat-window-header-bg-hover:       #7ac0f8;
+$scss-chat-window-header-bg-active:      #1E88E5;
+$scss-chat-window-header-border:         $chat-window-header-shadow;
+$scss-chat-window-input-border:          $chat-input-border;
+
+
+//  Widget
+$scss-widget-bg:                         $module-bg;
+$scss-widget-border:                     1px solid #E2EBF2;
+$scss-widget-header-color:               #7ca8cc;
+$scss-widget-header-bg:                  #EEF5FB;
+
+
+//  Bubble
+$scss-bubble-color:                      #fff;
+$scss-bubble-bg:                         $color-danger;
+
+
+//  Dropdown
+$scss-dropdown-bg:                       $dropdown-bg;
+$scss-dropdown-border:                   none;
+$scss-dropdown-item-bg:                  none;
+$scss-dropdown-item-bg-hover:            #f7fafe;
+$scss-dropdown-item-separator:           1px solid #E2EBF2;
+
+
+//  Notifications
+$scss-notification-item-separator:       $divider;
+$scss-notification-item-bg-unread:       $message-unread-bg;
+
+
+//  Avatar
+$scss-avatar-bg:                         $avatar-border-color;
+$scss-avatar-border:                     #E2EBF2;
+
+
+//  Reactions
+$scss-reactions-separator:               #E2EBF2;
+$scss-reactions-dropdown-bg:             #fff;
+$scss-reactions-dropdown-border:         #E2EBF2;
+$scss-reactions-dropdown-separator:      #E2EBF2;
+$scss-reactions-emote-shadow:            #fff;
+
+
+//  BadgeOS
+$scss-badgeos-item-bg:                   #f7fafe;
+$scss-badgeos-item-border:               #E2EBF2;
+$scss-badgeos-item-image-bg:             #fff;
+
+
+//  BlogPosts
+$scss-blogposts-post-bg:                 #fff;
+$scss-blogposts-post-border:             #E2EBF2;
+$scss-blogposts-post-image-bg:           #f7fafe;
+$scss-blogposts-authorbox-border:        #E2EBF2;
+
+
+//  WPAdverts
+$scss-classifieds-item-bg:               #fff;
+$scss-classifieds-item-border:           #E2EBF2;
+$scss-classifieds-item-featured-bg:      #f2f9ff;
+$scss-classifieds-item-featured-border:  #a4dffb;
+
+
+//  Messages
+$scss-messages-item-bg:                  #f7fafe;
+$scss-messages-item-bg-unread:           $message-unread-bg;
+$scss-messages-header-border:            #E2EBF2;
+
+$scss-typing-indicator-color:            $typing-indicator-color;
+$scss-typing-indicator-bg:               $typing-indicator-bg;
+
+
+//  Pagination
+$scss-pagination-bg:                     #E3F2FD;
+$scss-pagination-bg-hover:               #BBDEFB;
+
+
+//  Redirect box
+$scss-redirectbox-border:                #E2EBF2;
+$scss-redirectbox-bg:                    #f7fafe;
+
+
+//  Utility
+$scss-hr-bg:                             #f7fafe;

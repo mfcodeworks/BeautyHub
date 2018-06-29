@@ -1,0 +1,47 @@
+{
+  "name": "peepso",
+  "scripts": {
+    "build-core": "browserify -e assets/js/core.js | uglifyjs -c -m -o assets/js/core.min.js",
+    "build": "browserify -e assets/js/index.js | uglifyjs -c -m -o assets/js/bundle.min.js",
+    "watch": "watchify -e assets/js/index.js -o assets/js/bundle.min.js",
+    "build-location": "browserify -e assets/js/location/index.js | uglifyjs -c -m -o assets/js/location/bundle.min.js",
+    "watch-location": "watchify -e assets/js/location/index.js -o assets/js/location/bundle.min.js",
+    "build-moods": "browserify -e assets/js/moods/index.js | uglifyjs -c -m -o assets/js/moods/bundle.min.js",
+    "watch-moods": "watchify -e assets/js/moods/index.js -o assets/js/moods/bundle.min.js",
+    "build-tags": "browserify -e assets/js/tags/index.js | uglifyjs -c -m -o assets/js/tags/bundle.min.js",
+    "watch-tags": "watchify -e assets/js/tags/index.js -o assets/js/tags/bundle.min.js"
+  },
+  "dependencies": {
+    "imagesloaded": "^4.1.4",
+    "object-assign": "^4.1.1",
+    "swipejs": "github:rsusanto/swipe#rtl-support"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "browserify": "^14.5.0",
+    "browserify-shim": "^3.8.14",
+    "envify": "^4.1.0",
+    "uglify-js": "^3.2.1",
+    "watchify": "^3.9.0"
+  },
+  "browserify": {
+    "transform": [
+      "babelify",
+      "browserify-shim"
+    ]
+  },
+  "browser": {
+    "vue": "vue/dist/vue.common.js"
+  },
+  "browserify-shim": {
+    "jquery": "global:jQuery",
+    "peepso": "global:peepso"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}
