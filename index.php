@@ -1,10 +1,10 @@
 <?php
-    require_once 'scripts/functions.php';
-    loadHead();
-    loadTopBar();
-    loadNavBar();
-    beginContent();
-    loadCarousel();
+require_once 'scripts/functions.php';
+loadHead();
+loadTopBar();
+loadNavBar();
+beginContent();
+loadCarousel();
 ?>
             <!-- *** ADVANTAGES HOMEPAGE *** -->
             <div id="advantages">

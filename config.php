@@ -3,13 +3,13 @@
      * Set absolute config variables
      */
     define('DB_SERVER','localhost');
-    define('DB_USER','username');
-    define('DB_PASSWORD','password');
-    define('DB','my_database');
+    define('DB_USER','root');
+    define('DB_PASSWORD','');
+    define('DB','project1');
     define('ADMIN_EMAIL','admin@email.com');
     define('WEBMASTER_EMAIL','webmaster@website.com');
     define('IMAGE_DIR', dirname(dirname(__FILE__)) . '/img/');
-    define('RELATIVE_IMAGE_DIR', "/SUB_DIRECTORY/img/");
+    define('RELATIVE_IMAGE_DIR', "/img/");
     
     /**
      * SESSION settings for user data

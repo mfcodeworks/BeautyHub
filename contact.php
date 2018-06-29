@@ -1,6 +1,5 @@
 <?php
     require_once 'scripts/functions.php';
-    session_start();
     loadHead();
     loadTopBar();
     loadNavBar();

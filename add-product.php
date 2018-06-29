@@ -1,16 +1,11 @@
 <?php
     require_once 'scripts/functions.php';
-    session_start();
     loadHead();
     loadTopBar();
     loadNavBar();
     beginContent();
-    loadAddProduct();
-    loadFoot();
-    
-function loadAddProduct() {
-    echo
-    "<div class='col-md-12'>
+?>
+    <div class='col-md-12'>
         <div class='box'>
             <h1>New Product</h1>
             <p class='lead'>Add a new product for the BeautyHub community to find dupes and prices for and enjoy.</p>
@@ -40,10 +35,18 @@ function loadAddProduct() {
                         <div class='col-sm-6 text-center'>
                         <div class='form-group'>
                             <label for='productType'>Type*</label>
-                            <select class='form-control' id='productType'>";
-                            $types = ["BB & CC Cream","Blusher","Bronzer","Concealer","Contouring","Eye Liner","Eyebrow Colour & Shaping","Eyeshadow","Finishing","Foundation","Highlighter","Lip & Cheek Tint","Lip Balm","Lip Pencil","Lip Plumper","Lipgloss","Lipstick","Liquid Lipstick","Mascara","Palette","Powder","Primer","Self Tan","Setting Spray & Powder","Skin Care","Special","Strobing","Tinted Moisturiser","Toner"];
-                            foreach($types as $t) echo "<option value='$t'>$t</option>";
-                        echo "
+                            <select class='form-control' id='productType'>
+                            <?php
+                                $conn = sqlConnect();
+                                $sql = "SELECT DISTINCT product_type
+                                        FROM products
+                                        ORDER BY product_type ASC;";
+                                $result = mysqli_query($conn,$sql);
+                                while($row = mysqli_fetch_assoc($result)) {
+                                    $types[] = $row["product_type"];
+                                }
+                                foreach($types as $t) echo "<option value='$t'>$t</option>";
+                            ?>
                             </select>
                         </div>
                     </div>
@@ -73,6 +76,7 @@ function loadAddProduct() {
                 </div>
                 <!-- /.row -->
             </form>
-        </div>";
-};
+        </div>
+<?php
+    loadFoot();
 ?>

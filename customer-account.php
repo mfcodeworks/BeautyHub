@@ -1,6 +1,5 @@
 <?php
     require_once 'scripts/functions.php';
-    session_start();
     if(!isset($_SESSION['user'])) headerLocation('register.php');
     loadHead();
     loadTopBar();
@@ -20,17 +19,16 @@
                     FROM products 
                     WHERE product_type = \"Foundation\";";
 
-            $result = mysqli_query($conn,$sql);
-            while($row = mysqli_fetch_assoc($result)) {
+            $result = mysqli_query($conn, $sql);
+            while ($row = mysqli_fetch_assoc($result)) {
                 $products[] = new product($row['ID']);
             }
-            foreach($products as $product) {
-                if($product->getShades() !== null) {
-                    foreach($product->getShades() as $shade) {
+            foreach ($products as $product) {
+                if ($product->getShades() !== null) {
+                    foreach ($product->getShades() as $shade) {
                         echo "\"" . $product . " - " . $shade . "\",";
                     }
-                }
-                else {
+                } else {
                     echo "\"" . $product . "\",";
                 }
             }
@@ -48,17 +46,16 @@
             //Get items to autofill favourite selection
             $conn = sqlConnect();
             $sql = "SELECT ID FROM products;";
-            $result = mysqli_query($conn,$sql);
-            while($row = mysqli_fetch_assoc($result)) {
+            $result = mysqli_query($conn, $sql);
+            while ($row = mysqli_fetch_assoc($result)) {
                 $products[] = new product($row['ID']);
             }
-            foreach($products as $product) {
-                if($product->getShades() !== null) {
-                    foreach($product->getShades() as $shade) {
+            foreach ($products as $product) {
+                if ($product->getShades() !== null) {
+                    foreach ($product->getShades() as $shade) {
                         echo "\"" . $product . " - " . $shade . "\",";
                     }
-                }
-                else {
+                } else {
                     echo "\"" . $product . "\",";
                 }
             }
@@ -94,9 +91,6 @@
                         <div class="panel-body">
 
                             <ul class="nav nav-pills nav-stacked">
-                                <!--<li name='customer-orders.php'>
-                                    <a href="customer-orders.php"><i class="fa fa-list"></i> My orders</a>
-                                </li>-->
                                 <li name='customer-wishlist.php'>
                                     <a href="customer-wishlist.php"><i class="fa fa-heart"></i> My wishlist</a>
                                 </li>
@@ -119,7 +113,6 @@
                     <div class="box">
                         <h1>My account</h1>
                         <p class="lead">Change your personal details or your password here.</p>
-                        <!-- <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p> -->
 
                         <h3>Set profile picture</h3>
 
@@ -133,9 +126,9 @@
                                                         FROM users
                                                         WHERE ID=" . $_SESSION['user']->getID() . ";
                                                         ";
-                                                $result = mysqli_query($conn,$sql);
+                                                $result = mysqli_query($conn, $sql);
                                                 echo mysqli_fetch_assoc($result)['profile_img'];
-                                                ?>'
+                                    ?>'
                                         class='img-rounded' alt='Profile Picture' id='profilePicDisplay' style='height: auto; width: auto; max-height: 500px; max-width: 750px;'>
                                 </div>
                                 <div class='form-group col-sm-12 text-center'>
@@ -208,19 +201,19 @@
                         <form action="javascript:void(0)" id="account-info-form">
 
                                 <?php
-                                    /**
-                                     * Get account info
-                                     */
-                                    $conn = sqlConnect();
-                                    $sql = "SELECT foundation,social_links,bio
-                                            FROM users
-                                            WHERE ID = " . $_SESSION['user']->getID() . ";";
-                                    $result = mysqli_query($conn,$sql);
-                                    while($row = mysqli_fetch_assoc($result)) {
-                                        $links = json_decode($row['social_links'],true);
-                                        $foundation = json_decode($row['foundation'],true);
-                                        $bio = $row['bio'];
-                                    }
+                                /**
+                                 * Get account info
+                                 */
+                                $conn = sqlConnect();
+                                $sql = "SELECT foundation,social_links,bio
+                                        FROM users
+                                        WHERE ID = " . $_SESSION['user']->getID() . ";";
+                                $result = mysqli_query($conn, $sql);
+                                while ($row = mysqli_fetch_assoc($result)) {
+                                    $links = json_decode($row['social_links'], true);
+                                    $foundation = json_decode($row['foundation'], true);
+                                    $bio = $row['bio'];
+                                }
                                 ?>
 
                                 <div class="col-sm-6">

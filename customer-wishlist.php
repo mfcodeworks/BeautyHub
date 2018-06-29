@@ -1,12 +1,13 @@
 <?php
-    require_once 'scripts/functions.php';
-    session_start();
-    if(!isset($_SESSION['user'])) headerLocation('index.php');
-    loadHead();
-    loadTopBar();
-    loadNavBar();
-    beginContent();
-    $username = $_SESSION['user']->getUsername();
+require_once 'scripts/functions.php';
+if (!isset($_SESSION['user'])) {
+    headerLocation('index.php');
+}
+loadHead();
+loadTopBar();
+loadNavBar();
+beginContent();
+$username = $_SESSION['user']->getUsername();
         echo "    <div class='col-md-12'>
                     <!-- Home > Wishlist nav link -->
                     <ul class='breadcrumb'>

@@ -1,6 +1,5 @@
 <?php
     require_once 'scripts/functions.php';
-    session_start();
     loadHead();
     loadTopBar();
     loadNavBar();
@@ -21,7 +20,7 @@
                             <div class="box">
 
                                 <p class="text-center">
-                                    <img src="img/logo.png" alt="Obaju template">
+                                    <img src="img/logo.png">
                                 </p>
 
                                 <h3>We are sorry - this page is not here anymore</h3>

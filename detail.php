@@ -1,23 +1,30 @@
 <?php
-    require_once 'scripts/functions.php';
-    extract($_GET);
+require_once 'scripts/functions.php';
+extract($_GET);
+//Check product exists and chck for dupe brand requirements
+if (!isset($id)) {
+    headerLocation('index.php');
+}
+if (!sqlExists($id, 'ID', 'products')) {
+    headerLocation('index.php');
+}
+if (isset($dupeBrands)) {
+    $dupeBrands = explode(",", $dupeBrands);
+}
+//Load page
+loadHead();
+loadTopBar();
+loadNavBar();
+beginContent();
+if (isset($dupeBrands)) {
+    loadProductDetails($id, $dupeBrands);
+} else {
+    loadProductDetails($id);
+}
+loadFoot();
 
-    //Check product exists and chck for dupe brand requirements
-    if(!isset($id)) headerLocation('index.php');
-    if(!sqlExists($id,'ID','products')) headerLocation('index.php');
-    if(isset($dupeBrands)) $dupeBrands = explode(",",$dupeBrands);
 
-    //Load page
-    loadHead();
-    loadTopBar();
-    loadNavBar();
-    beginContent();
-    if(isset($dupeBrands)) loadProductDetails($id,$dupeBrands);
-    else loadProductDetails($id);
-    loadFoot();
-
-
-function loadProductDetails($id,$dupeBrands=NULL)
+function loadProductDetails($id, $dupeBrands = null)
 {
     //Load product
     $product = new product($id);
@@ -26,8 +33,8 @@ function loadProductDetails($id,$dupeBrands=NULL)
     $conn = sqlConnect();
     $sql = "SELECT name,brand
             FROM products;";
-    $result = mysqli_query($conn,$sql);
-    while($row = mysqli_fetch_assoc($result)) {
+    $result = mysqli_query($conn, $sql);
+    while ($row = mysqli_fetch_assoc($result)) {
         $allProducts[] = $row['brand'] . " - " . $row['name'];
     }
     mysqli_close($conn);
@@ -35,21 +42,21 @@ function loadProductDetails($id,$dupeBrands=NULL)
     "<script>
         $(document).ready(function() {
             var products = [";
-    for($i = 0; $i < count($allProducts); $i++) {
+    for ($i = 0; $i < count($allProducts); $i++) {
         $script .= "\"" . $allProducts[$i] . "\",";
     }
-    $script = trim($script,",") .
+    $script = trim($script, ",") .
             "];
             $('#dupeName').autocomplete({
                 source: products
             });
             var shades = [";
-    if($product->getShades() != null) {
-        foreach($product->getShades() as $s) {
+    if ($product->getShades() != null) {
+        foreach ($product->getShades() as $s) {
             $script .= "\"" . $s . "\",";
         }
     }
-    $script = trim($script,",") . 
+    $script = trim($script, ",") . 
             "];
             if(shades.length > 0) {
                 $('#thisShade').autocomplete({
@@ -94,11 +101,11 @@ function loadProductDetails($id,$dupeBrands=NULL)
             </div>
             <div class='panel-body'>";
 
-    if($product->getShadeImg()[0]['shade']  != null) {
+    if ($product->getShadeImg()[0]['shade']  != null) {
 
         echo "<select class='form-control' id='shade-selector'>";
 
-        foreach($product->getShadeImg() as $si) {
+        foreach ($product->getShadeImg() as $si) {
             echo "<option value='$si[img],$si[shade]'>$si[shade]</option>";
         }
 
@@ -112,13 +119,13 @@ function loadProductDetails($id,$dupeBrands=NULL)
             </div>
             </div>";
 
-    }
-
-    else echo "<div class='text-center'>
+    } else {
+        echo "<div class='text-center'>
                     <a href='javascript:void(0)' class='btn btn-primary' id='add-a-shade'>Add New Shade</a>
                 </div>
             </div>
         </div>";
+    }
 
     //Load search filters for dupes (Brand checkboxes on side)
     loadSearchFilters($dupeBrands);
@@ -134,9 +141,9 @@ function loadProductDetails($id,$dupeBrands=NULL)
                   echo "<div class='col-sm-6'>
                             <div class='box text-center'>
                                 <h1 class='text-center' id='product-title' name='$id'>$name</h1>";
-                if(isset($rating) && $rating != "" && $rating != " ") {
+                if (isset($rating) && $rating != "" && $rating != " ") {
                     echo "<h4>Rating:<br/>";
-                    for($i=0;$i<round($rating);$i++) echo "<i class='fa fa-star'></i>";
+                    for ($i=0;$i<round($rating);$i++) echo "<i class='fa fa-star'></i>";
                     echo "</h4>";
                 }
                 echo "          </h4>
@@ -144,9 +151,9 @@ function loadProductDetails($id,$dupeBrands=NULL)
                                 </p>";
 
     //Print prices/sites
-    if($product->getPriceSite()[0]['price'] != '') {
+    if ($product->getPriceSite()[0]['price'] != '') {
         echo "<select class='form-control' id='price-site-select'>";
-        foreach($product->getPriceSite() as $ps) {
+        foreach ($product->getPriceSite() as $ps) {
             //Set var
             $currentPrice = $ps['price'];
             $currentSite = $ps['site'];
@@ -205,24 +212,22 @@ function loadProductDetails($id,$dupeBrands=NULL)
 
     //Print add to wishlist button
     //TODO: Display login button for wishlist if not logged in
-    if(isset($_SESSION['user'])) {
+    if (isset($_SESSION['user'])) {
         $currentUser = new profile($_SESSION['user']->getID());
     }
-    if(isset($currentUser)) {
-        if( $currentUser->isInWishlist($id,$product->getShades()[0]) ) {
+    if (isset($currentUser)) {
+        if ($currentUser->isInWishlist($id, $product->getShades()[0]) ) {
             echo "<p class='text-center buttons' id='wishlist-button'>
                     <a href='javascript:void(0)' class='btn btn-default' id='in-wishlist' name='$id'><i class='fa fa-check'></i> Added to wishlist</a>
                 </p>
             </div>";
-        }
-        else {
+        } else {
             echo "<p class='text-center buttons' id='wishlist-button'>
                     <a href='javascript:void(0)' class='btn btn-default' id='add-to-wishlist' name='$id'><i class='fa fa-heart'></i> Add to wishlist</a>
                 </p>
             </div>";
         }
-    }
-    else {
+    } else {
         echo "</div>";
     }
 
@@ -245,7 +250,7 @@ function loadProductDetails($id,$dupeBrands=NULL)
     loadCommentForm();
 
     $shade = $product->getShades()[0];
-    getDupeDetails($id,$shade,$dupeBrands);
+    getDupeDetails($id, $shade, $dupeBrands);
     echo "
         </div>
     </div>

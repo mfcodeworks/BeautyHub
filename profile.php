@@ -1,46 +1,43 @@
 <?php
-    require_once 'scripts/functions.php';
-    session_start();
-    //Check ID exists
-    if(!isset($_GET['id']) 
+require_once 'scripts/functions.php';
+//Check ID exists
+if (!isset($_GET['id']) 
     || $_GET['id'] == "" 
-    || $_GET['id'] == " ") {
-        headerLocation("index.php");
-    }
-
-    loadHead();
-    loadTopBar();
-    loadNavBar();
-    beginContent();
-
-    $profile = new profile($_GET['id']);
+    || $_GET['id'] == " "
+) {
+    headerLocation("index.php");
+}
+loadHead();
+loadTopBar();
+loadNavBar();
+beginContent();
+$profile = new profile($_GET['id']);
 ?>
 
     <div class='row'>
         <!-- PROFILE PIC COLUMN -->
         <div class='col-lg-3 col-xs-12'>
             <img src='<?php echo $profile->ProfileImg(); ?>' id='profile-pic'/>
-            <?php if($profile->isVerified()) echo '<i class="fa fa-check-circle" id="profile-badge"></i>'; ?>
+            <?php if ($profile->isVerified()) echo '<i class="fa fa-check-circle" id="profile-badge"></i>'; ?>
         </div>
         <!-- MAIN INFO COLUMN -->
         <div class='col-lg-6 col-xs-12'>
             <div class='box'>
                 <p class='lead'>
                     <?php 
-                        $thisUser = new profile($_SESSION['user']->getID());
-                        echo "<strong id='profileUsername'>" . $profile->Username() . "</strong>";
-                        if($thisUser->isFollowing($profile->ID())) {
-                            echo "
-                                <button type='button' class='btn btn-success follow-button' id='unfollow' onclick='unfollowProfile(\"" . $profile->ID() . "\")'>
-                                    Unfollow&nbsp;<i class='fa fa-minus'></i>
-                                </button>";
-                        }
-                        else {
-                            echo "
-                            <button type='button' class='btn btn-primary follow-button' id='notFollowing' onclick='followProfile(\"" . $profile->ID() . "\")'>
-                                Follow&nbsp;<i class='fa fa-plus'></i>
+                    $thisUser = new profile($_SESSION['user']->getID());
+                    echo "<strong id='profileUsername'>" . $profile->Username() . "</strong>";
+                    if ($thisUser->isFollowing($profile->ID())) {
+                        echo "
+                            <button type='button' class='btn btn-success follow-button' id='unfollow' onclick='unfollowProfile(\"" . $profile->ID() . "\")'>
+                                Unfollow&nbsp;<i class='fa fa-minus'></i>
                             </button>";
-                        }
+                    } else {
+                        echo "
+                        <button type='button' class='btn btn-primary follow-button' id='notFollowing' onclick='followProfile(\"" . $profile->ID() . "\")'>
+                            Follow&nbsp;<i class='fa fa-plus'></i>
+                        </button>";
+                    }
                         
                         echo "
                         <button type='button' class='btn btn-danger follow-button' onclick='reportProfile(\"" . $profile->ID() . "\")'>
@@ -48,20 +45,20 @@
                         </button>";
                         echo "<br>" . $profile->Bio() . "<br><br>";
                         //Print selected foundation
-                        if($profile->Foundation() != NULL) {
+                        if ($profile->Foundation() != null) {
                             echo "<strong>Foundation</strong>";
                             echo "<br>";
                             echo $profile->Foundation();
                             echo "<br><br>";
                         }
                         //Print favourites
-                        if($profile->Favourites() != NULL) {
+                        if ($profile->Favourites() != null) {
                             echo "<strong>Favourites</strong>";
                             echo "<ul>";
-                            foreach($profile->Favourites() as $f) {
+                            foreach ($profile->Favourites() as $f) {
                                 $product = new product($f['id']);
                                 $product_text = $product->getBrand() . " " . $product->getName();
-                                if($f['shade'] != "NULL") {
+                                if ($f['shade'] != "NULL") {
                                     $product_text .= " - Shade " . $f['shade'];
                                 }
                                 echo "<li style='font-size: 12pt; padding-right: 7em;'>$product_text</li>";
@@ -76,13 +73,13 @@
         <div class='col-lg-3 col-xs-12'>
             <?php
                 //Print social links
-                if($profile->socialLinks() != NULL) {
+                if ($profile->socialLinks() != null) {
                     echo "
                         <div class='box'>
                         <p class='lead text-center'>";
                     echo "<strong>Social Media:</strong><br>";
-                    foreach($profile->socialLinks() as $key => $sl) {
-                        if($sl != "NULL") {
+                    foreach ($profile->socialLinks() as $key => $sl) {
+                        if ($sl != "NULL") {
                             switch($key) {
                                 case "facebook": 
                                     $fa = "facebook-square";
@@ -110,7 +107,7 @@
                     }
                     echo "</ul>";
                 }*/
-                ?>
+            ?>
             </p>
             </div>
         </div>
